@@ -10,4 +10,9 @@ class DiuController extends Controller
     {
         return view('front.home.index');
     }
+
+    public function aboutUs()
+    {
+        dd('aboutUs');
+    }
 }

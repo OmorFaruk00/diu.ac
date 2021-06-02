@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
+Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');

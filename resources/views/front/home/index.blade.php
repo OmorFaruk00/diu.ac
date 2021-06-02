@@ -1,5 +1,26 @@
 @extends('front.master')
 
+@push('style')
+    <style>
+        .notice-section {
+            background-image: linear-gradient(#FFFFFF, #01AA4D);
+        }
+
+        .about-section {
+            background: #ddd;
+        }
+
+        .card {
+            background: transparent !important;
+        }
+        .back-image{
+            /*background-size: 100%;*/
+            background-attachment: fixed;
+            background-position: center top;
+        }
+    </style>
+@endpush
+
 
 @section('body')
 
@@ -13,16 +34,17 @@
                     <div class="display-table">
                         <div class="display-table-cell">
                             <div class="container text-center">
-                                <h1 class="slider-title" data-animation-in="fadeInLeft" data-animation-out="animate-out">
+                                <h1 class="slider-title" data-animation-in="fadeInLeft"
+                                    data-animation-out="animate-out">
                                     WELCOME TO EDULEARN</h1>
-                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Fusce
+                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
+                                    Fusce
                                     sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br
                                         class="hidden-sm-dow"> Nunc quis sapien in arcu pharetra volutpat.Morbi nec
                                     vulputate dolor.</p>
-                                <a href="#" class="sl-readmore-btn mr-30" data-animation-in="lightSpeedIn"
-                                   data-animation-out="animate-out">READ MORE</a>
-                                <a href="#" class="sl-get-started-btn" data-animation-in="lightSpeedIn"
-                                   data-animation-out="animate-out">GET STARTED NOW</a>
+                                <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
+                                   data-animation-in="lightSpeedIn"
+                                   data-animation-out="animate-out">APPLY NOW</a>
                             </div>
                         </div>
                     </div>
@@ -36,16 +58,17 @@
                     <div class="display-table">
                         <div class="display-table-cell">
                             <div class="container text-center">
-                                <h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">ARE
+                                <h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">
+                                    ARE
                                     YOU READY TO APPLY?</h1>
-                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Fusce
+                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
+                                    Fusce
                                     sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br
                                         class="hidden-sm-dow"> Nunc quis sapien in arcu pharetra volutpat.Morbi nec
                                     vulputate dolor.</p>
-                                <a href="#" class="sl-readmore-btn mr-30" data-animation-in="fadeInUp"
-                                   data-animation-out="animate-out">READ MORE</a>
-                                <a href="#" class="sl-get-started-btn" data-animation-in="fadeInUp"
-                                   data-animation-out="animate-out">GET STARTED NOW</a>
+                                <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
+                                   data-animation-in="fadeInUp"
+                                   data-animation-out="animate-out">APPLY NOW</a>
                             </div>
                         </div>
                     </div>
@@ -59,15 +82,18 @@
                     <div class="display-table">
                         <div class="display-table-cell">
                             <div class="container text-center">
-                                <h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">ARE
+                                <h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">
+                                    ARE
                                     YOU READY TO APPLY?</h1>
-                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">Fusce
-                                    sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br> Nunc
+                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
+                                    Fusce
+                                    sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br>
+                                    Nunc
                                     quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor.</p>
-                                <a href="#" class="sl-readmore-btn mr-30" data-animation-in="fadeInUp"
-                                   data-animation-out="animate-out">READ MORE</a>
-                                <a href="#" class="sl-get-started-btn" data-animation-in="fadeInUp"
-                                   data-animation-out="animate-out">GET STARTED NOW</a>
+
+                                <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
+                                   data-animation-in="fadeInUp"
+                                   data-animation-out="animate-out">APPLY NOW</a>
                             </div>
                         </div>
                     </div>
@@ -132,11 +158,11 @@
     <!-- Services End -->
 
     <!-- About Us Start -->
-    <div id="rs-about" class="rs-about sec-spacer">
+    <div id="rs-about" class="rs-about sec-spacer about-us">
         <div class="container">
             <div class="sec-title mb-50 text-center">
                 <h2>ABOUT US</h2>
-                <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                {{--                <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>--}}
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -150,55 +176,71 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="about-desc">
-                        <h3>WELCOME TO EDULEARN</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua</p>
+                        <h3>WELCOME TO DIU</h3>
+                        <p>Dhaka International University (DIU) is one of the leading, familiar and note-worthy private
+                            universities in Bangladesh which was established on 7th April 1995. It is a non-profitable
+                            institution having strict academic discipline. This university was founded by Late Alhaj
+                            Professor Dr. A. B. M. Mafizul Islam Patwari, Former Chairman of the Department of Law,
+                            University of Dhaka, Bangladesh. It is recognized that Dhaka International University is
+                            such a private university, which was founded by a person who was a renowned humanist and
+                            academician. <a href="{{ route('about-us') }}" target="_blank">See more..</a></p>
+
                     </div>
                     <div id="accordion" class="rs-accordion-style1">
                         <div class="card">
-                            <div class="card-header" id="headingOne">
-                                <h3 class="acdn-title" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                    Our History
-                                </h3>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                 data-parent="#accordion">
-                                <div class="card-body">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="headingTwo">
-                                <h3 class="acdn-title collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="card-header" id="ourMission">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseOurMission"
+                                    aria-expanded="true" aria-controls="collapseOurMission">
                                     Our Mission
                                 </h3>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div id="collapseOurMission" class="collapse" aria-labelledby="ourMission"
+                                 data-parent="#accordion">
                                 <div class="card-body">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable.
+                                    The mission of DIU is to produce capable leaders in the respective field of study
+                                    who can meet the challenges of present dynamic world. It wants to create
+                                    multidisciplinary knowledge, communication and interpersonal skills at the highest
+                                    level of excellence among the students which will make them honest, sincere and
+                                    dedicated in their thoughts and deeds.
                                 </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-header mb-0" id="headingThree">
-                                <h3 class="acdn-title collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
+                            <div class="card-header" id="ourVision">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseOurVission"
+                                    aria-expanded="false" aria-controls="collapseTwo">
                                     Our Vision
                                 </h3>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            <div id="collapseOurVission" class="collapse" aria-labelledby="ourVision"
                                  data-parent="#accordion">
                                 <div class="card-body">
-                                    There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form, by injected humour, or randomised words which don't
-                                    look even slightly believable.
+                                    The vision of DIU is to contribute to the nation by producing age-worthy, pragmatic
+                                    and eligible graduates through continual innovation in education and research.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header mb-0" id="itsFounder">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    DIU And Its Founder
+                                </h3>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="itsFounder"
+                                 data-parent="#accordion">
+                                <div class="card-body">
+                                    Dhaka International University was founded by Late Alhaj Professor Dr. A.B.M.
+                                    Mafizul Islam Patwari. He was a Professor of the Department of Law, University of
+                                    Dhaka, Bangladesh. It may be observed that Dhaka International University is perhaps
+                                    the only private university which was established by a person who was basically an
+                                    academician. He established this university with high hopes and aspirations to
+                                    disseminate knowledge and thus to extend the horizon of knowledge. That is why, the
+                                    slogan of DIU is the universal adage, “Knowledge is Power.” DIU wants to generate
+                                    this power among individuals through teaching, training and guidance by using age
+                                    worthy, pragmatic and well-designed curricula and syllabi.
                                 </div>
                             </div>
                         </div>
@@ -209,664 +251,659 @@
     </div>
     <!-- About Us End -->
 
-    {{--<!-- Courses Start -->
-    <div id="rs-courses" class="rs-courses sec-color sec-spacer">
+    <!-- Latest notice && event Start -->
+    <div id="rs-latest-news-style7" class="rs-latest-news-style7 notice-section">
         <div class="container">
-            <div class="sec-title mb-50 text-center">
-                <h2>OUR POPULAR COURSES</h2>
-                <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
-            </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
-                         data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true"
-                         data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
-                         data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
-                         data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true"
-                         data-md-device-dots="true">
-                        <div class="cource-item">
-                            <div class="cource-img">
-                                <img src="images/courses/1.jpg" alt=""/>
-                                <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <span class="course-value">$450</span>
-                            </div>
-                            <div class="course-body">
-                                <a href="#" class="course-category">Science</a>
-                                <h4 class="course-title"><a href="courses-details.html">Electrical Engineering</a></h4>
-                                <div class="review-wrap">
-                                    <ul class="rating">
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star-half-empty"></li>
-                                    </ul>
-                                    <span class="review">25 Reviews</span>
-                                </div>
-                                <div class="course-desc">
-                                    <p>
-                                        Cras ultricies lacus consectetur, consectetur
-                                        scelerisque arcu curabitur
-                                    </p>
+
+                <div class="col-lg-6">
+                    <h2 class="uppercase title pb-50 md-pb-30">Our Latest Notice</h2>
+                    <div class="rs-latest-list">
+
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
                                 </div>
                             </div>
-                            <div class="course-footer">
-                                <div class="course-time">
-                                    <span class="label">Course Time</span>
-                                    <span class="desc">3 Year</span>
-                                </div>
-                                <div class="course-student">
-                                    <span class="label">Course Student</span>
-                                    <span class="desc">95</span>
-                                </div>
-                                <div class="class-duration">
-                                    <span class="label">Class Duration</span>
-                                    <span class="desc">8:30-4:00</span>
-                                </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
                             </div>
                         </div>
-                        <div class="cource-item">
-                            <div class="cource-img">
-                                <img src="images/courses/2.jpg" alt=""/>
-                                <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <span class="course-value">$450</span>
-                            </div>
-                            <div class="course-body">
-                                <a href="#" class="course-category">Science</a>
-                                <h4 class="course-title"><a href="courses-details.html">Computer Engineering</a></h4>
-                                <div class="review-wrap">
-                                    <ul class="rating">
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star-half-empty"></li>
-                                    </ul>
-                                    <span class="review">39 Reviews</span>
-                                </div>
-                                <div class="course-desc">
-                                    <p>
-                                        Cras ultricies lacus consectetur, consectetur
-                                        scelerisque arcu curabitur
-                                    </p>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
                                 </div>
                             </div>
-                            <div class="course-footer">
-                                <div class="course-time">
-                                    <span class="label">Course Time</span>
-                                    <span class="desc">4 Years</span>
-                                </div>
-                                <div class="course-student">
-                                    <span class="label">Course Student</span>
-                                    <span class="desc">99</span>
-                                </div>
-                                <div class="class-duration">
-                                    <span class="label">Class Duration</span>
-                                    <span class="desc">8:30-4:00</span>
-                                </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
                             </div>
                         </div>
-                        <div class="cource-item">
-                            <div class="cource-img">
-                                <img src="images/courses/3.jpg" alt=""/>
-                                <a class="image-link" href="courses-details.html" title="University Tour 2018">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                                <span class="course-value">$450</span>
-                            </div>
-                            <div class="course-body">
-                                <a href="#" class="course-category">Science</a>
-                                <h4 class="course-title"><a href="courses-details.html">Civil Engineering</a></h4>
-                                <div class="review-wrap">
-                                    <ul class="rating">
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star"></li>
-                                        <li class="fa fa-star-half-empty"></li>
-                                    </ul>
-                                    <span class="review">22 Reviews</span>
-                                </div>
-                                <div class="course-desc">
-                                    <p>
-                                        Cras ultricies lacus consectetur, consectetur
-                                        scelerisque arcu curabitur
-                                    </p>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
                                 </div>
                             </div>
-                            <div class="course-footer">
-                                <div class="course-time">
-                                    <span class="label">Course Time</span>
-                                    <span class="desc">3.5 Years</span>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
                                 </div>
-                                <div class="course-student">
-                                    <span class="label">Course Student</span>
-                                    <span class="desc">80</span>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
                                 </div>
-                                <div class="class-duration">
-                                    <span class="label">Class Duration</span>
-                                    <span class="desc">8:30-4:00</span>
-                                </div>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="event-item-new d-block mb-10">
+                            <div class="event-des text-right">
+
+                                <a href="" class="btn btn-success">See more..</a>
+
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-6">
+                    <h2 class="uppercase title pb-50 md-pb-30">Our Latest Events</h2>
+                    <div class="rs-latest-list">
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
+                                </div>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
+                                </div>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
+                                </div>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
+                                </div>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="event-item-new mb-10">
+                            <div class="event-date">
+                                <div class="vertical-align">
+                                    <span class="day">05 / Sep</span>
+                                </div>
+                            </div>
+                            <div class="event-des">
+                                <h4 class="title">
+                                    <a href="#">Eshkool Gala Day For Kids</a>
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="event-item-new d-block mb-10">
+                            <div class="event-des text-right">
+
+                                <a href="" class="btn btn-success">See more..</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- Courses End -->
+    <!-- Latest notice && event end-->
 
-    <!-- Counter Up Section Start-->
-    <div class="rs-counter pt-100 pb-70 bg3">
+
+    <!-- CAMPUS / OTHER FACILITIES Start -->
+    <div id="rs-about" class="rs-about sec-spacer about-section mt-5 back-image" style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
         <div class="container">
+            <div class="sec-title mb-50 text-center">
+                <h2>Campus / Other Facilities</h2>
+            </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <div class="counter-content">
-                        <h2 class="counter-title">ACHEIVEMENTS</h2>
-                        <div class="counter-text">
-                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
-                                spring which I enjoy with my whole heart like mine.</p>
+                    <div class="about-desc">
+                        <h3>WELCOME OUR CAMPUS</h3>
+
+                    </div>
+                    <div id="campusAccordion" class="rs-accordion-style1">
+                        <div class="card">
+                            <div class="card-header" id="PermanentCampus">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapsePermanentCampus"
+                                    aria-expanded="true" aria-controls="collapsePermanentCampus">
+                                    Permanent Campus
+                                </h3>
+                            </div>
+                            <div id="collapsePermanentCampus" class="collapse" aria-labelledby="PermanentCampus"
+                                 data-parent="#campusAccordion">
+                                <div class="card-body">
+                                    DIU has established its permanent campus at Satarkul-Badda, Dhaka- Bangladesh. It is
+                                    located at one of the center places of Dhaka. Total land area is 1.18 acre. There
+                                    are two buildings. One is three (3) storied building and another is four(4) storied.
+                                    Modern facilities are available at permanent campus. The entrance road of the
+                                    permanent campus is decorated with green trees, which looks so to attractive and
+                                    mind blowing. DIU authority will construct a Long Tennis coat, Basket ball ground,
+                                    Indoor games ground as well as a big ground for playing Football and Cricket very
+                                    soon. Classes of Department of English, Department of Sociology, Department of
+                                    Pharmacy, Department of law & Department of Civil has already been started at
+                                    permanent campus. Total building area is about 75000 square feet. The architectural
+                                    view of the two buildings will touch the heart and it will help for remembering the
+                                    design of moghul architectural style. Different departments and offices will shift
+                                    there very soon as per government guide line.
+                                    <br>
+
+                                    Please Contact for any information: Shatarkul, Badda, Dhaka.Bangladesh. <br>
+
+                                    Cell Number: 01939851060-1 <br>
+
+
+                                </div>
+                            </div>
                         </div>
-                        <div class="counter-img rs-image-effect-shine">
-                            <img src="images/counter/1.jpg" alt="Counter Discussion">
+
+                        <div class="card">
+                            <div class="card-header" id="BananiCampus">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseBananiCampus"
+                                    aria-expanded="false" aria-controls="collapseBananiCampus">
+                                    Banani Campus
+                                </h3>
+                            </div>
+                            <div id="collapseBananiCampus" class="collapse" aria-labelledby="BananiCampus"
+                                 data-parent="#campusAccordion">
+                                <div class="card-body">
+                                    DIU Banani Campus is located at one of the center places of Dhaka. The building is
+                                    owned by DIU. There are two buildings. One is five(5) storied and another is four(4)
+                                    storied. Classes of different programs belong to faculty of Business Studies and
+                                    Faculty of Law are held at Banani Campus. Offices of the honorable chairman and
+                                    vice-chairman,honorable vice chancellor and Treasurer, Registrar and Additional
+                                    Registrar & Controller of examinations are situated at Banani campus. There is a big
+                                    cafeteria at Banani Campus. The campus area is monitored through CC camera. WiFi and
+                                    other modern facilities are available. There are a library, prayer room, female
+                                    common room and Indoor games room as well as a computer laboratory for students.
+                                    More than twenty five thousand (25000) Books, journals, e-library and other
+                                    facilities are exist at the library.
+
+                                    <br>
+
+                                    House # 4, Road # 1 Block – F, Banani (Near at Banani chairman Bari Bus Stand)
+                                    Dhaka-1213 Bangladesh. <br>
+
+                                    Cell Number: 01939851060-4
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header mb-0" id="GreenRoadCampus">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseGreenRoadCampus"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    Green Road Campus
+                                </h3>
+                            </div>
+                            <div id="collapseGreenRoadCampus" class="collapse" aria-labelledby="GreenRoadCampus"
+                                 data-parent="#campusAccordion">
+                                <div class="card-body">
+                                    DIU Green Road Campus is located at the heart of the city, Green Road-Pantha Path.
+                                    The location of the Campus is so nice because it is very near at Farmgate and
+                                    Bashundhra City. It is a twelfth storied building. Classes of different programs
+                                    like Department of CSE, Department of EETE, and Department of English, Department of
+                                    Sociology, Department of Business administration and Department of Law are held at
+                                    this campus. A big library, prayer room, a big cafeteria, female common room and
+                                    indoor games room are available at this campus. More than twenty thousand books,
+                                    journals, E-library and other facilities are exist at the library. The campus area
+                                    is monitored through CC camera. WiFi and other modern facilities are available.
+                                    <br>
+                                    66 Green Road, Pantha Path Dhaka-1213, Bangladesh.
+                                    <br>
+                                    Cell Number: 01611348344-8
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 mt-80">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="rs-counter-list">
-                                <h2 class="counter-number plus">60</h2>
-                                <h4 class="counter-desc">TEACHERS</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="rs-counter-list">
-                                <h2 class="counter-number plus">40</h2>
-                                <h4 class="counter-desc">COURSES</h4>
-                            </div>
-                        </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-desc">
+                        <h3>Other Facilities</h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="rs-counter-list">
-                                <h2 class="counter-number plus">900</h2>
-                                <h4 class="counter-desc">STUDENTS</h4>
+                    <div id="facilitiesAccordion" class="rs-accordion-style1">
+
+                        <div class="card">
+                            <div class="card-header" id="AcademicSession">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseAcademicSession"
+                                    aria-expanded="true" aria-controls="collapseAcademicSession">
+                                    Academic Session
+                                </h3>
+                            </div>
+                            <div id="collapseAcademicSession" class="collapse" aria-labelledby="AcademicSession"
+                                 data-parent="#facilitiesAccordion">
+                                <div class="card-body">
+                                    The Academic year is mainly divided into three semesters. Each semester consists of
+                                    18 weeks including examinations. Dhaka International University (DIU) has its own
+                                    Holiday list.
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="rs-counter-list">
-                                <h2 class="counter-number plus">3675</h2>
-                                <h4 class="counter-desc">Satisfied Client</h4>
+
+                        <div class="card">
+                            <div class="card-header" id="healthService">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseHealthService"
+                                    aria-expanded="false" aria-controls="collapseHealthService">
+                                    Health Service
+                                </h3>
+                            </div>
+                            <div id="collapseHealthService" class="collapse" aria-labelledby="healthService"
+                                 data-parent="#facilitiesAccordion">
+                                <div class="card-body">
+                                    Dhaka international University has health services department . Doctors are
+                                    available in all campuses . They consult the students with their health related
+                                    problems.
+                                </div>
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="card-header" id="Accommodation">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseAccommodation"
+                                    aria-expanded="false" aria-controls="collapseAccommodation">
+                                    Accommodation
+                                </h3>
+                            </div>
+                            <div id="collapseAccommodation" class="collapse" aria-labelledby="Accommodation"
+                                 data-parent="#facilitiesAccordion">
+                                <div class="card-body">
+                                    DIU officers well-decorated hotels with modern facilities. At present there are six
+                                    boys hostel and one girls' hostel.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="studentsWelfare">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseStudentsWelfare"
+                                    aria-expanded="false" aria-controls="collapseStudentsWelfare">
+                                    Student’s Welfare
+                                </h3>
+                            </div>
+                            <div id="collapseStudentsWelfare" class="collapse" aria-labelledby="studentsWelfare"
+                                 data-parent="#facilitiesAccordion">
+                                <div class="card-body">
+                                    Dhaka international University is committed to serve the students. As per private
+                                    university act - 2010, DIU authority has appointed student welfare adviser. Student
+                                    welfare adviser conselts with the students regarding their problems and solv the
+                                    problems.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="careerCounseling">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseCareerCounseling"
+                                    aria-expanded="false" aria-controls="collapseCareerCounseling">
+                                    Career Counseling
+                                </h3>
+                            </div>
+                            <div id="collapseCareerCounseling" class="collapse" aria-labelledby="careerCounseling"
+                                 data-parent="#facilitiesAccordion">
+                                <div class="card-body">
+                                    DIU has its career counseling department. An institute has been set up. The name of
+                                    the institued is Center for Excellence and Career Development. CECD organizes career
+                                    related seminer, workshop and job fair for the students.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="onCourseCounseling">
+                                <h3 class="acdn-title collapsed" data-toggle="collapse"
+                                    data-target="#collapseOnCourseCounseling"
+                                    aria-expanded="false" aria-controls="collapseOnCourseCounseling">
+                                    On-Course Counseling
+                                </h3>
+                            </div>
+                            <div id="collapseOnCourseCounseling" class="collapse" aria-labelledby="onCourseCounseling"
+                                 data-parent="#facilitiesAccordion">
+                                <div class="card-body">
+                                    Every teachers of Dhaka international University has allocated their time in their
+                                    daily class routin for on cours counciling for students. Students get benefite form
+                                    ther on-cours counseling. It is compulsary for all teachers to allocate time for the
+                                    students.
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Counter Down Section End -->
+    <!-- CAMPUS / OTHER FACILITIES Us End -->
 
-    <!-- Events Start -->
-    <div id="rs-events" class="rs-events sec-spacer">
-        <div class="container">
-            <div class="sec-title mb-50 text-center">
-                <h2>OUR UPCOMING EVENTS</h2>
-                <p>I feel the presence of the Almighty, who formed us in his own image, and the breath.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30"
-                         data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true"
-                         data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
-                         data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
-                         data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true"
-                         data-md-device-dots="true">
-                        <div class="event-item">
-                            <div class="event-img">
-                                <img src="images/events/1.jpg" alt=""/>
-                                <a class="image-link" href="events-details.html" title="University Tour 2018">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div class="events-details sec-color">
-                                <div class="event-date">
-                                    <i class="fa fa-calendar"></i>
-                                    <span>28 June 2017</span>
-                                </div>
-                                <h4 class="event-title"><a href="events-details.html">PRACTICE WORKSHOP 2018</a></h4>
-                                <div class="event-meta">
-                                    <div class="event-time">
-                                        <i class="fa fa-clock-o"></i>
-                                        <span>12.30AM-05.30PM</span>
-                                    </div>
-                                    <div class="event-location">
-                                        <i class="fa fa-map-marker"></i>
-                                        <span>Venue A, Main Campus</span>
-                                    </div>
-                                </div>
-                                <div class="event-btn">
-                                    <a href="#">Join Event <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="event-item">
-                            <div class="event-img">
-                                <img src="images/events/2.jpg" alt=""/>
-                                <a class="image-link" href="events-details.html" title="University Tour 2018">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div class="events-details sec-color">
-                                <div class="event-date">
-                                    <i class="fa fa-calendar"></i>
-                                    <span>28 April 2017</span>
-                                </div>
-                                <h4 class="event-title"><a href="events-details.html">CAMPUS EXAMINATION ROOM</a></h4>
-                                <div class="event-meta">
-                                    <div class="event-time">
-                                        <i class="fa fa-clock-o"></i>
-                                        <span>10.30AM-03.30PM</span>
-                                    </div>
-                                    <div class="event-location">
-                                        <i class="fa fa-map-marker"></i>
-                                        <span>Venue A, Main Campus</span>
-                                    </div>
-                                </div>
-                                <div class="event-btn">
-                                    <a href="#">Join Event <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="event-item">
-                            <div class="event-img">
-                                <img src="images/events/3.jpg" alt=""/>
-                                <a class="image-link" href="events-details.html" title="University Tour 2018">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div class="events-details sec-color">
-                                <div class="event-date">
-                                    <i class="fa fa-calendar"></i>
-                                    <span>28 June 2017</span>
-                                </div>
-                                <h4 class="event-title"><a href="events-details.html">BEST GRADUATION CEREMONY</a></h4>
-                                <div class="event-meta">
-                                    <div class="event-time">
-                                        <i class="fa fa-clock-o"></i>
-                                        <span>10.30AM-03.30PM</span>
-                                    </div>
-                                    <div class="event-location">
-                                        <i class="fa fa-map-marker"></i>
-                                        <span>Venue A, Main Campus</span>
-                                    </div>
-                                </div>
-                                <div class="event-btn">
-                                    <a href="#">Join Event <i class="fa fa-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Events End -->
-
-    <!-- Team Start -->
-    <div id="rs-team" class="rs-team sec-color sec-spacer">
-        <div class="container">
-            <div class="sec-title mb-50 text-center">
-                <h2>OUR EXPERIENCED STAFFS</h2>
-                <p>Considering desire as primary motivation for the generation of narratives is a useful concept.</p>
-            </div>
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false"
-                 data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true"
-                 data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true"
-                 data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="3"
-                 data-md-device-nav="true" data-md-device-dots="true">
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="images/team/1.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">ABD Rashid Khan</h3>
-                            <span class="subtitle">Vice Chancellor</span>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="teachers-single.html">ABD Rashid Khan</a></h3>
-                                <span class="team-title">Vice Chancellor</span>
-                                <p class="team-desc">Entrusted with planning, implementation and evaluation.</p>
-                                <div class="team-social">
-                                    <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="images/team/2.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Luyes Figery</h3>
-                            <span class="subtitle">A. Professor</span>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="teachers-single.html">Luyes Figery</a></h3>
-                                <span class="team-title">A. Professor</span>
-                                <p class="team-desc">Entrusted with planning, implementation and evaluation.</p>
-                                <div class="team-social">
-                                    <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="images/team/3.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Mr. Mahabub Alam</h3>
-                            <span class="subtitle">Assistant Professor</span>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="teachers-single.html">Mr. Mahabub Alam</a></h3>
-                                <span class="team-title">Assistant Professor</span>
-                                <p class="team-desc">Entrusted with planning, implementation and evaluation.</p>
-                                <div class="team-social">
-                                    <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" class="social-icon"><i class="fa fa-pinterest-p"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-    <!-- Calltoaction Start -->
-    <div id="rs-calltoaction" class="rs-calltoaction sec-spacer bg4">
-        <div class="container">
-            <div class="rs-cta-inner text-center">
-                <div class="sec-title mb-50 text-center">
-                    <h2 class="white-color">WEB DESIGN &amp; DEVLOPMENT COURSE</h2>
-                    <p class="white-color">Fusce sem dolor, interdum in efficitur at, faucibus nec lorem.</p>
-                </div>
-                <a class="cta-button" href="#">Join Now</a>
-            </div>
-        </div>
-    </div>
-    <!-- Calltoaction End -->
-
-    <!-- Latest News Start -->
-    <div id="rs-latest-news" class="rs-latest-news sec-spacer">
-        <div class="container">
-            <div class="sec-title mb-50 text-center">
-                <h2>OUR LASTEST NEWS</h2>
-                <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="news-normal-block">
-                        <div class="news-img">
-                            <a href="#">
-                                <img src="images/blog/1.jpg" alt=""/>
-                            </a>
-                        </div>
-                        <div class="news-date">
-                            <i class="fa fa-calendar-check-o"></i>
-                            <span>June  28,  2017</span>
-                        </div>
-                        <h4 class="news-title"><a href="blog-details.html">Those Other College Expenses You Aren't Thinking
-                                About</a></h4>
-                        <div class="news-desc">
-                            <p>
-                                Blandit rutrum, erat et egestas ultricies, dolor tortor egestas enim, quiste rhoncus sem the
-                                purus eu sapien curabitur.Lorem Ipsum is therefore always free from repetitionetc.
-                            </p>
-                        </div>
-                        <div class="news-btn">
-                            <a href="#">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="news-list-block">
-                        <div class="news-list-item">
-                            <div class="news-img">
-                                <a href="#">
-                                    <img src="images/blog/2.jpg" alt=""/>
-                                </a>
-                            </div>
-                            <div class="news-content">
-                                <h5 class="news-title"><a href="blog-details.html">While the lovely valley team work</a>
-                                </h5>
-                                <div class="news-date">
-                                    <i class="fa fa-calendar-check-o"></i>
-                                    <span>June  28,  2017</span>
-                                </div>
-                                <div class="news-desc">
-                                    <p>
-                                        Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-list-item">
-                            <div class="news-img">
-                                <a href="#">
-                                    <img src="images/blog/3.jpg" alt=""/>
-                                </a>
-                            </div>
-                            <div class="news-content">
-                                <h5 class="news-title"><a href="blog-details.html">I must explain to you how all this
-                                        idea</a></h5>
-                                <div class="news-date">
-                                    <i class="fa fa-calendar-check-o"></i>
-                                    <span>June  28,  2017</span>
-                                </div>
-                                <div class="news-desc">
-                                    <p>
-                                        Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-list-item">
-                            <div class="news-img">
-                                <a href="#">
-                                    <img src="images/blog/4.jpg" alt=""/>
-                                </a>
-                            </div>
-                            <div class="news-content">
-                                <h5 class="news-title"><a href="blog-details.html">I should be incapable of drawing a
-                                        stroke</a></h5>
-                                <div class="news-date">
-                                    <i class="fa fa-calendar-check-o"></i>
-                                    <span>June  28,  2017</span>
-                                </div>
-                                <div class="news-desc">
-                                    <p>
-                                        Excepteur sint occaecat cupidatat non proident,
-                                        sunt in culpa qui officia deserunt.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Latest News End -->
-
-    <!-- Products Start -->
+    <!-- Programs Start -->
     <div id="rs-products" class="rs-products sec-spacer sec-color">
         <div class="container">
             <div class="sec-title mb-50 text-center">
-                <h2>OUR PUBLICATIONS</h2>
-                <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                <h2>OUR Programs</h2>
             </div>
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="false"
                  data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true"
-                 data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true"
-                 data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="4"
-                 data-md-device-nav="true" data-md-device-dots="true">
+                 data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
+                 data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
+                 data-ipad-device-dots="true" data-md-device="4" data-md-device-nav="true" data-md-device-dots="true">
+
                 <div class="product-item">
                     <div class="product-img">
-                        <a href="#">
-                            <img src="images/products/1.jpg" alt=""/>
+                        <a href="javaScript:void(0)">
+                            <img src="{{ asset('/') }}front/images/programs/1.jpg" alt=""/>
                         </a>
                     </div>
-                    <h4 class="product-title"><a href="shop-details.html">Book Packages V2</a></h4>
-                    <span class="product-price">From: $85.00</span>
+                    <h4 class="product-title"><a href="javaScript:void(0)">Pharmacy</a></h4>
                     <div class="product-btn">
-                        <a href="#">Add To Cart</a>
+                        <a href="#">Apply Now</a>
                     </div>
                 </div>
+
                 <div class="product-item">
                     <div class="product-img">
-                        <a href="#">
-                            <img src="images/products/2.jpg" alt=""/>
+                        <a href="javaScript:void(0)">
+                            <img src="{{ asset('/') }}front/images/programs/2.jpg" alt=""/>
                         </a>
                     </div>
-                    <h4 class="product-title"><a href="shop-details.html">Smart Tabs X18</a></h4>
-                    <span class="product-price">From: $85.00</span>
+                    <h4 class="product-title"><a href="javaScript:void(0)">Business Administration</a></h4>
                     <div class="product-btn">
-                        <a href="#">Add To Cart</a>
+                        <a href="#">Apply Now</a>
                     </div>
                 </div>
+
                 <div class="product-item">
                     <div class="product-img">
-                        <a href="#">
-                            <img src="images/products/3.jpg" alt=""/>
+                        <a href="javaScript:void(0)">
+                            <img src="{{ asset('/') }}front/images/programs/3.jpg" alt=""/>
                         </a>
                     </div>
-                    <h4 class="product-title"><a href="shop-details.html">Modern Bags L17</a></h4>
-                    <span class="product-price">From: $85.00</span>
+                    <h4 class="product-title"><a href="javaScript:void(0)">Civil Engineering</a></h4>
                     <div class="product-btn">
-                        <a href="#">Add To Cart</a>
+                        <a href="#">Apply Now</a>
                     </div>
                 </div>
+
                 <div class="product-item">
                     <div class="product-img">
-                        <a href="#">
-                            <img src="images/products/4.jpg" alt=""/>
+                        <a href="javaScript:void(0)">
+                            <img src="{{ asset('/') }}front/images/programs/1.jpg" alt=""/>
                         </a>
                     </div>
-                    <h4 class="product-title"><a href="shop-details.html">Internet CC Camera</a></h4>
-                    <span class="product-price">From: $85.00</span>
+                    <h4 class="product-title"><a href="javaScript:void(0)">Pharmacy</a></h4>
                     <div class="product-btn">
-                        <a href="#">Add To Cart</a>
+                        <a href="#">Apply Now</a>
                     </div>
                 </div>
-            </div>
-            <div class="view-btn">
-                <a href="#">VIEW ALL</a>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <a href="javaScript:void(0)">
+                            <img src="{{ asset('/') }}front/images/programs/2.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <h4 class="product-title"><a href="javaScript:void(0)">Business Administration</a></h4>
+                    <div class="product-btn">
+                        <a href="#">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img">
+                        <a href="javaScript:void(0)">
+                            <img src="{{ asset('/') }}front/images/programs/3.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <h4 class="product-title"><a href="javaScript:void(0)">Civil Engineering</a></h4>
+                    <div class="product-btn">
+                        <a href="#">Apply Now</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+    <!-- Programs end -->
 
-    <!-- Testimonial Start -->
-    <div id="rs-testimonial" class="rs-testimonial bg5 sec-spacer">
+    <!-- Our Campus Life Start -->
+    <div id="rs-team" class="rs-team sec-color sec-spacer back-image" style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
         <div class="container">
             <div class="sec-title mb-50 text-center">
-                <h2 class="white-color">WHAT PEOPLE SAYS</h2>
-                <p class="white-color">Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie
-                    justo.</p>
+                <h2>Our Campus Life</h2>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="rs-carousel owl-carousel" data-loop="true" data-items="2" data-margin="30"
-                         data-autoplay="true" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true"
-                         data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
-                         data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
-                         data-ipad-device-dots="true" data-md-device="2" data-md-device-nav="true"
-                         data-md-device-dots="true">
-                        <div class="testimonial-item">
-                            <div class="testi-img">
-                                <img src="images/testimonial/1.jpg" alt="Jhon Smith">
-                            </div>
-                            <div class="testi-desc">
-                                <h4 class="testi-name">Luise Henrikes</h4>
-                                <p>
-                                    Etiam non elit nec augue tempor gravida et sed velit. Aliquam tempus eget lorem ut
-                                    malesuada. Phasellus dictum est sed libero posuere dignissim.
+            <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false"
+                 data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true"
+                 data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
+                 data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
+                 data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/1.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Our Campus Life</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Our Campus Life</a></h3>
+                                <p class="team-desc">
+                                    DIU offers well-decorated hostel with modern facilities.At present there are seven
+                                    boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green
+                                    Road & Satarkul).
                                 </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <div class="testi-img">
-                                <img src="images/testimonial/2.jpg" alt="Jhon Smith">
-                            </div>
-                            <div class="testi-desc">
-                                <h4 class="testi-name">Aliana D’suza</h4>
-                                <p>
-                                    Tempor non elit nec augue nec gravida et sed velit. Aliquam tempus eget lorem ut
-                                    malesuada. Phasellus dictum est sed libero posuere dignissim.
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/1.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Hostel</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Hostel</a></h3>
+                                <p class="team-desc">
+                                    DIU offers well-decorated hostel with modern facilities
                                 </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <div class="testi-img">
-                                <img src="images/testimonial/3.jpg" alt="Jhon Smith">
-                            </div>
-                            <div class="testi-desc">
-                                <h4 class="testi-name">Aliana D’suza</h4>
-                                <p>
-                                    Tempor non elit nec augue nec gravida et sed velit. Aliquam tempus eget lorem ut
-                                    malesuada. Phasellus dictum est sed libero posuere dignissim.
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/2.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Labs</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Labs</a></h3>
+                                <p class="team-desc">
+                                    DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs & 10 Civil Labs. All labs
+                                    are designed by the experts from DU and BUET, and equipped with modern appliances.
                                 </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <div class="testi-img">
-                                <img src="images/testimonial/4.jpg" alt="Jhon Smith">
-                            </div>
-                            <div class="testi-desc">
-                                <h4 class="testi-name">Aliana D’suza</h4>
-                                <p>
-                                    Tempor non elit nec augue nec gravida et sed velit. Aliquam tempus eget lorem ut
-                                    malesuada. Phasellus dictum est sed libero posuere dignissim.
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/4.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Library</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Library</a></h3>
+                                <p class="team-desc">
+                                    DIU library is equipped with up-to-date books and reading materials. More than fifty
+                                    (50) thousand books are available at DIU libraby. E-library has already been
+                                    started.
                                 </p>
                             </div>
                         </div>
-                        <div class="testimonial-item">
-                            <div class="testi-img">
-                                <img src="images/testimonial/5.jpg" alt="Jhon Smith">
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/5.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Canteen & Common Rooms</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Canteen & Common Rooms</a></h3>
+                                <p class="team-desc">
+                                    DIU has its own catering service and each building has big common & leisure rooms.
+                                </p>
                             </div>
-                            <div class="testi-desc">
-                                <h4 class="testi-name">Aliana D’suza</h4>
-                                <p>
-                                    Tempor non elit nec augue nec gravida et sed velit. Aliquam tempus eget lorem ut
-                                    malesuada. Phasellus dictum est sed libero posuere dignissim.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/6.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Wi-Fi and Internet</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Wi-Fi and Internet</a></h3>
+                                <p class="team-desc">
+                                    All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all students.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/7.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Class Rooms</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Class Rooms</a></h3>
+                                <p class="team-desc">
+                                    All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{{ asset('/') }}front/images/sections/8.jpg" alt="team Image"/>
+                        <div class="normal-text">
+                            <h3 class="team-name">Transport</h3>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                        <div class="overly-border"></div>
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <h3 class="team-name"><a href="javaScript:void(0)">Transport</a></h3>
+                                <p class="team-desc">
+                                    DIU offers free transport service from different corner of the city to Permanent Campus.
                                 </p>
                             </div>
                         </div>
@@ -875,30 +912,82 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->--}}
+    <!-- Our Campus Life End -->
+
+    <!-- Counter Up Section Start-->
+    <div class="rs-counter pt-45 pb-70 back-image universitiy-achievement mt-3"
+         style="background-image: url({{ url('front/images/bg/DIU_Dhaka_International_University_OUT_banner.jpg')}}">
+        <div class="container">
+            <div class="sec-title white-text mb-30 text-center">
+                <h2>Statistics Present Our Strength</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="rs-counter-list">
+                        <h2 class="counter-number plus">60</h2>
+                        <h4 class="counter-desc">Current Foreign Students</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="rs-counter-list">
+                        <h2 class="counter-number plus">40</h2>
+                        <h4 class="counter-desc">Current Students</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="rs-counter-list">
+                        <h2 class="counter-number plus">900</h2>
+                        <h4 class="counter-desc">Full time teachers and employees</h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="rs-counter-list">
+                        <h2 class="counter-number plus">3675</h2>
+                        <h4 class="counter-desc">Number of alumnis</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Up Section End -->
 
     <!-- Partner Start -->
-    <div id="rs-partner" class="rs-partner pt-70 pb-70">
+    <div id="rs-partner" class="rs-partner pt-70 pb-70 back-image" style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
         <div class="container">
+            <div class="sec-title mb-50 text-center">
+                <h2>Our Partners</h2>
+            </div>
+
             <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="80" data-autoplay="true"
                  data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false"
                  data-nav-speed="false" data-mobile-device="2" data-mobile-device-nav="false"
                  data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false"
-                 data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false" data-md-device-dots="false">
+                 data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false"
+                 data-md-device-dots="false">
                 <div class="partner-item">
-                    <a href="#"><img src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png" alt="Partner Image"></a>
+                    <a href="#"><img
+                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
+                            alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png" alt="Partner Image"></a>
+                    <a href="#"><img
+                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
+                            alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png" alt="Partner Image"></a>
+                    <a href="#"><img
+                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
+                            alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png" alt="Partner Image"></a>
+                    <a href="#"><img
+                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
+                            alt="Partner Image"></a>
                 </div>
                 <div class="partner-item">
-                    <a href="#"><img src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png" alt="Partner Image"></a>
+                    <a href="#"><img
+                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
+                            alt="Partner Image"></a>
                 </div>
             </div>
         </div>

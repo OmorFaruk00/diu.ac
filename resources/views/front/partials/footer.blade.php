@@ -49,31 +49,49 @@
                         <p class="margin-remove">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-12">
-                    <h5 class="footer-title">RECENT NOTICES</h5>
-                    <div class="recent-post-widget">
-                        <div class="post-item">
-                            <div class="post-date">
-                                <span>01</span>
-                                <span>June</span>
-                            </div>
-                            <div class="post-desc">
-                                <h5 class="post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
-                                <span class="post-category">Lorem ipsum.</span>
-                            </div>
-                        </div>
-                        <div class="post-item">
-                            <div class="post-date">
-                                <span>01</span>
-                                <span>June</span>
-                            </div>
-                            <div class="post-desc">
-                                <h5 class="post-title"><a href="#">Lorem ipsum dolor sit amet.</a></h5>
-                                <span class="post-category">Lorem ipsum.</span>
-                            </div>
-                        </div>
-                    </div>
+                    <h5 class="footer-title">Useful Links</h5>
+                    <ul class="sitemap-widget useful-link">
+                        <li class="active">
+                            <a href="http://www.ugc-universities.gov.bd/university-detail/73" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>UGC Website</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="https://jobs.diu.ac/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Career</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="https://students.diu.ac/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Students Portal</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="https://admission.diu.ac/register" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Admission Website</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="http://international.diu.ac" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>International Website</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="https://blog.diu.ac" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="http://mail.diu-bd.net/webmail" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Webmail</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Online Payment</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="https://hotjobs.com.bd/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Find Jobs</a>
+                        </li>
+
+                    </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-12">
                     <h5 class="footer-title">OUR SITEMAP</h5>
                     <ul class="sitemap-widget">

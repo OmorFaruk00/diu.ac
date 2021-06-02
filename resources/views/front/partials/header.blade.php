@@ -16,7 +16,7 @@
                         <div class="col-sm-12">
                             <a class="rs-menu-toggle"><i class="fa fa-bars"></i>Menu</a>
                             <nav class="rs-menu">
-                                <ul class="nav-menu">
+                                <ul class="nav-menu text-center">
 
                                     <li @if(Request::is('/')) class="active" @endif ><a href="{{ route('homePage') }}">Home</a></li>
                                     <li><a href="{{ route('homePage') }}">About Us</a></li>
@@ -93,13 +93,15 @@
 
                                 </ul>
                             </nav>
-                            <div class="right-bar-icon rs-offcanvas-link text-right">
+
+                            {{--<div class="right-bar-icon rs-offcanvas-link text-right">
                                 <a class="hidden-xs rs-search" data-target=".search-modal" data-toggle="modal" href="#"><i
                                         class="fa fa-search"></i></a>
 
                                 <a id="nav-expander" class="nav-expander fixed"><i
                                         class="fa fa-bars fa-lg white"></i></a>
-                            </div>
+                            </div>--}}
+
                         </div>
                     </div>
                 </div>
