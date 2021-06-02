@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('welcome');
 });*/
+Route::group(['middleware' => ['pageSpreed']], function () {
+    Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
+    Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');
+});
 
-Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
-Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');

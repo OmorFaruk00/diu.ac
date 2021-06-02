@@ -12,9 +12,9 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.html">
     <link rel="shortcut icon" type="image/x-icon" href="/favicons.png">
 
-    @include('front.partials.allCss')
+{{--    @include('front.partials.allCss')--}}
 
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">--}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -41,8 +41,8 @@
 @include('front.partials.searchModal')
 
 {{--all javascript--}}
-@include('front.partials.allJs')
-{{--<script src="{{ asset('/') }}js/all.min.js"></script>--}}
+{{--@include('front.partials.allJs')--}}
+<script src="{{ asset('/') }}js/all.min.js"></script>
 
 @stack('script')
 

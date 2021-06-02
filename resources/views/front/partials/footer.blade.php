@@ -99,8 +99,6 @@
                         </li>
                         <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
                         <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Courses</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Courses
-                                Details</a></li>
                         <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Events</a></li>
                         <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Events
                                 Details</a></li>
