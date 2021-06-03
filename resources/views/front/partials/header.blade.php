@@ -18,8 +18,8 @@
                             <nav class="rs-menu">
                                 <ul class="nav-menu text-center">
 
-                                    <li @if(Request::is('/')) class="active" @endif ><a href="{{ route('homePage') }}">Home</a></li>
-                                    <li><a href="{{ route('homePage') }}">About Us</a></li>
+                                    <li @if(Request::is('/')) class="active" @endif><a href="{{ route('homePage') }}">Home</a></li>
+                                    <li @if(Request::is('about-us')) class="active" @endif><a href="{{ route('about-us') }}">About Us</a></li>
                                     <li><a href="{{ route('homePage') }}">Notice Board</a></li>
 
 
