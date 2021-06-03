@@ -29,7 +29,8 @@
                         <i class="fa fa-map-marker"></i>
                         <h4 class="contact-title">Email Address</h4>
                         <p class="contact-desc">
-                            <a class="contact-desc" href="mail:inf@diu-bd.net">inf@diu-bd.net</a>
+                            <a class="contact-desc" href="mail:inf@diu-bd.net">inf@diu-bd.net</a> <br>
+                            <a class="contact-desc" href="mail:info@diu.net.bd">info@diu.net.bd</a>
                         </p>
                     </div>
                 </div>

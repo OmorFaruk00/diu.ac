@@ -418,11 +418,17 @@
                 <h2>Campus / Other Facilities</h2>
             </div>
             <div class="row">
+
                 <div class="col-lg-6 col-md-12">
+
                     <div class="about-desc">
                         <h3>WELCOME OUR CAMPUS</h3>
-
                     </div>
+
+                    <div class="about-desc">
+                        <img src="{{ asset('/') }}front/images/campus.jpg" alt="diu-campus">
+                    </div>
+
                     <div id="campusAccordion" class="rs-accordion-style1">
                         <div class="card">
                             <div class="card-header" id="PermanentCampus">
@@ -520,6 +526,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
                 <div class="col-lg-6 col-md-12">
@@ -640,6 +647,7 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
