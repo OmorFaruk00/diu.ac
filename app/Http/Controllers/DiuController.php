@@ -13,6 +13,6 @@ class DiuController extends Controller
 
     public function aboutUs()
     {
-        dd('aboutUs');
+        return view('front.about.index');
     }
 }
