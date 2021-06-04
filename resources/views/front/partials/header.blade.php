@@ -20,7 +20,7 @@
 
                                     <li @if(Request::is('/')) class="active" @endif><a href="{{ route('homePage') }}">Home</a></li>
                                     <li @if(Request::is('about-us')) class="active" @endif><a href="{{ route('about-us') }}">About Us</a></li>
-                                    <li><a href="{{ route('homePage') }}">Notice Board</a></li>
+                                    <li @if(Request::is('notice-board')) class="active" @endif><a href="{{ route('notice-board') }}">Notice Board</a></li>
 
 
                                     <!--Department Menu Start-->
@@ -40,11 +40,11 @@
                                     </li>
                                     <!--Department Menu End-->
 
-                                    <li><a href="{{ route('homePage') }}">Admission</a></li>
-                                    <li><a href="{{ route('homePage') }}">Institute</a></li>
-                                    <li><a href="{{ route('homePage') }}">Alumni</a></li>
-                                    <li><a href="{{ route('homePage') }}">Cell</a></li>
-                                    <li><a href="{{ route('homePage') }}">Contact</a></li>
+                                    <li @if(Request::is('/')) class="active" @endif><a href="{{ route('homePage') }}">Admission</a></li>
+                                    <li @if(Request::is('institute')) class="active" @endif><a href="{{ route('institute') }}">Institute</a></li>
+                                    <li @if(Request::is('alumni')) class="active" @endif><a href="{{ route('alumni') }}">Alumni</a></li>
+                                    <li @if(Request::is('cell')) class="active" @endif><a href="{{ route('cell') }}">Cell</a></li>
+                                    <li @if(Request::is('contact-us')) class="active" @endif><a href="{{ route('contact-us') }}">Contact</a></li>
 
                                     <!-- Drop Down Pages Start -->
                                     {{--<li class="rs-mega-menu mega-rs"><a href="#">Mega</a>

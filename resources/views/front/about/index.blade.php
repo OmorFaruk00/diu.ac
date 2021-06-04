@@ -66,7 +66,7 @@
                     <ul>
                         <li>
                             <a class="active" href="{{ route('homePage') }}">Home</a> / <span
-                                style="color: #FFFFFF!important;">About US</span>
+                                style="color: #FFFFFF!important;">About Us</span>
                         </li>
                     </ul>
                 </div>
