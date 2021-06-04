@@ -13,54 +13,6 @@
 **/
 
 /*-----------------------
-    Timeline Style1
--------------------------*/
-.rs-timeline {
-    position: relative;
-    padding: 2em 0;
-/*
-    margin-top: 2em;
-    margin-bottom: 2em;
-*/
-}
-.rs-timeline::before {content: '';position: absolute;top: 0;left: 18px;height: 100%;width: 3px;background: #f5f5f5;}
-.rs-timeline .rs-timeline-block {position: relative;margin: 2em 0;}
-.rs-timeline .rs-timeline-block:after {content: "";display: table;clear: both;}
-.rs-timeline .rs-timeline-block:first-child {margin-top: 0;}
-.rs-timeline .rs-timeline-block:last-child {margin-bottom: 0;}
-.rs-timeline .rs-timeline-content {position: relative;margin-left: 60px;border: 3px solid #f5f5f5;border-radius: 0.25em;padding: 1em;}
-.rs-timeline .rs-timeline-content img, 
-.rs-timeline .rs-timeline-content video, 
-.rs-timeline .rs-timeline-content iframe {margin-bottom: 25px;width: 100%;}
-.rs-timeline .rs-timeline-content:after {content: "";display: table;clear: both;}
-.rs-timeline .rs-timeline-content h3,
-.rs-timeline .rs-timeline-content h3 a {font-size: 24px;margin-top: 0px;color: #303e49;}
-.rs-timeline .rs-timeline-content .rs-read-more,
-.rs-timeline .rs-timeline-content .rs-date {display: inline-block;}
-.rs-timeline .rs-timeline-content p {text-align: justify;margin: 1em 0;}
-.rs-timeline .rs-timeline-content .rs-read-more {
-    float: right;
-    padding: 3px 15px;
-    border: 2px solid #444;
-    color: #444;
-    font-size: 14px;
-    border-radius: 2px;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-}
-.rs-timeline .rs-timeline-content .rs-read-more:hover {background: #444;color: #fff;}
-.rs-timeline .rs-timeline-content .rs-date {float: left;padding: .8em 0;font-weight: 600;}
-.rs-timeline .rs-timeline-content::before {content: '';position: absolute;top: 16px;right: 100%;height: 0;width: 0;border: 10px solid transparent;border-right: 10px solid #f5f5f5;}
-
-.rs-timeline blockquote {
-    border-left: 5px solid rgba(0, 0, 0, 0.2);
-    padding-left: 20px;
-}
-.rs-timeline blockquote small{
-    font-size: 14px;
-}
-
-/*-----------------------
     Timeline Style2
 -------------------------*/
 
@@ -82,6 +34,7 @@
     height: 3px;
     background: #f0f0f0;
 }
+
 .rs-timeline-2 ol li:last-child {
     width: 120px;
 }
@@ -95,7 +48,7 @@
     height: 12px;
     transform: translateY(-50%);
     border-radius: 50%;
-    background: #F45B69;
+    background: #01aa4d;
 }
 .rs-timeline-2 ol li div {
     position: absolute;
@@ -104,8 +57,9 @@
     padding: 15px;
     font-size: 1rem;
     white-space: normal;
-    color: black;
-    background: #f0f0f0;
+    color: #631818d9;
+    /*background: #f0f0f0;*/
+    background-image:linear-gradient(#FFFFFF,#01aa4d);
 }
 .rs-timeline-2 ol li div::before {
     content: '';
@@ -139,6 +93,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 8px;
+    color: #ff0000;
 }
 
 
