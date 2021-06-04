@@ -1,14 +1,12 @@
 /**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Edulearn | Responsive Education HTML5 Template 
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
+ * Date : 2021-06-01;
+ * Developer Name : Md. Lemon Patwari;
+ * Theme Name: DIU;
+ * Theme URI: diu.ac;
+ * Author: Dhaka International University;
+ * Author URI: https://lemonpatwari.com/;
+ * Version: 1.1.0
+ */
 
 jQuery(document).ready(function($) {
     'use strict';

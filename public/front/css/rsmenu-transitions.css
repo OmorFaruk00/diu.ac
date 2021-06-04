@@ -1,7 +1,11 @@
-/*
-Theme Name: rs Menu
-Description: rs Menu is a fully responsive, easy-to-use, highly customized and creative Mega Menu
-Author: Rs Themes
+/**
+ * Date : 2021-06-01;
+ * Developer Name : Md. Lemon Patwari;
+ * Theme Name: DIU;
+ * Theme URI: diu.ac;
+ * Author: Dhaka International University;
+ * Author URI: https://lemonpatwari.com/;
+ * Version: 1.1.0
 */
 
 /************************************************
@@ -11,17 +15,17 @@ Author: Rs Themes
 	.rs-menu ul ul {
 		opacity: 0;
 		display: block;
-		visibility: hidden;	
+		visibility: hidden;
 		transform: translateY(10px);
 	}
 
-	.rs-menu li:active > ul, 
-	.rs-menu li:focus > ul, 
-	.rs-menu li:hover > ul, 
-	.rs-menu li:hover > ul.mega-menu > li > ul, 
-	.rs-menu li:hover ul.mega-menu .sub-menu {    
+	.rs-menu li:active > ul,
+	.rs-menu li:focus > ul,
+	.rs-menu li:hover > ul,
+	.rs-menu li:hover > ul.mega-menu > li > ul,
+	.rs-menu li:hover ul.mega-menu .sub-menu {
 		 opacity: 1;
-		 visibility:visible;		
+		 visibility:visible;
 		 transform: translateY(0px);
-	}	
+	}
 }

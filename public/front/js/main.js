@@ -1,14 +1,12 @@
 /**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Edulearn | Responsive Education HTML5 Template 
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
+ * Date : 2021-06-01;
+ * Developer Name : Md. Lemon Patwari;
+ * Theme Name: DIU;
+ * Theme URI: diu.ac;
+ * Author: Dhaka International University;
+ * Author URI: https://lemonpatwari.com/;
+ * Version: 1.1.0
+ */
 
 (function($) {
     "use strict";
@@ -24,7 +22,7 @@
            header.addClass("sticky");
        }
     });
-	
+
     // Latest News
 	$('.latest-news-slider').slick({
 		slidesToShow: 1,
@@ -45,8 +43,8 @@
 		centerPadding: '0',
 		focusOnSelect: true
 	});
-	
-	
+
+
 	//window load
 	$(window).on( 'load', function() {
 		//rs menu
@@ -58,11 +56,11 @@
 		 });
 		}
 	})
-	
-	//Slider js 
+
+	//Slider js
 	/*-------------------------------------
 	       Home page Slider
-	       -------------------------------------*/	  
+	       -------------------------------------*/
 	      // Declare Carousel jquery object
 	      var owl = $('#home-slider');
 
@@ -108,7 +106,7 @@
 	          var $elemsToanim = $currentItem.find("[data-animation-in]");
 	          setAnimation ($elemsToanim, 'in');
 	      });
-	
+
 	/*-------------------------------------
     OwlCarousel
     -------------------------------------*/
@@ -171,7 +169,7 @@
 
 	//CountDown Timer
     var CountTimer = $('.CountDownTimer');
-    if(CountTimer.length){ 
+    if(CountTimer.length){
         $(".CountDownTimer").TimeCircles({
             fg_width: 0.030,
             bg_width: 0.8,
@@ -191,11 +189,11 @@
                     color: "#ff3115"
                 }
             }
-        }); 
+        });
     }
     //CountDown Timer
     var CountTimer = $('.CountDownTimer2');
-    if(CountTimer.length){ 
+    if(CountTimer.length){
         $(".CountDownTimer2").TimeCircles({
             fg_width: 0.030,
             bg_width: 0.8,
@@ -215,16 +213,16 @@
                     color: "#fff"
                 }
             }
-        }); 
+        });
     }
 
 
-	 
-	// video 
+
+	// video
     if ($('.player').length) {
         $(".player").YTPlayer();
     }
-    
+
     //about tabs
     $('.collapse.show').prev('.card-header').addClass('active');
     $('#accordion, #bs-collapse, #accordion1')
@@ -237,7 +235,7 @@
 
     // wow init
     new WOW().init();
-    
+
     // image loaded portfolio init
 	var gridfilter = $('.grid');
 		if(gridfilter.length){
@@ -257,7 +255,7 @@
 			});
 		});
 	}
-        
+
     // project Filter
     if ($('.gridFilter button').length) {
 		var projectfiler = $('.gridFilter button');
@@ -285,7 +283,7 @@
 			}
 		});
 	}
-    
+
 	// video popup
 	var popupyoutube = $('.popup-youtube');
 	if(popupyoutube.length){
@@ -295,11 +293,11 @@
 			mainClass: 'mfp-fade',
 			removalDelay: 160,
 			preloader: false,
-			fixedContentPos: false								
-		});	
+			fixedContentPos: false
+		});
 	}
-	
-    
+
+
      /*----------------------------
     single-productjs active
     ------------------------------ */
@@ -335,17 +333,17 @@
 		$(".book_preload").fadeOut(200);
 		})
 	})
-		
+
     // Counter Up
-    if($('.counter-number').length){	
+    if($('.counter-number').length){
 		$('.counter-number').counterUp({
 			delay: 20,
 			time: 1500
 		});
 	}
     // scrollTop init
-    var totop = $('#scrollUp'); 
-    if(totop.length){	
+    var totop = $('#scrollUp');
+    if(totop.length){
 		win.on('scroll', function() {
 			if (win.scrollTop() > 150) {
 				totop.fadeIn();
@@ -359,7 +357,7 @@
 			}, 500)
 		});
 	}
-    
+
     // Google Map
     if ($('#googleMap').length) {
         var initialize = function() {
@@ -385,7 +383,7 @@
         // Add the map initialize function to the window load function
         google.maps.event.addDomListener(window, "load", initialize);
     }
-    
+
     /* MENU JS */
 	var togglebtn = $('.toggle-btn');
 	if(togglebtn.length){
@@ -394,7 +392,7 @@
 			$("body").toggleClass("hidden-menu");
 		});
 	}
-    
+
 	//canvas menu
 	var navexpander = $('#nav-expander');
 	if(navexpander.length){
@@ -410,7 +408,7 @@
 			$('body').removeClass('nav-expanded');
 		});
 	}
-	
+
 	//canvus menu
 	var sidebarnavmenu = $('.sidebarnav_menu');
 	if(sidebarnavmenu.length){
@@ -419,6 +417,6 @@
 		  });
 		});
 	}
-	
+
 
 })(jQuery);
