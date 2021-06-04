@@ -87,9 +87,24 @@
                     </div>
 
                     <div class="rs-timeline-content">
-                        <h3>Banani Campus:</h3>
+                        <h3>Banani Campus</h3>
                         <p>Address: House # 4, Road # 1, Block - F, Banani, Dhaka -1213, Bangladesh</p>
                         <p>Mobile: 01939851062-4</p>
+                        <p>E-mail: <a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
+                        <p>Website: <a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
+                        <span class="rs-date"></span>
+                    </div>
+                </div>
+
+                <div class="rs-timeline-block">
+                    <div class="rs-timeline-icon">
+                        <i class="fa fa-institution"></i>
+                    </div>
+
+                    <div class="rs-timeline-content">
+                        <h3>Green Road Campus</h3>
+                        <p>Address: 66 Green Road Dhaka - 1205, Bangladesh</p>
+                        <p>Mobile: 01611348344-8</p>
                         <p>E-mail: <a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
                         <p>Website: <a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
                         <span class="rs-date"></span>
