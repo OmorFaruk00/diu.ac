@@ -17401,7 +17401,12 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVN
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("form", _hoisted_1, [_hoisted_2]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("form", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: _ctx.route('about-us'),
+    target: "_blank"
+  }, "Test url", 8
+  /* PROPS */
+  , ["href"]), _hoisted_2]);
 });
 
 /***/ }),
@@ -18221,8 +18226,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({});
-app.use(ziggy__WEBPACK_IMPORTED_MODULE_1__.ZiggyVue, _ziggy__WEBPACK_IMPORTED_MODULE_2__.Ziggy);
-console.log(route('about-us'), 'working...'); // Importing all components programmetically. provided by laravel.
+app.use(ziggy__WEBPACK_IMPORTED_MODULE_1__.ZiggyVue, _ziggy__WEBPACK_IMPORTED_MODULE_2__.Ziggy); // Importing all components programmetically. provided by laravel.
 
 var files = __webpack_require__("./resources/js/components sync recursive \\.vue$/");
 

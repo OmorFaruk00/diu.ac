@@ -29,18 +29,18 @@
     @stack('style')
 
 </head>
-<body class="home1" id="app">
+<body class="home1">
 
-@include('front.partials.header')
+<span id="app">
+    @include('front.partials.header')
 
-@yield('body')
+    @yield('body')
 
-@include('front.partials.footer')
-@include('front.partials.scrollTop')
-{{--@include('front.partials.canvasMenu')--}}
-{{--@include('front.partials.searchModal')--}}
-
-
+    @include('front.partials.footer')
+    @include('front.partials.scrollTop')
+    {{--@include('front.partials.canvasMenu')--}}
+    {{--@include('front.partials.searchModal')--}}
+</span>
 
 @routes
 
@@ -52,10 +52,10 @@
 <![endif]-->
 
 {{--all javascript--}}
-@include('front.partials.allJs')
-{{--<script src="{{ asset('/') }}js/all.min.js"></script>--}}
+{{--@include('front.partials.allJs')--}}
+<script src="{{ asset('/') }}js/all.min.js"></script>
 
-{{--@stack('script')--}}
+@stack('script')
 
 </body>
 </html>
