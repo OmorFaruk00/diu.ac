@@ -40,7 +40,7 @@
                                     </li>
                                     <!--Department Menu End-->
 
-                                    <li @if(Request::is('/')) class="active" @endif><a href="{{ route('homePage') }}">Admission</a></li>
+                                    <li @if(Request::is('admission')) class="active" @endif><a href="{{ route('admission') }}">Admission</a></li>
                                     <li @if(Request::is('institute')) class="active" @endif><a href="{{ route('institute') }}">Institute</a></li>
                                     <li @if(Request::is('alumni')) class="active" @endif><a href="{{ route('alumni') }}">Alumni</a></li>
                                     <li @if(Request::is('cell')) class="active" @endif><a href="{{ route('cell') }}">Cell</a></li>

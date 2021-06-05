@@ -77,7 +77,7 @@
                         <p>Mobile: 55040891-7</p>
                         <p>E-mail: <a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
                         <p>Website: <a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Permanent Campus</span>
                     </div>
                 </div>
 
@@ -92,7 +92,7 @@
                         <p>Mobile: 01939851062-4</p>
                         <p>E-mail: <a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
                         <p>Website: <a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Banani Campus</span>
                     </div>
                 </div>
 
@@ -107,7 +107,7 @@
                         <p>Mobile: 01611348344-8</p>
                         <p>E-mail: <a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
                         <p>Website: <a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Green Road Campus</span>
                     </div>
                 </div>
             </div>

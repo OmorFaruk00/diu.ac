@@ -24,6 +24,9 @@
         .useful-link li {
             width: 100%!important;
         }
+        .toolbar-share-icon-active{
+            border-bottom: 2px solid #FFFFFF;
+        }
     </style>
 
     @stack('style')

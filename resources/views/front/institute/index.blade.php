@@ -79,13 +79,13 @@
                             activities at 66 Green Road (5th floor). Students are studying in Diploma in Computer
                             technology, Diploma in electrical, Diploma in Civil under BTEB.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Technical & Vocational Education Institute</span>
                     </div>
                 </div>
 
                 <div class="rs-timeline-block">
                     <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
+                        <i class="fa fa-mortar-board"></i>
                     </div>
 
                     <div class="rs-timeline-content">
@@ -94,13 +94,13 @@
                             activities at Choudhurani, Pirgacha - Rangpur. Students are studying in HSC (BM) under
                             BTEB.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Dr.M.I. Patwari Technical & Vocational Education Institute</span>
                     </div>
                 </div>
 
                 <div class="rs-timeline-block">
                     <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
+                        <i class="fa fa-snowflake-o"></i>
                     </div>
 
                     <div class="rs-timeline-content">
@@ -110,13 +110,13 @@
                             Agriculture under BTEB.
                         </p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Dr.Z.I. Chowdhury Agricultural Research & Training Institute</span>
                     </div>
                 </div>
 
                 <div class="rs-timeline-block">
                     <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
+                        <i class="fa fa-superpowers"></i>
                     </div>
 
                     <div class="rs-timeline-content">
@@ -126,13 +126,13 @@
                             in Computer technology, Diploma in electrical, Diploma in Civil and Diploma in Textile under
                             BTEB.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Dr.M.I. Patwari Private Engineering Institute</span>
                     </div>
                 </div>
 
                 <div class="rs-timeline-block">
                     <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
+                        <i class="fa fa-car"></i>
                     </div>
 
                     <div class="rs-timeline-content">
@@ -140,7 +140,7 @@
                         <p>This institute has been established in 2019 . This institute is now operating its activities
                             at at Falgacha,Moniram, Shundarganj-Gaibandha.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">Sundarganj Driving Training Institute</span>
                     </div>
                 </div>
             </div>

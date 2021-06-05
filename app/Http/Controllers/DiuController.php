@@ -21,6 +21,11 @@ class DiuController extends Controller
         return view('front.noticeBoard.index');
     }
 
+    public function admission()
+    {
+        return view('front.admission.index');
+    }
+
     public function institute()
     {
         return view('front.institute.index');
@@ -39,5 +44,25 @@ class DiuController extends Controller
     public function contactUs()
     {
         return view('front.contactUs.index');
+    }
+
+    public function club()
+    {
+        return view('front.club.index');
+    }
+
+    public function publications()
+    {
+        return view('front.publications.index');
+    }
+
+    public function convocation()
+    {
+        return view('front.convocation.index');
+    }
+
+    public function certificateVerification()
+    {
+        return view('front.certificateVerification.index');
     }
 }

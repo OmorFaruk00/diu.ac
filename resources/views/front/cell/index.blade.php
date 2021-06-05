@@ -90,7 +90,7 @@
                             a given period measures the success of a social business. sustainability of the company
                             indicates that it is running as a business.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">SBAC</span>
                     </div>
                 </div>
 
@@ -128,7 +128,7 @@
                             Accordingly, all Reports of seven departments have already been submitted at QA (Quality
                             Assurance) Unit, UGC after furnishing necessary improvement plans.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">IQAC</span>
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
                             company.
                         </p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">TCRC</span>
                     </div>
                 </div>
 
@@ -183,7 +183,7 @@
                             creative writing by dint of publishing literary magazines, which would build students’
                             innovative qualities and make them unique throughout the competitive world.</p>
                         <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
+                        <span class="rs-date">CECD (Centre for Excellence and Career development)</span>
                     </div>
                 </div>
             </div>
