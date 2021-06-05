@@ -15,10 +15,7 @@
 {{--    @include('front.partials.allCss')--}}
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 
     <style>
         .useful-link li {
@@ -32,22 +29,27 @@
     @stack('style')
 
 </head>
-<body class="home1" id="app">
+<body class="home1">
 
-@include('front.partials.header')
+<span id="app">
+    @include('front.partials.header')
 
-@yield('body')
+    @yield('body')
 
-@include('front.partials.footer')
-@include('front.partials.scrollTop')
-{{--@include('front.partials.canvasMenu')--}}
-{{--@include('front.partials.searchModal')--}}
-
+    @include('front.partials.footer')
+    @include('front.partials.scrollTop')
+    {{--@include('front.partials.canvasMenu')--}}
+    {{--@include('front.partials.searchModal')--}}
+</span>
 
 @routes
 
 {{-- output the compiled JS --}}
 <script src="{{ asset('js/app.js') }}"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 {{--all javascript--}}
 {{--@include('front.partials.allJs')--}}
