@@ -490,85 +490,11 @@
             <div class="sec-title mb-50 text-center">
                 <h2>OUR Programs</h2>
             </div>
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="4" data-margin="30" data-autoplay="false"
-                 data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true"
-                 data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
-                 data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
-                 data-ipad-device-dots="true" data-md-device="4" data-md-device-nav="true" data-md-device-dots="true">
 
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="javaScript:void(0)">
-                            <img src="{{ asset('/') }}front/images/programs/1.jpg" alt=""/>
-                        </a>
-                    </div>
-                    <h4 class="product-title"><a href="javaScript:void(0)">Pharmacy</a></h4>
-                    <div class="product-btn">
-                        <a href="#">Apply Now</a>
-                    </div>
-                </div>
 
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="javaScript:void(0)">
-                            <img src="{{ asset('/') }}front/images/programs/2.jpg" alt=""/>
-                        </a>
-                    </div>
-                    <h4 class="product-title"><a href="javaScript:void(0)">Business Administration</a></h4>
-                    <div class="product-btn">
-                        <a href="#">Apply Now</a>
-                    </div>
-                </div>
+            <Home-our-program/>
 
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="javaScript:void(0)">
-                            <img src="{{ asset('/') }}front/images/programs/3.jpg" alt=""/>
-                        </a>
-                    </div>
-                    <h4 class="product-title"><a href="javaScript:void(0)">Civil Engineering</a></h4>
-                    <div class="product-btn">
-                        <a href="#">Apply Now</a>
-                    </div>
-                </div>
 
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="javaScript:void(0)">
-                            <img src="{{ asset('/') }}front/images/programs/1.jpg" alt=""/>
-                        </a>
-                    </div>
-                    <h4 class="product-title"><a href="javaScript:void(0)">Pharmacy</a></h4>
-                    <div class="product-btn">
-                        <a href="#">Apply Now</a>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="javaScript:void(0)">
-                            <img src="{{ asset('/') }}front/images/programs/2.jpg" alt=""/>
-                        </a>
-                    </div>
-                    <h4 class="product-title"><a href="javaScript:void(0)">Business Administration</a></h4>
-                    <div class="product-btn">
-                        <a href="#">Apply Now</a>
-                    </div>
-                </div>
-
-                <div class="product-item">
-                    <div class="product-img">
-                        <a href="javaScript:void(0)">
-                            <img src="{{ asset('/') }}front/images/programs/3.jpg" alt=""/>
-                        </a>
-                    </div>
-                    <h4 class="product-title"><a href="javaScript:void(0)">Civil Engineering</a></h4>
-                    <div class="product-btn">
-                        <a href="#">Apply Now</a>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </div>
     <!-- Programs end -->
@@ -580,179 +506,9 @@
             <div class="sec-title mb-50 text-center">
                 <h2>Our Campus Life</h2>
             </div>
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="3" data-margin="30" data-autoplay="false"
-                 data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true"
-                 data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true"
-                 data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
-                 data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/1.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Our Campus Life</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Our Campus Life</a></h3>
-                                <p class="team-desc">
-                                    DIU offers well-decorated hostel with modern facilities.At present there are seven
-                                    boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green
-                                    Road & Satarkul).
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/1.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Hostel</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Hostel</a></h3>
-                                <p class="team-desc">
-                                    DIU offers well-decorated hostel with modern facilities
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <Home-our-campus-life/>
 
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/2.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Labs</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Labs</a></h3>
-                                <p class="team-desc">
-                                    DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs & 10 Civil Labs. All labs
-                                    are designed by the experts from DU and BUET, and equipped with modern appliances.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/4.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Library</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Library</a></h3>
-                                <p class="team-desc">
-                                    DIU library is equipped with up-to-date books and reading materials. More than fifty
-                                    (50) thousand books are available at DIU libraby. E-library has already been
-                                    started.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/5.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Canteen & Common Rooms</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Canteen & Common Rooms</a></h3>
-                                <p class="team-desc">
-                                    DIU has its own catering service and each building has big common & leisure rooms.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/6.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Wi-Fi and Internet</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Wi-Fi and Internet</a></h3>
-                                <p class="team-desc">
-                                    All DIU compuses are under Wi-Fi facilities. Internet facilities are available for
-                                    all students.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/7.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Class Rooms</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Class Rooms</a></h3>
-                                <p class="team-desc">
-                                    All class rooms of DIU are spacious, well-decorated, and equipped with multimedia
-                                    projector.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('/') }}front/images/sections/8.jpg" alt="team Image"/>
-                        <div class="normal-text">
-                            <h3 class="team-name">Transport</h3>
-                        </div>
-                    </div>
-                    <div class="team-content">
-                        <div class="overly-border"></div>
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <h3 class="team-name"><a href="javaScript:void(0)">Transport</a></h3>
-                                <p class="team-desc">
-                                    DIU offers free transport service from different corner of the city to Permanent
-                                    Campus.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- Our Campus Life End -->
@@ -802,38 +558,8 @@
                 <h2>Our Partners</h2>
             </div>
 
-            <div class="rs-carousel owl-carousel" data-loop="true" data-items="5" data-margin="80" data-autoplay="true"
-                 data-autoplay-timeout="5000" data-smart-speed="2000" data-dots="false" data-nav="false"
-                 data-nav-speed="false" data-mobile-device="2" data-mobile-device-nav="false"
-                 data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false"
-                 data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false"
-                 data-md-device-dots="false">
-                <div class="partner-item">
-                    <a href="#"><img
-                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
-                            alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img
-                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
-                            alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img
-                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
-                            alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img
-                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
-                            alt="Partner Image"></a>
-                </div>
-                <div class="partner-item">
-                    <a href="#"><img
-                            src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
-                            alt="Partner Image"></a>
-                </div>
-            </div>
+            <Home-our-partner/>
+
         </div>
     </div>
     <!-- Partner End -->
