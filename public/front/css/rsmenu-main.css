@@ -227,7 +227,7 @@
 }
 
 .rs-menu .sub-menu li a {
-	padding: 10px 14px;
+	padding: 8px 12px;
     color: #FFFFFF;
 }
 
@@ -253,7 +253,7 @@
 
 /* Sub-menus - font size and text alignment*/
 .rs-menu ul ul a {
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -613,7 +613,7 @@
     }
 
 	.nav-menu > li > a {
-		border-bottom:1px solid #131313;
+		/*border-bottom:1px solid #131313;*/
 		color: #fff !important;
 		text-align: left;
 	}
@@ -634,8 +634,8 @@
 		padding: 20px;
 		cursor:pointer;
 		line-height: 15px;
-		background: #181818;
-		border-left: 1px solid #131313;
+		/*background: #181818;*/
+		/*border-left: 1px solid #131313;*/
 
 		/* Remove the blue Webkit background when element is tapped */
 		-webkit-tap-highlight-color:rgba(0,0,0,0);
@@ -694,8 +694,8 @@
 	.rs-menu-toggle {
 		padding: 14.5px;
 		display: block;
-		background: #222;
-		border-left: 1px solid #222;
+		background: #01AA4D;
+		/*border-left: 1px solid #222;*/
 		position: relative;
 		cursor:pointer;
 		color: #eee;

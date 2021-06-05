@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                background-repeat: repeat-x;
+                 background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -62,88 +62,16 @@
     <!-- titmeline Start -->
     <div class="rs-titmeline sec-spacer">
         <div class="container">
+
             <div class="abt-title mb-70 text-center">
                 <h2>WELCOME TO OUR INSTITUTE</h2>
-                <p style="max-width: 700px;margin: 0 auto;">Beside Dhaka International University (DIU), the management authority of DIU runs several Institutes
+                <p style="max-width: 700px;margin: 0 auto;">Beside Dhaka International University (DIU), the management
+                    authority of DIU runs several Institutes
                     for students to get a degree in the professional life.</p>
             </div>
-            <div class="rs-timeline">
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
 
-                    <div class="rs-timeline-content">
-                        <h3>Technical & Vocational Education Institute</h3>
-                        <p>This institute has been established in 1998 . This institute is now operating its academic
-                            activities at 66 Green Road (5th floor). Students are studying in Diploma in Computer
-                            technology, Diploma in electrical, Diploma in Civil under BTEB.</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
-                    </div>
-                </div>
+            <Institute-institute-info/>
 
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>Dr.M.I. Patwari Technical & Vocational Education Institute</h3>
-                        <p>This institute has been established in 1998 . This institute is now operating its academic
-                            activities at Choudhurani, Pirgacha - Rangpur. Students are studying in HSC (BM) under
-                            BTEB.</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
-                    </div>
-                </div>
-
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>Dr.Z.I. Chowdhury Agricultural Research & Training Institute</h3>
-                        <p>This institute has been established in 1998 . This institute is now operating its academic
-                            activities at Falgacha,Moniram, Shundarganj-Gaibandha. Students are studying in Diploma in
-                            Agriculture under BTEB.
-                        </p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
-                    </div>
-                </div>
-
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>Dr.M.I. Patwari Private Engineering Institute</h3>
-                        <p>This institute has been established in 1998 . This institute is now operating its academic
-                            activities at at Falgacha,Moniram, Shundarganj-Gaibandha. Students are studying in Diploma
-                            in Computer technology, Diploma in electrical, Diploma in Civil and Diploma in Textile under
-                            BTEB.</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
-                    </div>
-                </div>
-
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>Sundarganj Driving Training Institute</h3>
-                        <p>This institute has been established in 2019 . This institute is now operating its activities
-                            at at Falgacha,Moniram, Shundarganj-Gaibandha.</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date"></span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- titmeline End -->

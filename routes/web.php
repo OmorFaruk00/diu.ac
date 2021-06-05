@@ -21,9 +21,15 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
     Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');
     Route::get('/notice-board', [DiuController::class, 'noticeBoard'])->name('notice-board');
+    Route::get('/admission', [DiuController::class, 'admission'])->name('admission');
     Route::get('/institute', [DiuController::class, 'institute'])->name('institute');
     Route::get('/alumni', [DiuController::class, 'alumni'])->name('alumni');
     Route::get('/cell', [DiuController::class, 'cell'])->name('cell');
     Route::get('/contact-us', [DiuController::class, 'contactUs'])->name('contact-us');
+
+    Route::get('/club', [DiuController::class, 'club'])->name('club');
+    Route::get('/publications', [DiuController::class, 'publications'])->name('publications');
+    Route::get('/convocation', [DiuController::class, 'convocation'])->name('convocation');
+    Route::get('/certificate-verification', [DiuController::class, 'certificateVerification'])->name('certificate-verification');
 });
 

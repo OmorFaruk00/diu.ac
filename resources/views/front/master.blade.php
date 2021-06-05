@@ -24,12 +24,15 @@
         .useful-link li {
             width: 100%!important;
         }
+        .toolbar-share-icon-active{
+            border-bottom: 2px solid #FFFFFF;
+        }
     </style>
 
     @stack('style')
 
 </head>
-<body class="home1">
+<body class="home1" id="app">
 
 @include('front.partials.header')
 
@@ -37,8 +40,14 @@
 
 @include('front.partials.footer')
 @include('front.partials.scrollTop')
-@include('front.partials.canvasMenu')
-@include('front.partials.searchModal')
+{{--@include('front.partials.canvasMenu')--}}
+{{--@include('front.partials.searchModal')--}}
+
+
+@routes
+
+{{-- output the compiled JS --}}
+<script src="{{ asset('js/app.js') }}"></script>
 
 {{--all javascript--}}
 {{--@include('front.partials.allJs')--}}
