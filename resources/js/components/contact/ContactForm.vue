@@ -1,18 +1,18 @@
 <template>
-    <form id="contact-form" method="post" action="javaScript:void(0)">
+    <form @submit.prevent="create()">
         <fieldset>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="form-group">
                         <label>First Name*</label>
-                        <input name="fname" id="fname" placeholder="first name" class="form-control"
+                        <input v-model="contactForm.first_name" name="first_name" id="first_name" placeholder="first name" class="form-control"
                                type="text">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="form-group">
                         <label>Last Name*</label>
-                        <input name="lname" id="lname" placeholder="last number" class="form-control"
+                        <input v-model="contactForm.last_name" name="last_name" id="last_name" placeholder="last name" class="form-control"
                                type="text">
                     </div>
                 </div>
@@ -21,14 +21,14 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="form-group">
                         <label>Email*</label>
-                        <input name="email" id="email" placeholder="email" class="form-control"
+                        <input v-model="contactForm.email" name="email" id="email" placeholder="email" class="form-control"
                                type="email">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="form-group">
                         <label>Subject *</label>
-                        <input name="subject" id="subject" placeholder="subject" class="form-control"
+                        <input v-model="contactForm.subject" name="subject" id="subject" placeholder="subject" class="form-control"
                                type="text">
                     </div>
                 </div>
@@ -37,13 +37,13 @@
                 <div class="col-md-12 col-sm-12">
                     <div class="form-group">
                         <label>Message *</label>
-                        <textarea cols="40" rows="4" placeholder="message" id="message" name="message"
+                        <textarea v-model="contactForm.message" cols="40" rows="4" placeholder="message" id="message" name="message"
                                   class="textarea form-control"></textarea>
                     </div>
                 </div>
             </div>
             <div class="form-group mb-0 text-right">
-                <button class="btn btn-secondary">Send <i class="fa fa-rocket"></i></button>
+                <button type="submit" class="btn btn-secondary">Send <i class="fa fa-rocket"></i></button>
             </div>
 
         </fieldset>
@@ -52,7 +52,21 @@
 
 <script>
 export default {
-    name: "ContactForm"
+    name: "ContactForm",
+    data: () => ({
+        contactForm: {
+            first_name: '',
+            last_name: '',
+            email: '',
+            subject: '',
+            message: '',
+        }
+    }),
+    methods: {
+        create(){
+            console.log('working....')
+        }
+    }
 }
 </script>
 

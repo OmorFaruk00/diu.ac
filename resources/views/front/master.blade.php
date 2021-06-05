@@ -15,10 +15,7 @@
 {{--    @include('front.partials.allCss')--}}
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 
     <style>
         .useful-link li {
@@ -44,16 +41,21 @@
 {{--@include('front.partials.searchModal')--}}
 
 
+
 @routes
 
 {{-- output the compiled JS --}}
 <script src="{{ asset('js/app.js') }}"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 
 {{--all javascript--}}
-{{--@include('front.partials.allJs')--}}
-<script src="{{ asset('/') }}js/all.min.js"></script>
+@include('front.partials.allJs')
+{{--<script src="{{ asset('/') }}js/all.min.js"></script>--}}
 
-@stack('script')
+{{--@stack('script')--}}
 
 </body>
 </html>
