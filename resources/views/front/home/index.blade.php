@@ -13,7 +13,8 @@
         .card {
             background: transparent !important;
         }
-        .back-image{
+
+        .back-image {
             /*background-size: 100%;*/
             background-attachment: fixed;
             background-position: center top;
@@ -108,50 +109,27 @@
     <div class="rs-services rs-services-style1">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-3 col-md-6">
-                    <div class="services-item rs-animation-hover">
-                        <div class="services-icon">
-                            <i class="fa fa-american-sign-language-interpreting rs-animation-scale-up"></i>
-                        </div>
-                        <div class="services-desc">
-                            <h4 class="services-title">Trending Courses</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
+                    <Home-service-card icon="fa fa-american-sign-language-interpreting" title="Trending Courses"
+                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
-                    <div class="services-item rs-animation-hover">
-                        <div class="services-icon">
-                            <i class="fa fa-book rs-animation-scale-up"></i>
-                        </div>
-                        <div class="services-desc">
-                            <h4 class="services-title">Books & Liberary</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
+                    <Home-service-card icon="fa fa-book" title="Books & Liberary"
+                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
-                    <div class="services-item rs-animation-hover">
-                        <div class="services-icon">
-                            <i class="fa fa-user rs-animation-scale-up"></i>
-                        </div>
-                        <div class="services-desc">
-                            <h4 class="services-title">Certified Teachers</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
+                    <Home-service-card icon="fa fa-user" title="Certified Teachers"
+                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
                 </div>
+
                 <div class="col-lg-3 col-md-6">
-                    <div class="services-item rs-animation-hover">
-                        <div class="services-icon">
-                            <i class="fa fa-graduation-cap rs-animation-scale-up"></i>
-                        </div>
-                        <div class="services-desc">
-                            <h4 class="services-title">Certification</h4>
-                            <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
-                        </div>
-                    </div>
+                    <Home-service-card icon="fa fa-fa-graduation-cap" title="Certification"
+                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
                 </div>
+
             </div>
         </div>
     </div>
@@ -256,163 +234,16 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-6">
-                    <h2 class="uppercase title pb-50 md-pb-30">Our Latest Notice</h2>
-                    <div class="rs-latest-list">
-
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class="event-item-new d-block mb-10">
-                            <div class="event-des text-right">
-
-                                <a href="" class="btn btn-success">See more..</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <h2 class="uppercase title pb-50 md-pb-30">Our Latest Events</h2>
-                    <div class="rs-latest-list">
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="event-item-new mb-10">
-                            <div class="event-date">
-                                <div class="vertical-align">
-                                    <span class="day">05 / Sep</span>
-                                </div>
-                            </div>
-                            <div class="event-des">
-                                <h4 class="title">
-                                    <a href="#">Eshkool Gala Day For Kids</a>
-                                </h4>
-                            </div>
-                        </div>
-
-                        <div class="event-item-new d-block mb-10">
-                            <div class="event-des text-right">
-
-                                <a href="" class="btn btn-success">See more..</a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <Home-notice-event/>
 
             </div>
         </div>
     </div>
     <!-- Latest notice && event end-->
 
-
     <!-- CAMPUS / OTHER FACILITIES Start -->
-    <div id="rs-about" class="rs-about sec-spacer about-section mt-5 back-image" style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
+    <div id="rs-about" class="rs-about sec-spacer about-section mt-5 back-image"
+         style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
         <div class="container">
             <div class="sec-title mb-50 text-center">
                 <h2>Campus / Other Facilities</h2>
@@ -743,7 +574,8 @@
     <!-- Programs end -->
 
     <!-- Our Campus Life Start -->
-    <div id="rs-team" class="rs-team sec-color sec-spacer back-image" style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
+    <div id="rs-team" class="rs-team sec-color sec-spacer back-image"
+         style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
         <div class="container">
             <div class="sec-title mb-50 text-center">
                 <h2>Our Campus Life</h2>
@@ -871,7 +703,8 @@
                             <div class="display-table-cell">
                                 <h3 class="team-name"><a href="javaScript:void(0)">Wi-Fi and Internet</a></h3>
                                 <p class="team-desc">
-                                    All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all students.
+                                    All DIU compuses are under Wi-Fi facilities. Internet facilities are available for
+                                    all students.
                                 </p>
                             </div>
                         </div>
@@ -891,7 +724,8 @@
                             <div class="display-table-cell">
                                 <h3 class="team-name"><a href="javaScript:void(0)">Class Rooms</a></h3>
                                 <p class="team-desc">
-                                    All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector.
+                                    All class rooms of DIU are spacious, well-decorated, and equipped with multimedia
+                                    projector.
                                 </p>
                             </div>
                         </div>
@@ -911,7 +745,8 @@
                             <div class="display-table-cell">
                                 <h3 class="team-name"><a href="javaScript:void(0)">Transport</a></h3>
                                 <p class="team-desc">
-                                    DIU offers free transport service from different corner of the city to Permanent Campus.
+                                    DIU offers free transport service from different corner of the city to Permanent
+                                    Campus.
                                 </p>
                             </div>
                         </div>
@@ -960,7 +795,8 @@
     <!-- Counter Up Section End -->
 
     <!-- Partner Start -->
-    <div id="rs-partner" class="rs-partner pt-70 pb-70 back-image" style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
+    <div id="rs-partner" class="rs-partner pt-70 pb-70 back-image"
+         style="background-image: url({{ url('front/images/bg/dot-grid.png')}}">
         <div class="container">
             <div class="sec-title mb-50 text-center">
                 <h2>Our Partners</h2>
