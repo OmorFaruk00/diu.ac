@@ -38,10 +38,10 @@
             <NoticeItem v-for="(n,index) in 20" :row="n" :key="index"/>
 
             <div class="event-item-new d-block mb-10">
-                <div class="event-des text-right">
+                <div class="event-des">
 
                     <nav aria-label="Page navigation example">
-                        <ul class="pagination">
+                        <ul class="pagination pagination-sm justify-content-center">
                             <li class="page-item">
                                 <a class="page-link" href="#" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
