@@ -16869,6 +16869,69 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/FacultyMembers.vue?vue&type=script&lang=js":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/FacultyMembers.vue?vue&type=script&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _data_teams__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../data/teams */ "./resources/js/data/teams.js");
+/* harmony import */ var _molecule_Team__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../molecule/Team */ "./resources/js/components/molecule/Team.vue");
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "FacultyMembers",
+  data: function data() {
+    return {
+      teams: _data_teams__WEBPACK_IMPORTED_MODULE_0__.teams
+    };
+  },
+  components: {
+    teamSection: _molecule_Team__WEBPACK_IMPORTED_MODULE_1__.default
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/Syllabus.vue?vue&type=script&lang=js":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/Syllabus.vue?vue&type=script&lang=js ***!
+  \*************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "Syllabus"
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/aditionalFeatures.vue?vue&type=script&lang=js":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/aditionalFeatures.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "aditionalFeatures"
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/NoticeEvent.vue?vue&type=script&lang=js":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/NoticeEvent.vue?vue&type=script&lang=js ***!
@@ -17856,6 +17919,129 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
   }), 64
   /* STABLE_FRAGMENT */
   ))]);
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-639e9c52");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-639e9c52");
+
+var _hoisted_1 = {
+  "class": "rs-carousel owl-carousel",
+  "data-loop": "true",
+  "data-items": "4",
+  "data-margin": "30",
+  "data-autoplay": "true",
+  "data-autoplay-timeout": "5000",
+  "data-smart-speed": "1200",
+  "data-dots": "true",
+  "data-nav": "true",
+  "data-nav-speed": "false",
+  "data-mobile-device": "1",
+  "data-mobile-device-nav": "true",
+  "data-mobile-device-dots": "true",
+  "data-ipad-device": "2",
+  "data-ipad-device-nav": "true",
+  "data-ipad-device-dots": "true",
+  "data-md-device": "4",
+  "data-md-device-nav": "true",
+  "data-md-device-dots": "true"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_teamSection = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("teamSection");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.teams, function (team, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_teamSection, {
+      team: team,
+      key: index
+    }, null, 8
+    /* PROPS */
+    , ["team"]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))]);
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/Syllabus.vue?vue&type=template&id=d6625db2&scoped=true":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/Syllabus.vue?vue&type=template&id=d6625db2&scoped=true ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-d6625db2");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-d6625db2");
+
+var _hoisted_1 = {
+  "class": "row"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-12 col-md-12\" data-v-d6625db2><div id=\"accordion\" class=\"rs-accordion-style1\" data-v-d6625db2><div class=\"card\" data-v-d6625db2><div class=\"card-header\" id=\"headingOne\" data-v-d6625db2><h3 class=\"acdn-title collapsed\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\" data-v-d6625db2> B.Sc. in CSE Program </h3></div><div id=\"collapseOne\" class=\"collapse\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-v-d6625db2><div class=\"card-body\" data-v-d6625db2><div class=\"table-responsive\" data-v-d6625db2><table class=\"table table-bordered\" data-v-d6625db2><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>1st Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-101</td><td data-v-d6625db2>Introduction to Computer Systems</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>PHY-101</td><td data-v-d6625db2>Physics-I</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>GED-101</td><td data-v-d6625db2>Principles of Accounting</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>GED-102</td><td data-v-d6625db2>Bangladesh Studies</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>12</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>2nd Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-103 </td><td data-v-d6625db2>Introduction to Computer Systems</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-104</td><td data-v-d6625db2>Structured Programming Lab </td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>PHY-103</td><td data-v-d6625db2>Physics-II</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>PHY-104</td><td data-v-d6625db2>Physics-II Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>ENG-101</td><td data-v-d6625db2>Basic English</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>MATH-101</td><td data-v-d6625db2>Linear Algebra &amp; Co-ordinate Geometry</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>14</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>3rd Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-105 </td><td data-v-d6625db2>Digital Systems</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-106</td><td data-v-d6625db2>Digital Systems Lab </td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CHEM-101</td><td data-v-d6625db2>Chemistry</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CHEM-102</td><td data-v-d6625db2>Chemistry Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>ENG-102</td><td data-v-d6625db2>Communicative English</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>MATH-102</td><td data-v-d6625db2>Differential and Integral Calculus</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>14</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>4th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-201 </td><td data-v-d6625db2>Discrete Mathematics</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>EEE-201</td><td data-v-d6625db2>Electrical Circuits </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>EEE-202</td><td data-v-d6625db2>Electrical Circuits Lab</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>GED-201</td><td data-v-d6625db2>Principles of Economics</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>MATH-201</td><td data-v-d6625db2>Statistical Methods &amp; Probability</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>13</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>5th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-203 </td><td data-v-d6625db2>Electronic Devices &amp; Circuits </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-204</td><td data-v-d6625db2>Electronic Devices &amp; Circuits Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-205</td><td data-v-d6625db2>Data Structures </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-206</td><td data-v-d6625db2>Data Structures Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>MATH-201</td><td data-v-d6625db2>Differential Equations &amp; Vector Analysis</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>11</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>6th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-207 </td><td data-v-d6625db2>Object Oriented Programming </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-204</td><td data-v-d6625db2>Object Oriented Programming Lab </td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-209</td><td data-v-d6625db2>Computer Organization &amp; Architecture </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>GED-202</td><td data-v-d6625db2>Principles of Management </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>MATH-203</td><td data-v-d6625db2>Complex Variables and Transforms (Laplace &amp; Fourier)</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>13</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>7th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-301</td><td data-v-d6625db2>Algorithm Design &amp; Analysis </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-302</td><td data-v-d6625db2>Algorithm Design &amp; Analysis Lab </td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-303</td><td data-v-d6625db2>Numerical Analysis </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-304</td><td data-v-d6625db2>Numerical Analysis Lab </td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>EEE-301</td><td data-v-d6625db2>Data &amp; Telecommunication</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>GED-301</td><td data-v-d6625db2>Law &amp; Ethics in Engineering Practice </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>14</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>8th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-305</td><td data-v-d6625db2>Microprocessor, Microcontroller &amp; Assembly Language </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-306</td><td data-v-d6625db2>Microprocessor, Microcontroller &amp; Assembly Language Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-307</td><td data-v-d6625db2>Database Management Systems </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-308</td><td data-v-d6625db2>Database Management Systems Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-</td><td data-v-d6625db2>Elective Course (Section I) </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>11</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>9th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-309</td><td data-v-d6625db2>Operating Systems</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-310</td><td data-v-d6625db2>Operating Systems Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-311</td><td data-v-d6625db2>Computer Networks</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-312</td><td data-v-d6625db2>Computer Networks Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-</td><td data-v-d6625db2>Elective Course (Section I) </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-</td><td data-v-d6625db2>Elective Course (Section I) </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>11</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>10th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-401</td><td data-v-d6625db2>Compiler Design</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-402</td><td data-v-d6625db2>Compiler Design Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-403</td><td data-v-d6625db2>Peripherals &amp; Interfacing</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-404</td><td data-v-d6625db2>Peripherals &amp; Interfacing Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-</td><td data-v-d6625db2>Elective Course (Section II) </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-</td><td data-v-d6625db2>Elective Course (Section II) Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>12</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>11th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-405</td><td data-v-d6625db2>Computer Graphics &amp; Multimedia</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-406</td><td data-v-d6625db2>Computer Graphics &amp; Multimedia Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-407</td><td data-v-d6625db2>Artificial Intelligence &amp; Neural Networks</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-408</td><td data-v-d6625db2>Artificial Intelligence &amp; Neural Networks Lab</td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-</td><td data-v-d6625db2>Elective Course (Section II) </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>11</td></tr><tr data-v-d6625db2><th colspan=\"3\" class=\"text-center\" data-v-d6625db2>12th Semester</th></tr><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE</td><td data-v-d6625db2>Elective Course (Section II) </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-406</td><td data-v-d6625db2>Elective Course (Section II) Lab </td><td data-v-d6625db2>1</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-425</td><td data-v-d6625db2>Project Work</td><td data-v-d6625db2>5</td></tr><tr data-v-d6625db2><td data-v-d6625db2></td><td data-v-d6625db2>Total credits</td><td data-v-d6625db2>9</td></tr></table></div></div></div></div><div class=\"card\" data-v-d6625db2><div class=\"card-header\" id=\"headingTwo\" data-v-d6625db2><h3 class=\"acdn-title collapsed\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\" data-v-d6625db2> M.Sc. In CSE Program </h3></div><div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-v-d6625db2><div class=\"card-body\" data-v-d6625db2><div class=\"accordion-content\" data-v-d6625db2><p data-v-d6625db2><strong data-v-d6625db2>Eligibility for Admission in M.Sc. CSE</strong></p><p data-v-d6625db2>Individuals who hold a Bachelor&#39;s degree in CS/CSE/EEE/EETE/IT/ECE/Applied Physics from a recognized university having CGPA not less than 2.5 will be considered for admission into the Master of Science in Computer Science and Engineering program. Students from CS/CSE/EEE/EETE/IT/ECE/Applied Physics will be required to take a number of prerequisite courses as decided by the Department of Computer Science and Engineering.</p><p data-v-d6625db2><strong data-v-d6625db2>Grouping (M.Sc. CSE)</strong></p><p data-v-d6625db2>The M.Sc. in Computer Science and Engineering is divided into two groups : M.Sc. General Group and M.Sc. Thesis Group.</p><p data-v-d6625db2><strong data-v-d6625db2>Duration of the Program :</strong></p><p data-v-d6625db2>The duration of the M.Sc. in CSE program is 3 Semester (1.5 years). </p><p data-v-d6625db2><strong data-v-d6625db2>Credits Load :</strong></p><p data-v-d6625db2><strong data-v-d6625db2>M.Sc. General Group (Group A)</strong></p><ul class=\"list-unstyled\" data-v-d6625db2><li data-v-d6625db2>1st Semester : 12 Credits (Theoretical)</li><li data-v-d6625db2>2nd Semester : 12 Credits (Theoretical)</li><li data-v-d6625db2>3rd Semester : 6 Credits (Theoretical) &amp; 6 Credits (Project Work &amp; Viva)</li></ul><p data-v-d6625db2><strong data-v-d6625db2>M.Sc. Thesis Group (Group B)</strong></p><ul class=\"list-unstyled\" data-v-d6625db2><li data-v-d6625db2>1st Semester : 12 Credits (Theoretical)</li><li data-v-d6625db2>2nd Semester : 6 Credits (Theoretical) &amp; 6 Credits ( Thesis Work )</li><li data-v-d6625db2>3rd Semester : 12 Credits (Thesis Work &amp; Viva)</li></ul></div><table class=\"table table-bordered\" data-v-d6625db2><tr data-v-d6625db2><th data-v-d6625db2>Code No.</th><th data-v-d6625db2>Course Title</th><th data-v-d6625db2>Credit</th></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE-501</td><td data-v-d6625db2>Advanced Algorithm</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -502</td><td data-v-d6625db2>Advanced Networking</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -503</td><td data-v-d6625db2>Advanced Database</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -504</td><td data-v-d6625db2>Advanced Graph Theory</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -505</td><td data-v-d6625db2>Advanced Digital Signal Processing</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -506</td><td data-v-d6625db2>Pattern Recognition</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -507</td><td data-v-d6625db2>Advanced Simulation and Modeling</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -508</td><td data-v-d6625db2>Cryptography and Network Security</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -509</td><td data-v-d6625db2>Bioinformatics</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -510</td><td data-v-d6625db2>Parallel Algorithm</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -511</td><td data-v-d6625db2>Embedded System Design</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -512</td><td data-v-d6625db2>Advanced Wireless and Mobile Communication</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -513</td><td data-v-d6625db2>Advanced Optical Communication </td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -514</td><td data-v-d6625db2>Advanced Optical Communication</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -515</td><td data-v-d6625db2>Robotics and Computer Vision</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -516</td><td data-v-d6625db2>Advanced Multimedia System</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -517</td><td data-v-d6625db2>Teletraffic Engineering</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -518</td><td data-v-d6625db2>Knowledge Engineering</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -519</td><td data-v-d6625db2>Machine Learning</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -520</td><td data-v-d6625db2>Wireless Sensor Network</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -521</td><td data-v-d6625db2>Channel Modeling</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -522</td><td data-v-d6625db2>Advanced Filter Design</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -523</td><td data-v-d6625db2>Fault Tolerant Computing and Design</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -524</td><td data-v-d6625db2>Advanced Digital Image Processing</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -525</td><td data-v-d6625db2>Speech Recognition</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -526</td><td data-v-d6625db2>Advanced Digital Communication</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -527</td><td data-v-d6625db2>Radio Frequency Technology</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -528</td><td data-v-d6625db2>Adaptive and Optimal Image Processing</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -529</td><td data-v-d6625db2>Enterprise Application Integration</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -530</td><td data-v-d6625db2>Enterprise Application Integration</td><td data-v-d6625db2>3</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -531</td><td data-v-d6625db2>Project Work</td><td data-v-d6625db2>6</td></tr><tr data-v-d6625db2><td data-v-d6625db2>CSE -532</td><td data-v-d6625db2>Thesis Work</td><td data-v-d6625db2>18</td></tr></table></div></div></div></div></div>", 1);
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-4b74f790");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-4b74f790");
+
+var _hoisted_1 = {
+  "class": "rs-timeline-2"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ol data-v-4b74f790><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Hostel</time> DIU offers well-decorated hostel with modern facilities.At present there are seven boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road &amp; Satarkul). </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Labs</time> DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs &amp; 10 Civil Labs. All labs are designed by the experts from DU and BUET, and equipped with modern appliances </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>English Proficiency</time> In order to improve English proficiency of the students, DIU has set up a language institute with expert tutors and modern language labs. </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Library</time> DIU library is equipped with up-to-date books and reading materials. More than fifty (50) thousand books are available at DIU libraby. E-library has already been started. </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Canteen &amp; Common Rooms</time> DIU has its own catering service and each building has big common &amp; leisure rooms. </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Class Rooms</time> All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector. </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Wi-Fi and Internet</time> All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all students. </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Transport</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante. </div></li><li data-v-4b74f790><div data-v-4b74f790><time data-v-4b74f790>Medium of Instruction</time> English is the medium of instruction for all programs at DIU. </div></li></ol><div class=\"arrows\" data-v-4b74f790><button class=\"arrow arrow__prev disabled\" disabled data-v-4b74f790></button><button class=\"arrow arrow__next\" data-v-4b74f790></button></div>", 2);
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
 });
 
 /***/ }),
@@ -37534,6 +37720,87 @@ _convocation_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__
 
 /***/ }),
 
+/***/ "./resources/js/components/department/FacultyMembers.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/department/FacultyMembers.vue ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _FacultyMembers_vue_vue_type_template_id_639e9c52_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true */ "./resources/js/components/department/FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true");
+/* harmony import */ var _FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FacultyMembers.vue?vue&type=script&lang=js */ "./resources/js/components/department/FacultyMembers.vue?vue&type=script&lang=js");
+
+
+
+_FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _FacultyMembers_vue_vue_type_template_id_639e9c52_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-639e9c52"
+/* hot reload */
+if (false) {}
+
+_FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/department/FacultyMembers.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/components/department/Syllabus.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/department/Syllabus.vue ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Syllabus_vue_vue_type_template_id_d6625db2_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Syllabus.vue?vue&type=template&id=d6625db2&scoped=true */ "./resources/js/components/department/Syllabus.vue?vue&type=template&id=d6625db2&scoped=true");
+/* harmony import */ var _Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Syllabus.vue?vue&type=script&lang=js */ "./resources/js/components/department/Syllabus.vue?vue&type=script&lang=js");
+
+
+
+_Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _Syllabus_vue_vue_type_template_id_d6625db2_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-d6625db2"
+/* hot reload */
+if (false) {}
+
+_Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/department/Syllabus.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
+/***/ "./resources/js/components/department/aditionalFeatures.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/department/aditionalFeatures.vue ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _aditionalFeatures_vue_vue_type_template_id_4b74f790_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true */ "./resources/js/components/department/aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true");
+/* harmony import */ var _aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./aditionalFeatures.vue?vue&type=script&lang=js */ "./resources/js/components/department/aditionalFeatures.vue?vue&type=script&lang=js");
+
+
+
+_aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _aditionalFeatures_vue_vue_type_template_id_4b74f790_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-4b74f790"
+/* hot reload */
+if (false) {}
+
+_aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/department/aditionalFeatures.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/components/home/NoticeEvent.vue":
 /*!******************************************************!*\
   !*** ./resources/js/components/home/NoticeEvent.vue ***!
@@ -38028,6 +38295,54 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/department/FacultyMembers.vue?vue&type=script&lang=js":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/department/FacultyMembers.vue?vue&type=script&lang=js ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FacultyMembers_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FacultyMembers.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/FacultyMembers.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/components/department/Syllabus.vue?vue&type=script&lang=js":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/department/Syllabus.vue?vue&type=script&lang=js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Syllabus_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Syllabus.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/Syllabus.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
+/***/ "./resources/js/components/department/aditionalFeatures.vue?vue&type=script&lang=js":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/components/department/aditionalFeatures.vue?vue&type=script&lang=js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_aditionalFeatures_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./aditionalFeatures.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/aditionalFeatures.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/home/NoticeEvent.vue?vue&type=script&lang=js":
 /*!******************************************************************************!*\
   !*** ./resources/js/components/home/NoticeEvent.vue?vue&type=script&lang=js ***!
@@ -38412,6 +38727,54 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/department/FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true":
+/*!*********************************************************************************************************!*\
+  !*** ./resources/js/components/department/FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true ***!
+  \*********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FacultyMembers_vue_vue_type_template_id_639e9c52_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_FacultyMembers_vue_vue_type_template_id_639e9c52_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/FacultyMembers.vue?vue&type=template&id=639e9c52&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/department/Syllabus.vue?vue&type=template&id=d6625db2&scoped=true":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/components/department/Syllabus.vue?vue&type=template&id=d6625db2&scoped=true ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Syllabus_vue_vue_type_template_id_d6625db2_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Syllabus_vue_vue_type_template_id_d6625db2_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Syllabus.vue?vue&type=template&id=d6625db2&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/Syllabus.vue?vue&type=template&id=d6625db2&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/department/aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true":
+/*!************************************************************************************************************!*\
+  !*** ./resources/js/components/department/aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true ***!
+  \************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_aditionalFeatures_vue_vue_type_template_id_4b74f790_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_aditionalFeatures_vue_vue_type_template_id_4b74f790_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/department/aditionalFeatures.vue?vue&type=template&id=4b74f790&scoped=true");
+
+
+/***/ }),
+
 /***/ "./resources/js/components/home/NoticeEvent.vue?vue&type=template&id=64d57a9d&scoped=true":
 /*!************************************************************************************************!*\
   !*** ./resources/js/components/home/NoticeEvent.vue?vue&type=template&id=64d57a9d&scoped=true ***!
@@ -38791,6 +39154,9 @@ var map = {
 	"./contact/AddressInfo.vue": "./resources/js/components/contact/AddressInfo.vue",
 	"./contact/ContactForm.vue": "./resources/js/components/contact/ContactForm.vue",
 	"./convocation/convocation.vue": "./resources/js/components/convocation/convocation.vue",
+	"./department/FacultyMembers.vue": "./resources/js/components/department/FacultyMembers.vue",
+	"./department/Syllabus.vue": "./resources/js/components/department/Syllabus.vue",
+	"./department/aditionalFeatures.vue": "./resources/js/components/department/aditionalFeatures.vue",
 	"./home/NoticeEvent.vue": "./resources/js/components/home/NoticeEvent.vue",
 	"./home/OurCampusLife.vue": "./resources/js/components/home/OurCampusLife.vue",
 	"./home/OurPartner.vue": "./resources/js/components/home/OurPartner.vue",

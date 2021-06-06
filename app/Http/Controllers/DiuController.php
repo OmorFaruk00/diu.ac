@@ -65,4 +65,9 @@ class DiuController extends Controller
     {
         return view('front.certificateVerification.index');
     }
+
+    public function departmentDetails($slug)
+    {
+        return view('front.departmentDetails.index', compact('slug'));
+    }
 }
