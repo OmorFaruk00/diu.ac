@@ -1,5 +1,6 @@
 <template>
     <form action="">
+        <a :href="route('about-us')" target="_blank">Test url</a>
         <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
             <div class="form-group">
                 <label for="roll">Roll</label>

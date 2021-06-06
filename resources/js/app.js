@@ -2,7 +2,12 @@ require('./bootstrap');
 
 import { createApp } from 'vue'
 
+import { ZiggyVue } from 'ziggy'
+import {Ziggy} from "./ziggy";
+
 const app = createApp({});
+
+app.use(ZiggyVue, Ziggy);
 
 // Importing all components programmetically. provided by laravel.
 const files = require.context('./components', true, /\.vue$/i);

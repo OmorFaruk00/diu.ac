@@ -37,12 +37,11 @@
                             <div class="container text-center">
                                 <h1 class="slider-title" data-animation-in="fadeInLeft"
                                     data-animation-out="animate-out">
-                                    WELCOME TO EDULEARN</h1>
+                                    WELCOME TO DIU</h1>
                                 <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
-                                    Fusce
-                                    sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br
-                                        class="hidden-sm-dow"> Nunc quis sapien in arcu pharetra volutpat.Morbi nec
-                                    vulputate dolor.</p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br
+                                        class="hidden-sm-dow">Dolor id in, perferendis
+                                    provident quidem voluptate.</p>
                                 <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
                                    data-animation-in="lightSpeedIn"
                                    data-animation-out="animate-out">APPLY NOW</a>
@@ -60,13 +59,10 @@
                         <div class="display-table-cell">
                             <div class="container text-center">
                                 <h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">
-                                    ARE
-                                    YOU READY TO APPLY?</h1>
+                                    Lorem ipsum dolor sit amet.</h1>
                                 <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
-                                    Fusce
-                                    sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br
-                                        class="hidden-sm-dow"> Nunc quis sapien in arcu pharetra volutpat.Morbi nec
-                                    vulputate dolor.</p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, voluptates.<br
+                                        class="hidden-sm-dow"> NQuasi, voluptates.</p>
                                 <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
                                    data-animation-in="fadeInUp"
                                    data-animation-out="animate-out">APPLY NOW</a>
@@ -84,13 +80,10 @@
                         <div class="display-table-cell">
                             <div class="container text-center">
                                 <h1 class="slider-title" data-animation-in="fadeInUp" data-animation-out="animate-out">
-                                    ARE
-                                    YOU READY TO APPLY?</h1>
+                                    Lorem ipsum dolor sit.</h1>
                                 <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
-                                    Fusce
-                                    sem dolor, interdum in efficitur at, faucibus nec lorem.Sed nec molestie justo.<br>
-                                    Nunc
-                                    quis sapien in arcu pharetra volutpat.Morbi nec vulputate dolor.</p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquid, animi
+                                    nisi sit vero?</p>
 
                                 <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
                                    data-animation-in="fadeInUp"
