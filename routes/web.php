@@ -31,5 +31,6 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/publications', [DiuController::class, 'publications'])->name('publications');
     Route::get('/convocation', [DiuController::class, 'convocation'])->name('convocation');
     Route::get('/certificate-verification', [DiuController::class, 'certificateVerification'])->name('certificate-verification');
+    Route::get('/department/{slug}', [DiuController::class, 'departmentDetails'])->name('department-details');
 });
 

@@ -8,7 +8,7 @@
             <div class="event-item-new d-block mb-10">
                 <div class="event-des text-right">
 
-                    <a href="" class="btn btn-success">See more..</a>
+                    <a :href="route('notice-board')" class="btn btn-success">See more..</a>
 
                 </div>
             </div>
@@ -24,7 +24,7 @@
             <div class="event-item-new d-block mb-10">
                 <div class="event-des text-right">
 
-                    <a href="" class="btn btn-success">See more..</a>
+                    <a :href="route('notice-board')" class="btn btn-success">See more..</a>
 
                 </div>
             </div>

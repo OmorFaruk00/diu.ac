@@ -26,16 +26,16 @@
                                     <!--Department Menu Start-->
                                     <li class="menu-item-has-children"><a href="javaScript:void(0)">Department</a>
                                         <ul class="sub-menu">
-                                            <li><a href="javaScript:void(0)">Department of Business Administration</a></li>
-                                            <li><a href="javaScript:void(0)">Department of Civil Engineering</a></li>
-                                            <li><a href="javaScript:void(0)">Department of CSE</a></li>
-                                            <li><a href="javaScript:void(0)">Department of EEE</a></li>
-                                            <li><a href="javaScript:void(0)">Department of English</a></li>
-                                            <li><a href="javaScript:void(0)">Department of Law</a></li>
-                                            <li><a href="javaScript:void(0)">Department of Pharmacy</a></li>
-                                            <li><a href="javaScript:void(0)">Department of Sociology</a></li>
-                                            <li><a href="javaScript:void(0)">Department of Economics</a></li>
-                                            <li><a href="javaScript:void(0)">Department of Political Science</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Business Administration')]) }}">Department of Business Administration</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Civil Engineering')]) }}">Department of Civil Engineering</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of CSE')]) }}">Department of CSE</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of EEE')]) }}">Department of EEE</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of English')]) }}">Department of English</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Law')]) }}">Department of Law</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Pharmacy')]) }}">Department of Pharmacy</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Sociology')]) }}">Department of Sociology</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Economics')]) }}">Department of Economics</a></li>
+                                            <li><a href="{{ route('department-details',['slug'=>\Str::slug('Department of Political Science')]) }}">Department of Political Science</a></li>
                                         </ul>
                                     </li>
                                     <!--Department Menu End-->

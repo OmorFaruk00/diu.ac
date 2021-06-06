@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                 background-repeat: repeat-x;
+                          background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -46,11 +46,11 @@
         <div class="overlay">
             <div class="container">
                 <div class="col-md-12 text-center">
-                    <h1 class="page-title">Alumni</h1>
+                    <h1 class="page-title">Convocation</h1>
                     <ul>
                         <li>
                             <a class="active" href="{{ route('homePage') }}">Home</a> / <span
-                                style="color: #FFFFFF!important;">Alumni</span>
+                                style="color: #FFFFFF!important;">Convocation</span>
                         </li>
                     </ul>
                 </div>
@@ -63,48 +63,16 @@
     <div class="rs-titmeline sec-spacer">
         <div class="container">
             <div class="abt-title mb-70 text-center">
-                <h2>WELCOME TO OUR ALUMNI</h2>
+                <h2>WELCOME TO OUR CONVOCATION</h2>
+                <p style="max-width: 750px;margin: auto">
+                    Convocation is a formal gathering of people who have been asked to come together, or a formal
+                    ceremony at a college or university where awards are given. Dhaka International University is
+                    organized the convocation ceremony to confer the degree to the graduate students almost every year.
+                </p>
             </div>
-            <div class="rs-timeline">
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
 
-                    <div class="rs-timeline-content">
-                        <h3>Business Alumni Association</h3>
-                        <p>Dhaka International University (DIU) is recognized in independent government assessments as one of top graded universities in Bangladesh. The university has been founded by Dhaka International University Group with the approval of the Ministry of Education under the Private University Act of 1992 and its amendment in 1998 and Dhaka International University came into being on 7th April 1995, the University today combines impressive modern facilities and a dynamic approach to teaching and research with its proud heritage of service and achievement. Business alumni Association is playing a vital role for the students of the Business Administration Department,Dhaka International University. Member of the alumni association creating job opportunities for the new students . This association organizizes annul general meeting, picnic etc for the members of the association .</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date">Business Alumni Association</span>
-                    </div>
-                </div>
+            <Convocation-convocation/>
 
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>CSE Alumni Association</h3>
-                        <p>Dhaka International University (DIU) is recognized in independent government assessments as one of top graded universities in Bangladesh. The university has been founded by Dhaka International University Group with the approval of the Ministry of Education under the Private University Act of 1992 and its amendment in 1998 and Dhaka International University came into being on 7th April 1995, the University today combines impressive modern facilities and a dynamic approach to teaching and research with its proud heritage of service and achievement. Dhaka International University. Member of the alumni association creating job opportunities for the new students . This association organizizes annul general meeting, picnic etc for the members of the association .</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date">CSE Alumni Association</span>
-                    </div>
-                </div>
-
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-institution"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>EETE Alumni Association</h3>
-                        <p>Dhaka International University (DIU) is recognized in independent government assessments as one of top graded universities in Bangladesh. The university has been founded by Dhaka International University Group with the approval of the Ministry of Education under the Private University Act of 1992 and its amendment in 1998 and Dhaka International University came into being on 7th April 1995, the University today combines impressive modern facilities and a dynamic approach to teaching and research with its proud heritage of service and achievement. Dhaka International University. Member of the alumni association creating job opportunities for the new students . This association organizizes annul general meeting, picnic etc for the members of the association .</p>
-                        <a href="javaScript:void(0)" class="rs-read-more">Read more</a>
-                        <span class="rs-date">EETE Alumni Association</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- titmeline End -->

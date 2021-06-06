@@ -52,89 +52,56 @@
                 </div>
 
                 <div class="col-lg-3 col-md-12">
-                    <h5 class="footer-title">Useful Links</h5>
-                    <ul class="sitemap-widget useful-link">
-                        <li class="active">
-                            <a href="http://www.ugc-universities.gov.bd/university-detail/73" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>UGC Website</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="https://jobs.diu.ac/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Career</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="https://students.diu.ac/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Students Portal</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="https://admission.diu.ac/register" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Admission Website</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="http://international.diu.ac" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>International Website</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="https://blog.diu.ac" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="http://mail.diu-bd.net/webmail" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Webmail</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="https://ibank.eximbankbd.com/eximIBank/eximIBank/login/loginForm?error=1" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Online Payment</a>
-                        </li>
-
-                        <li class="active">
-                            <a href="https://hotjobs.com.bd/" target="_blank"><i class="fa fa-angle-right" aria-hidden="true"></i>Find Jobs</a>
-                        </li>
-
-                    </ul>
+                    <Footer-useful-link/>
                 </div>
 
                 <div class="col-lg-3 col-md-12">
                     <h5 class="footer-title">OUR SITEMAP</h5>
                     <ul class="sitemap-widget">
-                        <li class="active"><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a>
+                        <li class="active"><a href="{{ route('homePage') }}"><i class="fa fa-angle-right"
+                                                                                aria-hidden="true"></i>Home</a>
                         </li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>About</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Courses</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Events</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Events
-                                Details</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Blog Details</a>
+                        <li><a href="{{ route('about-us') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>About</a>
                         </li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Teachers</a>
+                        <li><a href="{{ route('notice-board') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Notice</a>
                         </li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Teachers
-                                Details</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a></li>
-                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Error 404</a>
+                        <li><a href="{{ route('notice-board') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Events</a>
+                        </li>
+                        <li><a href="{{ route('homePage') }}"><i class="fa fa-angle-right"
+                                                                 aria-hidden="true"></i>Blog</a></li>
+                        <li><a href="https://blog.diu.ac" target="_blank"><i class="fa fa-angle-right"
+                                                                             aria-hidden="true"></i>Blog
+                                Details</a>
+                        </li>
+                        <li><a href="{{ route('admission') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Admission</a>
+                        </li>
+                        <li><a href="{{ route('institute') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Institute</a>
+                        </li>
+                        <li><a href="{{ route('alumni') }}"><i class="fa fa-angle-right"
+                                                               aria-hidden="true"></i>Alumni</a>
+                        </li>
+                        <li><a href="{{ route('cell') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Cell</a>
+                        </li>
+                        <li><a href="{{ route('contact-us') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Contact</a>
+                        </li>
+                        <li><a href="{{ route('certificate-verification') }}"><i class="fa fa-angle-right"
+                                                                                 aria-hidden="true"></i>Certificate</a>
+                        </li>
+                        <li><a href="{{ route('club') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Club</a>
+                        </li>
+                        <li><a href="{{ route('publications') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Publications</a>
                         </li>
                     </ul>
                 </div>
+
                 <div class="col-lg-3 col-md-12">
-                    <h5 class="footer-title">NEWSLETTER</h5>
-                    <p>Sign Up to Our Newsletter to Get Latest Updates &amp; Services</p>
-                    <form class="news-form">
-                        <input type="text" class="form-input" placeholder="Enter Your Email">
-                        <button type="submit" class="form-button"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </button>
-                    </form>
+                    <Footer-news-letter/>
                 </div>
+
             </div>
-            <div class="footer-share">
-                <ul>
-                    <li><a href="https://www.facebook.com/diu.net.bd" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="https://www.youtube.com/diudhaka" target="_blank"><i class="fa fa-youtube-square"></i></a></li>
-                    <li><a href="https://twitter.com/diubd" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/school/dhaka-international-university" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-                    <li><a href="https://www.instagram.com/diu.net.bd" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="https://www.pinterest.com/DIUdhaka" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
-                </ul>
-            </div>
+
+            <Footer-social-media/>
+
         </div>
     </div>
 

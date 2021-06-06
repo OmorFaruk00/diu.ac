@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                  background-repeat: repeat-x;
+                   background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -64,47 +64,13 @@
         <div class="container">
             <div class="abt-title mb-70 text-center">
                 <h2>WELCOME TO OUR CLUB</h2>
-                <p style="max-width: 750px;margin: auto;">Dhaka International University has formally formed different separate clubs for development of student . The following clubs are run successfully by the students and teachers.</p>
+                <p style="max-width: 750px;margin: auto;">Dhaka International University has formally formed different
+                    separate clubs for development of student . The following clubs are run successfully by the students
+                    and teachers.</p>
             </div>
-            <div class="rs-timeline">
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-sun-o"></i>
-                    </div>
 
-                    <div class="rs-timeline-content">
-                        <h3>Debating Club</h3>
-                        <p>Dhaka International University has formed Dhaka international University debating society for
-                            the devlopment of the students .DIUDS has glorious background .DIUDS has achived first
-                            position in several times at the national debate competition .</p>
-                        <span class="rs-date">Debating Club</span>
-                    </div>
-                </div>
+            <Club-club-info/>
 
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-sun-o"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>Cultural Club</h3>
-                        <p>Dhaka International University has formd DIU cultural club. Cultural club ogranizes cultural competiton for the students. Cultural club also organizes seminer and workshops related to cultural affairs for the students. Cultural club team members participate in different national and internationl cultural competition.</p>
-                        <span class="rs-date">Cultural Club</span>
-                    </div>
-                </div>
-
-                <div class="rs-timeline-block">
-                    <div class="rs-timeline-icon">
-                        <i class="fa fa-sun-o"></i>
-                    </div>
-
-                    <div class="rs-timeline-content">
-                        <h3>Sports Club</h3>
-                        <p>Dhaka International University sports clb organizes different sports competetion for the students every year. Sports club team members participate in different national and internationl Sports competition.</p>
-                        <span class="rs-date">Sports Club</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- titmeline End -->

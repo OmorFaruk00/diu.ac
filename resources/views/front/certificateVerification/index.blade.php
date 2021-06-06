@@ -58,13 +58,7 @@
     <!-- Page Header End here -->
 
     <!-- certificate verification Start -->
-    <div class="rs-titmeline sec-spacer">
-
-        <div class="container">
-            <div class="abt-title mb-70 text-center">
-                <h2>WELCOME TO OUR Certificate Verification</h2>
-            </div>
-        </div>
+    <div class="rs-titmeline sec-spacer" style="padding-bottom: 120px;!important;">
 
         <Certificate-verification-index/>
 

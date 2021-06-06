@@ -54,7 +54,6 @@
     </style>
 @endpush
 
-
 @section('body')
 
     <!-- Page Header Start here -->

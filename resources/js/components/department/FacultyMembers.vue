@@ -16,7 +16,7 @@ import {teams} from '../../data/teams';
 import teamSection from '../molecule/Team';
 
 export default {
-    name: "ExperienceStaffs",
+    name: "FacultyMembers",
     data: () => ({
         teams
     }),
