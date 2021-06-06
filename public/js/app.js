@@ -16849,8 +16849,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _data_ourCampusLifes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../data/ourCampusLifes */ "./resources/js/data/ourCampusLifes.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "OurCampusLife"
+  name: "OurCampusLife",
+  data: function data() {
+    return {
+      ourCampusLifes: _data_ourCampusLifes__WEBPACK_IMPORTED_MODULE_0__.ourCampusLifes
+    };
+  }
 });
 
 /***/ }),
@@ -17786,35 +17793,59 @@ var _hoisted_1 = {
 var _hoisted_2 = {
   "class": "team-img"
 };
+var _hoisted_3 = {
+  "class": "normal-text"
+};
+var _hoisted_4 = {
+  "class": "team-name"
+};
+var _hoisted_5 = {
+  "class": "team-content"
+};
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-  src: "http://webdev.diu.ac/front/images/sections/1.jpg",
-  alt: "team Image"
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "overly-border"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_4 = {
-  "class": "normal-text"
+var _hoisted_7 = {
+  "class": "display-table"
 };
-var _hoisted_5 = {
+var _hoisted_8 = {
+  "class": "display-table-cell"
+};
+var _hoisted_9 = {
   "class": "team-name"
 };
-
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"team-content\" data-v-882694bc><div class=\"overly-border\" data-v-882694bc></div><div class=\"display-table\" data-v-882694bc><div class=\"display-table-cell\" data-v-882694bc><h3 class=\"team-name\" data-v-882694bc><a href=\"javaScript:void(0)\" data-v-882694bc>Our Campus Life</a></h3><p class=\"team-desc\" data-v-882694bc> DIU offers well-decorated hostel with modern facilities.At present there are seven boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road &amp; Satarkul). </p></div></div></div>", 1);
+var _hoisted_10 = {
+  href: "javaScript:void(0)"
+};
+var _hoisted_11 = {
+  "class": "team-desc"
+};
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(10, function (row, index) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.ourCampusLifes, function (row, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       key: index,
       "class": "team-item"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", _hoisted_5, "Our Campus Life " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row), 1
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+      src: row.image_url,
+      alt: row.title
+    }, null, 8
+    /* PROPS */
+    , ["src", "alt"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.title), 1
     /* TEXT */
-    )])]), _hoisted_6]);
-  }), 64
-  /* STABLE_FRAGMENT */
+    )])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.title), 1
+    /* TEXT */
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.description), 1
+    /* TEXT */
+    )])])])]);
+  }), 128
+  /* KEYED_FRAGMENT */
   ))]);
 });
 
@@ -18408,6 +18439,61 @@ var institutes = [{
   title: 'Sundarganj Driving Training Institute',
   description: 'This institute has been established in 2019 . This institute is now operating its activities at at Falgacha,Moniram, Shundarganj-Gaibandha.',
   icon: 'fa fa-car',
+  url: ''
+}];
+
+/***/ }),
+
+/***/ "./resources/js/data/ourCampusLifes.js":
+/*!*********************************************!*\
+  !*** ./resources/js/data/ourCampusLifes.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ourCampusLifes": () => (/* binding */ ourCampusLifes)
+/* harmony export */ });
+var ourCampusLifes = [{
+  title: 'Our Campus Life',
+  description: 'DIU offers well-decorated hostel with modern facilities.At present there are seven boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road & Satarkul).',
+  image_url: 'https://webdev.diu.ac/front/images/sections/1.jpg',
+  url: ''
+}, {
+  title: 'Hostel',
+  description: 'DIU offers well-decorated hostel with modern facilities.At present there are seven boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road & Satarkul).',
+  image_url: 'https://webdev.diu.ac/front/images/sections/2.jpg',
+  url: ''
+}, {
+  title: 'Labs',
+  description: 'DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs & 10 Civil Labs. All labs are designed by the experts from DU and BUET, and equipped with modern appliances.',
+  image_url: 'https://webdev.diu.ac/front/images/sections/3.jpg',
+  url: ''
+}, {
+  title: 'Library',
+  description: 'DIU library is equipped with up-to-date books and reading materials. More than fifty (50) thousand books are available at DIU libraby. E-library has already been started.',
+  image_url: 'https://webdev.diu.ac/front/images/sections/4.jpg',
+  url: ''
+}, {
+  title: 'Canteen & Common Rooms',
+  description: 'DIU has its own catering service and each building has big common & leisure rooms.',
+  image_url: 'https://webdev.diu.ac/front/images/sections/5.jpg',
+  url: ''
+}, {
+  title: 'Wi-Fi and Internet',
+  description: 'All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all students.',
+  image_url: 'https://webdev.diu.ac/front/images/sections/6.jpg',
+  url: ''
+}, {
+  title: 'Class Rooms',
+  description: 'All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector.',
+  image_url: 'https://webdev.diu.ac/front/images/sections/7.jpg',
+  url: ''
+}, {
+  title: 'Medium of Instruction',
+  description: 'English is the medium of instruction for all programs at DIU.',
+  image_url: 'https://webdev.diu.ac/front/images/sections/8.jpg',
   url: ''
 }];
 
