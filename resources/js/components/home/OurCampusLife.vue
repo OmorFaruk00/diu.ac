@@ -5,12 +5,12 @@
          data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
          data-ipad-device-dots="true" data-md-device="3" data-md-device-nav="true" data-md-device-dots="true">
 
-        <div v-for="(row,index) in 10" :key="index" class="team-item">
+        <div v-for="(row,index) in ourCampusLifes" :key="index" class="team-item">
 
             <div class="team-img">
-                <img src="http://webdev.diu.ac/front/images/sections/1.jpg" alt="team Image"/>
+                <img :src="row.image_url" :alt="row.title"/>
                 <div class="normal-text">
-                    <h3 class="team-name">Our Campus Life {{ row }}</h3>
+                    <h3 class="team-name">{{ row.title }}</h3>
                 </div>
             </div>
 
@@ -18,11 +18,9 @@
                 <div class="overly-border"></div>
                 <div class="display-table">
                     <div class="display-table-cell">
-                        <h3 class="team-name"><a href="javaScript:void(0)">Our Campus Life</a></h3>
+                        <h3 class="team-name"><a href="javaScript:void(0)">{{ row.title }}</a></h3>
                         <p class="team-desc">
-                            DIU offers well-decorated hostel with modern facilities.At present there are seven
-                            boys hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green
-                            Road & Satarkul).
+                            {{ row.description }}
                         </p>
                     </div>
                 </div>
@@ -34,8 +32,13 @@
 </template>
 
 <script>
+import {ourCampusLifes} from "../../data/ourCampusLifes";
+
 export default {
-    name: "OurCampusLife"
+    name: "OurCampusLife",
+    data: () => ({
+        ourCampusLifes
+    }),
 }
 </script>
 
