@@ -44,6 +44,8 @@
 
 @routes
 
+{{ TawkTo::widgetCode() }}
+
 {{-- output the compiled JS --}}
 <script src="{{ asset('js/app.js') }}"></script>
 <!--[if lt IE 9]>
