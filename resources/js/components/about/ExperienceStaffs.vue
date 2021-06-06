@@ -6,33 +6,23 @@
          data-ipad-device-dots="true" data-md-device="4" data-md-device-nav="true" data-md-device-dots="true">
 
 
-        <div class="team-item" v-for="(row,index) in 8" :key="row">
-            <div class="team-img">
-                <img src="http://webdev.diu.ac/front/images/team/2.jpg" alt="team Image"/>
-                <div class="normal-text">
-                    <h3 class="team-name">Luyes Figery {{ row }}</h3>
-                    <span class="subtitle">A. Professor</span>
-                </div>
-            </div>
-            <div class="team-content">
-                <div class="overly-border"></div>
-                <div class="display-table">
-                    <div class="display-table-cell">
-                        <h3 class="team-name"><a href="javaScript:void(0)">Luyes Figery</a></h3>
-                        <span class="team-title">A. Professor</span>
-                        <p class="team-desc">Entrusted with planning, implementation and evaluation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <teamSection v-for="(team,index) in teams" :team="team" :key="index"/>
 
     </div>
 </template>
 
 <script>
+import {teams} from '../../data/teams';
+import teamSection from '../molecule/Team';
+
 export default {
-    name: "ExperienceStaffs"
+    name: "ExperienceStaffs",
+    data: () => ({
+        teams
+    }),
+    components: {
+        teamSection
+    }
 }
 </script>
 

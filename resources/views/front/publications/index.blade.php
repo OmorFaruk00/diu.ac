@@ -15,7 +15,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                 background-repeat: repeat-x;
+                  background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -62,18 +62,15 @@
         <div class="container">
             <div class="abt-title mb-70 text-center">
                 <h2>WELCOME TO OUR publications</h2>
-                <p style="max-width: 750px;margin: auto">DIU is profoundly esteemed for it's own reputation which is built upon credibility, practical knowhow and a feasible archive of books, bulletins and journals. DIU has published a few original books written by its teachers and faculties. Whereas bulletins help students to keep upto date regarding their class and exam routines, schedule and other important notices. Both faculties and students of extraordinary merit are allowed to write their own journals.</p>
+                <p style="max-width: 750px;margin: auto">DIU is profoundly esteemed for it's own reputation which is
+                    built upon credibility, practical knowhow and a feasible archive of books, bulletins and journals.
+                    DIU has published a few original books written by its teachers and faculties. Whereas bulletins help
+                    students to keep upto date regarding their class and exam routines, schedule and other important
+                    notices. Both faculties and students of extraordinary merit are allowed to write their own
+                    journals.</p>
             </div>
 
-            <div>
-                <h2>Our Journals</h2>
-
-                <ul>
-                    <li><i class="fa fa-arrow-circle-right"></i> <a href="javaScript:void(0)" target="_blank">DIU Journal of Law and Human Rights</a></li>
-                    <li><i class="fa fa-arrow-circle-right"></i> <a href="javaScript:void(0)" target="_blank">DIU Journal of Law and Human Rights</a></li>
-                    <li><i class="fa fa-arrow-circle-right"></i> <a href="javaScript:void(0)" target="_blank">DIU Journal of Law and Human Rights</a></li>
-                </ul>
-            </div>
+            <Publication-journal/>
 
         </div>
     </div>
