@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>DIU | Dhaka International University</title>
     <meta name="description" content="">
+    <!-- CSRF Token -->
+{{--    <meta name="csrf-token" content="{{ csrf_token() }}">--}}
     <!-- responsive tag -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +14,9 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.html">
     <link rel="shortcut icon" type="image/x-icon" href="/favicons.png">
 
-{{--    @include('front.partials.allCss')--}}
+    @include('front.partials.allCss')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">
+{{--    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">--}}
 
 
     <style>
@@ -44,7 +46,7 @@
 
 @routes
 
-{{ TawkTo::widgetCode() }}
+{{--{{ TawkTo::widgetCode() }}--}}
 
 {{-- output the compiled JS --}}
 <script src="{{ asset('js/app.js') }}"></script>
