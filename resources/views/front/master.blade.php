@@ -54,8 +54,8 @@
 <![endif]-->
 
 {{--all javascript--}}
-{{--@include('front.partials.allJs')--}}
-<script src="{{ asset('/') }}js/all.min.js"></script>
+@include('front.partials.allJs')
+{{--<script src="{{ asset('/') }}js/all.min.js"></script>--}}
 
 @stack('script')
 
