@@ -119,7 +119,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <Home-service-card icon="fa fa-fa-graduation-cap" title="Certification"
+                    <Home-service-card icon="fa fa-graduation-cap" title="Certification"
                                        details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
                 </div>
 
@@ -133,7 +133,6 @@
         <div class="container">
             <div class="sec-title mb-50 text-center">
                 <h2>ABOUT US</h2>
-                {{--                <p>Fusce sem dolor, interdum in fficitur at, faucibus nec lorem. Sed nec molestie justo.</p>--}}
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-12">

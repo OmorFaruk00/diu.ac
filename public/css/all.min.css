@@ -14692,11 +14692,11 @@ ul {
 ---------------------------------------*/
 #scrollUp {
     text-align: center;
-    bottom: 40px;
+    bottom: 70px;
     cursor: pointer;
     display: none;
     position: fixed;
-    right: 40px;
+    right: 30px;
     z-index: 999;
 }
 

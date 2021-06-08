@@ -3,7 +3,8 @@ require('./bootstrap');
 import { createApp } from 'vue'
 
 import { ZiggyVue } from 'ziggy'
-import {Ziggy} from "./ziggy";
+import {Ziggy} from "./ziggy"
+
 
 const app = createApp({});
 
