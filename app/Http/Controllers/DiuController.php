@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Ixudra\Curl\Facades\Curl;
 
 class DiuController extends Controller
 {
@@ -69,5 +70,14 @@ class DiuController extends Controller
     public function departmentDetails($slug)
     {
         return view('front.departmentDetails.index', compact('slug'));
+    }
+
+    public function test()
+    {
+
+
+        $response = Curl::to('https://api.diu.ac/diu-website/programs')->get();
+        return $response;
+
     }
 }
