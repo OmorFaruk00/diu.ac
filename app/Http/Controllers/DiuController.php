@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helper\Api;
 use Illuminate\Http\Request;
 use Ixudra\Curl\Facades\Curl;
 
@@ -9,7 +10,12 @@ class DiuController extends Controller
 {
     public function homePage()
     {
-        return view('front.home.index');
+//        $programs = Api::programs();
+
+        $programs = Curl::to('https://api.diu.ac/diu-website/programs')->get();
+
+
+        return view('front.home.index',['programs'=>$programs]);
     }
 
     public function aboutUs()
@@ -75,9 +81,7 @@ class DiuController extends Controller
     public function test()
     {
 
-
-        $response = Curl::to('https://api.diu.ac/diu-website/programs')->get();
-        return $response;
+        return view('front.test.index');
 
     }
 }

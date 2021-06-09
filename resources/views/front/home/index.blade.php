@@ -478,16 +478,7 @@
 
     <!-- Programs Start -->
     <div id="rs-products" class="rs-products sec-spacer sec-color">
-        <div class="container">
-            <div class="sec-title mb-50 text-center">
-                <h2>OUR Programs</h2>
-            </div>
-
-
-            <Home-our-program/>
-
-
-        </div>
+        <Home-our-program :programs="{{ $programs }}"/>
     </div>
     <!-- Programs end -->
 

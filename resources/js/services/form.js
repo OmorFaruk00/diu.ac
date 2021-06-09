@@ -6,7 +6,8 @@
 
 import Network from './network';
 import Error from './error';
-import { isEmpty } from 'lodash'
+import {isEmpty} from 'lodash'
+
 export default class Form {
     constructor(data) {
 
@@ -20,7 +21,7 @@ export default class Form {
         this.error = new Error;
 
         this.message = '',
-        this.loading = false
+            this.loading = false
     }
 
     reset() {
@@ -41,7 +42,6 @@ export default class Form {
                     reject(error)
                     this.failed(error);
                 })
-                .finally(() => this.loading = false)
         });
     }
 
@@ -87,9 +87,9 @@ export default class Form {
      */
     post(url, callback) {
         let data = this.data();
-        if(typeof(callback) == "function") {
-          data = callback(data) || {};
-        } else if (typeof(callback) == "object") {
+        if (typeof (callback) == "function") {
+            data = callback(data) || {};
+        } else if (typeof (callback) == "object") {
             data = callback;
         }
 
@@ -105,12 +105,12 @@ export default class Form {
      */
     get(url, data = null) {
         let params = null;
-        if(data || !isEmpty(this.data())) {
+        if (data || !isEmpty(this.data())) {
             params = {
                 params: data || this.data()
             }
         }
-       return this.submit('get', url, params)
+        return this.submit('get', url, params)
     }
 
     /**
@@ -118,12 +118,12 @@ export default class Form {
      *
      * @param  {String} endPoint
      * @return {null}
-    */
+     */
     put(url, callback) {
         let data = this.data();
-        if(typeof(callback) == "function") {
-          data = callback(data) || {};
-        } else if (typeof(callback) == "object") {
+        if (typeof (callback) == "function") {
+            data = callback(data) || {};
+        } else if (typeof (callback) == "object") {
             data = callback;
         }
         return this.submit('put', url, data);
