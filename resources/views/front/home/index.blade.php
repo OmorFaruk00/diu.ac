@@ -30,7 +30,7 @@
         <div id="home-slider">
             <!-- Item 1 -->
             <div class="item active">
-                <img src="{{ asset('/') }}front/images/slider/home1/slide1.jpg" alt="Slide1"/>
+                <img src="{{ asset('/') }}front/images/slider/1.jpg" alt="Slide1"/>
                 <div class="slide-content">
                     <div class="display-table">
                         <div class="display-table-cell">
@@ -53,7 +53,7 @@
 
             <!-- Item 2 -->
             <div class="item">
-                <img src="{{ asset('/') }}front/images/slider/home1/slide2.jpg" alt="Slide2"/>
+                <img src="{{ asset('/') }}front/images/slider/2.jpg" alt="Slide2"/>
                 <div class="slide-content">
                     <div class="display-table">
                         <div class="display-table-cell">
@@ -74,7 +74,7 @@
 
             <!-- Item 3 -->
             <div class="item">
-                <img src="{{ asset('/') }}front/images/slider/home1/slide3.jpg" alt="Slide3"/>
+                <img src="{{ asset('/') }}front/images/slider/3.jpg" alt="Slide3"/>
                 <div class="slide-content">
                     <div class="display-table">
                         <div class="display-table-cell">
@@ -137,7 +137,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-img rs-animation-hover">
-                        <img src="{{ asset('/') }}front/images/about/about.jpg" alt="img02"/>
+                        <img src="{{ asset('/') }}front/images/about/campus.jpg" alt="DIU campus"/>
                         <a class="popup-youtube rs-animation-fade" href="https://www.youtube.com/watch?v=Yt5K96ump9w"
                            title="Video Icon">
                         </a>

@@ -16516,8 +16516,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/form */ "./resources/js/services/form.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "TuitionFee"
+  name: "TuitionFee",
+  data: function data() {
+    return {
+      form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
+      tuitionFees: []
+    };
+  },
+  methods: {
+    getTuitionFee: function getTuitionFee() {
+      var _this = this;
+
+      this.form.get("/tuition_fee").then(function (res) {
+        _this.tuitionFees = res.data;
+      })["catch"](function (error) {
+        console.log('programs error');
+      });
+    }
+  },
+  created: function created() {
+    this.getTuitionFee();
+  }
 });
 
 /***/ }),
@@ -17352,13 +17374,92 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 var _hoisted_1 = {
   "class": "row"
 };
+var _hoisted_2 = {
+  "class": "col-lg-12 col-md-12"
+};
+var _hoisted_3 = {
+  id: "tuitionFee",
+  "class": "rs-accordion-style1"
+};
+var _hoisted_4 = {
+  "class": "card-body"
+};
+var _hoisted_5 = {
+  "class": "table-responsive"
+};
+var _hoisted_6 = {
+  "class": "table table-striped"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-12 col-md-12\" data-v-5ee8377b><div id=\"accordion\" class=\"rs-accordion-style1\" data-v-5ee8377b><div class=\"card\" data-v-5ee8377b><div class=\"card-header\" id=\"headingOne\" data-v-5ee8377b><h3 class=\"acdn-title\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\" data-v-5ee8377b> Faculty of Law </h3></div><div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordion\" data-v-5ee8377b><div class=\"card-body\" data-v-5ee8377b><div class=\"table-responsive\" data-v-5ee8377b><table class=\"table table-striped\" data-v-5ee8377b><thead data-v-5ee8377b><tr data-v-5ee8377b><th data-v-5ee8377b>Sl. No.</th><th data-v-5ee8377b>Name of Program</th><th data-v-5ee8377b>Duration</th><th data-v-5ee8377b>Credit</th><th data-v-5ee8377b>Total Fees (BDT)</th><th data-v-5ee8377b></th></tr></thead><tbody data-v-5ee8377b><tr data-v-5ee8377b><td data-v-5ee8377b>1</td><td data-v-5ee8377b>LL.B - Hons - First Shift</td><td data-v-5ee8377b>4 years</td><td data-v-5ee8377b>126</td><td data-v-5ee8377b>550000 TK</td><td class=\"text-center\" data-v-5ee8377b><a href=\"\" target=\"_blank\" class=\"btn btn-success\" data-v-5ee8377b>Apply <i class=\"fa fa-rocket\" data-v-5ee8377b></i></a></td></tr><tr data-v-5ee8377b><td data-v-5ee8377b>2</td><td data-v-5ee8377b>LL.B - Hons - First Shift</td><td data-v-5ee8377b>4 years</td><td data-v-5ee8377b>126</td><td data-v-5ee8377b>550000 TK</td><td class=\"text-center\" data-v-5ee8377b><a href=\"\" target=\"_blank\" class=\"btn btn-success\" data-v-5ee8377b>Apply <i class=\"fa fa-rocket\" data-v-5ee8377b></i></a></td></tr></tbody></table></div></div></div></div><div class=\"card\" data-v-5ee8377b><div class=\"card-header\" id=\"headingTwo\" data-v-5ee8377b><h3 class=\"acdn-title collapsed\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\" data-v-5ee8377b> Faculty of Business Studies </h3></div><div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordion\" data-v-5ee8377b><div class=\"card-body\" data-v-5ee8377b><table class=\"table table-striped\" data-v-5ee8377b><thead data-v-5ee8377b><tr data-v-5ee8377b><th data-v-5ee8377b>Sl. No.</th><th data-v-5ee8377b>Name of Program</th><th data-v-5ee8377b>Duration</th><th data-v-5ee8377b>Credit</th><th data-v-5ee8377b>Total Fees (BDT)</th><th data-v-5ee8377b></th></tr></thead><tbody data-v-5ee8377b><tr data-v-5ee8377b><td data-v-5ee8377b>1</td><td data-v-5ee8377b>LL.B - Hons - First Shift</td><td data-v-5ee8377b>4 years</td><td data-v-5ee8377b>126</td><td data-v-5ee8377b>550000 TK</td><td class=\"text-center\" data-v-5ee8377b><a href=\"\" target=\"_blank\" class=\"btn btn-success\" data-v-5ee8377b>Apply <i class=\"fa fa-rocket\" data-v-5ee8377b></i></a></td></tr><tr data-v-5ee8377b><td data-v-5ee8377b>2</td><td data-v-5ee8377b>LL.B - Hons - First Shift</td><td data-v-5ee8377b>4 years</td><td data-v-5ee8377b>126</td><td data-v-5ee8377b>550000 TK</td><td class=\"text-center\" data-v-5ee8377b><a href=\"\" target=\"_blank\" class=\"btn btn-success\" data-v-5ee8377b>Apply <i class=\"fa fa-rocket\" data-v-5ee8377b></i></a></td></tr></tbody></table></div></div></div><div class=\"card\" data-v-5ee8377b><div class=\"card-header mb-0\" id=\"headingThree\" data-v-5ee8377b><h3 class=\"acdn-title collapsed\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\" data-v-5ee8377b> Faculty of Arts and Social Sciences </h3></div><div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordion\" data-v-5ee8377b><div class=\"card-body\" data-v-5ee8377b><table class=\"table table-striped\" data-v-5ee8377b><thead data-v-5ee8377b><tr data-v-5ee8377b><th data-v-5ee8377b>Sl. No.</th><th data-v-5ee8377b>Name of Program</th><th data-v-5ee8377b>Duration</th><th data-v-5ee8377b>Credit</th><th data-v-5ee8377b>Total Fees (BDT)</th><th data-v-5ee8377b></th></tr></thead><tbody data-v-5ee8377b><tr data-v-5ee8377b><td data-v-5ee8377b>1</td><td data-v-5ee8377b>LL.B - Hons - First Shift</td><td data-v-5ee8377b>4 years</td><td data-v-5ee8377b>126</td><td data-v-5ee8377b>550000 TK</td><td class=\"text-center\" data-v-5ee8377b><a href=\"\" target=\"_blank\" class=\"btn btn-success\" data-v-5ee8377b>Apply <i class=\"fa fa-rocket\" data-v-5ee8377b></i></a></td></tr><tr data-v-5ee8377b><td data-v-5ee8377b>2</td><td data-v-5ee8377b>LL.B - Hons - First Shift</td><td data-v-5ee8377b>4 years</td><td data-v-5ee8377b>126</td><td data-v-5ee8377b>550000 TK</td><td class=\"text-center\" data-v-5ee8377b><a href=\"\" target=\"_blank\" class=\"btn btn-success\" data-v-5ee8377b>Apply <i class=\"fa fa-rocket\" data-v-5ee8377b></i></a></td></tr></tbody></table></div></div></div></div></div>", 1);
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Sl. No."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Name of Program"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Duration"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Credit"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Total Fees (BDT)"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th")])], -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  "class": "text-center"
+};
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Apply ");
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fa fa-rocket"
+}, null, -1
+/* HOISTED */
+);
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.tuitionFees, function (row, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      "class": "card",
+      key: index
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      "class": "card-header",
+      id: "ourTuitionFee".concat(index)
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+      "class": ["acdn-title", index != '0' ? 'collapsed' : ''],
+      "data-toggle": "collapse",
+      "data-target": "#collapseTuitionFee".concat(index),
+      "aria-expanded": "true",
+      "aria-controls": "collapseTuitionFee".concat(index)
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.name), 11
+    /* TEXT, CLASS, PROPS */
+    , ["data-target", "aria-controls"])], 8
+    /* PROPS */
+    , ["id"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      id: "collapseTuitionFee".concat(index),
+      "class": ["collapse", index == '0' ? 'show' : ''],
+      "aria-labelledby": "ourTuitionFee".concat(index),
+      "data-parent": "#tuitionFee"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("table", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.programs, function (programs, innerRow) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("tr", {
+        key: innerRow
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(innerRow + 1), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.name) + " - " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.type) + " - " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.shift), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.duration), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.credit), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.total_fee), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+        href: "https://admission.diu.ac/register?program=".concat(programs.name, " - ").concat(programs.shift),
+        target: "_blank",
+        "class": "btn btn-success"
+      }, [_hoisted_9, _hoisted_10], 8
+      /* PROPS */
+      , ["href"])])]);
+    }), 128
+    /* KEYED_FRAGMENT */
+    ))])])])])], 10
+    /* CLASS, PROPS */
+    , ["id", "aria-labelledby"])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])]);
 });
 
 /***/ }),

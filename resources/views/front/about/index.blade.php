@@ -133,7 +133,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="row">
                         <div class="col-md-12 mobile-mb-30 text-center">
-                            <img src="{{ asset('/') }}front/images/about/founder.jpg" alt="Mission Image"/>
+                            <img src="{{ asset('/') }}front/images/about/founder.jpg" alt="Dr. A. B. M. Mafizul Islam Patwari"/>
                         </div>
                     </div>
                 </div>
