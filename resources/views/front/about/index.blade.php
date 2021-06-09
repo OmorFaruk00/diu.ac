@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-             background-repeat: repeat-x;
+                       background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -38,7 +38,8 @@
         .page-title ul li a span {
             color: #000000;
         }
-        .governing-img{
+
+        .governing-img {
 
         }
 
@@ -78,11 +79,11 @@
     <div class="rs-history sec-spacer">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-6 col-md-12 rs-vertical-bottom mobile-mb-50">
-                    <a href="#">
-                        <img src="{{ asset('/') }}front/images/about/history.jpg" alt="History Image"/>
-                    </a>
+                    <img src="{{ asset('/') }}front/images/about/campus.jpg" alt="DIU introduction"/>
                 </div>
+
                 <div class="col-lg-6 col-md-12">
                     <div class="abt-title">
                         <h2>Introduction</h2>
@@ -103,6 +104,7 @@
                             syllabus.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -130,15 +132,8 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="row">
-                        <div class="col-md-6 mobile-mb-30">
-                            <a href="#">
-                                <img src="{{ asset('/') }}front/images/about/mission1.jpg" alt="Mission Image"/>
-                            </a>
-                        </div>
-                        <div class="col-md-6">
-                            <a href="#">
-                                <img src="{{ asset('/') }}front/images/about/mission2.jpg" alt="Mission Image"/>
-                            </a>
+                        <div class="col-md-12 mobile-mb-30 text-center">
+                            <img src="{{ asset('/') }}front/images/about/founder.jpg" alt="Dr. A. B. M. Mafizul Islam Patwari"/>
                         </div>
                     </div>
                 </div>
@@ -152,9 +147,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 rs-vertical-bottom mobile-mb-50">
-                    <a href="#">
-                        <img src="{{ asset('/') }}front/images/about/history.jpg" alt="History Image"/>
-                    </a>
+                    <img src="{{ asset('/') }}front/images/about/mission.jpg" alt="DIU Mission"/>
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <div class="abt-title">
@@ -191,13 +184,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-12 mobile-mb-50">
-                    <div class="vision-img rs-animation-hover">
-                        <img src="{{ asset('/') }}front/images/about/vision.jpg" alt="img02"/>
-                        <a class="popup-youtube rs-animation-fade" href="https://www.youtube.com/watch?v=3f9CAMoj3Ec"
-                           title="Video Icon">
-                        </a>
-                        <div class="overly-border"></div>
-                    </div>
+                    <img src="{{ asset('/') }}front/images/about/vision.jpg" alt="DIU vision"/>
                 </div>
             </div>
         </div>
