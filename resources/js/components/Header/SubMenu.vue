@@ -20,7 +20,7 @@ export default {
     methods: {
         getPrograms() {
 
-            this.form.get("diu-website/programs").then((res) => {
+            this.form.get("public-diu-website/programs").then((res) => {
 
                 this.programs = res.data;
 

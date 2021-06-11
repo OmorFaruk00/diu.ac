@@ -16372,7 +16372,7 @@ __webpack_require__.r(__webpack_exports__);
     getPrograms: function getPrograms() {
       var _this = this;
 
-      this.form.get("diu-website/programs").then(function (res) {
+      this.form.get("public-diu-website/programs").then(function (res) {
         _this.programs = res.data;
       })["catch"](function (error) {
         console.log('programs error');
@@ -16603,8 +16603,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/form */ "./resources/js/services/form.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "index"
+  name: "index",
+  data: function data() {
+    return {
+      form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default({
+        'roll': '',
+        'session': '',
+        'reg_code': '',
+        'passing_year': ''
+      }),
+      loading: false,
+      transcript: [],
+      transcriptStatus: ''
+    };
+  },
+  computed: {
+    years: function years() {
+      var year = new Date().getFullYear();
+      return Array.from({
+        length: year - 1993
+      }, function (value, index) {
+        return 1993 + index;
+      });
+    }
+  },
+  methods: {
+    checkCertificate: function checkCertificate() {
+      var _this = this;
+
+      this.loading = true;
+      this.form.post("transcript_verification").then(function (res) {
+        _this.transcript = res.data;
+        _this.transcriptStatus = '';
+      })["catch"](function (error) {
+        if (error.response.status == 404) {
+          _this.transcriptStatus = error.response.data.error;
+          _this.transcript = '';
+        } else {
+          console.log('certificate verification fail');
+        }
+      })["finally"](function (res) {
+        _this.loading = false;
+      });
+    },
+    padLeadingZeros: function padLeadingZeros(num, size) {
+      var s = num + "";
+
+      while (s.length < size) {
+        s = "0" + s;
+      }
+
+      return s;
+    },
+    sessionCreate: function sessionCreate(row) {
+      var newYear = parseInt(row) + parseInt(1);
+      return "".concat(row, "-").concat(parseInt(row) + parseInt(1));
+    }
+  }
 });
 
 /***/ }),
@@ -17608,12 +17666,239 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-6fe44dcc");
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\" data-v-6fe44dcc><div class=\"abt-title mb-70 text-center\" data-v-6fe44dcc><h2 data-v-6fe44dcc>WELCOME TO OUR Certificate Verification</h2></div></div><form action=\"\" data-v-6fe44dcc><!--        &lt;a :href=&quot;route(&#39;about-us&#39;)&quot; target=&quot;_blank&quot;&gt;Test url&lt;/a&gt;--><div class=\"col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4\" data-v-6fe44dcc><div class=\"form-group\" data-v-6fe44dcc><label for=\"roll\" data-v-6fe44dcc>Roll</label><input type=\"number\" class=\"form-control\" placeholder=\"Enter roll\" required data-v-6fe44dcc></div></div><div class=\"col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4\" data-v-6fe44dcc><div class=\"form-group\" data-v-6fe44dcc><label for=\"session\" data-v-6fe44dcc>Session</label><input type=\"text\" class=\"form-control\" placeholder=\"Enter session\" data-v-6fe44dcc></div></div><div class=\"col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4\" data-v-6fe44dcc><div class=\"form-group\" data-v-6fe44dcc><label for=\"session\" data-v-6fe44dcc>Reg Code</label><input type=\"text\" class=\"form-control\" placeholder=\"Enter reg code\" data-v-6fe44dcc></div></div><div class=\"col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4\" data-v-6fe44dcc><div class=\"form-group\" data-v-6fe44dcc><label for=\"passingYear\" data-v-6fe44dcc>Passing Year</label><select name=\"passingYear\" id=\"passingYear\" class=\"form-control\" data-v-6fe44dcc><option value=\"1\" data-v-6fe44dcc>1</option><option value=\"1\" data-v-6fe44dcc>2</option></select></div></div><div class=\"col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4\" data-v-6fe44dcc><button type=\"submit\" class=\"btn btn-info\" data-v-6fe44dcc>Search</button></div></form><div class=\"col-lg-6 col-md-6 col-sm-12 offset-lg-3 offset-md-3 mt-4\" data-v-6fe44dcc><div class=\"card\" data-v-6fe44dcc><div class=\"card-body\" data-v-6fe44dcc><div class=\"table-responsive\" data-v-6fe44dcc><table class=\"table table-striped\" data-v-6fe44dcc><tr data-v-6fe44dcc><th style=\"width:140px;\" data-v-6fe44dcc>Name</th><td data-v-6fe44dcc>test</td></tr><tr data-v-6fe44dcc><th data-v-6fe44dcc>Roll</th><td data-v-6fe44dcc>test</td></tr><tr data-v-6fe44dcc><th data-v-6fe44dcc>Program</th><td data-v-6fe44dcc>test</td></tr><tr data-v-6fe44dcc><th data-v-6fe44dcc>Batch</th><td data-v-6fe44dcc>test</td></tr><tr data-v-6fe44dcc><th data-v-6fe44dcc>Session</th><td data-v-6fe44dcc>test</td></tr><tr data-v-6fe44dcc><th data-v-6fe44dcc>CGPA/Class</th><td data-v-6fe44dcc>test</td></tr><tr data-v-6fe44dcc><th data-v-6fe44dcc>Passing Year</th><td data-v-6fe44dcc>test</td></tr></table></div></div></div></div>", 3);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "container"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "abt-title mb-70 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "WELCOME TO OUR Certificate Verification")])], -1
+/* HOISTED */
+);
+
+var _hoisted_2 = {
+  "class": "col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4"
+};
+var _hoisted_3 = {
+  "class": "form-group"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "roll"
+}, "Roll", -1
+/* HOISTED */
+);
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("option", {
+  value: "",
+  selected: "",
+  disabled: "",
+  hidden: ""
+}, "Select roll", -1
+/* HOISTED */
+);
+
+var _hoisted_6 = {
+  "class": "col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4"
+};
+var _hoisted_7 = {
+  "class": "form-group"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "session"
+}, "Session", -1
+/* HOISTED */
+);
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("option", {
+  value: "",
+  selected: "",
+  disabled: "",
+  hidden: ""
+}, "Select session", -1
+/* HOISTED */
+);
+
+var _hoisted_10 = {
+  "class": "col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4"
+};
+var _hoisted_11 = {
+  "class": "form-group"
+};
+
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "session"
+}, "Reg Code", -1
+/* HOISTED */
+);
+
+var _hoisted_13 = {
+  "class": "col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4"
+};
+var _hoisted_14 = {
+  "class": "form-group"
+};
+
+var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("label", {
+  "for": "passingYear"
+}, "Passing Year", -1
+/* HOISTED */
+);
+
+var _hoisted_16 = {
+  "class": "col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4"
+};
+var _hoisted_17 = {
+  type: "submit",
+  "class": "btn btn-info"
+};
+
+var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Search ");
+
+var _hoisted_19 = {
+  key: 0,
+  "class": "fa fa-spinner fa-pulse"
+};
+var _hoisted_20 = {
+  key: 0,
+  "class": "col-lg-6 col-md-6 col-sm-12 offset-lg-3 offset-md-3 mt-4"
+};
+var _hoisted_21 = {
+  "class": "card"
+};
+var _hoisted_22 = {
+  "class": "card-body"
+};
+var _hoisted_23 = {
+  "class": "table-responsive"
+};
+var _hoisted_24 = {
+  "class": "table table-striped"
+};
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", {
+  style: {
+    "width": "140px"
+  }
+}, "Name", -1
+/* HOISTED */
+);
+
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Roll", -1
+/* HOISTED */
+);
+
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Program", -1
+/* HOISTED */
+);
+
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Batch", -1
+/* HOISTED */
+);
+
+var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Session", -1
+/* HOISTED */
+);
+
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "CGPA/Class", -1
+/* HOISTED */
+);
+
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Passing Year", -1
+/* HOISTED */
+);
+
+var _hoisted_32 = {
+  key: 1,
+  "class": "col-lg-6 col-md-6 col-sm-12 offset-lg-3 offset-md-3 mt-4"
+};
+var _hoisted_33 = {
+  "class": "card"
+};
+var _hoisted_34 = {
+  "class": "card-body"
+};
+var _hoisted_35 = {
+  "class": "text-center"
+};
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return _hoisted_1;
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", {
+    onSubmit: _cache[5] || (_cache[5] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+      return $options.checkCertificate && $options.checkCertificate.apply($options, arguments);
+    }, ["prevent"]))
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("select", {
+    "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
+      return _ctx.form.roll = $event;
+    }),
+    "class": "form-control",
+    required: ""
+  }, [_hoisted_5, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(600, function (row, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("option", {
+      value: row
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.padLeadingZeros(row, 2)), 9
+    /* TEXT, PROPS */
+    , ["value"]);
+  }), 64
+  /* STABLE_FRAGMENT */
+  ))], 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, _ctx.form.roll]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("select", {
+    "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
+      return _ctx.form.session = $event;
+    }),
+    "class": "form-control",
+    required: ""
+  }, [_hoisted_9, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($options.years, function (row, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("option", {
+      value: $options.sessionCreate(row)
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.sessionCreate(row)), 9
+    /* TEXT, PROPS */
+    , ["value"]);
+  }), 256
+  /* UNKEYED_FRAGMENT */
+  ))], 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, _ctx.form.session]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_11, [_hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "text",
+    "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
+      return _ctx.form.reg_code = $event;
+    }),
+    "class": "form-control",
+    placeholder: "Enter reg code.Ex: 123456"
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.form.reg_code]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+    type: "text",
+    "onUpdate:modelValue": _cache[4] || (_cache[4] = function ($event) {
+      return _ctx.form.passing_year = $event;
+    }),
+    "class": "form-control",
+    placeholder: "Enter passing year.Ex:2021"
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.form.passing_year]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", _hoisted_17, [_hoisted_18, _ctx.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", _hoisted_19)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])], 32
+  /* HYDRATE_EVENTS */
+  ), _ctx.transcript != '' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("table", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.name), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.roll), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.program), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.batch), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.session), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.cgpa), 1
+  /* TEXT */
+  )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcript.passing_year), 1
+  /* TEXT */
+  )])])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.transcriptStatus ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.transcriptStatus), 1
+  /* TEXT */
+  )])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
+  /* STABLE_FRAGMENT */
+  );
 });
 
 /***/ }),

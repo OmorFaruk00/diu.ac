@@ -1283,7 +1283,7 @@ ul {
 
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon {
     display: inline-block;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
 }
 
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li {
@@ -1297,6 +1297,7 @@ ul {
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a {
     font-size: 14px;
     color: #FFFFFF;
+    padding: 0 10px!important;
 }
 
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a:hover,

@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.html">
     <link rel="shortcut icon" type="image/x-icon" href="/favicons.png">
 
-    {{--@include('front.partials.allCss')--}}
+{{--    @include('front.partials.allCss')--}}
 
     <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">
 

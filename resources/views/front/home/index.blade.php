@@ -28,31 +28,36 @@
     <!-- Slider Area Start -->
     <div id="rs-slider" class="slider-overlay-2">
         <div id="home-slider">
-            <!-- Item 1 -->
-            <div class="item active">
-                <img src="{{ asset('/') }}front/images/slider/1.jpg" alt="Slide1"/>
-                <div class="slide-content">
-                    <div class="display-table">
-                        <div class="display-table-cell">
-                            <div class="container text-center">
-                                <h1 class="slider-title" data-animation-in="fadeInLeft"
-                                    data-animation-out="animate-out">
-                                    WELCOME TO DIU</h1>
-                                <p data-animation-in="fadeInUp" data-animation-out="animate-out" class="slider-desc">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br
-                                        class="hidden-sm-dow">Dolor id in, perferendis
-                                    provident quidem voluptate.</p>
-                                <a href="https://admission.diu.ac/register" target="_blank" class="sl-get-started-btn"
-                                   data-animation-in="lightSpeedIn"
-                                   data-animation-out="animate-out">APPLY NOW</a>
+
+
+            @foreach ($sliders as $key=>$slider)
+                <div class="item {{ $key == 0 ? 'active' : '' }}">
+                    <img src="{{ $slider->image_url }}" alt="{{ $slider->title }}"/>
+                    <div class="slide-content">
+                        <div class="display-table">
+                            <div class="display-table-cell">
+                                <div class="container text-center">
+                                    <h1 class="slider-title" data-animation-in="fadeInLeft"
+                                        data-animation-out="animate-out">
+                                        WELCOME TO DIU</h1>
+                                    <p data-animation-in="fadeInUp" data-animation-out="animate-out"
+                                       class="slider-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br
+                                            class="hidden-sm-dow">Dolor id in, perferendis
+                                        provident quidem voluptate.</p>
+                                    <a href="https://admission.diu.ac/register" target="_blank"
+                                       class="sl-get-started-btn"
+                                       data-animation-in="lightSpeedIn"
+                                       data-animation-out="animate-out">APPLY NOW</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        @endforeach
 
-            <!-- Item 2 -->
-            <div class="item">
+
+        <!--            <div class="item">
                 <img src="{{ asset('/') }}front/images/slider/2.jpg" alt="Slide2"/>
                 <div class="slide-content">
                     <div class="display-table">
@@ -71,8 +76,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Item 3 -->
             <div class="item">
                 <img src="{{ asset('/') }}front/images/slider/3.jpg" alt="Slide3"/>
                 <div class="slide-content">
@@ -92,7 +95,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </div>
