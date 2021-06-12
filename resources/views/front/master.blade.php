@@ -45,7 +45,7 @@
 
 @routes
 
-{{--{{ TawkTo::widgetCode() }}--}}
+{{ TawkTo::widgetCode() }}
 
 
 <!--<script src="https://cms.diu.ac/axios/axios.min.js"></script>

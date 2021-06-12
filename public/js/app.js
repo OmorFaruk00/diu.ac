@@ -16869,17 +16869,28 @@ __webpack_require__.r(__webpack_exports__);
     return {
       newsletter: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default({
         'email': ''
-      })
+      }),
+      errors: ''
     };
   },
   methods: {
     newsletterFormSubmit: function newsletterFormSubmit() {
-      toast.fire({
-        icon: 'success',
-        title: 'Signed in successfully'
+      var _this = this;
+
+      this.newsletter.post("public-diu-website/newslatter").then(function (res) {
+        toast.fire({
+          icon: 'success',
+          title: res.message
+        });
+        _this.newsletter.email = '';
+        _this.errors = '';
+      })["catch"](function (error) {
+        console.log('newsletter error');
+
+        if (error.response.status == 422) {
+          _this.errors = error.response.data;
+        }
       });
-      console.log(this.newsletter);
-      console.log('newsletter form submit');
     }
   }
 });
@@ -18489,7 +18500,11 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
+var _hoisted_3 = {
+  "class": "col-12"
+};
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
   type: "submit",
   "class": "form-button"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
@@ -18499,6 +18514,10 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
+var _hoisted_5 = {
+  "class": "col-12"
+};
+
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
@@ -18507,16 +18526,25 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       return $options.newsletterFormSubmit && $options.newsletterFormSubmit.apply($options, arguments);
     }, ["prevent"])),
     "class": "news-form"
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("input", {
     type: "text",
+    id: "email",
+    name: "email",
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return _ctx.newsletter.email = $event;
     }),
     "class": "form-input",
-    placeholder: "Enter Your Email"
+    placeholder: "Enter Your Email",
+    required: ""
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.newsletter.email]]), _hoisted_3], 32
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, _ctx.newsletter.email]]), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_ctx.errors.email ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("small", {
+    key: 0,
+    "class": "text-danger with-errors",
+    innerHTML: _ctx.errors.email[0]
+  }, null, 8
+  /* PROPS */
+  , ["innerHTML"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])], 32
   /* HYDRATE_EVENTS */
   )], 64
   /* STABLE_FRAGMENT */
@@ -19387,10 +19415,11 @@ window.toast = sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().mixin({
   timer: 3000,
   timerProgressBar: true,
   didOpen: function didOpen(toast) {
-    toast.addEventListener('mouseenter', Swal.stopTimer);
-    toast.addEventListener('mouseleave', Swal.resumeTimer);
+    toast.addEventListener('mouseenter', (sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().stopTimer));
+    toast.addEventListener('mouseleave', (sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().resumeTimer));
   }
-});
+}); // window.swal = swal
+
 var app = (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({});
 app.use(ziggy__WEBPACK_IMPORTED_MODULE_1__.ZiggyVue, _ziggy__WEBPACK_IMPORTED_MODULE_2__.Ziggy); // Importing all components programmetically. provided by laravel.
 
