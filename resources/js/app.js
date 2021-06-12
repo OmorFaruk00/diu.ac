@@ -1,10 +1,22 @@
 require('./bootstrap');
 
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 
-import { ZiggyVue } from 'ziggy'
+import {ZiggyVue} from 'ziggy'
 import {Ziggy} from "./ziggy"
 
+import swal from 'sweetalert2'
+window.toast = swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+})
 
 const app = createApp({});
 
@@ -18,7 +30,6 @@ files.keys().map(key => {
 
     app.component(fileName, files(key).default);
 })
-
 
 app.mount('#app');
 

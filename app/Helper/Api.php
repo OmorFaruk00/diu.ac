@@ -16,7 +16,7 @@ class Api
         $response = $curl->get();
 
         if ($response->status == 200) {
-            return $response->content;
+            return $response->content->data;
         }
         return false;
     }
@@ -25,6 +25,20 @@ class Api
     {
         $basePath = env('API_URL');
         $url = "{$basePath}/public-diu-website/sliders";
+        $curl = Curl::to($url)->returnResponseObject();
+        $curl->asJson(false);
+        $response = $curl->get();
+
+        if ($response->status == 200) {
+            return $response->content;
+        }
+        return false;
+    }
+
+    public static function partners()
+    {
+        $basePath = env('API_URL');
+        $url = "{$basePath}/public-diu-website/partners";
         $curl = Curl::to($url)->returnResponseObject();
         $curl->asJson(false);
         $response = $curl->get();

@@ -11,7 +11,7 @@
              data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true"
              data-ipad-device-dots="true" data-md-device="4" data-md-device-nav="true" data-md-device-dots="true">
 
-            <div class="product-item" v-for="(program ,index) in programs.data" :key="index">
+            <div class="product-item" v-for="(program ,index) in programs" :key="index">
 
                 <div class="product-img">
                     <a href="javaScript:void(0)">
@@ -33,45 +33,18 @@
 </template>
 
 <script>
-import Form from '../../services/form'
-
 export default {
     name: "OurProgram",
-    data: () => ({
-        form: new Form(),
-        programs: [],
-        programDetails: false
-    }),
     props: {
         programs: {
             type: Array,
         }
     },
-
-    methods: {
-        async getPrograms() {
-
-            await this.form.get("diu-website/programs").then((res) => {
-
-                this.programs = res.data;
-                this.programDetails = true;
-
-                console.log(res.data, 'data');
-                console.log(this.programDetails)
-
-            }).catch((error) => {
-                console.log('programs error')
-            });
-        }
-    },
-    created() {
-        // this.getPrograms();
-    }
 }
 </script>
 
 <style scoped>
-.product-item{
-    height: 400px!important;
+.product-item {
+    height: 400px !important;
 }
 </style>

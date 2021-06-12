@@ -3,17 +3,39 @@
     <h2>Our Journals</h2>
 
     <ul>
-        <li v-for="(row,index) in 10" :key="index">
-            <i class="fa fa-arrow-circle-right"></i>
-            <a href="javaScript:void(0)" target="_blank"> DIU Journal of Law and Human Rights {{ row }}</a>
+        <li v-for="(row,index) in journals" :key="index">
+            <i class="fa fa-arrow-circle-right mr-2"></i>
+            <a :href="row.image_url" target="_blank"> {{ row.title }}</a>
         </li>
     </ul>
 
 </template>
 
 <script>
+import Form from '../../services/form'
 export default {
-    name: "Journal"
+    name: "Journal",
+    data: () => ({
+        form: new Form(),
+        journals: [],
+    }),
+
+    methods: {
+        getJournals() {
+
+            this.form.get("public-diu-website/publication").then((res) => {
+
+                this.journals = res;
+
+            }).catch((error) => {
+                console.log('programs error')
+            });
+        }
+    },
+
+    created() {
+        this.getJournals();
+    }
 }
 </script>
 

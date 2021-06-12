@@ -6,10 +6,14 @@
          data-ipad-device-dots="false" data-md-device="5" data-md-device-nav="false"
          data-md-device-dots="false">
 
-        <div class="partner-item" v-for="(row,index) in 15" :key="index">
-            <a href="#"><img
-                src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/partnerships/ilia.png"
-                :alt="row"></a>
+        <div class="partner-item" v-for="(row,index) in partners" :key="index">
+            <!--            <a href="#">-->
+
+            <img
+                :src="row.image_url"
+                :alt="row.title">
+
+            <!--            </a>-->
         </div>
 
     </div>
@@ -17,7 +21,13 @@
 
 <script>
 export default {
-    name: "OurPartner"
+    name: "OurPartner",
+    props: {
+        partners: {
+            type: Array,
+            required: true
+        }
+    },
 }
 </script>
 

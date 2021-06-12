@@ -15,6 +15,8 @@
                     <option value="" selected disabled hidden>Select roll</option>
                     <option v-for="(row,index) in 600" :value="row">{{ padLeadingZeros(row, 2) }}</option>
                 </select>
+                <small v-if="errors.roll" class="text-danger with-errors"
+                       v-html="errors.roll[0]"></small>
             </div>
         </div>
 
@@ -25,26 +27,38 @@
                     <option value="" selected disabled hidden>Select session</option>
                     <option v-for="(row,index) in years" :value="sessionCreate(row)">{{ sessionCreate(row) }}</option>
                 </select>
+                <small v-if="errors.session" class="text-danger with-errors"
+                       v-html="errors.session[0]"></small>
             </div>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
             <div class="form-group">
-                <label for="session">Reg Code</label>
-                <input type="text" v-model="form.reg_code" class="form-control" placeholder="Enter reg code.Ex: 123456">
+                <label for="reg_code">Reg Code</label>
+                <input name="reg_code" type="text" v-model="form.reg_code" class="form-control"
+                       placeholder="Enter reg code.Ex: 123456">
+                <small v-if="errors.reg_code" class="text-danger with-errors"
+                       v-html="errors.reg_code[0]"></small>
             </div>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
             <div class="form-group">
                 <label for="passingYear">Passing Year</label>
-                <input type="text" v-model="form.passing_year" class="form-control" placeholder="Enter passing year.Ex:2021">
+                <input type="text" v-model="form.passing_year" class="form-control"
+                       placeholder="Enter passing year.Ex:2021">
+                <small v-if="errors.passing_year" class="text-danger with-errors"
+                       v-html="errors.passing_year[0]"></small>
             </div>
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <button type="submit" class="btn btn-info">Search
+            <button type="submit" class="btn btn-outline-info">Search
                 <span v-if="loading" class="fa fa-spinner fa-pulse"></span>
+            </button>
+
+            <button v-if="transcript != '' || transcriptStatus" type="button" @click="clearButton"
+                    class="btn btn-outline-danger ml-2">Clear
             </button>
         </div>
 
@@ -126,6 +140,7 @@ export default {
         loading: false,
         transcript: [],
         transcriptStatus: '',
+        errors: [],
     }),
 
     computed: {
@@ -142,10 +157,27 @@ export default {
             this.form.post("transcript_verification").then((res) => {
                 this.transcript = res.data;
                 this.transcriptStatus = '';
+
+                toast.fire({
+                    icon: 'success',
+                    title: 'Transcript found.'
+                });
+
             }).catch((error) => {
+
                 if (error.response.status == 404) {
                     this.transcriptStatus = error.response.data.error;
                     this.transcript = '';
+
+                    toast.fire({
+                        icon: 'info',
+                        title: error.response.data.error
+                    });
+
+                } else if (error.response.status == 422) {
+                    this.errors = error.response.data;
+                    this.transcript = '';
+                    this.transcriptStatus = '';
                 } else {
                     console.log('certificate verification fail')
                 }
@@ -164,6 +196,16 @@ export default {
         sessionCreate(row) {
             let newYear = parseInt(row) + parseInt(1);
             return `${row}-${parseInt(row) + parseInt(1)}`;
+        },
+
+        clearButton() {
+            this.form.roll = '';
+            this.form.session = '';
+            this.form.reg_code = '';
+            this.form.passing_year = '';
+            this.errors = '';
+            this.transcript = '';
+            this.transcriptStatus = '';
         }
     },
 }

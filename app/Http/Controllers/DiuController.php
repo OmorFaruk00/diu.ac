@@ -11,12 +11,14 @@ class DiuController extends Controller
     public function homePage()
     {
 
-        $programs = Curl::to('https://api.diu.ac/public-diu-website/programs')->get();
         $sliders = Api::sliders();
+        $partners = Api::partners();
+        $programs = Api::programs();
 
-        return view('front.home.index',[
-            'programs'=>$programs,
-            'sliders'=>$sliders
+        return view('front.home.index', [
+            'programs' => $programs,
+            'sliders' => $sliders,
+            'partners' => $partners
         ]);
     }
 
