@@ -16781,8 +16781,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/form */ "./resources/js/services/form.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "convocation"
+  name: "convocation",
+  data: function data() {
+    return {
+      form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
+      convocations: []
+    };
+  },
+  methods: {
+    getConvocations: function getConvocations() {
+      var _this = this;
+
+      this.form.get("/public-diu-website/convocations").then(function (res) {
+        _this.convocations = res;
+      })["catch"](function (error) {
+        console.log('programs error');
+      });
+    }
+  },
+  created: function created() {
+    this.getConvocations();
+  }
 });
 
 /***/ }),
@@ -18294,22 +18316,15 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "row"
 };
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+var _hoisted_4 = {
   "class": "col-12"
-}, " The mission of DIU is to produce capable leaders in the respective field of study who can meet the challenges of present dynamic world. It wants to create multidisciplinary knowledge, communication and interpersonal skills at the highest level of excellence among the students which will make them honest, sincere and dedicated in their thoughts and deeds. ", -1
-/* HOISTED */
-);
-
-var _hoisted_5 = {
-  "class": "col-lg-3 col-md-3 col-sm-6 mb-4"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(5, function (row, index) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.convocations, function (row, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "card",
       key: index
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
@@ -18321,7 +18336,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "data-target": "#collapseOurMission".concat(index),
       "aria-expanded": "true",
       "aria-controls": "collapseOurMission".concat(index)
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row) + " Convocation / Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolores! ", 9
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.title) + " / " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.short_description), 9
     /* TEXT, PROPS */
     , ["data-target", "aria-controls"])], 8
     /* PROPS */
@@ -18330,20 +18345,30 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "class": "collapse",
       "aria-labelledby": "ourConvocation".concat(index),
       "data-parent": "#convocation"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(10, function (row) {
-      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-        src: "https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/convocation-img.jpg",
-        alt: row
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.description), 1
+    /* TEXT */
+    ), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.convoction_images, function (innerRow, innerIndex) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+        key: innerIndex,
+        "class": "col-lg-3 col-md-3 col-sm-6 mb-4"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+        href: innerRow.image_url,
+        target: "_blank"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+        src: innerRow.image_url,
+        alt: row.title
       }, null, 8
       /* PROPS */
-      , ["alt"])]);
-    }), 64
-    /* STABLE_FRAGMENT */
+      , ["src", "alt"])], 8
+      /* PROPS */
+      , ["href"])]);
+    }), 128
+    /* KEYED_FRAGMENT */
     ))])])], 8
     /* PROPS */
     , ["id", "aria-labelledby"])]);
-  }), 64
-  /* STABLE_FRAGMENT */
+  }), 128
+  /* KEYED_FRAGMENT */
   ))]);
 });
 

@@ -1,12 +1,12 @@
 <template>
     <div id="convocation" class="rs-accordion-style1">
 
-        <div class="card" v-for="(row,index) in 5" :key="index">
+        <div class="card" v-for="(row,index) in convocations" :key="index">
             <div class="card-header" :id="`ourConvocation${index}`">
                 <h3 class="acdn-title collapsed" data-toggle="collapse"
                     :data-target="`#collapseOurMission${index}`"
                     aria-expanded="true" :aria-controls="`collapseOurMission${index}`">
-                    {{ row }} Convocation / Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolores!
+                    {{ row.title }} / {{ row.short_description }}
                 </h3>
             </div>
 
@@ -17,16 +17,15 @@
                     <div class="row">
 
                         <div class="col-12">
-                            The mission of DIU is to produce capable leaders in the respective field of study
-                            who can meet the challenges of present dynamic world. It wants to create
-                            multidisciplinary knowledge, communication and interpersonal skills at the highest
-                            level of excellence among the students which will make them honest, sincere and
-                            dedicated in their thoughts and deeds.
+                            {{ row.description }}
                         </div>
 
-                        <div v-for="row in 10" class="col-lg-3 col-md-3 col-sm-6 mb-4">
-                            <img src="https://diu.ac/wp-content/themes/diu-theme-lite-v1/images/convocation-img.jpg"
-                                 :alt="row">
+                        <div v-for="(innerRow,innerIndex) in row.convoction_images" :key="innerIndex" class="col-lg-3 col-md-3 col-sm-6 mb-4">
+
+                            <a :href="innerRow.image_url" target="_blank">
+                                <img :src="innerRow.image_url"
+                                     :alt="row.title">
+                            </a>
                         </div>
 
                     </div>
@@ -40,8 +39,31 @@
 </template>
 
 <script>
+import Form from '../../services/form'
+
 export default {
-    name: "convocation"
+    name: "convocation",
+    data: () => ({
+        form: new Form(),
+        convocations: []
+    }),
+
+    methods: {
+        getConvocations() {
+
+            this.form.get("/public-diu-website/convocations").then((res) => {
+
+                this.convocations = res;
+
+            }).catch((error) => {
+                console.log('programs error')
+            });
+        }
+    },
+
+    created() {
+        this.getConvocations();
+    }
 }
 </script>
 
