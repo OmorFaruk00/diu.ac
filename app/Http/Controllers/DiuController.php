@@ -24,7 +24,14 @@ class DiuController extends Controller
 
     public function aboutUs()
     {
-        return view('front.about.index');
+        $keyResourcePersons = Api::keyResourcePersons();
+        $diuGoverningBodies = Api::diuGoverningBodies();
+
+        return view('front.about.index', [
+            'keyResourcePersons' => $keyResourcePersons,
+            'diuGoverningtypes' => $diuGoverningBodies->vitalPersonType,
+            'diuGoverningPersons' => $diuGoverningBodies->vitalPerson
+        ]);
     }
 
     public function noticeBoard()
