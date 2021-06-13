@@ -199,7 +199,7 @@
                 <p>Considering desire as primary motivation for the generation of narratives is a useful concept.</p>
             </div>
 
-            <About-experience-staffs/>
+            <About-experience-staffs :persons='{!! json_encode($keyResourcePersons) !!}' />
 
         </div>
     </div>
@@ -228,8 +228,7 @@
                 <h2 class="mb-30">DIU Governing Bodies</h2>
             </div>
 
-            <About-governing-bodies/>
-
+            <About-governing-bodies :types='{!! json_encode($diuGoverningtypes) !!}' :persons='{!! json_encode($diuGoverningPersons) !!}'/>
 
         </div>
     </div>

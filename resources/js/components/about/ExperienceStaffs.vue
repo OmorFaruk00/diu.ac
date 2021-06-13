@@ -6,23 +6,24 @@
          data-ipad-device-dots="true" data-md-device="4" data-md-device-nav="true" data-md-device-dots="true">
 
 
-        <teamSection v-for="(team,index) in teams" :team="team" :key="index"/>
+        <teamSection v-for="(team,index) in persons.vital_persons" :team="team" :key="index"/>
 
     </div>
 </template>
 
 <script>
-import {teams} from '../../data/teams';
 import teamSection from '../molecule/Team';
 
 export default {
     name: "ExperienceStaffs",
-    data: () => ({
-        teams
-    }),
     components: {
         teamSection
-    }
+    },
+    props: {
+        persons: {
+            type: Object,
+        }
+    },
 }
 </script>
 
