@@ -16446,6 +16446,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/form */ "./resources/js/services/form.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "GoverningBodies",
   props: {
@@ -16457,6 +16459,26 @@ __webpack_require__.r(__webpack_exports__);
       type: Array,
       require: true
     }
+  },
+  data: function data() {
+    return {
+      form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
+      vitalPersonType: []
+    };
+  },
+  methods: {
+    getVitalPersonType: function getVitalPersonType() {
+      var _this = this;
+
+      this.form.get("/public-diu-website/diu-governing-bodies").then(function (res) {
+        _this.vitalPersonType = res.vitalPersonType;
+      })["catch"](function (error) {
+        console.log('governing bodies error');
+      });
+    }
+  },
+  created: function created() {
+    this.getVitalPersonType();
   }
 });
 
@@ -17369,67 +17391,85 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-61885932");
 
 var _hoisted_1 = {
-  "class": "gridFilter"
+  "class": "row"
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("button", {
-  "class": "active",
-  "data-filter": "*"
-}, "All", -1
-/* HOISTED */
-);
-
+var _hoisted_2 = {
+  "class": "col-lg-12 col-md-12"
+};
 var _hoisted_3 = {
-  "class": "row grid"
+  id: "vitalPerson",
+  "class": "rs-accordion-style1"
 };
 var _hoisted_4 = {
-  "class": "cource-item"
+  "class": "card-body"
 };
 var _hoisted_5 = {
-  "class": "governing-img"
+  "class": "row"
 };
 var _hoisted_6 = {
-  "class": "course-body"
+  "class": "cource-item"
 };
 var _hoisted_7 = {
-  "class": "course-title"
+  "class": "governing-img"
 };
 var _hoisted_8 = {
+  "class": "course-body"
+};
+var _hoisted_9 = {
+  "class": "course-title"
+};
+var _hoisted_10 = {
   "class": "course-desc"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [_hoisted_2, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.types, function (type, index) {
-    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("button", {
-      key: index,
-      "data-filter": ".filter".concat(type.id)
-    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(type.title), 9
-    /* TEXT, PROPS */
-    , ["data-filter"]);
-  }), 128
-  /* KEYED_FRAGMENT */
-  ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.persons, function (person, index) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <div class=\"gridFilter\">\n            <button class=\"active\" data-filter=\"filter2\">All</button>\n\n            <button v-for=\"(type,index) in types\" :key=\"index\" :data-filter=\"`.filter${type.id}`\">{{ type.title }}</button>\n\n        </div>\n\n        <div class=\"row grid\">\n\n            <div v-for=\"(person,index) in persons\"\n                 :key=\"index\" :class=\"`col-lg-3 col-md-4 grid-item filter${person.vital_person_type_id}`\">\n                <div class=\"cource-item\">\n\n                    <div class=\"governing-img\">\n                        <img :src=\"person.image_url\" :alt=\"person.name\"/>\n                    </div>\n\n                    <div class=\"course-body\">\n                        <h5 class=\"course-title\">{{ person.name }}</h5>\n                        <div class=\"course-desc\">\n                            <p>\n                                {{ person.title }}\n                            </p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n        </div>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.vitalPersonType, function (row, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
-      key: index,
-      "class": "col-lg-3 col-md-4 grid-item filter".concat(person.vital_person_type_id)
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
-      src: person.image_url,
-      alt: person.name
-    }, null, 8
+      "class": "card",
+      key: index
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      "class": "card-header",
+      id: "diuVitalPerson".concat(index)
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+      "class": ["acdn-title", index != '0' ? 'collapsed' : ''],
+      "data-toggle": "collapse",
+      "data-target": "#collapseVitalPerson".concat(index),
+      "aria-expanded": "true",
+      "aria-controls": "collapseVitalPerson".concat(index)
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.title), 11
+    /* TEXT, CLASS, PROPS */
+    , ["data-target", "aria-controls"])], 8
     /* PROPS */
-    , ["src", "alt"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.name), 1
-    /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.title), 1
-    /* TEXT */
-    )])])])], 2
-    /* CLASS */
-    );
+    , ["id"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      id: "collapseVitalPerson".concat(index),
+      "class": ["collapse", index == '0' ? 'show' : ''],
+      "aria-labelledby": "diuVitalPerson".concat(index),
+      "data-parent": "#vitalPerson"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.vital_persons, function (person, index) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+        key: index,
+        "class": "col-lg-3 col-md-4"
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+        src: person.image_url,
+        alt: person.name
+      }, null, 8
+      /* PROPS */
+      , ["src", "alt"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.name), 1
+      /* TEXT */
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.title), 1
+      /* TEXT */
+      )])])])]);
+    }), 128
+    /* KEYED_FRAGMENT */
+    ))])])], 10
+    /* CLASS, PROPS */
+    , ["id", "aria-labelledby"])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])], 64
-  /* STABLE_FRAGMENT */
+  ))])])])], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   );
 });
 

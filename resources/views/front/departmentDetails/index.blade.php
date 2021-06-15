@@ -59,9 +59,12 @@
                         </li>
                     </ul>
                 </div>
-            </div><!-- container -->
-        </div><!-- overlay -->
-    </section><!-- page header -->
+            </div>
+            <!-- container -->
+        </div>
+        <!-- overlay -->
+    </section>
+    <!-- page header -->
     <!-- Page Header End here -->
 
 

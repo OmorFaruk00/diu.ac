@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                       background-repeat: repeat-x;
+                              background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -133,7 +133,8 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="row">
                         <div class="col-md-12 mobile-mb-30 text-center">
-                            <img src="{{ asset('/') }}front/images/about/founder.jpg" alt="Dr. A. B. M. Mafizul Islam Patwari"/>
+                            <img src="{{ asset('/') }}front/images/about/founder.jpg"
+                                 alt="Dr. A. B. M. Mafizul Islam Patwari"/>
                         </div>
                     </div>
                 </div>
@@ -199,7 +200,7 @@
                 <p>Considering desire as primary motivation for the generation of narratives is a useful concept.</p>
             </div>
 
-            <About-experience-staffs :persons='{!! json_encode($keyResourcePersons) !!}' />
+            <About-experience-staffs :persons='{!! json_encode($keyResourcePersons) !!}'/>
 
         </div>
     </div>
@@ -228,7 +229,8 @@
                 <h2 class="mb-30">DIU Governing Bodies</h2>
             </div>
 
-            <About-governing-bodies :types='{!! json_encode($diuGoverningtypes) !!}' :persons='{!! json_encode($diuGoverningPersons) !!}'/>
+            <About-governing-bodies/>
+            {{--<About-governing-bodies :types='{!! json_encode($diuGoverningtypes) !!}' :persons='{!! json_encode($diuGoverningPersons) !!}'/>--}}
 
         </div>
     </div>
