@@ -49,7 +49,6 @@ class Api
         return false;
     }
 
-
     public static function keyResourcePersons()
     {
         $basePath = env('API_URL');

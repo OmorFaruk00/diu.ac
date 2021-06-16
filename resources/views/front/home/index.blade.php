@@ -29,43 +29,45 @@
     <div id="rs-slider" class="slider-overlay-2">
         <div id="home-slider">
 
-            @foreach ($sliders as $key=>$slider)
-                <div class="item {{ $key == 0 ? 'active' : '' }}">
-                    <img src="{{ $slider->image_url }}" alt="{{ $slider->title }}"/>
-                    <div class="slide-content">
-                        <div class="display-table">
-                            <div class="display-table-cell">
-                                <div class="container text-center">
+            @if($sliders)
+                @foreach ($sliders as $key=>$slider)
+                    <div class="item {{ $key == 0 ? 'active' : '' }}">
+                        <img src="{{ $slider->image_url }}" alt="{{ $slider->title }}"/>
+                        <div class="slide-content">
+                            <div class="display-table">
+                                <div class="display-table-cell">
+                                    <div class="container text-center">
 
-                                    <h1 class="slider-title" data-animation-in="fadeInLeft"
-                                        data-animation-out="animate-out">{{ $slider->title }}</h1>
+                                        <h1 class="slider-title" data-animation-in="fadeInLeft"
+                                            data-animation-out="animate-out">{{ $slider->title }}</h1>
 
-                                    @if($slider->short_description)
-                                        <p data-animation-in="fadeInUp" data-animation-out="animate-out"
-                                           class="slider-desc">
-                                            {{ $slider->short_description ?? '' }}
-                                        </p>
-                                    @endif
+                                        @if($slider->short_description)
+                                            <p data-animation-in="fadeInUp" data-animation-out="animate-out"
+                                               class="slider-desc">
+                                                {{ $slider->short_description ?? '' }}
+                                            </p>
+                                        @endif
 
-                                <!--<p data-animation-in="fadeInUp" data-animation-out="animate-out"
+                                    <!--<p data-animation-in="fadeInUp" data-animation-out="animate-out"
                                        class="slider-desc">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br
                                             class="hidden-sm-dow">Dolor id in, perferendis
                                         provident quidem voluptate.</p>-->
 
-                                    @if($slider->apply_url)
-                                        <a href="{{ $slider->apply_url }}" target="_blank"
-                                           class="sl-get-started-btn"
-                                           data-animation-in="lightSpeedIn"
-                                           data-animation-out="animate-out">APPLY NOW</a>
-                                    @endif
+                                        @if($slider->apply_url)
+                                            <a href="{{ $slider->apply_url }}" target="_blank"
+                                               class="sl-get-started-btn"
+                                               data-animation-in="lightSpeedIn"
+                                               data-animation-out="animate-out">APPLY NOW</a>
+                                        @endif
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            @endif
 
         </div>
     </div>
