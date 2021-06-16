@@ -16879,8 +16879,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/form */ "./resources/js/services/form.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Objectives"
+  name: "Objectives",
+  data: function data() {
+    return {
+      form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
+      objectives: []
+    };
+  },
+  methods: {
+    getObjectives: function getObjectives() {
+      var _this = this;
+
+      this.form.get("public-diu-website/department-objectives/".concat(route().params.slug)).then(function (res) {
+        _this.objectives = res;
+      })["catch"](function (error) {
+        console.log('Basic Info');
+      });
+    }
+  },
+  created: function created() {
+    this.getObjectives();
+  }
 });
 
 /***/ }),
@@ -16937,21 +16959,22 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
-      programs: []
+      basic: []
     };
   },
   methods: {
-    getPrograms: function getPrograms() {
+    getBasicInfo: function getBasicInfo() {
       var _this = this;
 
-      this.form.get("public-diu-website/programs").then(function (res) {
-        _this.programs = res.data;
+      this.form.get("public-diu-website/department-basic-info/".concat(route().params.slug)).then(function (res) {
+        _this.basic = res.data;
       })["catch"](function (error) {
-        console.log('programs error');
+        console.log('Basic Info');
       });
     }
   },
-  created: function created() {// this.getPrograms();
+  created: function created() {
+    this.getBasicInfo();
   }
 });
 
@@ -16968,8 +16991,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _services_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../services/form */ "./resources/js/services/form.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "chairman"
+  name: "chairman",
+  data: function data() {
+    return {
+      form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
+      basic: []
+    };
+  },
+  methods: {
+    getBasicInfo: function getBasicInfo() {
+      var _this = this;
+
+      this.form.get("public-diu-website/department-basic-info/".concat(route().params.slug)).then(function (res) {
+        _this.basic = res.data;
+      })["catch"](function (error) {
+        console.log('Basic Info');
+      });
+    }
+  },
+  created: function created() {
+    this.getBasicInfo();
+  }
 });
 
 /***/ }),
@@ -18629,15 +18674,58 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-0ed466c8");
 
 var _hoisted_1 = {
+  key: 0,
   "class": "container"
 };
+var _hoisted_2 = {
+  "class": "row"
+};
+var _hoisted_3 = {
+  "class": "col-lg-12 col-md-12"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"row\" data-v-0ed466c8><div class=\"col-lg-12 col-md-12\" data-v-0ed466c8><div class=\"sec-title\" data-v-0ed466c8><h2 data-v-0ed466c8>Objectives</h2></div><div class=\"about-desc\" data-v-0ed466c8><ul data-v-0ed466c8><li data-v-0ed466c8><i class=\"fa fa-arrow-circle-o-right\" data-v-0ed466c8></i> Knowledge of Engineering Sciences</li><p class=\"mb-2\" data-v-0ed466c8>Apply knowledge of mathematics, science, engineering fundamentals and an engineering specialization to the conceptualization of engineering models</p><li data-v-0ed466c8><i class=\"fa fa-arrow-circle-o-right\" data-v-0ed466c8></i> Knowledge of Engineering Sciences</li><p data-v-0ed466c8>Apply knowledge of mathematics, science, engineering fundamentals and an engineering specialization to the conceptualization of engineering models</p></ul></div></div></div>", 1);
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Objectives")], -1
+/* HOISTED */
+);
+
+var _hoisted_5 = {
+  "class": "about-desc"
+};
+var _hoisted_6 = {
+  key: 0
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+  "class": "fa fa-arrow-circle-o-right"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_8 = {
+  style: {
+    "list-style": "square",
+    "margin-left": "20px"
+  }
+};
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
+  var _ctx$objectives;
+
+  return ((_ctx$objectives = _ctx.objectives) === null || _ctx$objectives === void 0 ? void 0 : _ctx$objectives.length) > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [_hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.objectives, function (objective, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("span", {
+      key: index
+    }, [objective !== null && objective !== void 0 && objective.title ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("li", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(objective.title), 1
+    /* TEXT */
+    )])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("li", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(objective.description), 1
+    /* TEXT */
+    )])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 });
 
 /***/ }),
@@ -18727,13 +18815,61 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 var _hoisted_1 = {
   "class": "row"
 };
+var _hoisted_2 = {
+  key: 0,
+  "class": "col-lg-12 col-md-12"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-12 col-md-12\" data-v-0e9bf4fc><div class=\"sec-title\" data-v-0e9bf4fc><h2 data-v-0e9bf4fc>INTRODUCTION</h2></div><div class=\"about-desc\" data-v-0e9bf4fc><p data-v-0e9bf4fc>The Department of Computer Science and Engineering (CSE) at Dhaka International University (also known as DIU) is a place where brightest minds from all over the country and abroad assembles for a greater future. We have a strong alumni association to exchange academic and professional knowledge and experience among the existing and former students of DIU in the field of CSE. Our alumni serve in the top ranking universities as teachers and researchers and in the top companies all around the world as software engineers and IT specialists. We organize various co-curricular and extra-curriculum activities. Such as Programming contest, Workshop, job Fair, The Debating Club, Seminar, Intra-Department Football/Cricket Tournament, Indoor Games, etc. Our students are well equipped to take the challenge to stand out as the leaders of tomorrow. We welcome all in our community who are willing to take the challenge and who are trying to be the best in their future. Welcome to CSEDIU.</p></div></div><div class=\"col-lg-12 col-md-12\" data-v-0e9bf4fc><div class=\"sec-title\" data-v-0e9bf4fc><h2 data-v-0e9bf4fc>MISSION</h2></div><div class=\"about-desc\" data-v-0e9bf4fc><p data-v-0e9bf4fc>The mission of department of computer Science and Engineering (CSE) is to teach and prepare educated, skilled, &amp; ethically sound computer scientists and engineers for leadership and professional careers and for advanced studies.</p></div></div><div class=\"col-lg-12 col-md-12\" data-v-0e9bf4fc><div class=\"sec-title\" data-v-0e9bf4fc><h2 data-v-0e9bf4fc>VISION</h2></div><div class=\"about-desc\" data-v-0e9bf4fc><p data-v-0e9bf4fc>To produce competent professionals who shall be leaders in technology, industry and research at the national and international level.</p></div></div>", 3);
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "INTRODUCTION")], -1
+/* HOISTED */
+);
+
+var _hoisted_4 = {
+  "class": "about-desc"
+};
+var _hoisted_5 = {
+  key: 1,
+  "class": "col-lg-12 col-md-12"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "MISSION")], -1
+/* HOISTED */
+);
+
+var _hoisted_7 = {
+  "class": "about-desc"
+};
+var _hoisted_8 = {
+  key: 2,
+  "class": "col-lg-12 col-md-12"
+};
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "VISION")], -1
+/* HOISTED */
+);
+
+var _hoisted_10 = {
+  "class": "about-desc"
+};
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        {{ route().params.slug }}"), _hoisted_2]);
+  var _ctx$basic, _ctx$basic2, _ctx$basic3;
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        {{ route().params.slug }}"), (_ctx$basic = _ctx.basic) !== null && _ctx$basic !== void 0 && _ctx$basic.introduction ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.introduction), 1
+  /* TEXT */
+  )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (_ctx$basic2 = _ctx.basic) !== null && _ctx$basic2 !== void 0 && _ctx$basic2.mission ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.mission), 1
+  /* TEXT */
+  )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (_ctx$basic3 = _ctx.basic) !== null && _ctx$basic3 !== void 0 && _ctx$basic3.vission ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.vission), 1
+  /* TEXT */
+  )])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
 });
 
 /***/ }),
@@ -18759,13 +18895,67 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 var _hoisted_1 = {
   "class": "row rs-vertical-middle"
 };
+var _hoisted_2 = {
+  key: 0,
+  "class": "col-lg-7 col-md-12"
+};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-7 col-md-12\" data-v-0b9578d2><div class=\"sec-title\" data-v-0b9578d2><h2 data-v-0b9578d2>Department Head</h2></div><p class=\"mobile-mb-50\" data-v-0b9578d2> Computer Science and Engineering (CSE) department started its journey in 1996 at the very beginning of the establishment of the university. Now, the CSE Department is the largest department of Dhaka International University. In total 26 full-time faculty members are serving about 1600 students in B. Sc and M. Sc levels. The faculty members of the CSE department are highly qualified, energetic, young and friendly with the students and university authority is also trying their best to increase the existing facility of the students. Students are engaged in various academic, co-curricular and extra-curricular activities. Our students also participate in regional contests of the ACM International Collegiate Programming Contest regularly. Our graduates are successfully working in reputed companies and organizations likes Dhaka Stock Exchange Limited, Data Soft, IP vision, Gramophone, Air-tel, Bangla-Link, TeleTalk, Robi, ICT division, etc. They are also working in Banks, Garments sector and NGOs, etc. Some of our graduates are also working as faculty members in the home and abroad. Our graduates are also pursuing higher studies in different universities in the UK, Germany, Japan, Sweden, Norway, and many other countries. Recently, B.Sc. in CSE program at DIU has been accredited as a professional degree program by the Board of Accreditation for Engineering and Technical Education (BAETE) of the Institution of Engineers, Bangladesh (IEB). Our CSE graduates can become a member of IEB. </p><div class=\"row about-signature\" data-v-0b9578d2><div class=\"col-md-12\" data-v-0b9578d2><h4 data-v-0b9578d2>Dr. A.T.M. Mahbubur Rahman Sarker</h4><span data-v-0b9578d2>Dean (Faculty Of Science &amp; Eng.) &amp; Chairman</span> <br data-v-0b9578d2><span data-v-0b9578d2><a href=\"mailto:rahman.cse@diu-bd.net\" data-v-0b9578d2>rahman.cse@diu-bd.net</a></span></div></div></div><div class=\"col-lg-5 col-md-12\" data-v-0b9578d2><div class=\"about-img rs-image-effect-shine\" data-v-0b9578d2><img src=\"https://api.diu.ac/images/profile_photo_file_141.jpg\" alt=\"img02\" data-v-0b9578d2></div></div>", 2);
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Department Head")], -1
+/* HOISTED */
+);
+
+var _hoisted_4 = {
+  key: 0,
+  "class": "mobile-mb-50"
+};
+var _hoisted_5 = {
+  "class": "row about-signature"
+};
+var _hoisted_6 = {
+  "class": "col-md-12"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+/* HOISTED */
+);
+
+var _hoisted_9 = {
+  "class": "col-lg-5 col-md-12"
+};
+var _hoisted_10 = {
+  "class": "about-img rs-image-effect-shine text-center"
+};
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
+  var _ctx$basic, _ctx$basic2;
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(_ctx$basic = _ctx.basic) !== null && _ctx$basic !== void 0 && _ctx$basic.chairman_name ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_2, [_hoisted_3, (_ctx$basic2 = _ctx.basic) !== null && _ctx$basic2 !== void 0 && _ctx$basic2.department_head_speach ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("p", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.department_head_speach), 1
+  /* TEXT */
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.chairman_name), 1
+  /* TEXT */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.chairman_designation), 1
+  /* TEXT */
+  ), _hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "mailto:".concat(_ctx.basic.chairman_office_email)
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.basic.chairman_office_email), 9
+  /* TEXT, PROPS */
+  , ["href"])])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+    href: "https://profile.diu.ac/".concat(_ctx.basic.chairman_slug),
+    target: "_blank"
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+    src: _ctx.basic.chairman_image,
+    alt: _ctx.basic.chairman_name
+  }, null, 8
+  /* PROPS */
+  , ["src", "alt"])], 8
+  /* PROPS */
+  , ["href"])])])]);
 });
 
 /***/ }),
