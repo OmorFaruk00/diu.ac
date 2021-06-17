@@ -1,79 +1,36 @@
 <template>
-    <div class="rs-timeline-2">
-        <ol>
-            <li>
-                <div>
-                    <time>Hostel</time>
-                    DIU offers well-decorated hostel with modern facilities.At present there are seven boys
-                    hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road &
-                    Satarkul).
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Labs</time>
-                    DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs & 10 Civil Labs. All labs are
-                    designed by the experts from DU and BUET, and equipped with modern appliances
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>English Proficiency</time>
-                    In order to improve English proficiency of the students, DIU has set up a language institute
-                    with expert tutors and modern language labs.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Library</time>
-                    DIU library is equipped with up-to-date books and reading materials. More than fifty (50)
-                    thousand books are available at DIU libraby. E-library has already been started.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Canteen & Common Rooms</time>
-                    DIU has its own catering service and each building has big common & leisure rooms.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Class Rooms</time>
-                    All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Wi-Fi and Internet</time>
-                    All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all
-                    students.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Transport</time>
-                    Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus,
-                    euismod quis ante.
-                </div>
-            </li>
-            <li>
-                <div>
-                    <time>Medium of Instruction</time>
-                    English is the medium of instruction for all programs at DIU.
-                </div>
-            </li>
+    <div v-if="facilities?.length > 0" class="container-fluid">
+        <div class="sec-title mb-30 text-center">
+            <h2>Facilities</h2>
+        </div>
+        <div class="rs-timeline-2">
 
-        </ol>
-        <div class="arrows">
-            <button class="arrow arrow__prev disabled" disabled></button>
-            <button class="arrow arrow__next"></button>
+            <ol>
+                <li v-for="(facility,index) in facilities" :key="index">
+                    <div>
+                        <time>{{ facility.title }}</time>
+                        {{ facility.description }}
+                    </div>
+                </li>
+            </ol>
+
+            <div class="arrows">
+                <button class="arrow arrow__prev disabled" disabled></button>
+                <button class="arrow arrow__next"></button>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "aditionalFeatures"
+    name: "aditionalFeatures",
+    props: {
+        facilities: {
+            type: Array,
+            required: true
+        }
+    },
 }
 </script>
 

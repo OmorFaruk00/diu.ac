@@ -5,6 +5,9 @@ import {createApp} from 'vue'
 import {ZiggyVue} from 'ziggy'
 import {Ziggy} from "./ziggy"
 
+import 'viewerjs/dist/viewer.css'
+import VueViewer from 'v-viewer'
+
 import swal from 'sweetalert2'
 window.toast = swal.mixin({
     toast: true,
@@ -23,6 +26,7 @@ window.toast = swal.mixin({
 const app = createApp({});
 
 app.use(ZiggyVue, Ziggy);
+app.use(VueViewer);
 
 // Importing all components programmetically. provided by laravel.
 const files = require.context('./components', true, /\.vue$/i);

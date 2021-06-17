@@ -151,7 +151,7 @@
     position: relative;
     display: inline-block;
     list-style-type: none;
-    width: 160px;
+    width: 210px;
     height: 3px;
     background: #f0f0f0;
 }
@@ -176,13 +176,14 @@
 .rs-timeline-2 ol li div {
     position: absolute;
     left: 0;
-    width: 280px;
+    width: 380px;
     padding: 15px;
-    font-size: 1rem;
+    font-size: 13px;
     white-space: normal;
     color: #631818d9;
     /*background: #f0f0f0;*/
     background-image: linear-gradient(#FFFFFF, #01aa4d);
+    height: 250px;
 }
 
 .rs-timeline-2 ol li div::before {
@@ -219,9 +220,9 @@
 
 .rs-timeline-2 time {
     display: block;
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
     color: #ff0000;
 }
 

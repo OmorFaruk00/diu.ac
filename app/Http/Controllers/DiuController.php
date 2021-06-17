@@ -84,10 +84,11 @@ class DiuController extends Controller
         return view('front.certificateVerification.index');
     }
 
-    public function departmentDetails(Request $request,$slug)
+    public function departmentDetails($slug)
     {
-//        dd(\Route::current()->parameters['slug']);
-        return view('front.departmentDetails.index', compact('slug'));
+        $facilities = Api::departmentFacilities($slug);
+
+        return view('front.departmentDetails.index', compact('slug', 'facilities'));
     }
 
     public function test()

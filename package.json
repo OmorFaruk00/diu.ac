@@ -20,6 +20,7 @@
     "dependencies": {
         "@types/ziggy-js": "^1.0.1",
         "sweetalert2": "^11.0.17",
+        "v-viewer": "^3.0.9",
         "vform": "^2.0.4",
         "vue": "^3.0.11"
     }
