@@ -77,4 +77,32 @@ class Api
         return false;
     }
 
+    public static function departmentFacilities($slug)
+    {
+        $basePath = env('API_URL');
+        $url = "{$basePath}/public-diu-website/department-facilities/{$slug}";
+        $curl = Curl::to($url)->returnResponseObject();
+        $curl->asJson(false);
+        $response = $curl->get();
+
+        if ($response->status == 200) {
+            return $response->content;
+        }
+        return false;
+    }
+
+    public static function departmentGalleries($slug)
+    {
+        $basePath = env('API_URL');
+        $url = "{$basePath}/public-diu-website/department-gallery/{$slug}";
+        $curl = Curl::to($url)->returnResponseObject();
+        $curl->asJson(false);
+        $response = $curl->get();
+
+        if ($response->status == 200) {
+            return $response->content;
+        }
+        return false;
+    }
+
 }
