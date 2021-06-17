@@ -20940,8 +20940,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Ziggy": () => (/* binding */ Ziggy)
 /* harmony export */ });
 var Ziggy = {
-  "url": "http:\/\/localhost:8000",
-  "port": 8000,
+  "url": "https:\/\/webdev.diu.ac",
+  "port": null,
   "defaults": {},
   "routes": {
     "homePage": {
