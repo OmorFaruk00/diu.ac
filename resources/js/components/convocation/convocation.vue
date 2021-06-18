@@ -16,17 +16,20 @@
 
                     <div class="row">
 
-                        <div class="col-12 description" v-html="row.description">
-                        </div>
+                        <div class="col-12 description" v-html="row.description"></div>
 
-                        <div v-for="(innerRow,innerIndex) in row.convoction_images" :key="innerIndex"
-                             class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                        <viewer :images="row.convoction_images">
+                            <div class="row">
+                                <div v-for="(innerRow,innerIndex) in row.convoction_images" :key="innerIndex"
+                                     class="col-lg-3 col-md-3 col-sm-6 mb-4">
 
-                            <viewer :images="innerRow">
-                                <img :src="innerRow.image_url" :alt="row.title" style="cursor: pointer">
-                            </viewer>
 
-                        </div>
+                                    <img :src="innerRow.image_url" :alt="row.title" style="cursor: pointer">
+
+
+                                </div>
+                            </div>
+                        </viewer>
 
                     </div>
 
