@@ -16,17 +16,20 @@
 
                     <div class="row">
 
-                        <div class="col-12">
-                            {{ row.description }}
-                        </div>
+                        <div class="col-12 description" v-html="row.description"></div>
 
-                        <div v-for="(innerRow,innerIndex) in row.convoction_images" :key="innerIndex" class="col-lg-3 col-md-3 col-sm-6 mb-4">
+                        <viewer :images="row.convoction_images">
+                            <div class="row">
+                                <div v-for="(innerRow,innerIndex) in row.convoction_images" :key="innerIndex"
+                                     class="col-lg-3 col-md-3 col-sm-6 mb-4">
 
-                            <a :href="innerRow.image_url" target="_blank">
-                                <img :src="innerRow.image_url"
-                                     :alt="row.title">
-                            </a>
-                        </div>
+
+                                    <img :src="innerRow.image_url" :alt="row.title" style="cursor: pointer">
+
+
+                                </div>
+                            </div>
+                        </viewer>
 
                     </div>
 
@@ -67,6 +70,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+.description {
+    margin-left: 15px;
+}
+
+.description ul {
+    list-style: circle !important;
+}
 
 </style>

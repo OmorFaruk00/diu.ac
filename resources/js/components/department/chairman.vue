@@ -6,9 +6,7 @@
                 <h2>Department Head</h2>
             </div>
 
-            <p v-if="basic?.department_head_speach" class="mobile-mb-50">
-                {{ basic.department_head_speach }}
-            </p>
+            <p v-if="basic?.department_head_speach" v-html="basic.department_head_speach" class="mobile-mb-50"></p>
 
             <div class="row about-signature">
                 <div class="col-md-12">

@@ -8,35 +8,37 @@
         </div>
 
         <viewer :images="galleries">
-
-            <div class="row">
-                <div v-for="src in galleries" :key="src" class="col-lg-3 col-md-6 mb-4">
-
-                    <div class="card">
-                        <img :src="src.image_url" style="cursor: pointer">
-                        <div class="card-body">
-
-                            <p class="card-text">{{ src.title }}</p>
-
-                        </div>
+            <div class="card-columns">
+                <div class="card" v-for="(src,index) in galleries" :key="index">
+                    <img class="card-img-top" :src="src.image_url" :alt="src.title" style="cursor: pointer;">
+                    <div class="card-body">
+                        <p class="card-text">{{ src.title }}</p>
                     </div>
                 </div>
             </div>
-
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled"><a class="page-link fa fa-angle-left" href="#" tabindex="-1"></a>
-                    </li>
-                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link dotted" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                    <li class="page-item"><a class="page-link fa fa-angle-right" href="#"></a></li>
-                </ul>
-            </nav>
-
         </viewer>
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination pagination-sm justify-content-center">
+
+                <li class="page-item" :class="meta.current_page >1 ? '' :  'disabled'">
+                    <a class="page-link fa fa-angle-left" href="javaScript:void(0)" @click="paginatePreview"></a>
+                </li>
+
+                <li class="page-item" v-for="(row,index) in meta?.last_page" :key="index">
+                    <a class="page-link" :class="row == meta?.current_page ? 'active' : ''"
+                       @click="paginatePageWise(row)"
+                       href="javaScript:void(0)">{{ row }}</a>
+                </li>
+
+
+                <li class="page-item" :class="meta.last_page > meta.current_page ? '' : 'disabled'">
+                    <a class="page-link fa fa-angle-right" href="javaScript:void(0)" @click="paginateNext"></a>
+                </li>
+
+
+            </ul>
+        </nav>
     </div>
 
 
@@ -50,18 +52,53 @@ export default {
     data: () => ({
         form: new Form(),
         galleries: [],
-
+        links: [],
+        meta: [],
     }),
 
     methods: {
         getGalleryInfo() {
 
             this.form.get(`public-diu-website/department-gallery/${route().params.slug}`).then((res) => {
+
                 this.galleries = res.data;
+                this.links = res.links;
+                this.meta = res.meta;
+
             }).catch((error) => {
                 console.log('galleries Info')
             });
         },
+
+        paginatePreview() {
+            let page_number = parseInt(this.meta.current_page - 1);
+            this.fetchGalleryPaginateInfo(page_number);
+        },
+
+        paginateNext() {
+
+            let page_number = parseInt(this.meta.current_page + 1);
+            this.fetchGalleryPaginateInfo(page_number);
+
+        },
+
+        paginatePageWise(row) {
+            this.fetchGalleryPaginateInfo(row);
+        },
+
+        fetchGalleryPaginateInfo(page) {
+
+            this.form.get(`public-diu-website/department-gallery/${route().params.slug}?page=${page}`).then((res) => {
+
+                this.galleries = res.data;
+                this.links = res.links;
+                this.meta = res.meta;
+
+            }).catch((error) => {
+                console.log('galleries Info')
+            });
+        },
+
     },
 
     created() {

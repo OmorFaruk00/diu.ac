@@ -1,15 +1,13 @@
 <template>
     <div class="row">
 
-        <!--        {{ route().params.slug }}-->
-
         <div v-if="basic?.introduction" class="col-lg-12 col-md-12">
             <div class="sec-title">
                 <h2>INTRODUCTION</h2>
             </div>
 
             <div class="about-desc">
-                <p>{{ basic.introduction }}</p>
+                <p v-html="basic.introduction"></p>
             </div>
         </div>
 
@@ -18,7 +16,7 @@
                 <h2>MISSION</h2>
             </div>
             <div class="about-desc">
-                <p>{{ basic.mission }}</p>
+                <p v-html="basic.mission"></p>
             </div>
         </div>
 
@@ -27,7 +25,7 @@
                 <h2>VISION</h2>
             </div>
             <div class="about-desc">
-                <p>{{ basic.vission }}</p>
+                <p v-html="basic.vission"></p>
             </div>
         </div>
 
