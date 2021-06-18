@@ -13,7 +13,7 @@
                 <div v-for="src in galleries" :key="src" class="col-lg-3 col-md-6 mb-4">
 
                     <div class="card">
-                        <img :src="src.image_url" style="cursor: pointer">
+                        <img :src="src.image_url" :alt="src.title" style="cursor: pointer">
                         <div class="card-body">
 
                             <p class="card-text">{{ src.title }}</p>

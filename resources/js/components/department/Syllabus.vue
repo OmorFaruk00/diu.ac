@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container" v-if="syllabus?.length > 0">
         <div class="sec-title-2 mb-50 text-center">
             <h2>Syllabus</h2>
             <p>A proper syllabus is maintained for the best outcome of academic experience in our university.</p>
@@ -8,7 +8,7 @@
             <div class="col-lg-12 col-md-12">
                 <div id="convocation" class="rs-accordion-style1">
 
-                    <div class="card" v-for="(row,index) in convocations" :key="index">
+                    <div class="card" v-for="(row,index) in syllabus" :key="index">
                         <div class="card-header" :id="`ourConvocation${index}`">
                             <h3 class="acdn-title collapsed" data-toggle="collapse"
                                 :data-target="`#collapseOurMission${index}`"
@@ -48,7 +48,7 @@ export default {
     name: "Syllabus",
     data: () => ({
         form: new Form(),
-        convocations: []
+        syllabus: []
     }),
 
     methods: {
@@ -56,7 +56,7 @@ export default {
 
             this.form.get(`public-diu-website/department-syllabus/${route().params.slug}`).then((res) => {
 
-                this.convocations = res;
+                this.syllabus = res;
 
             }).catch((error) => {
                 console.log('programs error')

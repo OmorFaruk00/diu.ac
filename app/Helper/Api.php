@@ -105,4 +105,18 @@ class Api
         return false;
     }
 
+    public static function departmentFacultyMembers($slug)
+    {
+        $basePath = env('API_URL');
+        $url = "{$basePath}/public-diu-website/department-faculty-member/{$slug}";
+        $curl = Curl::to($url)->returnResponseObject();
+        $curl->asJson(false);
+        $response = $curl->get();
+
+        if ($response->status == 200) {
+            return $response->content->data;
+        }
+        return false;
+    }
+
 }

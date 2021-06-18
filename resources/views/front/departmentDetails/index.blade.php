@@ -119,14 +119,7 @@
 
     <!-- OUR EXPERIENCED STAFFS Start -->
     <div id="rs-team" class="rs-team sec-spacer">
-        <div class="container">
-            <div class="sec-title-2 mb-50 text-center">
-                <h2>Faculty Members</h2>
-            </div>
-
-            <Department-faculty-members/>
-
-        </div>
+        <Department-faculty-members :faculties='{!! json_encode($facultyMembers) !!}'/>
     </div>
     <!-- OUR EXPERIENCED STAFFS End -->
 

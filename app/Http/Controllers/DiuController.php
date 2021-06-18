@@ -87,8 +87,9 @@ class DiuController extends Controller
     public function departmentDetails($slug)
     {
         $facilities = Api::departmentFacilities($slug);
+        $facultyMembers = Api::departmentFacultyMembers($slug);
 
-        return view('front.departmentDetails.index', compact('slug', 'facilities'));
+        return view('front.departmentDetails.index', compact('slug', 'facilities','facultyMembers'));
     }
 
     public function test()
