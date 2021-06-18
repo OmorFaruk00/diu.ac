@@ -7,6 +7,8 @@ import {Ziggy} from "./ziggy"
 
 import 'viewerjs/dist/viewer.css'
 import VueViewer from 'v-viewer'
+import VueLazyLoad from 'vue3-lazyload'
+
 
 import swal from 'sweetalert2'
 window.toast = swal.mixin({
@@ -27,6 +29,11 @@ const app = createApp({});
 
 app.use(ZiggyVue, Ziggy);
 app.use(VueViewer);
+app.use(VueLazyLoad, {
+    error: '/loading.gif',
+    loading: '/loading.gif',
+})
+
 
 // Importing all components programmetically. provided by laravel.
 const files = require.context('./components', true, /\.vue$/i);

@@ -22,6 +22,9 @@
             <div class="about-img rs-image-effect-shine text-center">
                 <a :href="`https://profile.diu.ac/${basic.chairman_slug}`" target="_blank">
                     <img :src="basic.chairman_image" :alt="basic.chairman_name">
+
+                    <!--                    <img v-lazy="{ src: basic.chairman_image }" :alt="basic.chairman_name"/>-->
+
                 </a>
             </div>
         </div>

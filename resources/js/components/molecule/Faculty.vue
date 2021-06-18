@@ -2,7 +2,7 @@
   <a :href="team.website" target="_blank">
     <div class="team-item">
       <div class="team-img">
-        <img :src="team.profilepic" :alt="team.name"/>
+        <img v-lazy="{ src: team.profilepic }" :alt="team.name"/>
         <div class="normal-text">
           <h3 class="team-name">{{ stringLimit(team.name, 25) }}</h3>
           <span class="subtitle">{{ stringLimit(team.designation, 25) }}</span>

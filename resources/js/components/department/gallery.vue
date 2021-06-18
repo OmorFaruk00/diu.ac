@@ -10,7 +10,7 @@
         <viewer :images="galleries">
             <div class="card-columns">
                 <div class="card" v-for="(src,index) in galleries" :key="index">
-                    <img class="card-img-top" :src="src.image_url" :alt="src.title" style="cursor: pointer;">
+                    <img class="card-img-top" v-lazy="{ src: src.image_url }" :alt="src.title" style="cursor: pointer;">
                     <div class="card-body">
                         <p class="card-text">{{ src.title }}</p>
                     </div>
