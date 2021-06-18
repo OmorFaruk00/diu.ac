@@ -90,4 +90,12 @@ export default {
     border: 1px solid #dee2e6 !important;
 }
 
+.test {
+    margin-left: 15px!important;
+}
+
+.test ul {
+    list-style: circle !important;
+}
+
 </style>

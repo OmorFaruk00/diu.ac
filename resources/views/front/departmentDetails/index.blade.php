@@ -95,10 +95,18 @@
 
 
     <!-- FACILITIES Start -->
-    <div class="sec-spacer">
+    {{--    <div class="sec-spacer">
         <Department-aditional-features :facilities='{!! json_encode($facilities) !!}'/>
-    </div>
+    </div>--}}
     <!-- FACILITIES End -->
+
+
+    <!-- facilities Start -->
+    <div id="rs-learning-objectives" class="rs-learning-objectives">
+        <Department-facilities/>
+    </div>
+    <!-- facilities End -->
+
 
     <!-- Gallery Start -->
     <div class="rs-gallery-4 rs-gallery sec-spacer">
@@ -110,11 +118,16 @@
 
     <!-- admission requirement Start -->
     <div class="rs-titmeline sec-spacer">
-
         <Department-syllabus/>
-
     </div>
     <!-- admission requirement End -->
+
+
+    <!-- Introduction Start -->
+    <div class="rs-history sec-spacer">
+        <Department-ieb/>
+    </div>
+    <!-- Introduction End -->
 
 
     <!-- OUR EXPERIENCED STAFFS Start -->
