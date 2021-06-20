@@ -10677,7 +10677,7 @@ ul {
 }
 
 .rs-latest-news-style7 .rs-latest-list {
-    padding: 50px;
+    padding: 25px;
     /*background: #d6d8db;*/
     -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -10728,7 +10728,7 @@ ul {
 }
 
 .rs-latest-news-style7 .rs-latest-list .event-item-new .event-date {
-    margin-right: 30px;
+    margin-right: 18px;
     min-width: 125px;
     border-radius: 10px;
     height: 35px;
@@ -10743,7 +10743,7 @@ ul {
 }
 
 .rs-latest-news-style7 .rs-latest-list .event-item-new .event-date .vertical-align .day {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     color: #01AA4D;
     line-height: 40px;
@@ -10761,7 +10761,7 @@ ul {
 .rs-latest-news-style7 .rs-latest-list .event-item-new .event-des .title {
     font-weight: 600;
     font-size: 15px;
-    margin: 0 0 15px;
+    margin: 0 0 10px;
 }
 
 .rs-latest-news-style7 .rs-latest-list .event-item-new .event-des .title a {

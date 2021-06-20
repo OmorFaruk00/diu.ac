@@ -3,7 +3,7 @@
         <h2 class="uppercase title pb-50 md-pb-30">Our Latest Notice</h2>
         <div class="rs-latest-list">
 
-            <NoticeItem v-for="(n,index) in 20" :row="n" :key="index"/>
+            <NoticeItem v-for="(n,index) in notice" :row="n" :key="index"/>
 
             <div class="event-item-new d-block mb-10">
                 <div class="event-des text-right">
@@ -35,7 +35,7 @@
         <h2 class="uppercase title pb-50 md-pb-30">Our Latest Events</h2>
         <div class="rs-latest-list">
 
-            <NoticeItem v-for="(n,index) in 20" :row="n" :key="index"/>
+<!--            <NoticeItem v-for="(n,index) in 20" :row="n" :key="index"/>-->
 
             <div class="event-item-new d-block mb-10">
                 <div class="event-des">
@@ -66,11 +66,33 @@
 
 <script>
 import NoticeItem from "../molecule/NoticeItem";
+import Form from "../../services/form";
 
 export default {
     name: "NoticeEvent",
     components: {
         NoticeItem
+    },
+    data: () => ({
+        form: new Form(),
+        notice: []
+    }),
+
+    methods: {
+        getNotice() {
+
+            this.form.get("/public-diu-website/notice").then((res) => {
+
+                this.notice = res.data;
+
+            }).catch((error) => {
+                console.log('programs error')
+            });
+        }
+    },
+
+    created() {
+        this.getNotice();
     }
 }
 </script>
