@@ -7,13 +7,12 @@
          data-md-device-dots="false">
 
         <div class="partner-item" v-for="(row,index) in partners" :key="index">
-            <!--            <a href="#">-->
 
             <img
-                :src="row.image_url"
+
+                v-lazy="{ src: row.image_url }"
                 :alt="row.title">
 
-            <!--            </a>-->
         </div>
 
     </div>

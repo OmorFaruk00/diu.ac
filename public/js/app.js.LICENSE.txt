@@ -1,3 +1,20 @@
+/*!
+ * Viewer.js v1.10.0
+ * https://fengyuanchen.github.io/viewerjs
+ *
+ * Copyright 2015-present Chen Fengyuan
+ * Released under the MIT license
+ *
+ * Date: 2021-06-12T07:57:10.970Z
+ */
+
+/*!
+ * Vue3-Lazyload.js v0.2.2-beta
+ * A Vue3.x image lazyload plugin
+ * (c) 2020 MuRong <admin@imuboy.cn>
+ * Released under the MIT License.
+ */
+
 /**
  * @license
  * Lodash <https://lodash.com/>
