@@ -18,7 +18,7 @@ export default {
     name: "NoticeItem",
     props: {
         row: {
-            type: Array,
+            type: Object,
             required: true
         }
     },

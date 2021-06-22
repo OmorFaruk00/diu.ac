@@ -3,19 +3,20 @@
         <div class="row">
 
             <div class="col-12">
-                <h4 class="uppercase title pb-50 md-pb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Inventore, sint?</h4>
+
+                <h4 class="uppercase title pb-50 md-pb-30">{{ noticeDetails.title }}</h4>
                 <div class="rs-latest-list">
 
-                    <h6>Published Date :</h6>
+                    <h6>Published Date : {{ noticeDetails.published_date }}</h6>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda debitis ea est
-                        pariatur. Autem eum odit praesentium soluta. Alias aperiam autem beatae blanditiis,
-                        consequatur corporis deserunt distinctio dolor dolorum eius facere facilis illo ipsam iste
-                        magnam molestias natus nesciunt pariatur praesentium ratione, sunt tempora ullam ut vel
-                        veniam voluptate.
+                    <p v-html="noticeDetails.description"></p>
 
+                    <p v-for="(notice_file,index) in noticeDetails?.notice_files" :key="index">
+                        {{ notice_file.file_name }}
+                        <a :href="notice_file.file_url" :download="notice_file.file_url" target="_blank">
+                            <i class="ml-2 fa fa-download"></i>
+                            Download
+                        </a>
                     </p>
 
                 </div>
@@ -26,8 +27,28 @@
 </template>
 
 <script>
+import Form from "../../services/form";
+
 export default {
-    name: "show"
+    name: "show",
+    data: () => ({
+        form: new Form(),
+        noticeDetails: []
+    }),
+
+    methods: {
+        getNoticeDetails() {
+
+            this.form.get(`public-diu-website/notice/${route().params.slug}`).then((res) => {
+                this.noticeDetails = res.data
+            }).catch((error) => {
+                console.log('Basic Info')
+            });
+        }
+    },
+    created() {
+        this.getNoticeDetails();
+    }
 }
 </script>
 

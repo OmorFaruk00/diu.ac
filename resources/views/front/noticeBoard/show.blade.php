@@ -15,7 +15,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                    background-repeat: repeat-x;
+                       background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -35,7 +35,7 @@
 
         .notice-section {
             {{--background-image: url({{ url('front/images/bg/dot-grid.png') }});--}}
-                background-attachment: fixed;
+                   background-attachment: fixed;
             background-position: center top;
         }
     </style>
@@ -64,7 +64,6 @@
 
     <!-- Latest notice && event Start -->
     <div id="rs-latest-news-style7" class="rs-latest-news-style7 notice-section py-5">
-
         <Notice-board-show/>
     </div>
     <!-- Latest notice && event end-->
