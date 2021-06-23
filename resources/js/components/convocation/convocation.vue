@@ -6,7 +6,7 @@
                 <h3 class="acdn-title collapsed" data-toggle="collapse"
                     :data-target="`#collapseOurMission${index}`"
                     aria-expanded="true" :aria-controls="`collapseOurMission${index}`">
-                    {{ row.title }} / {{ row.short_description }}
+                    {{ row.title }} <span class="convocation-sub-title">/ {{ stringLimit(row.short_description,95) }}</span>
                 </h3>
             </div>
 
@@ -16,7 +16,11 @@
 
                     <div class="row">
 
+                        <div class="col-12 description" style="font-weight: 700" v-html="row.short_description"></div>
+                        <br>
+
                         <div class="col-12 description" v-html="row.description"></div>
+                        <br>
 
                         <viewer :images="row.convoction_images">
                             <div class="row">
@@ -61,6 +65,10 @@ export default {
             }).catch((error) => {
                 console.log('programs error')
             });
+        },
+
+        stringLimit(text, count) {
+            return text.slice(0, count) + (text.length > count ? " ..." : "");
         }
     },
 

@@ -70,5 +70,5 @@
 @endsection
 
 @push('script')
-    <!-- timeline js -->
+
 @endpush

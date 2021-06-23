@@ -45,9 +45,11 @@
                 <div class="col-lg-3 col-md-12">
                     <div class="about-widget">
                         <img src="{{ asset('/') }}diu_white.png" alt="Footer Logo">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam cum dicta dolorum ea fugit
-                            iste maxime modi sint voluptas voluptate.</p>
-                        <p class="margin-remove">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>Dhaka International University, rated among the top private universities of Bangladesh, </p>
+
+                        <p class="margin-remove">is an
+                            institution that promotes eastern culture and values, and meaningfully blends eastern and
+                            western thoughts and innovation.</p>
                     </div>
                 </div>
 

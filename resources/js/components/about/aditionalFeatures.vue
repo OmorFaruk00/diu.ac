@@ -1,5 +1,15 @@
 <template>
-    <div class="rs-timeline-2">
+
+    <div class="card-columns">
+        <div class="card text-center" v-for="(facility,index) in aboutFeatures" :key="index">
+            <div class="card-body">
+                <h5 class="card-title">{{ facility.title }}</h5>
+                <p class="card-text" v-html="facility.description"></p>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="rs-timeline-2">
         <ol>
             <li>
                 <div>
@@ -68,12 +78,19 @@
             <button class="arrow arrow__prev disabled" disabled></button>
             <button class="arrow arrow__next"></button>
         </div>
-    </div>
+    </div>-->
 </template>
 
 <script>
+import {aboutFeatures} from '../../data/aboutFeatures'
+
 export default {
-    name: "aditionalFeatures"
+    name: "aditionalFeatures",
+    data() {
+        return {
+            aboutFeatures
+        }
+    }
 }
 </script>
 

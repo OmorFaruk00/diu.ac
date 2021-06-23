@@ -8,7 +8,8 @@
         <div v-for="(row,index) in ourCampusLifes" :key="index" class="team-item">
 
             <div class="team-img">
-                <img v-lazy="{ src: row.image_url }" :alt="row.title"/>
+                <!--<img v-lazy="{ src: row.image_url }" :alt="row.title"/>-->
+                <img :src="row.image_url" :alt="row.title"/>
                 <div class="normal-text">
                     <h3 class="team-name">{{ row.title }}</h3>
                 </div>

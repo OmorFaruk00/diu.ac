@@ -35,13 +35,13 @@
                                     <tbody>
 
                                     <tr v-for="(programs,innerRow) in row.programs" :key="innerRow">
-                                        <td>{{ innerRow+1 }}</td>
-                                        <td>{{ programs.name }} - {{ programs.type }} - {{ programs.shift }}</td>
+                                        <td>{{ innerRow + 1 }}</td>
+                                        <td>{{ programs.short_name }}</td>
                                         <td>{{ programs.duration }}</td>
                                         <td>{{ programs.credit }}</td>
                                         <td>{{ programs.total_fee }}</td>
                                         <td class="text-center">
-                                            <a :href="`https://admission.diu.ac/register?program=${programs.name} - ${programs.shift}`"
+                                            <a :href="`https://admission.diu.ac/register?program=${programs.short_name}`"
                                                target="_blank" class="btn btn-success">Apply <i
                                                 class="fa fa-rocket"></i></a>
                                         </td>
@@ -65,6 +65,7 @@
 
 <script>
 import Form from '../../services/form'
+
 export default {
     name: "TuitionFee",
     data: () => ({
