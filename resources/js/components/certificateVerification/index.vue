@@ -53,12 +53,12 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <button type="submit" class="btn btn-outline-info">Search
+            <button type="submit" class="btn btn-outline-info btn-block">Search
                 <span v-if="loading" class="fa fa-spinner fa-pulse"></span>
             </button>
 
             <button v-if="transcript != '' || transcriptStatus" type="button" @click="clearButton"
-                    class="btn btn-outline-danger ml-2">Clear
+                    class="btn btn-outline-danger btn-block mt-2">Clear
             </button>
         </div>
 
