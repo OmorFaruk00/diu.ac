@@ -28,6 +28,29 @@
     <script src="{{ asset('/') }}js/all.min.js" defer></script>
 
     <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            z-index: 1;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            /*background-color: #6F323D;*/
+            background: linear-gradient(transparent, #01AA4D);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(transparent, #01AA4D);
+        }
+
         .useful-link li {
             width: 100% !important;
         }
