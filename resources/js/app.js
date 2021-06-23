@@ -34,7 +34,6 @@ app.use(VueLazyLoad, {
     loading: '/loading.gif',
 })
 
-
 // Importing all components programmetically. provided by laravel.
 const files = require.context('./components', true, /\.vue$/i);
 files.keys().map(key => {
@@ -43,6 +42,8 @@ files.keys().map(key => {
 
     app.component(fileName, files(key).default);
 })
+
+
 
 app.mount('#app');
 
