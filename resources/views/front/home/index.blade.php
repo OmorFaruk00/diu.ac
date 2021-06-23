@@ -32,7 +32,7 @@
             @if($sliders)
                 @foreach ($sliders as $key=>$slider)
                     <div class="item {{ $key == 0 ? 'active' : '' }}">
-                        <img style="width: 100%;height: 700px!important;" src="{{ $slider->image_url }}"
+                        <img class="image-fluid" src="{{ $slider->image_url }}"
                              alt="{{ $slider->title }}"/>
                         <div class="slide-content">
                             <div class="display-table">

@@ -2122,7 +2122,7 @@ ul {
 .university-home .rs-events .event-item .event-btn a,
 .home5 .rs-events .event-item .event-title a,
 .university-home .rs-events .event-item .event-title a {
-    color: #92278f;
+    color: #000;
 }
 
 .home5 .copyright a:hover,
@@ -2277,8 +2277,8 @@ ul {
 }
 
 #rs-slider .slide-content .slider-title {
-    font-size: 60px;
-    color: #fff;
+    font-size: 50px;
+    color: #01AA4D;
     margin-bottom: 15px;
     -webkit-animation-duration: 1.4s;
     animation-duration: 1.4s;
@@ -2372,11 +2372,11 @@ ul {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(255, 109, 0, 0.3);
+    /*background: rgba(255, 109, 0, 0.3);*/
     z-index: -1;
     background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 109, 0, 0.3) 100%);
     background: linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 109, 0, 0.3) 100%);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 109, 0, 0.3) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(255, 109, 0, 0.6) 100%);
     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(255, 109, 0, 0.3) 100%);
     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.3) 100%);
     background: -webkit-gradient(linear, right top, right bottom, color-stop(0%, rgba(0, 0, 0, 0.55)), color-stop(50%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.3)));
