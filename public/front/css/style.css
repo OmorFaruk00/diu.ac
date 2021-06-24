@@ -2,69 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Condensed:400,500,600,700');
 
 /**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : Edulearn | Responsive Education HTML5 Template
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
-/* Table Of Content
----------------------------------------------------------
-01. General CSS
-02. Global Class
-03. Header Section
-04. Sticky Menu
-05. Slider Section
-06. Breadcrumbs
-07. Services
-08. About Us
-09. Popular Cources
-10. Courses Details
-11. Rs-counter
-12. Upcoming Events
-13. Experienced Staffs
-14. Staffs Single
-15. Calltoaction
-16. Latest News
-17. Our Publications
-18. Testimonial
-19. Newsletter
-20. Rs-video
-21. Why Choose Us
-22. Pricing Table
-23. Instagram
-24. About Us Page
-25. Rs Timeline
-26. Elements
-27. Blog Pages
-28. Blog Details
-29. Shop Page Start Here
-30. Shop Single Page Start Here
-31. Check Out css Start Here
-32. Shipping Area Start Here
-32. Contact Page Section Start Here
-33. Rs Gallery
-34. ScrollUp
-35. 404 Page Area Start Here
-36. Preloader css
-37. Rs Footer
-
---------------------------------------------------------*/
-/**
-*
-* -----------------------------------------------------------------------------
-*
-* Template : RS-Construction - Construction HTML5 Template
-* Author : rs-theme
-* Author URI : http://www.rstheme.com/
-*
-* -----------------------------------------------------------------------------
-*
-**/
+ * Date : 2021-06-01;
+ * Developer Name : Md. Lemon Patwari;
+ * Theme Name: DIU;
+ * Theme URI: diu.ac;
+ * Author: Dhaka International University;
+ * Author URI: https://lemonpatwari.com/;
+ * Version: 1.1.0
+*/
 /*-----------------------
     Animation
 -------------------------*/
@@ -1297,7 +1242,7 @@ ul {
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a {
     font-size: 14px;
     color: #FFFFFF;
-    padding: 0 10px!important;
+    padding: 0 10px !important;
 }
 
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a:hover,
@@ -10473,4 +10418,10 @@ ul {
         transform: rotate(-40deg);
         -webkit-transform: rotate(-40deg);
     }
+}
+
+
+/*top menu*/
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
+    color: #fff !important;
 }
