@@ -13,17 +13,47 @@
 
 /* Layout: Large Devices. */
 @media only screen and (min-width: 1600px) {
+    .mobile-logo, .mobile-top-header-menu {
+        display: none;
+    }
 
+    .extra-small-device, .small-device, .medium-device {
+        display: none;
+    }
+
+    .large-device {
+        display: block;
+    }
 }
 
 /* Layout: Large Devices. */
 @media only screen and (min-width: 1440px) {
+    .mobile-logo, .mobile-top-header-menu {
+        display: none;
+    }
 
+    .extra-small-device, .small-device, .medium-device {
+        display: none;
+    }
+
+    .large-device {
+        display: block;
+    }
 }
 
 /* Layout: Large Devices. */
 @media only screen and (max-width: 1440px) {
+    .mobile-logo, .mobile-top-header-menu {
+        display: none;
+    }
 
+    .extra-small-device, .small-device, .medium-device {
+        display: none;
+    }
+
+    .large-device {
+        display: block;
+    }
 }
 
 /* Layout: Large Devices. */
@@ -42,6 +72,14 @@
 
     .home3 #rs-slider .owl-dots {
         right: 30px;
+    }
+
+    .extra-small-device, .small-device, .medium-device {
+        display: none;
+    }
+
+    .large-device {
+        display: block;
     }
 }
 
@@ -120,6 +158,19 @@
 
     .rs-banner-section2 .banner-inner {
         top: 55%;
+    }
+
+    .mobile-logo, .mobile-top-header-menu {
+        display: none;
+    }
+
+
+    .extra-small-device, .small-device, .medium-device {
+        display: none;
+    }
+
+    .large-device {
+        display: block;
     }
 }
 
@@ -230,9 +281,22 @@
 /* Medium Layout: 991px. */
 @media only screen and (max-width: 991px) {
 
-    .convocation-sub-title{
+    .mobile-logo {
+        display: block;
+    }
+
+    .top-header-logo {
         display: none;
     }
+
+    .mobile-top-header-menu {
+        display: block !important;
+    }
+
+    .convocation-sub-title {
+        display: none;
+    }
+
     .sec-spacer,
     .bg12,
     .shop-page-area.single-product-page {
@@ -415,7 +479,8 @@
         padding: 45px 20px;
     }
 
-    .nav-expander,
+
+    /*.nav-expander,
     .rs-header-style8 .rs-right-btn-inner,
     .rs-transfarent-header-style .searce-box,
     .instructor-home .apply-box,
@@ -425,10 +490,25 @@
     .owl-controls .owl-nav .owl-prev,
     .owl-controls .owl-nav .owl-next {
         display: none !important;
+    }*/
+    .nav-expander,
+    .rs-header-style8 .rs-right-btn-inner,
+    .rs-transfarent-header-style .searce-box,
+    .instructor-home .apply-box,
+    .instructor-home .searce-box,
+    .home3 .rs-header .menu-area .toggle-btn,
+    .rs-header .rs-header-top .header-contact,
+    .owl-controls .owl-nav .owl-prev,
+    .owl-controls .owl-nav .owl-next {
+        display: none;
     }
 
-    .rs-why-choose .choose-img,
-    .rs-header .logo-area {
+    .rs-header .rs-header-top .mobile-top-header-menu {
+        display: block;
+    !important;
+    }
+
+    .rs-why-choose .choose-img {
         text-align: center;
     }
 
@@ -712,6 +792,14 @@
     .contact-page-section .contact-address-section .contact-info p {
         font-size: 15px;
     }
+
+    .medium-device {
+        display: block;
+    }
+
+    .extra-small-device, .small-device, .large-device {
+        display: none;
+    }
 }
 
 /* Min Width: 991px. */
@@ -869,7 +957,7 @@
     }
 
     .rs-toolbar .rs-toolbar-right {
-        margin-top: 6px;
+        /*margin-top: 6px;*/
     }
 
     .rs-counter-style7 .rs-counter-list,
@@ -1121,6 +1209,15 @@
     .rs-banner-section2 .banner-inner .btn-area {
         padding-top: 5px;
     }
+
+
+    .extra-small-device, .medium-device, .large-device {
+        display: none;
+    }
+
+    .small-device {
+        display: block;
+    }
 }
 
 /* Small Device : 590px. */
@@ -1283,6 +1380,15 @@
     .rs-date {
         display: none !important;
     }
+
+    .small-device, .medium-device, .large-device {
+        display: none;
+    }
+
+    .extra-small-device {
+        display: block;
+    }
+
 }
 
 /* Small Device : 480px. */
@@ -1518,6 +1624,10 @@
 @media only screen and (max-width: 420px) {
     .rs-team-2 .col-xs-6 {
         width: 100%;
+    }
+
+    .welcome-message i {
+        display: none;
     }
 }
 

@@ -8,10 +8,7 @@
 
         <div class="partner-item" v-for="(row,index) in partners" :key="index">
 
-            <img
-
-                v-lazy="{ src: row.image_url }"
-                :alt="row.title">
+            <img :src="row.image_url" :alt="row.title">
 
         </div>
 

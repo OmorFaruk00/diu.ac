@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                        background-repeat: repeat-x;
+                            background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -72,7 +72,8 @@
 
     <!-- map Start -->
     <div class="contact-page-section sec-spacer">
-        <iframe src="https://www.google.com/maps/d/embed?mid=zpd50ugWdJd0.knmLtiVuBsXE" width="100%"
+        <iframe src="https://www.google.com/maps/d/embed?mid=zpd50ugWdJd0.knmLtiVuBsXE"
+                width="100%"
                 height="500"></iframe>
     </div>
     <!-- map End -->

@@ -35,9 +35,14 @@ mix.styles([
     'public/front/fonts/fonts2/flaticon.css',
     'public/front/css/rsmenu-main.css',
     'public/front/css/rsmenu-transitions.css',
+    // 'public/front/css/style.css',
+    // 'public/front/css/responsive.css',
+], 'public/css/all.min.css');
+
+mix.styles([
     'public/front/css/style.css',
     'public/front/css/responsive.css',
-], 'public/css/all.min.css');
+], 'public/css/custom.min.css');
 
 
 mix.scripts([
