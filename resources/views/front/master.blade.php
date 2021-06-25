@@ -26,9 +26,9 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicons.png">
 
 
-    @include('front.partials.allCss')
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">--}}
-{{--    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/custom.min.css">--}}
+{{--    @include('front.partials.allCss')--}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/') }}css/custom.min.css">
     {{-- output the compiled JS --}}
     <script src="{{ asset('js/app.js') }}" defer></script>
     {{--@include('front.partials.allJs')--}}
