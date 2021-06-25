@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                   background-repeat: repeat-x;
+                    background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -61,17 +61,7 @@
 
     <!-- titmeline Start -->
     <div class="rs-titmeline sec-spacer">
-        <div class="container">
-            <div class="abt-title mb-70 text-center">
-                <h2>WELCOME TO OUR CLUB</h2>
-                <p style="max-width: 750px;margin: auto;">Dhaka International University has formally formed different
-                    separate clubs for development of student . The following clubs are run successfully by the students
-                    and teachers.</p>
-            </div>
-
-            <Club-club-info/>
-
-        </div>
+        <Club-club-info/>
     </div>
     <!-- titmeline End -->
 

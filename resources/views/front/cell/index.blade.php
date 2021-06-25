@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                      background-repeat: repeat-x;
+                       background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -61,16 +61,7 @@
 
     <!-- titmeline Start -->
     <div class="rs-titmeline sec-spacer">
-        <div class="container">
-            <div class="abt-title mb-70 text-center">
-                <h2>WELCOME TO OUR CELL</h2>
-                <p style="max-width: 700px;margin: 0 auto;">Dhaka International University formally formed various
-                    separate cell for development of DIU, Society as well as Bangladesh. Those cells are formed for work
-                    on specific purpose. Those cells actually work with various alliance, Government, non-governmental
-                    and international organizations work together.</p>
-            </div>
-            <Cell-cell-info/>
-        </div>
+        <Cell-cell-info/>
     </div>
     <!-- titmeline End -->
 

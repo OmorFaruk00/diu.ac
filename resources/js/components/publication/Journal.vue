@@ -1,9 +1,9 @@
 <template>
 
     <div class="container">
-        <div class="abt-title mb-70 text-center">
+        <div class="sec-title-2 mb-70 text-center">
             <h2>WELCOME TO OUR publications</h2>
-            <p style="max-width: 750px;margin: auto">DIU is profoundly esteemed for it's own reputation which is
+            <p>DIU is profoundly esteemed for it's own reputation which is
                 built upon credibility, practical knowhow and a feasible archive of books, bulletins and journals.
                 DIU has published a few original books written by its teachers and faculties. Whereas bulletins help
                 students to keep upto date regarding their class and exam routines, schedule and other important

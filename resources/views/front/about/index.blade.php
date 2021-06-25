@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                              background-repeat: repeat-x;
+                                                    background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -194,45 +194,26 @@
 
     <!-- OUR EXPERIENCED STAFFS Start -->
     <div id="rs-team" class="rs-team sec-spacer">
-        <div class="container">
-            <div class="sec-title-2 mb-50 text-center">
-                <h2>OUR EXPERIENCED STAFFS</h2>
-                <p>Considering desire as primary motivation for the generation of narratives is a useful concept.</p>
-            </div>
 
-            <About-experience-staffs :persons='{!! json_encode($keyResourcePersons) !!}'/>
+        <About-experience-staffs :persons='{!! json_encode($keyResourcePersons) !!}'/>
 
-        </div>
     </div>
     <!-- OUR EXPERIENCED STAFFS End -->
 
 
     <!-- Timeline Start -->
     <div class="sec-spacer">
-        <div class="container-fluid">
-            <div class="sec-title mb-30 text-center">
-                <h2>DIU Additional Features</h2>
-                <p>These additional features make us unique and set us apart from other organizations.</p>
-            </div>
-
-            <About-aditional-features/>
-
-        </div>
+        <About-aditional-features/>
     </div>
+
     <!-- Timeline End -->
 
 
     <!-- Courses Start -->
     <div id="rs-courses-2" class="rs-courses-2 sec-spacer sec-color">
-        <div class="container">
-            <div class="sec-title-2">
-                <h2 class="mb-30">DIU Governing Bodies</h2>
-            </div>
 
-            <About-governing-bodies/>
-            {{--<About-governing-bodies :types='{!! json_encode($diuGoverningtypes) !!}' :persons='{!! json_encode($diuGoverningPersons) !!}'/>--}}
+        <About-governing-bodies/>
 
-        </div>
     </div>
     <!-- Courses End -->
 

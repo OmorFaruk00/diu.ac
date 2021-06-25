@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                          background-repeat: repeat-x;
+                           background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -61,19 +61,7 @@
 
     <!-- titmeline Start -->
     <div class="rs-titmeline sec-spacer">
-        <div class="container">
-            <div class="abt-title mb-70 text-center">
-                <h2>WELCOME TO OUR CONVOCATION</h2>
-                <p style="max-width: 750px;margin: auto">
-                    Convocation is a formal gathering of people who have been asked to come together, or a formal
-                    ceremony at a college or university where awards are given. Dhaka International University is
-                    organized the convocation ceremony to confer the degree to the graduate students almost every year.
-                </p>
-            </div>
-
-            <Convocation-convocation/>
-
-        </div>
+        <Convocation-convocation/>
     </div>
     <!-- titmeline End -->
 

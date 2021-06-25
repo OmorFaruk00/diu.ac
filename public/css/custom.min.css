@@ -431,6 +431,7 @@ img {
 
 p {
     margin: 0 0 26px;
+    text-align: justify;
 }
 
 h1,
@@ -756,6 +757,7 @@ ul {
 .sec-title p {
     margin-bottom: 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .sec-title .view-more {
@@ -841,6 +843,7 @@ ul {
 .sec-title-2 p {
     margin-bottom: 0;
     font-size: 16px;
+    text-align: center;
 }
 
 .primary-btn {
@@ -7883,6 +7886,7 @@ ul {
 
 .rs-accordion-style1 .card .card-body {
     padding: 5px 15px 18px;
+    text-align: justify;
 }
 
 /* ------------------------------------

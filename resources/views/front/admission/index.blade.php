@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                 background-repeat: repeat-x;
+                   background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -30,13 +30,15 @@
             background-color: rgba(146, 176, 110, .8);
             text-align: center;
         }
-        .documents-title{
+
+        .documents-title {
             font-size: 22px;
             text-decoration: underline;
             color: #01aa4d;
             font-weight: 600;
             margin-bottom: 4px;
         }
+
         .contact-address p {
             font-size: 13px;
         }
@@ -65,30 +67,14 @@
 
     <!-- admission requirement Start -->
     <div class="rs-titmeline sec-spacer">
-        <div class="container">
-            <div class="abt-title mb-70 text-center">
-                <h2>WELCOME TO OUR ADMISSION</h2>
-            </div>
-
-            <Admission-our-admission/>
-
-        </div>
+        <Admission-our-admission/>
     </div>
     <!-- admission requirement End -->
 
 
     <!-- Tuition Fee Start -->
     <div id="rs-about" class="rs-about sec-spacer">
-        <div class="container">
-            <div class="sec-title mb-50 text-center">
-                <h2>Tuition Fee</h2>
-                <p style="max-width: 750px;margin: auto">For Undergraduate/ Honors Program / Master’s / Graduate Program
-                    <br>
-                    (** Tuition fee may be changed as per instruction of the authority.)
-                </p>
-            </div>
-            <Admission-tuition-fee/>
-        </div>
+        <Admission-tuition-fee/>
     </div>
     <!-- About Us End -->
 
@@ -96,10 +82,11 @@
     <!-- Contact Section Start -->
     <div class="contact-page-section sec-spacer">
         <div class="container">
-            <div class="sec-title mb-50 text-center">
+            <div class="sec-title-2 mb-50 text-center">
                 <h2>Application For Admission</h2>
                 <p style="max-width: 750px;margin: auto">
-                    A candidate seeking admission to a program must procure prescribed Application From from DIU office on payment of TK. 1000.00. Admission form available at admission information section:
+                    A candidate seeking admission to a program must procure prescribed Application From from DIU office
+                    on payment of TK. 1000.00. Admission form available at admission information section:
 
                     On the basis of admission test result, a student will get full free scholarship.
                 </p>

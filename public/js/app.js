@@ -16714,16 +16714,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "GoverningBodies",
-  props: {
-    types: {
-      type: Array,
-      require: true
-    },
-    persons: {
-      type: Array,
-      require: true
-    }
-  },
   data: function data() {
     return {
       form: new _services_form__WEBPACK_IMPORTED_MODULE_0__.default(),
@@ -18429,6 +18419,17 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-0326ea8a");
 
 var _hoisted_1 = {
+  key: 0,
+  "class": "container"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2 mb-50 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "OUR EXPERIENCED STAFFS"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Considering desire as primary motivation for the generation of narratives is a useful concept.")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
   "class": "rs-carousel owl-carousel",
   "data-loop": "true",
   "data-items": "4",
@@ -18453,9 +18454,11 @@ var _hoisted_1 = {
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _$props$persons, _$props$persons$vital;
+
   var _component_teamSection = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("teamSection");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.persons.vital_persons, function (team, index) {
+  return ((_$props$persons = $props.persons) === null || _$props$persons === void 0 ? void 0 : (_$props$persons$vital = _$props$persons.vital_persons) === null || _$props$persons$vital === void 0 ? void 0 : _$props$persons$vital.length) > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($props.persons.vital_persons, function (team, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_teamSection, {
       team: team,
       key: index
@@ -18464,7 +18467,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     , ["team"]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))]);
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 });
 
 /***/ }),
@@ -18488,43 +18491,58 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-61885932");
 
 var _hoisted_1 = {
+  key: 0,
+  "class": "container"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", {
+  "class": "mb-30"
+}, "DIU Governing Bodies")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
   "class": "row"
 };
-var _hoisted_2 = {
+var _hoisted_4 = {
   "class": "col-lg-12 col-md-12"
 };
-var _hoisted_3 = {
+var _hoisted_5 = {
   id: "vitalPerson",
   "class": "rs-accordion-style1"
 };
-var _hoisted_4 = {
+var _hoisted_6 = {
   "class": "card-body"
 };
-var _hoisted_5 = {
+var _hoisted_7 = {
   "class": "row"
 };
-var _hoisted_6 = {
+var _hoisted_8 = {
   "class": "cource-item"
 };
-var _hoisted_7 = {
+var _hoisted_9 = {
   "class": "governing-img"
 };
-var _hoisted_8 = {
+var _hoisted_10 = {
   "class": "course-body"
 };
-var _hoisted_9 = {
+var _hoisted_11 = {
   "class": "course-title"
 };
-var _hoisted_10 = {
+var _hoisted_12 = {
   "class": "course-desc"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  var _ctx$vitalPersonType;
+
   var _directive_lazy = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveDirective)("lazy");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.vitalPersonType, function (row, index) {
+  return ((_ctx$vitalPersonType = _ctx.vitalPersonType) === null || _ctx$vitalPersonType === void 0 ? void 0 : _ctx$vitalPersonType.length) > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.vitalPersonType, function (row, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "card",
       key: index
@@ -18546,19 +18564,19 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "class": ["collapse", index == '0' ? 'show' : ''],
       "aria-labelledby": "diuVitalPerson".concat(index),
       "data-parent": "#vitalPerson"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.vital_persons, function (person, index) {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.vital_persons, function (person, index) {
       return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
         key: index,
         "class": "col-lg-3 col-md-4"
-      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
         alt: person.name
       }, null, 8
       /* PROPS */
       , ["alt"]), [[_directive_lazy, {
         src: person.image_url
-      }]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.name), 1
+      }]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.name), 1
       /* TEXT */
-      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.title), 1
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(person.title), 1
       /* TEXT */
       )])])])]);
     }), 128
@@ -18568,7 +18586,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     , ["id", "aria-labelledby"])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])]);
+  ))])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 });
 
 /***/ }),
@@ -18592,23 +18610,36 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-09b07176");
 
 var _hoisted_1 = {
+  key: 0,
+  "class": "container-fluid"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2 mb-50 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "DIU Additional Features"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "These additional features make us unique and set us apart from other organizations.")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
   "class": "card-columns"
 };
-var _hoisted_2 = {
+var _hoisted_4 = {
   "class": "card-body"
 };
-var _hoisted_3 = {
+var _hoisted_5 = {
   "class": "card-title"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.aboutFeatures, function (facility, index) {
+  var _$data$aboutFeatures;
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [((_$data$aboutFeatures = $data.aboutFeatures) === null || _$data$aboutFeatures === void 0 ? void 0 : _$data$aboutFeatures.length) > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.aboutFeatures, function (facility, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "card text-center",
       key: index
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(facility.title), 1
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h5", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(facility.title), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
       "class": "card-text",
@@ -18618,7 +18649,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     , ["innerHTML"])])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <div class=\"rs-timeline-2\">\n        <ol>\n            <li>\n                <div>\n                    <time>Hostel</time>\n                    DIU offers well-decorated hostel with modern facilities.At present there are seven boys\n                    hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road &\n                    Satarkul).\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Labs</time>\n                    DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs & 10 Civil Labs. All labs are\n                    designed by the experts from DU and BUET, and equipped with modern appliances\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>English Proficiency</time>\n                    In order to improve English proficiency of the students, DIU has set up a language institute\n                    with expert tutors and modern language labs.\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Library</time>\n                    DIU library is equipped with up-to-date books and reading materials. More than fifty (50)\n                    thousand books are available at DIU libraby. E-library has already been started.\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Canteen & Common Rooms</time>\n                    DIU has its own catering service and each building has big common & leisure rooms.\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Class Rooms</time>\n                    All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector.\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Wi-Fi and Internet</time>\n                    All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all\n                    students.\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Transport</time>\n                    Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus,\n                    euismod quis ante.\n                </div>\n            </li>\n            <li>\n                <div>\n                    <time>Medium of Instruction</time>\n                    English is the medium of instruction for all programs at DIU.\n                </div>\n            </li>\n\n        </ol>\n        <div class=\"arrows\">\n            <button class=\"arrow arrow__prev disabled\" disabled></button>\n            <button class=\"arrow arrow__next\"></button>\n        </div>\n    </div>")], 2112
+  ))])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <div class=\"rs-timeline-2\">\n            <ol>\n                <li>\n                    <div>\n                        <time>Hostel</time>\n                        DIU offers well-decorated hostel with modern facilities.At present there are seven boys\n                        hostel (Nikunja, Khilkhet and Satarkul, Badda) and two girls hostels (Green Road &\n                        Satarkul).\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Labs</time>\n                        DIU has 8 Pharmacy labs, 10 Computer labs, 12 EETE labs & 10 Civil Labs. All labs are\n                        designed by the experts from DU and BUET, and equipped with modern appliances\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>English Proficiency</time>\n                        In order to improve English proficiency of the students, DIU has set up a language institute\n                        with expert tutors and modern language labs.\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Library</time>\n                        DIU library is equipped with up-to-date books and reading materials. More than fifty (50)\n                        thousand books are available at DIU libraby. E-library has already been started.\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Canteen & Common Rooms</time>\n                        DIU has its own catering service and each building has big common & leisure rooms.\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Class Rooms</time>\n                        All class rooms of DIU are spacious, well-decorated, and equipped with multimedia projector.\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Wi-Fi and Internet</time>\n                        All DIU compuses are under Wi-Fi facilities. Internet facilities are available for all\n                        students.\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Transport</time>\n                        Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus,\n                        euismod quis ante.\n                    </div>\n                </li>\n                <li>\n                    <div>\n                        <time>Medium of Instruction</time>\n                        English is the medium of instruction for all programs at DIU.\n                    </div>\n                </li>\n\n            </ol>\n            <div class=\"arrows\">\n                <button class=\"arrow arrow__prev disabled\" disabled></button>\n                <button class=\"arrow arrow__next\"></button>\n            </div>\n        </div>")], 2112
   /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   );
 });
@@ -18676,10 +18707,10 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-352b150e");
 
 var _hoisted_1 = {
-  "class": "rs-timeline"
+  "class": "container"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"rs-timeline-block\" data-v-352b150e><div class=\"rs-timeline-icon\" data-v-352b150e><i class=\"fa fa-graduation-cap\" data-v-352b150e></i></div><div class=\"rs-timeline-content\" data-v-352b150e><h3 data-v-352b150e>Admission Eligibility</h3><p data-v-352b150e>Candidates seeking admission must apply in prescribed application Form which can be collected on payment of Tk. 1000.00 Candidates having 2nd division or at least GPA 2.50 in both SSC &amp; HSC examinations, or their equivalents are eligible to apply for admission into Honours program in Law,English, Sociology and Business Administration. For B.Sc in (Computer Science &amp; Engineering), B.Sc.( Electrical, Electronics and Telecommunication Engineering) and B.Sc (Civil Engineering) programs, candidate must have physics &amp; Mathematics at their HSC level.For Bachelor of Pharmacy (B.Pharm.) program, candidates must have Biology &amp; Chemistry at their HSC level.For LL.M (2 years), M.A English (2.5 Years), MSS Sociology (2 Years), MHRL, and MBA programs, the applicants must have at least Bachelor Degree with GPA-2.00 (minimum). For LL.M (2 Years), student must complete LL.B (Pass) Course.</p><span class=\"rs-date\" data-v-352b150e>Admission Eligibility</span></div></div><div class=\"rs-timeline-block\" data-v-352b150e><div class=\"rs-timeline-icon\" data-v-352b150e><i class=\"fa fa-file\" data-v-352b150e></i></div><div class=\"rs-timeline-content\" data-v-352b150e><h3 data-v-352b150e>Required Documents</h3><ul data-v-352b150e><li class=\"documents-title\" data-v-352b150e>For Undergraduate/ Honors Program:</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of S.S.C. or Equivalent with 2 photocopies.</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of H.S.C. or Equivalent with 2 photocopies.</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> 7 Copies of Pass Port size Photograph .</li><li class=\"mt-2 documents-title\" data-v-352b150e>For Master’s / Graduate Program:</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of S.S.C. or Equivalent with 2 photocopies.</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of H.S.C. or Equivalent with 2 photocopies.</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of Undergraduate/ Honor’s Program with 2 photocopies.</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> 7 Copies of Pass Port size Photograph .</li></ul><span class=\"rs-date\" data-v-352b150e>Required Documents</span></div></div>", 2);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"abt-title mb-70 text-center\" data-v-352b150e><h2 data-v-352b150e>WELCOME TO OUR ADMISSION</h2></div><div class=\"rs-timeline\" data-v-352b150e><div class=\"rs-timeline-block\" data-v-352b150e><div class=\"rs-timeline-icon\" data-v-352b150e><i class=\"fa fa-graduation-cap\" data-v-352b150e></i></div><div class=\"rs-timeline-content\" data-v-352b150e><h3 data-v-352b150e>Admission Eligibility</h3><p data-v-352b150e>Candidates seeking admission must apply in prescribed application Form which can be collected on payment of Tk. 1000.00 Candidates having 2nd division or at least GPA 2.50 in both SSC &amp; HSC examinations, or their equivalents are eligible to apply for admission into Honours program in Law,English, Sociology and Business Administration. For B.Sc in (Computer Science &amp; Engineering), B.Sc.( Electrical, Electronics and Telecommunication Engineering) and B.Sc (Civil Engineering) programs, candidate must have physics &amp; Mathematics at their HSC level.For Bachelor of Pharmacy (B.Pharm.) program, candidates must have Biology &amp; Chemistry at their HSC level.For LL.M (2 years), M.A English (2.5 Years), MSS Sociology (2 Years), MHRL, and MBA programs, the applicants must have at least Bachelor Degree with GPA-2.00 (minimum). For LL.M (2 Years), student must complete LL.B (Pass) Course.</p><span class=\"rs-date\" data-v-352b150e>Admission Eligibility</span></div></div><div class=\"rs-timeline-block\" data-v-352b150e><div class=\"rs-timeline-icon\" data-v-352b150e><i class=\"fa fa-file\" data-v-352b150e></i></div><div class=\"rs-timeline-content\" data-v-352b150e><h3 data-v-352b150e>Required Documents</h3><ul data-v-352b150e><li class=\"documents-title\" data-v-352b150e>For Undergraduate/ Honors Program:</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of S.S.C. or Equivalent with 2 photocopies. </li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of H.S.C. or Equivalent with 2 photocopies. </li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> 7 Copies of Pass Port size Photograph .</li><li class=\"mt-2 documents-title\" data-v-352b150e>For Master’s / Graduate Program:</li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of S.S.C. or Equivalent with 2 photocopies. </li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of H.S.C. or Equivalent with 2 photocopies. </li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> Original Transcript &amp; Certificate of Undergraduate/ Honor’s Program with 2 photocopies. </li><li data-v-352b150e><i class=\"fa fa-arrow-circle-right\" data-v-352b150e></i> 7 Copies of Pass Port size Photograph .</li></ul><span class=\"rs-date\" data-v-352b150e>Required Documents</span></div></div></div>", 2);
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -18708,36 +18739,47 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-5ee8377b");
 
 var _hoisted_1 = {
-  "class": "row"
-};
-var _hoisted_2 = {
-  "class": "col-lg-12 col-md-12"
-};
-var _hoisted_3 = {
-  id: "tuitionFee",
-  "class": "rs-accordion-style1"
-};
-var _hoisted_4 = {
-  "class": "card-body"
-};
-var _hoisted_5 = {
-  "class": "table-responsive"
-};
-var _hoisted_6 = {
-  "class": "table table-striped"
+  key: 0,
+  "class": "container"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Sl. No."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Name of Program"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Duration"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Credit"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Total Fees (BDT)"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th")])], -1
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2 mb-50 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "Tuition Fee"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("For Undergraduate/ Honors Program / Master’s / Graduate Program "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" (** Tuition fee may be changed as per instruction of the authority.)")])], -1
 /* HOISTED */
 );
 
+var _hoisted_3 = {
+  "class": "row"
+};
+var _hoisted_4 = {
+  "class": "col-lg-12 col-md-12"
+};
+var _hoisted_5 = {
+  id: "tuitionFee",
+  "class": "rs-accordion-style1"
+};
+var _hoisted_6 = {
+  "class": "card-body"
+};
+var _hoisted_7 = {
+  "class": "table-responsive"
+};
 var _hoisted_8 = {
+  "class": "table table-striped"
+};
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Sl. No."), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Name of Program"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Duration"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Credit"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th", null, "Total Fees (BDT)"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("th")])], -1
+/* HOISTED */
+);
+
+var _hoisted_10 = {
   "class": "text-center"
 };
 
-var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Apply ");
+var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Apply ");
 
-var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
   "class": "fa fa-rocket"
 }, null, -1
 /* HOISTED */
@@ -18746,7 +18788,9 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.tuitionFees, function (row, index) {
+  var _ctx$tuitionFees;
+
+  return ((_ctx$tuitionFees = _ctx.tuitionFees) === null || _ctx$tuitionFees === void 0 ? void 0 : _ctx$tuitionFees.length) > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.tuitionFees, function (row, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "card",
       key: index
@@ -18768,7 +18812,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "class": ["collapse", index == '0' ? 'show' : ''],
       "aria-labelledby": "ourTuitionFee".concat(index),
       "data-parent": "#tuitionFee"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("table", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.programs, function (programs, innerRow) {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("table", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("tbody", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.programs, function (programs, innerRow) {
       return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("tr", {
         key: innerRow
       }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(innerRow + 1), 1
@@ -18781,11 +18825,11 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       /* TEXT */
       ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(programs.total_fee), 1
       /* TEXT */
-      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
+      ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("td", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("a", {
         href: "https://admission.diu.ac/register?program=".concat(programs.short_name),
         target: "_blank",
         "class": "btn btn-success"
-      }, [_hoisted_9, _hoisted_10], 8
+      }, [_hoisted_11, _hoisted_12], 8
       /* PROPS */
       , ["href"])])]);
     }), 128
@@ -18795,7 +18839,7 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
     , ["id", "aria-labelledby"])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])])]);
+  ))])])])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 });
 
 /***/ }),
@@ -18882,30 +18926,40 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-c3471ebc");
 
 var _hoisted_1 = {
+  "class": "container"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2 mb-50 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "WELCOME TO OUR CELL"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Dhaka International University formally formed various separate cell for development of DIU, Society as well as Bangladesh. Those cells are formed for work on specific purpose. Those cells actually work with various alliance, Government, non-governmental and international organizations work together.")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
   "class": "rs-timeline"
 };
-var _hoisted_2 = {
+var _hoisted_4 = {
   "class": "rs-timeline-icon"
 };
-var _hoisted_3 = {
+var _hoisted_5 = {
   "class": "rs-timeline-content"
 };
-var _hoisted_4 = {
+var _hoisted_6 = {
   "class": "rs-date"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.cell, function (cell, index) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.cell, function (cell, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "rs-timeline-block",
       key: index
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
       "class": cell.icon
     }, null, 2
     /* CLASS */
-    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cell.title), 1
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cell.title), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cell.description), 1
     /* TEXT */
@@ -18916,12 +18970,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "class": "rs-read-more"
     }, "Read more", 8
     /* PROPS */
-    , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cell.title), 1
+    , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(cell.title), 1
     /* TEXT */
     )])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))]);
+  ))])]);
 });
 
 /***/ }),
@@ -19232,30 +19286,40 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-04e035bc");
 
 var _hoisted_1 = {
+  "class": "container"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2 mb-50 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "WELCOME TO OUR CLUB"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "Dhaka International University has formally formed different separate clubs for development of student . The following clubs are run successfully by the students and teachers.")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
   "class": "rs-timeline"
 };
-var _hoisted_2 = {
+var _hoisted_4 = {
   "class": "rs-timeline-icon"
 };
-var _hoisted_3 = {
+var _hoisted_5 = {
   "class": "rs-timeline-content"
 };
-var _hoisted_4 = {
+var _hoisted_6 = {
   "class": "rs-date"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
 var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.clubs, function (club, index) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.clubs, function (club, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "rs-timeline-block",
       key: index
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("i", {
       "class": club.icon
     }, null, 2
     /* CLASS */
-    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(club.title), 1
+    )]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(club.title), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(club.description), 1
     /* TEXT */
@@ -19266,12 +19330,12 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
       "class": "rs-read-more"
     }, "Read more", 8
     /* PROPS */
-    , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(club.title), 1
+    , ["href"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(club.title), 1
     /* TEXT */
     )])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))]);
+  ))])]);
 });
 
 /***/ }),
@@ -19554,34 +19618,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
+  "class": "container"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "sec-title-2 mb-70 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "WELCOME TO OUR CONVOCATION"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Convocation is a formal gathering of people who have been asked to come together, or a formal ceremony at a college or university where awards are given. Dhaka International University is organized the convocation ceremony to confer the degree to the graduate students almost every year. ")], -1
+/* HOISTED */
+);
+
+var _hoisted_3 = {
   id: "convocation",
   "class": "rs-accordion-style1"
 };
-var _hoisted_2 = {
+var _hoisted_4 = {
   "class": "convocation-sub-title"
 };
-var _hoisted_3 = {
+var _hoisted_5 = {
   "class": "card-body"
 };
-var _hoisted_4 = {
+var _hoisted_6 = {
   "class": "row"
 };
 
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br", null, null, -1
 /* HOISTED */
 );
 
-var _hoisted_7 = {
+var _hoisted_9 = {
   "class": "row"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_viewer = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("viewer");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.convocations, function (row, index) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.convocations, function (row, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
       "class": "card",
       key: index
@@ -19589,25 +19663,25 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": "card-header",
       id: "ourConvocation".concat(index)
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
-      "class": "acdn-title collapsed",
+      "class": ["acdn-title", index != '0' ? 'collapsed' : ''],
       "data-toggle": "collapse",
       "data-target": "#collapseOurMission".concat(index),
       "aria-expanded": "true",
       "aria-controls": "collapseOurMission".concat(index)
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(row.title) + " ", 1
     /* TEXT */
-    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_2, "/ " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.stringLimit(row.short_description, 95)), 1
+    ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", _hoisted_4, "/ " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($options.stringLimit(row.short_description, 95)), 1
     /* TEXT */
-    )], 8
-    /* PROPS */
+    )], 10
+    /* CLASS, PROPS */
     , ["data-target", "aria-controls"])], 8
     /* PROPS */
     , ["id"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
       id: "collapseOurMission".concat(index),
-      "class": "collapse",
+      "class": [index == '0' ? 'show' : '', "collapse"],
       "aria-labelledby": "ourConvocation".concat(index),
       "data-parent": "#convocation"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
       "class": "col-12 description",
       style: {
         "font-weight": "700"
@@ -19615,16 +19689,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       innerHTML: row.short_description
     }, null, 8
     /* PROPS */
-    , ["innerHTML"]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+    , ["innerHTML"]), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
       "class": "col-12 description",
       innerHTML: row.description
     }, null, 8
     /* PROPS */
-    , ["innerHTML"]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_viewer, {
+    , ["innerHTML"]), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_viewer, {
       images: row.convoction_images
     }, {
       "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.convoction_images, function (innerRow, innerIndex) {
+        return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_9, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(row.convoction_images, function (innerRow, innerIndex) {
           return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
             key: innerIndex,
             "class": "col-lg-3 col-md-3 col-sm-6 mb-4"
@@ -19646,12 +19720,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
     }, 1032
     /* PROPS, DYNAMIC_SLOTS */
-    , ["images"])])])], 8
-    /* PROPS */
+    , ["images"])])])], 10
+    /* CLASS, PROPS */
     , ["id", "aria-labelledby"])]);
   }), 128
   /* KEYED_FRAGMENT */
-  ))]);
+  ))])]);
 }
 
 /***/ }),
@@ -21536,13 +21610,8 @@ var _hoisted_1 = {
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "abt-title mb-70 text-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "WELCOME TO OUR publications"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  style: {
-    "max-width": "750px",
-    "margin": "auto"
-  }
-}, "DIU is profoundly esteemed for it's own reputation which is built upon credibility, practical knowhow and a feasible archive of books, bulletins and journals. DIU has published a few original books written by its teachers and faculties. Whereas bulletins help students to keep upto date regarding their class and exam routines, schedule and other important notices. Both faculties and students of extraordinary merit are allowed to write their own journals.")], -1
+  "class": "sec-title-2 mb-70 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h2", null, "WELCOME TO OUR publications"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "DIU is profoundly esteemed for it's own reputation which is built upon credibility, practical knowhow and a feasible archive of books, bulletins and journals. DIU has published a few original books written by its teachers and faculties. Whereas bulletins help students to keep upto date regarding their class and exam routines, schedule and other important notices. Both faculties and students of extraordinary merit are allowed to write their own journals.")], -1
 /* HOISTED */
 );
 
