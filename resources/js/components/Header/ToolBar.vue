@@ -6,8 +6,8 @@
                 <div class="welcome-message">
 
                     <i class="fa fa-bank"></i>
-
                     <span>Welcome to DIU</span>
+
                 </div>
             </div>
         </div>
@@ -17,16 +17,18 @@
                 <div class="toolbar-share-icon">
                     <ul>
 
+
+
                         <span class="large-device">
 
                             <li><a href="https://international.diu.ac" target="_blank">International</a></li>
                             <li><a href="https://blog.diu.ac" target="_blank">Blog</a></li>
-                            <li><a :href="route('club')">Club</a></li>
+                            <li><a :class="route().current() == 'club' ? 'toolbar-share-icon-active' : ''" :href="route('club')">Club</a></li>
                             <li><a href="https://jobs.diu.ac" target="_blank">Career</a></li>
-                            <li><a :href="route('publications')">Publications</a></li>
-                            <li><a :href="route('convocation')">Convocation</a></li>
+                            <li><a :class="route().current() == 'publications' ? 'toolbar-share-icon-active' : ''" :href="route('publications')">Publications</a></li>
+                            <li><a :class="route().current() == 'convocation' ? 'toolbar-share-icon-active' : ''" :href="route('convocation')">Convocation</a></li>
                             <li><a href="https://students.diu.ac" target="_blank">Students Portal</a></li>
-                            <li><a :href="route('certificate-verification')">Certificate Verification</a></li>
+                            <li><a :class="route().current() == 'certificate-verification' ? 'toolbar-share-icon-active' : ''" :href="route('certificate-verification')">Certificate Verification</a></li>
 
                         </span>
 
@@ -34,17 +36,17 @@
 
                             <li><a href="https://international.diu.ac" target="_blank">International</a></li>
                             <li><a href="https://blog.diu.ac" target="_blank">Blog</a></li>
-                            <li><a :href="route('club')">Club</a></li>
+                            <li><a :class="route().current() == 'club' ? 'toolbar-share-icon-active' : ''" :href="route('club')">Club</a></li>
                             <li><a href="https://jobs.diu.ac" target="_blank">Career</a></li>
-                            <li><a :href="route('publications')">Publications</a></li>
+                            <li><a :class="route().current() == 'publications' ? 'toolbar-share-icon-active' : ''" :href="route('publications')">Publications</a></li>
 
                             <li v-if="!seeMoreStatus"><a href="javaScript:void(0)" @click="seeMoreStatusChange">See
                                 More...</a></li>
                             <template v-if="seeMoreStatus">
 
-                                <li><a :href="route('convocation')">Convocation</a></li>
+                                <li><a :class="route().current() == 'convocation' ? 'toolbar-share-icon-active' : ''" :href="route('convocation')">Convocation</a></li>
                                 <li><a href="https://students.diu.ac" target="_blank">Students Portal</a></li>
-                                <li><a :href="route('certificate-verification')">Certificate Verification</a></li>
+                                <li><a :class="route().current() == 'certificate-verification' ? 'toolbar-share-icon-active' : ''" :href="route('certificate-verification')">Certificate Verification</a></li>
                             </template>
                         </span>
 
@@ -52,7 +54,7 @@
 
                             <li><a href="https://international.diu.ac" target="_blank">International</a></li>
                             <li><a href="https://blog.diu.ac" target="_blank">Blog</a></li>
-                            <li><a :href="route('club')">Club</a></li>
+                            <li><a :class="route().current() == 'club' ? 'toolbar-share-icon-active' : ''" :href="route('club')">Club</a></li>
 
                             <li v-if="!seeMoreStatus"><a href="javaScript:void(0)" @click="seeMoreStatusChange">See
                                 More...</a></li>
@@ -60,10 +62,10 @@
 
 
                                 <li><a href="https://jobs.diu.ac" target="_blank">Career</a></li>
-                                <li><a :href="route('publications')">Publications</a></li>
-                                <li><a :href="route('convocation')">Convocation</a></li>
+                                <li><a :class="route().current() == 'publications' ? 'toolbar-share-icon-active' : ''" :href="route('publications')">Publications</a></li>
+                                <li><a :class="route().current() == 'convocation' ? 'toolbar-share-icon-active' : ''" :href="route('convocation')">Convocation</a></li>
                                 <li><a href="https://students.diu.ac" target="_blank">Students Portal</a></li>
-                                <li><a :href="route('certificate-verification')">Certificate Verification</a></li>
+                                <li><a :class="route().current() == 'certificate-verification' ? 'toolbar-share-icon-active' : ''" :href="route('certificate-verification')">Certificate Verification</a></li>
                             </template>
                         </span>
 
@@ -75,12 +77,12 @@
                                 More...</a></li>
                             <template v-if="seeMoreStatus">
                                 <li><a href="https://blog.diu.ac" target="_blank">Blog</a></li>
-                                <li><a :href="route('club')">Club</a></li>
+                                <li><a :class="route().current() == 'club' ? 'toolbar-share-icon-active' : ''" :href="route('club')">Club</a></li>
                                 <li><a href="https://jobs.diu.ac" target="_blank">Career</a></li>
-                                <li><a :href="route('publications')">Publications</a></li>
-                                <li><a :href="route('convocation')">Convocation</a></li>
+                                <li><a :class="route().current() == 'publications' ? 'toolbar-share-icon-active' : ''" :href="route('publications')">Publications</a></li>
+                                <li><a :class="route().current() == 'convocation' ? 'toolbar-share-icon-active' : ''" :href="route('convocation')">Convocation</a></li>
                                 <li><a href="https://students.diu.ac" target="_blank">Students Portal</a></li>
-                                <li><a :href="route('certificate-verification')">Certificate Verification</a></li>
+                                <li><a :class="route().current() == 'certificate-verification' ? 'toolbar-share-icon-active' : ''" :href="route('certificate-verification')">Certificate Verification</a></li>
                             </template>
                         </span>
 
