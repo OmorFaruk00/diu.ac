@@ -1251,7 +1251,7 @@ ul {
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a:hover,
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a:active,
 .rs-toolbar .rs-toolbar-right .toolbar-share-icon ul li a:focus {
-    color: red;
+    color: #fff;
 }
 
 .rs-toolbar .rs-toolbar-right .apply-btn {
@@ -1390,7 +1390,7 @@ ul {
 
 .home1 .menu-area .rs-menu > ul > li > a:hover,
 .home1 .menu-area .rs-menu li.current_page_item > a {
-    color: #0b2e13 !important;
+    color: #fff !important;
 }
 
 .home1 .menu-area {
@@ -6882,20 +6882,35 @@ ul {
 }
 
 .rs-products .product-item .product-btn a {
-    display: inline-block;
+    /*display: inline-block;
     margin-left: auto;
     padding: 2px 15px;
     font-size: 15px;
     font-weight: 500;
     text-decoration: none;
     border: 1px solid #212121;
-    color: #212121;
+    color: #212121;*/
+
+    background-color: #01AA4D;
+    border: 2px solid #01AA4D;
+    display: inline-block;
+    padding: 3px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease 0s;
 }
 
 .rs-products .product-item .product-btn a:hover {
-    border-color: #ff3115;
+    /*border-color: #ff3115;
     background-color: #ff3115;
-    color: #fff;
+    color: #fff;*/
+
+    background-color: #e41f05;
+    border-color: #e41f05;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .rs-products .view-btn {
@@ -10428,4 +10443,27 @@ ul {
 /*top menu*/
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-brand {
     color: #fff !important;
+}
+
+.contact-address p {
+    text-align: center!important;
+}
+
+.contact-button{
+    background-color: #01AA4D;
+    border: 2px solid #01AA4D;
+    display: inline-block;
+    padding: 8px 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-button:hover{
+    background-color: #e41f05;
+    border-color: #e41f05;
+    color: rgba(255, 255, 255, 0.8);
 }

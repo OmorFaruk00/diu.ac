@@ -53,7 +53,7 @@
         </div>
 
         <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-            <button type="submit" class="btn btn-outline-info btn-block">Search
+            <button type="submit" class="btn btn-outline-info btn-block contact-button">Search
                 <span v-if="loading" class="fa fa-spinner fa-pulse"></span>
             </button>
 

@@ -63,7 +63,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-4 col-sm-12 offset-lg-4 offset-md-4">
-                    <button type="submit" class="btn btn-secondary btn-block">Send <i class="fa fa-rocket"></i></button>
+                    <button type="submit" class="btn btn-secondary btn-block contact-button">Send <i class="fa fa-rocket"></i></button>
                 </div>
 
             </div>
