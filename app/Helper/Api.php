@@ -119,10 +119,4 @@ class Api
         return false;
     }
 
-
-    public static function cacheClear()
-    {
-        \Artisan::call('cache:clear');
-    }
-
 }

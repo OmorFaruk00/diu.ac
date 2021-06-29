@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Helper\Api;
 use Illuminate\Http\Request;
-use Ixudra\Curl\Facades\Curl;
 use Illuminate\Support\Facades\Cache;
 
 class DiuController extends Controller
@@ -30,10 +29,6 @@ class DiuController extends Controller
         $cache_partners = Cache::get('partnersData');
         $cache_programs = Cache::get('programsData');
 
-        /*$cache_sliders = Api::sliders();
-        $cache_partners = Api::partners();
-        $cache_programs = Api::programs();*/
-
         return view('front.home.index', [
             'programs' => $cache_programs,
             'sliders' => $cache_sliders,
@@ -43,13 +38,25 @@ class DiuController extends Controller
 
     public function aboutUs()
     {
-        $keyResourcePersons = Api::keyResourcePersons();
-        $diuGoverningBodies = Api::diuGoverningBodies();
+
+        if (!Cache::has('keyResourcePersons')) {
+            $keyResourcePersons = Api::keyResourcePersons();
+            Cache::put('keyResourcePersons', $keyResourcePersons);
+        }
+
+        if (!Cache::has('diuGoverningBodies')) {
+            $diuGoverningBodies = Api::diuGoverningBodies();
+            Cache::put('diuGoverningBodies', $diuGoverningBodies);
+        }
+
+
+        $cache_key_resource_persons = Cache::get('keyResourcePersons');
+        $cache_diu_governing_bodies = Cache::get('diuGoverningBodies');
 
         return view('front.about.index', [
-            'keyResourcePersons' => $keyResourcePersons,
-            'diuGoverningtypes' => $diuGoverningBodies->vitalPersonType,
-            'diuGoverningPersons' => $diuGoverningBodies->vitalPerson
+            'keyResourcePersons' => $cache_key_resource_persons,
+            'diuGoverningtypes' => $cache_diu_governing_bodies->vitalPersonType,
+            'diuGoverningPersons' => $cache_diu_governing_bodies->vitalPerson
         ]);
     }
 
@@ -105,7 +112,15 @@ class DiuController extends Controller
 
     public function departmentDetails($slug)
     {
-        $facultyMembers = Api::departmentFacultyMembers($slug);
+
+        if (!Cache::has('programsData_' . $slug)) {
+
+            $facultyMembers = Api::departmentFacultyMembers($slug);
+
+            Cache::put('programsData_' . $slug, $facultyMembers);
+        }
+
+        $facultyMembers = Cache::get('programsData_' . $slug);
 
         return view('front.departmentDetails.index', compact('slug', 'facultyMembers'));
     }
