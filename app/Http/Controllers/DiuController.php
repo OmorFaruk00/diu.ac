@@ -5,20 +5,39 @@ namespace App\Http\Controllers;
 use App\Helper\Api;
 use Illuminate\Http\Request;
 use Ixudra\Curl\Facades\Curl;
+use Illuminate\Support\Facades\Cache;
 
 class DiuController extends Controller
 {
     public function homePage()
     {
+        /*if (!Cache::has('sliderData')) {
+            $sliders = Api::sliders();
+            Cache::put('sliderData', $sliders);
+        }
 
-        $sliders = Api::sliders();
-        $partners = Api::partners();
-        $programs = Api::programs();
+        if (!Cache::has('partnersData')) {
+            $partners = Api::partners();
+            Cache::put('partnersData', $partners);
+        }
+
+        if (!Cache::has('programsData')) {
+            $programs = Api::programs();
+            Cache::put('programsData', $programs);
+        }
+
+        $cache_sliders = Cache::get('sliderData');
+        $cache_partners = Cache::get('partnersData');
+        $cache_programs = Cache::get('programsData');*/
+
+        $cache_sliders = Api::sliders();
+        $cache_partners = Api::partners();
+        $cache_programs = Api::programs();
 
         return view('front.home.index', [
-            'programs' => $programs,
-            'sliders' => $sliders,
-            'partners' => $partners
+            'programs' => $cache_programs,
+            'sliders' => $cache_sliders,
+            'partners' => $cache_partners
         ]);
     }
 
@@ -86,7 +105,6 @@ class DiuController extends Controller
 
     public function departmentDetails($slug)
     {
-//        $facilities = Api::departmentFacilities($slug);
         $facultyMembers = Api::departmentFacultyMembers($slug);
 
         return view('front.departmentDetails.index', compact('slug', 'facultyMembers'));
