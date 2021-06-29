@@ -16,9 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/cache-clear', function () {
 
+    \Artisan::call('route:clear');
+    \Artisan::call('config:clear');
     \Artisan::call('cache:clear');
+
+    \Artisan::call('route:cache');
+    \Artisan::call('config:cache');
+
     return response()->json(['message'=>'cache clear'],200);
+
 });
+
 Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
     Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');
