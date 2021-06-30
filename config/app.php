@@ -1,5 +1,11 @@
 <?php
 
+$ip_array = [
+    // '172.16.7.2',
+    '172.16.7.3',
+    '127.0.0.1',
+];
+
 return [
 
     /*
@@ -39,7 +45,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => in_array(@$_SERVER['REMOTE_ADDR'], $ip_array) ? true : false,
 
     /*
     |--------------------------------------------------------------------------

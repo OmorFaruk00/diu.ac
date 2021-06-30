@@ -20035,10 +20035,17 @@ var _hoisted_6 = {
   "class": "card-body"
 };
 var _hoisted_7 = {
+<<<<<<< HEAD
   "class": "row"
 };
 var _hoisted_8 = {
   "class": "col-12 test"
+=======
+  "class": "col-12 test"
+};
+var _hoisted_8 = {
+  "class": "table-responsive"
+>>>>>>> 3759ac767de437062011303da7ed300cdb5504ba
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _ctx$syllabus;
@@ -20065,11 +20072,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": "collapse",
       "aria-labelledby": "ourConvocation".concat(index),
       "data-parent": "#convocation"
+<<<<<<< HEAD
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
       innerHTML: row.description
     }, null, 8
     /* PROPS */
     , ["innerHTML"])])])])], 8
+=======
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <div class=\"row\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+      innerHTML: row.description
+    }, null, 8
+    /* PROPS */
+    , ["innerHTML"])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                </div>")])], 8
+>>>>>>> 3759ac767de437062011303da7ed300cdb5504ba
     /* PROPS */
     , ["id", "aria-labelledby"])]);
   }), 128
@@ -22535,6 +22550,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Ziggy": () => (/* binding */ Ziggy)
 /* harmony export */ });
 var Ziggy = {
+<<<<<<< HEAD
   "url": "https:\/\/webdev.diu.ac",
   "port": null,
   "defaults": {},
@@ -22563,6 +22579,12 @@ var Ziggy = {
       "uri": "_debugbar\/cache\/{key}\/{tags?}",
       "methods": ["DELETE"]
     },
+=======
+  "url": "http:\/\/localhost:8000",
+  "port": 8000,
+  "defaults": {},
+  "routes": {
+>>>>>>> 3759ac767de437062011303da7ed300cdb5504ba
     "homePage": {
       "uri": "\/",
       "methods": ["GET", "HEAD"]
@@ -22627,7 +22649,13 @@ var Ziggy = {
 };
 
 if (typeof window !== 'undefined' && typeof window.Ziggy !== 'undefined') {
+<<<<<<< HEAD
   Object.assign(Ziggy.routes, window.Ziggy.routes);
+=======
+  for (var name in window.Ziggy.routes) {
+    Ziggy.routes[name] = window.Ziggy.routes[name];
+  }
+>>>>>>> 3759ac767de437062011303da7ed300cdb5504ba
 }
 
 
@@ -23437,7 +23465,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
+<<<<<<< HEAD
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.test table {\n    width: 100% !important;\n    margin-bottom: 1rem !important;\n    background-color: transparent;\n    border: 1px solid #dee2e6 !important;\n}\n.test table-bordered td, .test table-bordered th {\n    border: 1px solid #dee2e6 !important;\n}\n.test table td, .test table th {\n    padding: .75rem !important;\n    vertical-align: top !important;\n    border-top: 1px solid #dee2e6 !important;\n    border: 1px solid #dee2e6 !important;\n}\n.test {\n    margin-left: 15px!important;\n}\n.test ul {\n    list-style: circle !important;\n}\n\n", ""]);
+=======
+___CSS_LOADER_EXPORT___.push([module.id, "\n.test table {\n    width: 100% !important;\n    margin-bottom: 1rem !important;\n    background-color: transparent;\n    border: 1px solid #dee2e6 !important;\n}\n.test table-bordered td, .test table-bordered th {\n    border: 1px solid #dee2e6 !important;\n}\n.test table td, .test table th {\n    padding: .75rem !important;\n    vertical-align: top !important;\n    border-top: 1px solid #dee2e6 !important;\n    border: 1px solid #dee2e6 !important;\n}\n.test {\n    /*margin-left: 15px!important;*/\n}\n.test ul {\n    list-style: circle !important;\n}\n\n", ""]);
+>>>>>>> 3759ac767de437062011303da7ed300cdb5504ba
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
