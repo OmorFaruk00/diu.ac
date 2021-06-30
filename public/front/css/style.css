@@ -9774,6 +9774,10 @@ ul {
     color: #ff3115;
 }
 
+.contact-inner p {
+    text-align: center;
+}
+
 .rs-footer .footer-contact-desc .contact-inner .contact-title {
     margin-bottom: 10px;
     color: #ffffff;

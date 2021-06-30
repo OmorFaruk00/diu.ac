@@ -22,13 +22,15 @@
                              data-parent="#convocation">
                             <div class="card-body">
 
-                                <div class="row">
+<!--                                <div class="row">-->
 
                                     <div class="col-12 test">
-                                        <span v-html="row.description"></span>
+                                        <div class="table-responsive">
+                                            <span v-html="row.description"></span>
+                                        </div>
                                     </div>
 
-                                </div>
+<!--                                </div>-->
 
                             </div>
                         </div>
@@ -91,7 +93,7 @@ export default {
 }
 
 .test {
-    margin-left: 15px!important;
+    /*margin-left: 15px!important;*/
 }
 
 .test ul {
