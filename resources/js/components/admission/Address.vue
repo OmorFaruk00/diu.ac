@@ -4,7 +4,7 @@
             <div class="contact-info contact-address">
                 <i class="fa fa-map-marker"></i>
                 <h3>Permanent Campus</h3>
-                <p>Shatarkul, Badda, <br> Dhaka-1212. Bangladesh.</p>
+                <p>Satarkul, Badda, <br> Dhaka-1212. Bangladesh.</p>
                 <p>55040891-7</p>
                 <p><a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
                 <p><a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
