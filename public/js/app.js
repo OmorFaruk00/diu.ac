@@ -20870,7 +20870,7 @@ var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("dat
 var _hoisted_1 = {
   "class": "rs-carousel owl-carousel",
   "data-loop": "true",
-  "data-items": "5",
+  "data-items": "6",
   "data-margin": "80",
   "data-autoplay": "true",
   "data-autoplay-timeout": "2000",
