@@ -18678,7 +18678,7 @@ var _hoisted_1 = {
   "class": "row contact-address-section"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 pl-0\" data-v-3b6c5613><div class=\"contact-info contact-address\" data-v-3b6c5613><i class=\"fa fa-map-marker\" data-v-3b6c5613></i><h3 data-v-3b6c5613>Permanent Campus</h3><p data-v-3b6c5613>Shatarkul, Badda, <br data-v-3b6c5613> Dhaka-1212. Bangladesh.</p><p data-v-3b6c5613>55040891-7</p><p data-v-3b6c5613><a href=\"mailto:admission@diu.net.bd\" data-v-3b6c5613>admission@diu.net.bd</a></p><p data-v-3b6c5613><a href=\"https://admission.diu.ac/register\" target=\"_blank\" data-v-3b6c5613>https://admission.diu.ac/register</a></p></div></div><div class=\"col-md-4\" data-v-3b6c5613><div class=\"contact-info contact-address\" data-v-3b6c5613><i class=\"fa fa-map-marker\" data-v-3b6c5613></i><h3 data-v-3b6c5613>Banani Campus</h3><p data-v-3b6c5613>House # 4, Road # 1, Block - F, Banani, <br data-v-3b6c5613> Dhaka -1213, Bangladesh</p><p data-v-3b6c5613>01939851062-4</p><p data-v-3b6c5613><a href=\"mailto:admission@diu.net.bd\" data-v-3b6c5613>admission@diu.net.bd</a></p><p data-v-3b6c5613><a href=\"https://admission.diu.ac/register\" target=\"_blank\" data-v-3b6c5613>https://admission.diu.ac/register</a></p><span class=\"rs-date\" data-v-3b6c5613></span></div></div><div class=\"col-md-4 pr-0\" data-v-3b6c5613><div class=\"contact-info contact-address\" data-v-3b6c5613><i class=\"fa fa-map-marker\" data-v-3b6c5613></i><h3 data-v-3b6c5613>Green Road Campus</h3><p data-v-3b6c5613>66 Green Road <br data-v-3b6c5613> Dhaka - 1205, Bangladesh</p><p data-v-3b6c5613>01611348344-8</p><p data-v-3b6c5613><a href=\"mailto:admission@diu.net.bd\" data-v-3b6c5613>admission@diu.net.bd</a></p><p data-v-3b6c5613><a href=\"https://admission.diu.ac/register\" target=\"_blank\" data-v-3b6c5613>https://admission.diu.ac/register</a></p><span class=\"rs-date\" data-v-3b6c5613></span></div></div>", 3);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-4 pl-0\" data-v-3b6c5613><div class=\"contact-info contact-address\" data-v-3b6c5613><i class=\"fa fa-map-marker\" data-v-3b6c5613></i><h3 data-v-3b6c5613>Permanent Campus</h3><p data-v-3b6c5613>Satarkul, Badda, <br data-v-3b6c5613> Dhaka-1212. Bangladesh.</p><p data-v-3b6c5613>55040891-7</p><p data-v-3b6c5613><a href=\"mailto:admission@diu.net.bd\" data-v-3b6c5613>admission@diu.net.bd</a></p><p data-v-3b6c5613><a href=\"https://admission.diu.ac/register\" target=\"_blank\" data-v-3b6c5613>https://admission.diu.ac/register</a></p></div></div><div class=\"col-md-4\" data-v-3b6c5613><div class=\"contact-info contact-address\" data-v-3b6c5613><i class=\"fa fa-map-marker\" data-v-3b6c5613></i><h3 data-v-3b6c5613>Banani Campus</h3><p data-v-3b6c5613>House # 4, Road # 1, Block - F, Banani, <br data-v-3b6c5613> Dhaka -1213, Bangladesh</p><p data-v-3b6c5613>01939851062-4</p><p data-v-3b6c5613><a href=\"mailto:admission@diu.net.bd\" data-v-3b6c5613>admission@diu.net.bd</a></p><p data-v-3b6c5613><a href=\"https://admission.diu.ac/register\" target=\"_blank\" data-v-3b6c5613>https://admission.diu.ac/register</a></p><span class=\"rs-date\" data-v-3b6c5613></span></div></div><div class=\"col-md-4 pr-0\" data-v-3b6c5613><div class=\"contact-info contact-address\" data-v-3b6c5613><i class=\"fa fa-map-marker\" data-v-3b6c5613></i><h3 data-v-3b6c5613>Green Road Campus</h3><p data-v-3b6c5613>66 Green Road <br data-v-3b6c5613> Dhaka - 1205, Bangladesh</p><p data-v-3b6c5613>01611348344-8</p><p data-v-3b6c5613><a href=\"mailto:admission@diu.net.bd\" data-v-3b6c5613>admission@diu.net.bd</a></p><p data-v-3b6c5613><a href=\"https://admission.diu.ac/register\" target=\"_blank\" data-v-3b6c5613>https://admission.diu.ac/register</a></p><span class=\"rs-date\" data-v-3b6c5613></span></div></div>", 3);
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -21819,7 +21819,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var campusAddresses = [{
   title: 'Permanent Campus',
-  address: 'Shatarkul, Badda, Dhaka-1212. Bangladesh.',
+  address: 'Satarkul, Badda, Dhaka-1212. Bangladesh.',
   mobile: '55040891-7',
   email: 'admission@diu.net.bd',
   website: 'https://admission.diu.ac/register',
@@ -22539,6 +22539,30 @@ var Ziggy = {
   "port": 8000,
   "defaults": {},
   "routes": {
+    "debugbar.openhandler": {
+      "uri": "_debugbar\/open",
+      "methods": ["GET", "HEAD"]
+    },
+    "debugbar.clockwork": {
+      "uri": "_debugbar\/clockwork\/{id}",
+      "methods": ["GET", "HEAD"]
+    },
+    "debugbar.telescope": {
+      "uri": "_debugbar\/telescope\/{id}",
+      "methods": ["GET", "HEAD"]
+    },
+    "debugbar.assets.css": {
+      "uri": "_debugbar\/assets\/stylesheets",
+      "methods": ["GET", "HEAD"]
+    },
+    "debugbar.assets.js": {
+      "uri": "_debugbar\/assets\/javascript",
+      "methods": ["GET", "HEAD"]
+    },
+    "debugbar.cache.delete": {
+      "uri": "_debugbar\/cache\/{key}\/{tags?}",
+      "methods": ["DELETE"]
+    },
     "homePage": {
       "uri": "\/",
       "methods": ["GET", "HEAD"]

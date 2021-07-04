@@ -221,7 +221,7 @@
                 <div class="col-lg-6 col-md-12">
 
                     <div class="about-desc">
-                        <h3>WELCOME OUR CAMPUS</h3>
+                        <h3>WELCOME TO OUR CAMPUS</h3>
                     </div>
 
                     <div class="about-desc">
@@ -255,7 +255,7 @@
                                     there very soon as per government guide line.
                                     <br>
 
-                                    Please Contact for any information: Shatarkul, Badda, Dhaka.Bangladesh. <br>
+                                    Please Contact for any information: Satarkul, Badda, Dhaka.Bangladesh. <br>
 
                                     Cell Number: 01939851060-1 <br>
 
