@@ -1,5 +1,9 @@
 require('./bootstrap');
 
+import Alpine from 'alpinejs';
+window.Alpine = Alpine;
+Alpine.start();
+
 import {createApp} from 'vue'
 
 import {ZiggyVue} from 'ziggy'
@@ -23,8 +27,6 @@ window.toast = swal.mixin({
     }
 })
 
-// window.swal = swal
-
 const app = createApp({});
 
 app.use(ZiggyVue, Ziggy);
@@ -34,7 +36,7 @@ app.use(VueLazyLoad, {
     loading: '/loading.gif',
 })
 
-// Importing all components programmetically. provided by laravel.
+// Importing all components programmatically. provided by laravel.
 const files = require.context('./components', true, /\.vue$/i);
 files.keys().map(key => {
     let fileName = key.replace('./', '').split('/').map(item => item.charAt(0).toUpperCase() + item.slice(1)).join('').replace('.vue', '');
@@ -43,7 +45,4 @@ files.keys().map(key => {
     app.component(fileName, files(key).default);
 })
 
-
-
 app.mount('#app');
-

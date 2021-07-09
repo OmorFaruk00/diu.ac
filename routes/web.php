@@ -40,3 +40,7 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/test', [DiuController::class, 'test'])->name('test');
 });
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
