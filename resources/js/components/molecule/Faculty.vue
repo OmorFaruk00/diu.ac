@@ -13,8 +13,8 @@
         <div class="display-table">
           <div class="display-table-cell">
             <h4 class="team-name text-white">{{ team.name }}</h4>
-            <span class="team-title text-white">{{ team.designation }}</span>
-            <p class="team-desc">{{ team.office_email }}</p>
+            <span class="team-title text-white text-center">{{ team.designation }}</span>
+            <p class="team-desc text-center">{{ team.office_email }}</p>
           </div>
         </div>
       </div>
