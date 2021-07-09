@@ -17632,6 +17632,30 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OtherFacilities.vue?vue&type=script&lang=js":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OtherFacilities.vue?vue&type=script&lang=js ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _data_otherFacilities__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../data/otherFacilities */ "./resources/js/data/otherFacilities.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "OtherFacilities",
+  data: function data() {
+    return {
+      otherFacilities: _data_otherFacilities__WEBPACK_IMPORTED_MODULE_0__.otherFacilities
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OurCampusLife.vue?vue&type=script&lang=js":
 /*!************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OurCampusLife.vue?vue&type=script&lang=js ***!
@@ -20749,6 +20773,77 @@ var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data,
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+
+var _withId = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.withScopeId)("data-v-2016e8ac");
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-2016e8ac");
+
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "about-desc"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", null, "Other Facilities")], -1
+/* HOISTED */
+);
+
+var _hoisted_2 = {
+  id: "facilitiesAccordion",
+  "class": "rs-accordion-style1"
+};
+var _hoisted_3 = {
+  "class": "card-body"
+};
+
+(0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
+
+var render = /*#__PURE__*/_withId(function (_ctx, _cache, $props, $setup, $data, $options) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [_hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.otherFacilities, function (otherFacility, index) {
+    return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", {
+      key: index,
+      "class": "card"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      "class": "card-header",
+      id: "otherFacility".concat(index)
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h3", {
+      "class": "acdn-title collapsed",
+      "data-toggle": "collapse",
+      "data-target": "#collapseAcademicSession".concat(index),
+      "aria-expanded": "true",
+      "aria-controls": "collapseAcademicSession".concat(index)
+    }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(otherFacility.title), 9
+    /* TEXT, PROPS */
+    , ["data-target", "aria-controls"])], 8
+    /* PROPS */
+    , ["id"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+      id: "collapseAcademicSession".concat(index),
+      "class": "collapse",
+      "aria-labelledby": "otherFacility".concat(index),
+      "data-parent": "#facilitiesAccordion"
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(otherFacility.description), 1
+    /* TEXT */
+    )], 8
+    /* PROPS */
+    , ["id", "aria-labelledby"])]);
+  }), 128
+  /* KEYED_FRAGMENT */
+  ))])], 64
+  /* STABLE_FRAGMENT */
+  );
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OurCampusLife.vue?vue&type=template&id=882694bc&scoped=true":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OurCampusLife.vue?vue&type=template&id=882694bc&scoped=true ***!
@@ -21947,6 +22042,45 @@ var institutes = [{
 
 /***/ }),
 
+/***/ "./resources/js/data/otherFacilities.js":
+/*!**********************************************!*\
+  !*** ./resources/js/data/otherFacilities.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "otherFacilities": () => (/* binding */ otherFacilities)
+/* harmony export */ });
+var otherFacilities = [{
+  id: '1',
+  title: 'Academic Session',
+  description: "The Academic year is mainly divided into three semesters. Each semester consists of 18 weeks including examinations. Dhaka International University (DIU) has its own Holiday list."
+}, {
+  id: '2',
+  title: 'Health Service',
+  description: "Dhaka international University has health services department . Doctors are available in all campuses . They consult the students with their health related problems."
+}, {
+  id: '3',
+  title: 'Accommodation',
+  description: "DIU officers well-decorated hotels with modern facilities. At present there are six boys hostel and one girls' hostel."
+}, {
+  id: '4',
+  title: 'Student’s Welfare',
+  description: "Dhaka international University is committed to serve the students. As per private university act - 2010, DIU authority has appointed student welfare adviser. Student welfare adviser conselts with the students regarding their problems and solv the problems."
+}, {
+  id: '5',
+  title: 'Career Counseling',
+  description: "DIU has its career counseling department. An institute has been set up. The name of the instituted is Center for Excellence and Career Development. CECD organizes career related seminar, workshop and job fair for the students."
+}, {
+  id: '6',
+  title: 'On-Course Counseling',
+  description: "Every teachers of Dhaka international University has allocated their time in their daily class routin for on cours counciling for students. Students get benefite form ther on-cours counseling. It is compulsary for all teachers to allocate time for the students."
+}];
+
+/***/ }),
+
 /***/ "./resources/js/data/ourCampusLifes.js":
 /*!*********************************************!*\
   !*** ./resources/js/data/ourCampusLifes.js ***!
@@ -22640,139 +22774,179 @@ if (typeof window !== 'undefined' && typeof window.Ziggy !== 'undefined') {
   \********************************************/
 /***/ (function(module, exports) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) { symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); } keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _wrapNativeSuper(Class) { var _cache = typeof Map === "function" ? new Map() : undefined; _wrapNativeSuper = function _wrapNativeSuper(Class) { if (Class === null || !_isNativeFunction(Class)) return Class; if (typeof Class !== "function") { throw new TypeError("Super expression must either be null or a function"); } if (typeof _cache !== "undefined") { if (_cache.has(Class)) return _cache.get(Class); _cache.set(Class, Wrapper); } function Wrapper() { return _construct(Class, arguments, _getPrototypeOf(this).constructor); } Wrapper.prototype = Object.create(Class.prototype, { constructor: { value: Wrapper, enumerable: false, writable: true, configurable: true } }); return _setPrototypeOf(Wrapper, Class); }; return _wrapNativeSuper(Class); }
-
-function _construct(Parent, args, Class) { if (_isNativeReflectConstruct()) { _construct = Reflect.construct; } else { _construct = function _construct(Parent, args, Class) { var a = [null]; a.push.apply(a, args); var Constructor = Function.bind.apply(Parent, a); var instance = new Constructor(); if (Class) _setPrototypeOf(instance, Class.prototype); return instance; }; } return _construct.apply(null, arguments); }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
-
-function _isNativeFunction(fn) { return Function.toString.call(fn).indexOf("[native code]") !== -1; }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-!function (t, e) {
-  "object" == ( false ? 0 : _typeof(exports)) && "undefined" != "object" ? e(exports) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (e),
+!function (t, n) {
+  "object" == ( false ? 0 : _typeof(exports)) && "undefined" != "object" ? n(exports) :  true ? !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (n),
 		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : 0;
 }(this, function (t) {
-  var e = Object.prototype.hasOwnProperty,
-      r = Array.isArray,
-      n = function () {
-    for (var t = [], e = 0; e < 256; ++e) {
-      t.push("%" + ((e < 16 ? "0" : "") + e.toString(16)).toUpperCase());
+  function n(t, n) {
+    for (var r = 0; r < n.length; r++) {
+      var e = n[r];
+      e.enumerable = e.enumerable || !1, e.configurable = !0, "value" in e && (e.writable = !0), Object.defineProperty(t, e.key, e);
+    }
+  }
+
+  function r(t, r, e) {
+    return r && n(t.prototype, r), e && n(t, e), t;
+  }
+
+  function e() {
+    return (e = Object.assign || function (t) {
+      for (var n = 1; n < arguments.length; n++) {
+        var r = arguments[n];
+
+        for (var e in r) {
+          Object.prototype.hasOwnProperty.call(r, e) && (t[e] = r[e]);
+        }
+      }
+
+      return t;
+    }).apply(this, arguments);
+  }
+
+  function i(t) {
+    return (i = Object.setPrototypeOf ? Object.getPrototypeOf : function (t) {
+      return t.__proto__ || Object.getPrototypeOf(t);
+    })(t);
+  }
+
+  function o(t, n) {
+    return (o = Object.setPrototypeOf || function (t, n) {
+      return t.__proto__ = n, t;
+    })(t, n);
+  }
+
+  function u() {
+    if ("undefined" == typeof Reflect || !Reflect.construct) return !1;
+    if (Reflect.construct.sham) return !1;
+    if ("function" == typeof Proxy) return !0;
+
+    try {
+      return Date.prototype.toString.call(Reflect.construct(Date, [], function () {})), !0;
+    } catch (t) {
+      return !1;
+    }
+  }
+
+  function f(t, n, r) {
+    return (f = u() ? Reflect.construct : function (t, n, r) {
+      var e = [null];
+      e.push.apply(e, n);
+      var i = new (Function.bind.apply(t, e))();
+      return r && o(i, r.prototype), i;
+    }).apply(null, arguments);
+  }
+
+  function c(t) {
+    var n = "function" == typeof Map ? new Map() : void 0;
+    return (c = function c(t) {
+      if (null === t || -1 === Function.toString.call(t).indexOf("[native code]")) return t;
+      if ("function" != typeof t) throw new TypeError("Super expression must either be null or a function");
+
+      if (void 0 !== n) {
+        if (n.has(t)) return n.get(t);
+        n.set(t, r);
+      }
+
+      function r() {
+        return f(t, arguments, i(this).constructor);
+      }
+
+      return r.prototype = Object.create(t.prototype, {
+        constructor: {
+          value: r,
+          enumerable: !1,
+          writable: !0,
+          configurable: !0
+        }
+      }), o(r, t);
+    })(t);
+  }
+
+  var a = Object.prototype.hasOwnProperty,
+      s = Array.isArray,
+      l = function () {
+    for (var t = [], n = 0; n < 256; ++n) {
+      t.push("%" + ((n < 16 ? "0" : "") + n.toString(16)).toUpperCase());
     }
 
     return t;
   }(),
-      i = function i(t, e) {
-    for (var r = e && e.plainObjects ? Object.create(null) : {}, n = 0; n < t.length; ++n) {
-      void 0 !== t[n] && (r[n] = t[n]);
+      v = function v(t, n) {
+    for (var r = n && n.plainObjects ? Object.create(null) : {}, e = 0; e < t.length; ++e) {
+      void 0 !== t[e] && (r[e] = t[e]);
     }
 
     return r;
   },
-      o = {
-    arrayToObject: i,
-    assign: function assign(t, e) {
-      return Object.keys(e).reduce(function (t, r) {
-        return t[r] = e[r], t;
+      d = {
+    arrayToObject: v,
+    assign: function assign(t, n) {
+      return Object.keys(n).reduce(function (t, r) {
+        return t[r] = n[r], t;
       }, t);
     },
-    combine: function combine(t, e) {
-      return [].concat(t, e);
+    combine: function combine(t, n) {
+      return [].concat(t, n);
     },
     compact: function compact(t) {
-      for (var e = [{
+      for (var n = [{
         obj: {
           o: t
         },
         prop: "o"
-      }], n = [], i = 0; i < e.length; ++i) {
-        for (var o = e[i], u = o.obj[o.prop], f = Object.keys(u), s = 0; s < f.length; ++s) {
-          var a = f[s],
-              c = u[a];
-          "object" == _typeof(c) && null !== c && -1 === n.indexOf(c) && (e.push({
-            obj: u,
-            prop: a
-          }), n.push(c));
+      }], r = [], e = 0; e < n.length; ++e) {
+        for (var i = n[e], o = i.obj[i.prop], u = Object.keys(o), f = 0; f < u.length; ++f) {
+          var c = u[f],
+              a = o[c];
+          "object" == _typeof(a) && null !== a && -1 === r.indexOf(a) && (n.push({
+            obj: o,
+            prop: c
+          }), r.push(a));
         }
       }
 
       return function (t) {
         for (; t.length > 1;) {
-          var e = t.pop(),
-              n = e.obj[e.prop];
+          var n = t.pop(),
+              r = n.obj[n.prop];
 
-          if (r(n)) {
-            for (var i = [], o = 0; o < n.length; ++o) {
-              void 0 !== n[o] && i.push(n[o]);
+          if (s(r)) {
+            for (var e = [], i = 0; i < r.length; ++i) {
+              void 0 !== r[i] && e.push(r[i]);
             }
 
-            e.obj[e.prop] = i;
+            n.obj[n.prop] = e;
           }
         }
-      }(e), t;
+      }(n), t;
     },
-    decode: function decode(t, e, r) {
-      var n = t.replace(/\+/g, " ");
-      if ("iso-8859-1" === r) return n.replace(/%[0-9a-f]{2}/gi, unescape);
+    decode: function decode(t, n, r) {
+      var e = t.replace(/\+/g, " ");
+      if ("iso-8859-1" === r) return e.replace(/%[0-9a-f]{2}/gi, unescape);
 
       try {
-        return decodeURIComponent(n);
+        return decodeURIComponent(e);
       } catch (t) {
-        return n;
+        return e;
       }
     },
-    encode: function encode(t, e, r) {
+    encode: function encode(t, n, r) {
       if (0 === t.length) return t;
-      var i = t;
-      if ("symbol" == _typeof(t) ? i = Symbol.prototype.toString.call(t) : "string" != typeof t && (i = String(t)), "iso-8859-1" === r) return escape(i).replace(/%u[0-9a-f]{4}/gi, function (t) {
+      var e = t;
+      if ("symbol" == _typeof(t) ? e = Symbol.prototype.toString.call(t) : "string" != typeof t && (e = String(t)), "iso-8859-1" === r) return escape(e).replace(/%u[0-9a-f]{4}/gi, function (t) {
         return "%26%23" + parseInt(t.slice(2), 16) + "%3B";
       });
 
-      for (var o = "", u = 0; u < i.length; ++u) {
-        var f = i.charCodeAt(u);
-        45 === f || 46 === f || 95 === f || 126 === f || f >= 48 && f <= 57 || f >= 65 && f <= 90 || f >= 97 && f <= 122 ? o += i.charAt(u) : f < 128 ? o += n[f] : f < 2048 ? o += n[192 | f >> 6] + n[128 | 63 & f] : f < 55296 || f >= 57344 ? o += n[224 | f >> 12] + n[128 | f >> 6 & 63] + n[128 | 63 & f] : (f = 65536 + ((1023 & f) << 10 | 1023 & i.charCodeAt(u += 1)), o += n[240 | f >> 18] + n[128 | f >> 12 & 63] + n[128 | f >> 6 & 63] + n[128 | 63 & f]);
+      for (var i = "", o = 0; o < e.length; ++o) {
+        var u = e.charCodeAt(o);
+        45 === u || 46 === u || 95 === u || 126 === u || u >= 48 && u <= 57 || u >= 65 && u <= 90 || u >= 97 && u <= 122 ? i += e.charAt(o) : u < 128 ? i += l[u] : u < 2048 ? i += l[192 | u >> 6] + l[128 | 63 & u] : u < 55296 || u >= 57344 ? i += l[224 | u >> 12] + l[128 | u >> 6 & 63] + l[128 | 63 & u] : (u = 65536 + ((1023 & u) << 10 | 1023 & e.charCodeAt(o += 1)), i += l[240 | u >> 18] + l[128 | u >> 12 & 63] + l[128 | u >> 6 & 63] + l[128 | 63 & u]);
       }
 
-      return o;
+      return i;
     },
     isBuffer: function isBuffer(t) {
       return !(!t || "object" != _typeof(t) || !(t.constructor && t.constructor.isBuffer && t.constructor.isBuffer(t)));
@@ -22780,138 +22954,138 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     isRegExp: function isRegExp(t) {
       return "[object RegExp]" === Object.prototype.toString.call(t);
     },
-    maybeMap: function maybeMap(t, e) {
-      if (r(t)) {
-        for (var n = [], i = 0; i < t.length; i += 1) {
-          n.push(e(t[i]));
+    maybeMap: function maybeMap(t, n) {
+      if (s(t)) {
+        for (var r = [], e = 0; e < t.length; e += 1) {
+          r.push(n(t[e]));
         }
 
-        return n;
+        return r;
       }
 
-      return e(t);
+      return n(t);
     },
-    merge: function t(n, o, u) {
-      if (!o) return n;
+    merge: function t(n, r, e) {
+      if (!r) return n;
 
-      if ("object" != _typeof(o)) {
-        if (r(n)) n.push(o);else {
-          if (!n || "object" != _typeof(n)) return [n, o];
-          (u && (u.plainObjects || u.allowPrototypes) || !e.call(Object.prototype, o)) && (n[o] = !0);
+      if ("object" != _typeof(r)) {
+        if (s(n)) n.push(r);else {
+          if (!n || "object" != _typeof(n)) return [n, r];
+          (e && (e.plainObjects || e.allowPrototypes) || !a.call(Object.prototype, r)) && (n[r] = !0);
         }
         return n;
       }
 
-      if (!n || "object" != _typeof(n)) return [n].concat(o);
-      var f = n;
-      return r(n) && !r(o) && (f = i(n, u)), r(n) && r(o) ? (o.forEach(function (r, i) {
-        if (e.call(n, i)) {
+      if (!n || "object" != _typeof(n)) return [n].concat(r);
+      var i = n;
+      return s(n) && !s(r) && (i = v(n, e)), s(n) && s(r) ? (r.forEach(function (r, i) {
+        if (a.call(n, i)) {
           var o = n[i];
-          o && "object" == _typeof(o) && r && "object" == _typeof(r) ? n[i] = t(o, r, u) : n.push(r);
+          o && "object" == _typeof(o) && r && "object" == _typeof(r) ? n[i] = t(o, r, e) : n.push(r);
         } else n[i] = r;
-      }), n) : Object.keys(o).reduce(function (r, n) {
-        var i = o[n];
-        return r[n] = e.call(r, n) ? t(r[n], i, u) : i, r;
-      }, f);
+      }), n) : Object.keys(r).reduce(function (n, i) {
+        var o = r[i];
+        return n[i] = a.call(n, i) ? t(n[i], o, e) : o, n;
+      }, i);
     }
   },
-      u = String.prototype.replace,
-      f = /%20/g,
-      s = {
+      p = String.prototype.replace,
+      y = /%20/g,
+      h = {
     RFC1738: "RFC1738",
     RFC3986: "RFC3986"
   },
-      a = o.assign({
-    "default": s.RFC3986,
+      b = d.assign({
+    "default": h.RFC3986,
     formatters: {
       RFC1738: function RFC1738(t) {
-        return u.call(t, f, "+");
+        return p.call(t, y, "+");
       },
       RFC3986: function RFC3986(t) {
         return String(t);
       }
     }
-  }, s),
-      c = Object.prototype.hasOwnProperty,
-      l = {
+  }, h),
+      g = Object.prototype.hasOwnProperty,
+      j = {
     brackets: function brackets(t) {
       return t + "[]";
     },
     comma: "comma",
-    indices: function indices(t, e) {
-      return t + "[" + e + "]";
+    indices: function indices(t, n) {
+      return t + "[" + n + "]";
     },
     repeat: function repeat(t) {
       return t;
     }
   },
-      h = Array.isArray,
-      p = Array.prototype.push,
-      d = function d(t, e) {
-    p.apply(t, h(e) ? e : [e]);
+      m = Array.isArray,
+      O = Array.prototype.push,
+      w = function w(t, n) {
+    O.apply(t, m(n) ? n : [n]);
   },
-      y = Date.prototype.toISOString,
-      b = a["default"],
-      v = {
+      R = Date.prototype.toISOString,
+      E = b["default"],
+      k = {
     addQueryPrefix: !1,
     allowDots: !1,
     charset: "utf-8",
     charsetSentinel: !1,
     delimiter: "&",
     encode: !0,
-    encoder: o.encode,
+    encoder: d.encode,
     encodeValuesOnly: !1,
-    format: b,
-    formatter: a.formatters[b],
+    format: E,
+    formatter: b.formatters[E],
     indices: !1,
     serializeDate: function serializeDate(t) {
-      return y.call(t);
+      return R.call(t);
     },
     skipNulls: !1,
     strictNullHandling: !1
   },
-      m = function t(e, r, n, i, u, f, s, a, c, l, p, y, b) {
-    var m,
-        g = e;
+      x = function t(n, r, e, i, o, u, f, c, a, s, l, v, p) {
+    var y,
+        h = n;
 
-    if ("function" == typeof s ? g = s(r, g) : g instanceof Date ? g = l(g) : "comma" === n && h(g) && (g = o.maybeMap(g, function (t) {
-      return t instanceof Date ? l(t) : t;
-    }).join(",")), null === g) {
-      if (i) return f && !y ? f(r, v.encoder, b, "key") : r;
-      g = "";
+    if ("function" == typeof f ? h = f(r, h) : h instanceof Date ? h = s(h) : "comma" === e && m(h) && (h = d.maybeMap(h, function (t) {
+      return t instanceof Date ? s(t) : t;
+    }).join(",")), null === h) {
+      if (i) return u && !v ? u(r, k.encoder, p, "key") : r;
+      h = "";
     }
 
-    if ("string" == typeof (m = g) || "number" == typeof m || "boolean" == typeof m || "symbol" == _typeof(m) || "bigint" == typeof m || o.isBuffer(g)) return f ? [p(y ? r : f(r, v.encoder, b, "key")) + "=" + p(f(g, v.encoder, b, "value"))] : [p(r) + "=" + p(String(g))];
-    var j,
-        w = [];
-    if (void 0 === g) return w;
-    if (h(s)) j = s;else {
-      var O = Object.keys(g);
-      j = a ? O.sort(a) : O;
+    if ("string" == typeof (y = h) || "number" == typeof y || "boolean" == typeof y || "symbol" == _typeof(y) || "bigint" == typeof y || d.isBuffer(h)) return u ? [l(v ? r : u(r, k.encoder, p, "key")) + "=" + l(u(h, k.encoder, p, "value"))] : [l(r) + "=" + l(String(h))];
+    var b,
+        g = [];
+    if (void 0 === h) return g;
+    if (m(f)) b = f;else {
+      var j = Object.keys(h);
+      b = c ? j.sort(c) : j;
     }
 
-    for (var $ = 0; $ < j.length; ++$) {
-      var E = j[$],
-          S = g[E];
+    for (var O = 0; O < b.length; ++O) {
+      var R = b[O],
+          E = h[R];
 
-      if (!u || null !== S) {
-        var x = h(g) ? "function" == typeof n ? n(r, E) : r : r + (c ? "." + E : "[" + E + "]");
-        d(w, t(S, x, n, i, u, f, s, a, c, l, p, y, b));
+      if (!o || null !== E) {
+        var x = m(h) ? "function" == typeof e ? e(r, R) : r : r + (a ? "." + R : "[" + R + "]");
+        w(g, t(E, x, e, i, o, u, f, c, a, s, l, v, p));
       }
     }
 
-    return w;
+    return g;
   },
-      g = Object.prototype.hasOwnProperty,
-      j = Array.isArray,
-      w = {
+      S = Object.prototype.hasOwnProperty,
+      C = Array.isArray,
+      D = {
     allowDots: !1,
     allowPrototypes: !1,
     arrayLimit: 20,
     charset: "utf-8",
     charsetSentinel: !1,
     comma: !1,
-    decoder: o.decode,
+    decoder: d.decode,
     delimiter: "&",
     depth: 5,
     ignoreQueryPrefix: !1,
@@ -22921,41 +23095,41 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     plainObjects: !1,
     strictNullHandling: !1
   },
-      O = function O(t) {
-    return t.replace(/&#(\d+);/g, function (t, e) {
-      return String.fromCharCode(parseInt(e, 10));
+      N = function N(t) {
+    return t.replace(/&#(\d+);/g, function (t, n) {
+      return String.fromCharCode(parseInt(n, 10));
     });
   },
-      $ = function $(t, e) {
-    return t && "string" == typeof t && e.comma && t.indexOf(",") > -1 ? t.split(",") : t;
+      T = function T(t, n) {
+    return t && "string" == typeof t && n.comma && t.indexOf(",") > -1 ? t.split(",") : t;
   },
-      E = function E(t, e, r, n) {
+      F = function F(t, n, r, e) {
     if (t) {
       var i = r.allowDots ? t.replace(/\.([^.[]+)/g, "[$1]") : t,
           o = /(\[[^[\]]*])/g,
           u = r.depth > 0 && /(\[[^[\]]*])/.exec(i),
           f = u ? i.slice(0, u.index) : i,
-          s = [];
+          c = [];
 
       if (f) {
-        if (!r.plainObjects && g.call(Object.prototype, f) && !r.allowPrototypes) return;
-        s.push(f);
+        if (!r.plainObjects && S.call(Object.prototype, f) && !r.allowPrototypes) return;
+        c.push(f);
       }
 
       for (var a = 0; r.depth > 0 && null !== (u = o.exec(i)) && a < r.depth;) {
-        if (a += 1, !r.plainObjects && g.call(Object.prototype, u[1].slice(1, -1)) && !r.allowPrototypes) return;
-        s.push(u[1]);
+        if (a += 1, !r.plainObjects && S.call(Object.prototype, u[1].slice(1, -1)) && !r.allowPrototypes) return;
+        c.push(u[1]);
       }
 
-      return u && s.push("[" + i.slice(u.index) + "]"), function (t, e, r, n) {
-        for (var i = n ? e : $(e, r), o = t.length - 1; o >= 0; --o) {
+      return u && c.push("[" + i.slice(u.index) + "]"), function (t, n, r, e) {
+        for (var i = e ? n : T(n, r), o = t.length - 1; o >= 0; --o) {
           var u,
               f = t[o];
           if ("[]" === f && r.parseArrays) u = [].concat(i);else {
             u = r.plainObjects ? Object.create(null) : {};
-            var s = "[" === f.charAt(0) && "]" === f.charAt(f.length - 1) ? f.slice(1, -1) : f,
-                a = parseInt(s, 10);
-            r.parseArrays || "" !== s ? !isNaN(a) && f !== s && String(a) === s && a >= 0 && r.parseArrays && a <= r.arrayLimit ? (u = [])[a] = i : u[s] = i : u = {
+            var c = "[" === f.charAt(0) && "]" === f.charAt(f.length - 1) ? f.slice(1, -1) : f,
+                a = parseInt(c, 10);
+            r.parseArrays || "" !== c ? !isNaN(a) && f !== c && String(a) === c && a >= 0 && r.parseArrays && a <= r.arrayLimit ? (u = [])[a] = i : u[c] = i : u = {
               0: i
             };
           }
@@ -22963,382 +23137,282 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
         }
 
         return i;
-      }(s, e, r, n);
+      }(c, n, r, e);
     }
   },
-      S = function S(t, e) {
-    var r = function (t) {
-      if (!t) return w;
-      if (null != t.decoder && "function" != typeof t.decoder) throw new TypeError("Decoder has to be a function.");
-      if (void 0 !== t.charset && "utf-8" !== t.charset && "iso-8859-1" !== t.charset) throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
-      return {
-        allowDots: void 0 === t.allowDots ? w.allowDots : !!t.allowDots,
-        allowPrototypes: "boolean" == typeof t.allowPrototypes ? t.allowPrototypes : w.allowPrototypes,
-        arrayLimit: "number" == typeof t.arrayLimit ? t.arrayLimit : w.arrayLimit,
-        charset: void 0 === t.charset ? w.charset : t.charset,
-        charsetSentinel: "boolean" == typeof t.charsetSentinel ? t.charsetSentinel : w.charsetSentinel,
-        comma: "boolean" == typeof t.comma ? t.comma : w.comma,
-        decoder: "function" == typeof t.decoder ? t.decoder : w.decoder,
-        delimiter: "string" == typeof t.delimiter || o.isRegExp(t.delimiter) ? t.delimiter : w.delimiter,
-        depth: "number" == typeof t.depth || !1 === t.depth ? +t.depth : w.depth,
-        ignoreQueryPrefix: !0 === t.ignoreQueryPrefix,
-        interpretNumericEntities: "boolean" == typeof t.interpretNumericEntities ? t.interpretNumericEntities : w.interpretNumericEntities,
-        parameterLimit: "number" == typeof t.parameterLimit ? t.parameterLimit : w.parameterLimit,
-        parseArrays: !1 !== t.parseArrays,
-        plainObjects: "boolean" == typeof t.plainObjects ? t.plainObjects : w.plainObjects,
-        strictNullHandling: "boolean" == typeof t.strictNullHandling ? t.strictNullHandling : w.strictNullHandling
-      };
-    }(e);
-
-    if ("" === t || null == t) return r.plainObjects ? Object.create(null) : {};
-
-    for (var n = "string" == typeof t ? function (t, e) {
-      var r,
-          n = {},
-          i = (e.ignoreQueryPrefix ? t.replace(/^\?/, "") : t).split(e.delimiter, Infinity === e.parameterLimit ? void 0 : e.parameterLimit),
-          u = -1,
-          f = e.charset;
-      if (e.charsetSentinel) for (r = 0; r < i.length; ++r) {
-        0 === i[r].indexOf("utf8=") && ("utf8=%E2%9C%93" === i[r] ? f = "utf-8" : "utf8=%26%2310003%3B" === i[r] && (f = "iso-8859-1"), u = r, r = i.length);
-      }
-
-      for (r = 0; r < i.length; ++r) {
-        if (r !== u) {
-          var s,
-              a,
-              c = i[r],
-              l = c.indexOf("]="),
-              h = -1 === l ? c.indexOf("=") : l + 1;
-          -1 === h ? (s = e.decoder(c, w.decoder, f, "key"), a = e.strictNullHandling ? null : "") : (s = e.decoder(c.slice(0, h), w.decoder, f, "key"), a = o.maybeMap($(c.slice(h + 1), e), function (t) {
-            return e.decoder(t, w.decoder, f, "value");
-          })), a && e.interpretNumericEntities && "iso-8859-1" === f && (a = O(a)), c.indexOf("[]=") > -1 && (a = j(a) ? [a] : a), n[s] = g.call(n, s) ? o.combine(n[s], a) : a;
-        }
-      }
-
-      return n;
-    }(t, r) : t, i = r.plainObjects ? Object.create(null) : {}, u = Object.keys(n), f = 0; f < u.length; ++f) {
-      var s = u[f],
-          a = E(s, n[s], r, "string" == typeof t);
-      i = o.merge(i, a, r);
+      $ = function () {
+    function t(t, n, r) {
+      var e;
+      this.name = t, this.definition = n, this.bindings = null != (e = n.bindings) ? e : {}, this.config = r;
     }
 
-    return o.compact(i);
-  };
-
-  var x = /*#__PURE__*/function () {
-    function x(t, e, r) {
-      var _e$bindings;
-
-      _classCallCheck(this, x);
-
-      this.name = t, this.definition = e, this.bindings = (_e$bindings = e.bindings) !== null && _e$bindings !== void 0 ? _e$bindings : {}, this.config = r;
-    }
-
-    _createClass(x, [{
+    var n = t.prototype;
+    return n.matchesUrl = function (t) {
+      if (!this.definition.methods.includes("GET")) return !1;
+      var n = this.template.replace(/\/{[^}?]*\?}/g, "(/[^/?]+)?").replace(/{[^}]+}/g, "[^/?]+").replace(/^\w+:\/\//, "");
+      return new RegExp("^" + n + "$").test(t.replace(/\/+$/, "").split("?").shift());
+    }, n.compile = function (t) {
+      var n = this;
+      return this.parameterSegments.length ? this.template.replace(/{([^}?]+)\??}/g, function (r, e) {
+        var i;
+        if ([null, void 0].includes(t[e]) && n.parameterSegments.find(function (t) {
+          return t.name === e;
+        }).required) throw new Error("Ziggy error: '" + e + "' parameter is required for route '" + n.name + "'.");
+        return encodeURIComponent(null != (i = t[e]) ? i : "");
+      }).replace(/\/+$/, "") : this.template;
+    }, r(t, [{
       key: "template",
       get: function get() {
-        return "".concat(this.config.absolute ? this.definition.domain ? "".concat(this.config.url.match(/^\w+:\/\//)[0]).concat(this.definition.domain).concat(this.config.port ? ":" + this.config.port : "") : this.config.url : "", "/").concat(this.definition.uri).replace(/\/+$/, "");
+        return ((this.config.absolute ? this.definition.domain ? "" + this.config.url.match(/^\w+:\/\//)[0] + this.definition.domain + (this.config.port ? ":" + this.config.port : "") : this.config.url : "") + "/" + this.definition.uri).replace(/\/+$/, "");
       }
     }, {
       key: "parameterSegments",
       get: function get() {
-        var _ref;
-
-        var t;
-        return (_ref = null === (t = this.template.match(/{[^}?]+\??}/g)) || void 0 === t ? void 0 : t.map(function (t) {
+        var t, n;
+        return null != (t = null === (n = this.template.match(/{[^}?]+\??}/g)) || void 0 === n ? void 0 : n.map(function (t) {
           return {
             name: t.replace(/{|\??}/g, ""),
             required: !/\?}$/.test(t)
           };
-        })) !== null && _ref !== void 0 ? _ref : [];
+        })) ? t : [];
       }
-    }, {
-      key: "matchesUrl",
-      value: function matchesUrl(t) {
-        if (!this.definition.methods.includes("GET")) return !1;
-        var e = this.template.replace(/\/{[^}?]*\?}/g, "(/[^/?]+)?").replace(/{[^}]+}/g, "[^/?]+").replace(/^\w+:\/\//, "");
-        return new RegExp("^".concat(e, "$")).test(t.replace(/\/+$/, "").split("?").shift());
-      }
-    }, {
-      key: "compile",
-      value: function compile(t) {
-        var _this = this;
+    }]), t;
+  }(),
+      A = function (t) {
+    var n, i;
 
-        return this.parameterSegments.length ? this.template.replace(/{([^}?]+)\??}/g, function (e, r) {
-          var _t$r;
+    function o(n, r, i, o) {
+      var u, f;
 
-          if ([null, void 0].includes(t[r]) && _this.parameterSegments.find(function (_ref2) {
-            var t = _ref2.name;
-            return t === r;
-          }).required) throw new Error("Ziggy error: '".concat(r, "' parameter is required for route '").concat(_this.name, "'."));
-          return encodeURIComponent((_t$r = t[r]) !== null && _t$r !== void 0 ? _t$r : "");
-        }).replace(/\/+$/, "") : this.template;
-      }
-    }]);
-
-    return x;
-  }();
-
-  var N = /*#__PURE__*/function (_String) {
-    _inherits(N, _String);
-
-    var _super = _createSuper(N);
-
-    function N(t, e) {
-      var _ref3;
-
-      var _this2;
-
-      var r = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : !0;
-      var n = arguments.length > 3 ? arguments[3] : undefined;
-
-      _classCallCheck(this, N);
-
-      if (_this2 = _super.call(this), _this2.t = (_ref3 = n !== null && n !== void 0 ? n : Ziggy) !== null && _ref3 !== void 0 ? _ref3 : null === globalThis || void 0 === globalThis ? void 0 : globalThis.Ziggy, _this2.t = _objectSpread(_objectSpread({}, _this2.t), {}, {
-        absolute: r
-      }), t) {
-        if (!_this2.t.routes[t]) throw new Error("Ziggy error: route '".concat(t, "' is not in the route list."));
-        _this2.i = new x(t, _this2.t.routes[t], _this2.t), _this2.u = _this2.s(e);
+      if (void 0 === i && (i = !0), (f = t.call(this) || this).t = null != (u = null != o ? o : Ziggy) ? u : null === globalThis || void 0 === globalThis ? void 0 : globalThis.Ziggy, f.t = e({}, f.t, {
+        absolute: i
+      }), n) {
+        if (!f.t.routes[n]) throw new Error("Ziggy error: route '" + n + "' is not in the route list.");
+        f.i = new $(n, f.t.routes[n], f.t), f.u = f.s(r);
       }
 
-      return _possibleConstructorReturn(_this2);
+      return f;
     }
 
-    _createClass(N, [{
-      key: "toString",
-      value: function toString() {
-        var _this3 = this;
+    i = t, (n = o).prototype = Object.create(i.prototype), n.prototype.constructor = n, n.__proto__ = i;
+    var u = o.prototype;
+    return u.toString = function () {
+      var t = this,
+          n = Object.keys(this.u).filter(function (n) {
+        return !t.i.parameterSegments.some(function (t) {
+          return t.name === n;
+        });
+      }).filter(function (t) {
+        return "_query" !== t;
+      }).reduce(function (n, r) {
+        var i;
+        return e({}, n, ((i = {})[r] = t.u[r], i));
+      }, {});
+      return this.i.compile(this.u) + function (t, n) {
+        var r,
+            e = t,
+            i = function (t) {
+          if (!t) return k;
+          if (null != t.encoder && "function" != typeof t.encoder) throw new TypeError("Encoder has to be a function.");
+          var n = t.charset || k.charset;
+          if (void 0 !== t.charset && "utf-8" !== t.charset && "iso-8859-1" !== t.charset) throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
+          var r = b["default"];
 
-        var t = Object.keys(this.u).filter(function (t) {
-          return !_this3.i.parameterSegments.some(function (_ref4) {
-            var e = _ref4.name;
-            return e === t;
-          });
-        }).filter(function (t) {
-          return "_query" !== t;
-        }).reduce(function (t, e) {
-          return _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, e, _this3.u[e]));
+          if (void 0 !== t.format) {
+            if (!g.call(b.formatters, t.format)) throw new TypeError("Unknown format option provided.");
+            r = t.format;
+          }
+
+          var e = b.formatters[r],
+              i = k.filter;
+          return ("function" == typeof t.filter || m(t.filter)) && (i = t.filter), {
+            addQueryPrefix: "boolean" == typeof t.addQueryPrefix ? t.addQueryPrefix : k.addQueryPrefix,
+            allowDots: void 0 === t.allowDots ? k.allowDots : !!t.allowDots,
+            charset: n,
+            charsetSentinel: "boolean" == typeof t.charsetSentinel ? t.charsetSentinel : k.charsetSentinel,
+            delimiter: void 0 === t.delimiter ? k.delimiter : t.delimiter,
+            encode: "boolean" == typeof t.encode ? t.encode : k.encode,
+            encoder: "function" == typeof t.encoder ? t.encoder : k.encoder,
+            encodeValuesOnly: "boolean" == typeof t.encodeValuesOnly ? t.encodeValuesOnly : k.encodeValuesOnly,
+            filter: i,
+            formatter: e,
+            serializeDate: "function" == typeof t.serializeDate ? t.serializeDate : k.serializeDate,
+            skipNulls: "boolean" == typeof t.skipNulls ? t.skipNulls : k.skipNulls,
+            sort: "function" == typeof t.sort ? t.sort : null,
+            strictNullHandling: "boolean" == typeof t.strictNullHandling ? t.strictNullHandling : k.strictNullHandling
+          };
+        }(n);
+
+        "function" == typeof i.filter ? e = (0, i.filter)("", e) : m(i.filter) && (r = i.filter);
+        var o = [];
+        if ("object" != _typeof(e) || null === e) return "";
+        var u = j[n && n.arrayFormat in j ? n.arrayFormat : n && "indices" in n ? n.indices ? "indices" : "repeat" : "indices"];
+        r || (r = Object.keys(e)), i.sort && r.sort(i.sort);
+
+        for (var f = 0; f < r.length; ++f) {
+          var c = r[f];
+          i.skipNulls && null === e[c] || w(o, x(e[c], c, u, i.strictNullHandling, i.skipNulls, i.encode ? i.encoder : null, i.filter, i.sort, i.allowDots, i.serializeDate, i.formatter, i.encodeValuesOnly, i.charset));
+        }
+
+        var a = o.join(i.delimiter),
+            s = !0 === i.addQueryPrefix ? "?" : "";
+        return i.charsetSentinel && (s += "iso-8859-1" === i.charset ? "utf8=%26%2310003%3B&" : "utf8=%E2%9C%93&"), a.length > 0 ? s + a : "";
+      }(e({}, n, this.u._query), {
+        addQueryPrefix: !0,
+        arrayFormat: "indices",
+        encodeValuesOnly: !0,
+        skipNulls: !0,
+        encoder: function encoder(t, n) {
+          return "boolean" == typeof t ? Number(t) : n(t);
+        }
+      });
+    }, u.current = function (t, n) {
+      var r = this,
+          e = this.t.absolute ? this.l().host + this.l().pathname : this.l().pathname.replace(this.t.url.replace(/^\w*:\/\/[^/]+/, ""), "").replace(/^\/+/, "/"),
+          i = Object.entries(this.t.routes).find(function (n) {
+        return new $(t, n[1], r.t).matchesUrl(e);
+      }) || [void 0, void 0],
+          o = i[0],
+          u = i[1];
+      if (!t) return o;
+      var f = new RegExp("^" + t.replace(".", "\\.").replace("*", ".*") + "$").test(o);
+      if ([null, void 0].includes(n) || !f) return f;
+      var c = new $(o, u, this.t);
+      n = this.s(n, c);
+      var a = this.v(u);
+      return !(!Object.values(n).every(function (t) {
+        return !t;
+      }) || Object.values(a).length) || Object.entries(n).every(function (t) {
+        return a[t[0]] == t[1];
+      });
+    }, u.l = function () {
+      var t,
+          n,
+          r,
+          e,
+          i,
+          o,
+          u = "undefined" != typeof window ? window.location : {},
+          f = u.host,
+          c = u.pathname,
+          a = u.search;
+      return {
+        host: null != (t = null === (n = this.t.location) || void 0 === n ? void 0 : n.host) ? t : void 0 === f ? "" : f,
+        pathname: null != (r = null === (e = this.t.location) || void 0 === e ? void 0 : e.pathname) ? r : void 0 === c ? "" : c,
+        search: null != (i = null === (o = this.t.location) || void 0 === o ? void 0 : o.search) ? i : void 0 === a ? "" : a
+      };
+    }, u.has = function (t) {
+      return Object.keys(this.t.routes).includes(t);
+    }, u.s = function (t, n) {
+      var r = this;
+      void 0 === t && (t = {}), void 0 === n && (n = this.i), t = ["string", "number"].includes(_typeof(t)) ? [t] : t;
+      var i = n.parameterSegments.filter(function (t) {
+        return !r.t.defaults[t.name];
+      });
+      if (Array.isArray(t)) t = t.reduce(function (t, n, r) {
+        var o, u;
+        return e({}, t, i[r] ? ((o = {})[i[r].name] = n, o) : ((u = {})[n] = "", u));
+      }, {});else if (1 === i.length && !t[i[0].name] && (t.hasOwnProperty(Object.values(n.bindings)[0]) || t.hasOwnProperty("id"))) {
+        var o;
+        (o = {})[i[0].name] = t, t = o;
+      }
+      return e({}, this.p(n), this.h(t, n.bindings));
+    }, u.p = function (t) {
+      var n = this;
+      return t.parameterSegments.filter(function (t) {
+        return n.t.defaults[t.name];
+      }).reduce(function (t, r, i) {
+        var o,
+            u = r.name;
+        return e({}, t, ((o = {})[u] = n.t.defaults[u], o));
+      }, {});
+    }, u.h = function (t, n) {
+      return void 0 === n && (n = {}), Object.entries(t).reduce(function (t, r) {
+        var i,
+            o,
+            u = r[0],
+            f = r[1];
+        if (!f || "object" != _typeof(f) || Array.isArray(f) || "_query" === u) return e({}, t, ((o = {})[u] = f, o));
+
+        if (!f.hasOwnProperty(n[u])) {
+          if (!f.hasOwnProperty("id")) throw new Error("Ziggy error: object passed as '" + u + "' parameter is missing route model binding key '" + n[u] + "'.");
+          n[u] = "id";
+        }
+
+        return e({}, t, ((i = {})[u] = f[n[u]], i));
+      }, {});
+    }, u.v = function (t) {
+      var n,
+          r = this.l().pathname.replace(this.t.url.replace(/^\w*:\/\/[^/]+/, ""), "").replace(/^\/+/, ""),
+          i = function i(t, n, r) {
+        void 0 === n && (n = "");
+        var i = [t, n].map(function (t) {
+          return t.split(r);
+        }),
+            o = i[0];
+        return i[1].reduce(function (t, n, r) {
+          var i;
+          return /^{[^}?]+\??}$/.test(n) && o[r] ? e({}, t, ((i = {})[n.replace(/^{|\??}$/g, "")] = o[r], i)) : t;
         }, {});
-        return this.i.compile(this.u) + function (t, e) {
+      };
+
+      return e({}, i(this.l().host, t.domain, "."), i(r, t.uri, "/"), function (t, n) {
+        var r = D;
+        if ("" === t || null == t) return r.plainObjects ? Object.create(null) : {};
+
+        for (var e = "string" == typeof t ? function (t, n) {
           var r,
-              n = t,
-              i = function (t) {
-            if (!t) return v;
-            if (null != t.encoder && "function" != typeof t.encoder) throw new TypeError("Encoder has to be a function.");
-            var e = t.charset || v.charset;
-            if (void 0 !== t.charset && "utf-8" !== t.charset && "iso-8859-1" !== t.charset) throw new TypeError("The charset option must be either utf-8, iso-8859-1, or undefined");
-            var r = a["default"];
+              e = {},
+              i = (n.ignoreQueryPrefix ? t.replace(/^\?/, "") : t).split(n.delimiter, Infinity === n.parameterLimit ? void 0 : n.parameterLimit),
+              o = -1,
+              u = n.charset;
+          if (n.charsetSentinel) for (r = 0; r < i.length; ++r) {
+            0 === i[r].indexOf("utf8=") && ("utf8=%E2%9C%93" === i[r] ? u = "utf-8" : "utf8=%26%2310003%3B" === i[r] && (u = "iso-8859-1"), o = r, r = i.length);
+          }
 
-            if (void 0 !== t.format) {
-              if (!c.call(a.formatters, t.format)) throw new TypeError("Unknown format option provided.");
-              r = t.format;
+          for (r = 0; r < i.length; ++r) {
+            if (r !== o) {
+              var f,
+                  c,
+                  a = i[r],
+                  s = a.indexOf("]="),
+                  l = -1 === s ? a.indexOf("=") : s + 1;
+              -1 === l ? (f = n.decoder(a, D.decoder, u, "key"), c = n.strictNullHandling ? null : "") : (f = n.decoder(a.slice(0, l), D.decoder, u, "key"), c = d.maybeMap(T(a.slice(l + 1), n), function (t) {
+                return n.decoder(t, D.decoder, u, "value");
+              })), c && n.interpretNumericEntities && "iso-8859-1" === u && (c = N(c)), a.indexOf("[]=") > -1 && (c = C(c) ? [c] : c), e[f] = S.call(e, f) ? d.combine(e[f], c) : c;
             }
-
-            var n = a.formatters[r],
-                i = v.filter;
-            return ("function" == typeof t.filter || h(t.filter)) && (i = t.filter), {
-              addQueryPrefix: "boolean" == typeof t.addQueryPrefix ? t.addQueryPrefix : v.addQueryPrefix,
-              allowDots: void 0 === t.allowDots ? v.allowDots : !!t.allowDots,
-              charset: e,
-              charsetSentinel: "boolean" == typeof t.charsetSentinel ? t.charsetSentinel : v.charsetSentinel,
-              delimiter: void 0 === t.delimiter ? v.delimiter : t.delimiter,
-              encode: "boolean" == typeof t.encode ? t.encode : v.encode,
-              encoder: "function" == typeof t.encoder ? t.encoder : v.encoder,
-              encodeValuesOnly: "boolean" == typeof t.encodeValuesOnly ? t.encodeValuesOnly : v.encodeValuesOnly,
-              filter: i,
-              formatter: n,
-              serializeDate: "function" == typeof t.serializeDate ? t.serializeDate : v.serializeDate,
-              skipNulls: "boolean" == typeof t.skipNulls ? t.skipNulls : v.skipNulls,
-              sort: "function" == typeof t.sort ? t.sort : null,
-              strictNullHandling: "boolean" == typeof t.strictNullHandling ? t.strictNullHandling : v.strictNullHandling
-            };
-          }(e);
-
-          "function" == typeof i.filter ? n = (0, i.filter)("", n) : h(i.filter) && (r = i.filter);
-          var o = [];
-          if ("object" != _typeof(n) || null === n) return "";
-          var u = l[e && e.arrayFormat in l ? e.arrayFormat : e && "indices" in e ? e.indices ? "indices" : "repeat" : "indices"];
-          r || (r = Object.keys(n)), i.sort && r.sort(i.sort);
-
-          for (var f = 0; f < r.length; ++f) {
-            var s = r[f];
-            i.skipNulls && null === n[s] || d(o, m(n[s], s, u, i.strictNullHandling, i.skipNulls, i.encode ? i.encoder : null, i.filter, i.sort, i.allowDots, i.serializeDate, i.formatter, i.encodeValuesOnly, i.charset));
           }
 
-          var p = o.join(i.delimiter),
-              y = !0 === i.addQueryPrefix ? "?" : "";
-          return i.charsetSentinel && (y += "iso-8859-1" === i.charset ? "utf8=%26%2310003%3B&" : "utf8=%E2%9C%93&"), p.length > 0 ? y + p : "";
-        }(_objectSpread(_objectSpread({}, t), this.u._query), {
-          addQueryPrefix: !0,
-          arrayFormat: "indices",
-          encodeValuesOnly: !0,
-          skipNulls: !0,
-          encoder: function encoder(t, e) {
-            return "boolean" == typeof t ? Number(t) : e(t);
-          }
-        });
-      }
-    }, {
-      key: "current",
-      value: function current(t, e) {
-        var _this4 = this;
+          return e;
+        }(t, r) : t, i = r.plainObjects ? Object.create(null) : {}, o = Object.keys(e), u = 0; u < o.length; ++u) {
+          var f = o[u],
+              c = F(f, e[f], r, "string" == typeof t);
+          i = d.merge(i, c, r);
+        }
 
-        var r = this.t.absolute ? this.l.host + this.l.pathname : this.l.pathname.replace(this.t.url.replace(/^\w*:\/\/[^/]+/, ""), "").replace(/^\/+/, "/"),
-            _ref5 = Object.entries(this.t.routes).find(function (_ref7) {
-          var _ref8 = _slicedToArray(_ref7, 2),
-              e = _ref8[0],
-              n = _ref8[1];
-
-          return new x(t, n, _this4.t).matchesUrl(r);
-        }) || [void 0, void 0],
-            _ref6 = _slicedToArray(_ref5, 2),
-            n = _ref6[0],
-            i = _ref6[1];
-
-        if (!t) return n;
-        var o = new RegExp("^".concat(t.replace(".", "\\.").replace("*", ".*"), "$")).test(n);
-        if ([null, void 0].includes(e) || !o) return o;
-        var u = new x(n, i, this.t);
-        e = this.s(e, u);
-        var f = this.h(i);
-        return !(!Object.values(e).every(function (t) {
-          return !t;
-        }) || Object.values(f).length) || Object.entries(e).every(function (_ref9) {
-          var _ref10 = _slicedToArray(_ref9, 2),
-              t = _ref10[0],
-              e = _ref10[1];
-
-          return f[t] == e;
-        });
-      }
-    }, {
-      key: "l",
-      get: function get() {
-        var _ref12, _ref13, _ref14;
-
-        var t, e, r;
-
-        var _ref11 = "undefined" != typeof window ? window.location : {},
-            _ref11$host = _ref11.host,
-            n = _ref11$host === void 0 ? "" : _ref11$host,
-            _ref11$pathname = _ref11.pathname,
-            i = _ref11$pathname === void 0 ? "" : _ref11$pathname,
-            _ref11$search = _ref11.search,
-            o = _ref11$search === void 0 ? "" : _ref11$search;
-
-        return {
-          host: (_ref12 = null === (t = this.t.location) || void 0 === t ? void 0 : t.host) !== null && _ref12 !== void 0 ? _ref12 : n,
-          pathname: (_ref13 = null === (e = this.t.location) || void 0 === e ? void 0 : e.pathname) !== null && _ref13 !== void 0 ? _ref13 : i,
-          search: (_ref14 = null === (r = this.t.location) || void 0 === r ? void 0 : r.search) !== null && _ref14 !== void 0 ? _ref14 : o
-        };
-      }
-    }, {
+        return d.compact(i);
+      }(null === (n = this.l().search) || void 0 === n ? void 0 : n.replace(/^\?/, "")));
+    }, u.valueOf = function () {
+      return this.toString();
+    }, u.check = function (t) {
+      return this.has(t);
+    }, r(o, [{
       key: "params",
       get: function get() {
-        return this.h(this.t.routes[this.current()]);
+        return this.v(this.t.routes[this.current()]);
       }
-    }, {
-      key: "has",
-      value: function has(t) {
-        return Object.keys(this.t.routes).includes(t);
-      }
-    }, {
-      key: "s",
-      value: function s() {
-        var _this5 = this;
-
-        var t = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-        var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.i;
-        t = ["string", "number"].includes(_typeof(t)) ? [t] : t;
-        var r = e.parameterSegments.filter(function (_ref15) {
-          var t = _ref15.name;
-          return !_this5.t.defaults[t];
-        });
-        return Array.isArray(t) ? t = t.reduce(function (t, e, n) {
-          return r[n] ? _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, r[n].name, e)) : _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, e, ""));
-        }, {}) : 1 !== r.length || t[r[0].name] || !t.hasOwnProperty(Object.values(e.bindings)[0]) && !t.hasOwnProperty("id") || (t = _defineProperty({}, r[0].name, t)), _objectSpread(_objectSpread({}, this.p(e)), this.v(t, e.bindings));
-      }
-    }, {
-      key: "p",
-      value: function p(t) {
-        var _this6 = this;
-
-        return t.parameterSegments.filter(function (_ref16) {
-          var t = _ref16.name;
-          return _this6.t.defaults[t];
-        }).reduce(function (t, _ref17, r) {
-          var e = _ref17.name;
-          return _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, e, _this6.t.defaults[e]));
-        }, {});
-      }
-    }, {
-      key: "v",
-      value: function v(t) {
-        var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-        return Object.entries(t).reduce(function (t, _ref18) {
-          var _ref19 = _slicedToArray(_ref18, 2),
-              r = _ref19[0],
-              n = _ref19[1];
-
-          if (!n || "object" != _typeof(n) || Array.isArray(n) || "_query" === r) return _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, r, n));
-
-          if (!n.hasOwnProperty(e[r])) {
-            if (!n.hasOwnProperty("id")) throw new Error("Ziggy error: object passed as '".concat(r, "' parameter is missing route model binding key '").concat(e[r], "'."));
-            e[r] = "id";
-          }
-
-          return _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, r, n[e[r]]));
-        }, {});
-      }
-    }, {
-      key: "h",
-      value: function h(t) {
-        var e;
-        var r = this.l.pathname.replace(this.t.url.replace(/^\w*:\/\/[^/]+/, ""), "").replace(/^\/+/, "");
-
-        var n = function n(t) {
-          var e = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
-          var r = arguments.length > 2 ? arguments[2] : undefined;
-
-          var _map = [t, e].map(function (t) {
-            return t.split(r);
-          }),
-              _map2 = _slicedToArray(_map, 2),
-              n = _map2[0],
-              i = _map2[1];
-
-          return i.reduce(function (t, e, r) {
-            return /^{[^}?]+\??}$/.test(e) && n[r] ? _objectSpread(_objectSpread({}, t), {}, _defineProperty({}, e.replace(/^{|\??}$/g, ""), n[r])) : t;
-          }, {});
-        };
-
-        return _objectSpread(_objectSpread(_objectSpread({}, n(this.l.host, t.domain, ".")), n(r, t.uri, "/")), S(null === (e = this.l.search) || void 0 === e ? void 0 : e.replace(/^\?/, "")));
-      }
-    }, {
-      key: "valueOf",
-      value: function valueOf() {
-        return this.toString();
-      }
-    }, {
-      key: "check",
-      value: function check(t) {
-        return this.has(t);
-      }
-    }]);
-
-    return N;
-  }( /*#__PURE__*/_wrapNativeSuper(String));
+    }]), o;
+  }(c(String));
 
   t.ZiggyVue = {
-    install: function install(t, e) {
+    install: function install(t, n) {
       return t.mixin({
         methods: {
-          route: function route(t, r, n) {
-            var i = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : e;
-            return function (t, e, r, n) {
-              var i = new N(t, e, r, n);
+          route: function route(t, r, e, i) {
+            return void 0 === i && (i = n), function (t, n, r, e) {
+              var i = new A(t, n, r, e);
               return t ? i.toString() : i;
-            }(t, r, n, i);
+            }(t, r, e, i);
           }
         }
       });
@@ -49725,6 +49799,33 @@ _NoticeEvent_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__
 
 /***/ }),
 
+/***/ "./resources/js/components/home/OtherFacilities.vue":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/home/OtherFacilities.vue ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _OtherFacilities_vue_vue_type_template_id_2016e8ac_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true */ "./resources/js/components/home/OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true");
+/* harmony import */ var _OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./OtherFacilities.vue?vue&type=script&lang=js */ "./resources/js/components/home/OtherFacilities.vue?vue&type=script&lang=js");
+
+
+
+_OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.render = _OtherFacilities_vue_vue_type_template_id_2016e8ac_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render
+_OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__scopeId = "data-v-2016e8ac"
+/* hot reload */
+if (false) {}
+
+_OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default.__file = "resources/js/components/home/OtherFacilities.vue"
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__.default);
+
+/***/ }),
+
 /***/ "./resources/js/components/home/OurCampusLife.vue":
 /*!********************************************************!*\
   !*** ./resources/js/components/home/OurCampusLife.vue ***!
@@ -50495,6 +50596,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/home/OtherFacilities.vue?vue&type=script&lang=js":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/home/OtherFacilities.vue?vue&type=script&lang=js ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__.default)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OtherFacilities_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./OtherFacilities.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OtherFacilities.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/components/home/OurCampusLife.vue?vue&type=script&lang=js":
 /*!********************************************************************************!*\
   !*** ./resources/js/components/home/OurCampusLife.vue?vue&type=script&lang=js ***!
@@ -51131,6 +51248,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_NoticeEvent_vue_vue_type_template_id_64d57a9d_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_NoticeEvent_vue_vue_type_template_id_64d57a9d_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./NoticeEvent.vue?vue&type=template&id=64d57a9d&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/NoticeEvent.vue?vue&type=template&id=64d57a9d&scoped=true");
+
+
+/***/ }),
+
+/***/ "./resources/js/components/home/OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true":
+/*!****************************************************************************************************!*\
+  !*** ./resources/js/components/home/OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true ***!
+  \****************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OtherFacilities_vue_vue_type_template_id_2016e8ac_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_OtherFacilities_vue_vue_type_template_id_2016e8ac_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/home/OtherFacilities.vue?vue&type=template&id=2016e8ac&scoped=true");
 
 
 /***/ }),
@@ -52025,6 +52158,7 @@ var map = {
 	"./footer/SocialMedia.vue": "./resources/js/components/footer/SocialMedia.vue",
 	"./footer/UsefulLink.vue": "./resources/js/components/footer/UsefulLink.vue",
 	"./home/NoticeEvent.vue": "./resources/js/components/home/NoticeEvent.vue",
+	"./home/OtherFacilities.vue": "./resources/js/components/home/OtherFacilities.vue",
 	"./home/OurCampusLife.vue": "./resources/js/components/home/OurCampusLife.vue",
 	"./home/OurPartner.vue": "./resources/js/components/home/OurPartner.vue",
 	"./home/OurProgram.vue": "./resources/js/components/home/OurProgram.vue",
