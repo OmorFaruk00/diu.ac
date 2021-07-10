@@ -15,7 +15,7 @@
 
                 <div class="product-img">
                     <a href="javaScript:void(0)">
-                        <img style="height: 250px" v-lazy="{ src: program.image_url }" :alt="program.title"/>
+                        <img style="height: 250px" :src="program.image_url" :alt="program.title"/>
                     </a>
                 </div>
 

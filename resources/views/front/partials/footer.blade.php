@@ -111,7 +111,7 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="copyright">
-                <p>© {{ \Carbon\Carbon::now()->format('Y') }} | <a href="#">DIU</a>. All Rights Reserved.</p>
+                <p>© {{ \Carbon\Carbon::now()->format('Y') }} | <a href="{{ route('homePage') }}">DIU</a>. All Rights Reserved.</p>
             </div>
         </div>
     </div>

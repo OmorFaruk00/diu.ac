@@ -5,7 +5,7 @@
         </div>
         <div class="services-desc">
             <h4 class="services-title"> {{ title }}</h4>
-            <p> {{ details }}</p>
+            <p class="text-center"> {{ details }}</p>
         </div>
     </div>
 </template>
