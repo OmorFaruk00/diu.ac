@@ -111,7 +111,11 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="copyright">
-                <p>© {{ \Carbon\Carbon::now()->format('Y') }} | <a href="{{ route('homePage') }}">DIU</a>. All Rights Reserved.</p>
+{{--                <p class="text-center ">© {{ \Carbon\Carbon::now()->format('Y') }} | <a href="{{ route('homePage') }}">DIU</a>. All Rights Reserved.</p>--}}
+                <p class="text-center ">
+                    © {{ \Carbon\Carbon::now()->format('Y') }} <a href="{{ route('homePage') }}">DIU</a>. All rights Reserved. | Developed & Powered by:
+                    <a href="https://it.diu.ac" target="_blank">IT-Team, DIU</a>
+                </p>
             </div>
         </div>
     </div>
