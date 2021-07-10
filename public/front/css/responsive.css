@@ -1394,7 +1394,7 @@
 /* Small Device : 480px. */
 @media only screen and (max-width: 480px) {
     #rs-slider .slide-content .slider-desc {
-        display: none;
+        /*display: none;*/
     }
 
     .rs-header-2 .menu-area {
