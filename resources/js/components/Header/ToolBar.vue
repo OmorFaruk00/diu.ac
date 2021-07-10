@@ -5,8 +5,10 @@
             <div class="rs-toolbar-left">
                 <div class="welcome-message">
 
-                    <i class="fa fa-bank"></i>
-                    <span>Welcome to DIU</span>
+                    <a :href="route('homePage')">
+                        <i class="fa fa-bank"></i>
+                        <span>Welcome to DIU</span>
+                    </a>
 
                 </div>
             </div>
