@@ -5,19 +5,21 @@
         .notice-section {
             background-image: linear-gradient(#FFFFFF, #01AA4D);
         }
-
         .about-section {
             background: #ddd;
         }
-
         .card {
             background: transparent !important;
         }
-
         .back-image {
             /*background-size: 100%;*/
             background-attachment: fixed;
             background-position: center top;
+        }
+        .slider-desc {
+            max-width: 850px;
+            margin: 0 auto;
+            text-align: center;
         }
     </style>
 @endpush
