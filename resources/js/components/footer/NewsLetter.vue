@@ -1,23 +1,28 @@
 <template>
     <h5 class="footer-title">NEWSLETTER</h5>
     <p>Sign Up to Our Newsletter to Get Latest Updates &amp; Services</p>
+
+
     <form @submit.prevent="newsletterFormSubmit" class="news-form">
+        <div class="row">
+            <div class="col-12">
+                <input type="text" id="email" name="email" v-model="newsletter.email" class="form-input"
+                       placeholder="Enter Your Email" required>
 
-        <div class="col-12">
-            <input type="text" id="email" name="email" v-model="newsletter.email" class="form-input"
-                   placeholder="Enter Your Email" required>
+                <button type="submit" class="form-button">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </div>
 
-            <button type="submit" class="form-button">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </button>
-        </div>
-
-        <div class="col-12">
-            <small v-if="errors.email" class="text-danger with-errors"
-                   v-html="errors.email[0]"></small>
+            <div class="col-12">
+                <small v-if="errors.email" class="text-danger with-errors"
+                       v-html="errors.email[0]"></small>
+            </div>
         </div>
 
     </form>
+
+
 </template>
 
 <script>

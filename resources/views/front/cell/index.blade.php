@@ -50,7 +50,7 @@
                     <ul>
                         <li>
                             <a class="active" href="{{ route('homePage') }}">Home</a> / <span
-                                style="color: #FFFFFF!important;">Institute</span>
+                                style="color: #FFFFFF!important;">Cell</span>
                         </li>
                     </ul>
                 </div>

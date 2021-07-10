@@ -194,7 +194,7 @@ export default {
         },
 
         sessionCreate(row) {
-            let newYear = parseInt(row) + parseInt(1);
+            // let newYear = parseInt(row) + parseInt(1);
             return `${row}-${parseInt(row) + parseInt(1)}`;
         },
 
