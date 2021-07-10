@@ -24368,10 +24368,10 @@ var _hoisted_10 = {
   "class": "team-name text-white"
 };
 var _hoisted_11 = {
-  "class": "team-title text-white"
+  "class": "team-title text-white text-center"
 };
 var _hoisted_12 = {
-  "class": "team-desc"
+  "class": "team-desc text-center"
 };
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
@@ -25870,7 +25870,7 @@ var Ziggy = {
       }
     },
     "telescope": {
-      "uri": "telescope\/{view?}",
+      "uri": "log\/{view?}",
       "methods": ["GET", "HEAD"]
     },
     "livewire.message": {
