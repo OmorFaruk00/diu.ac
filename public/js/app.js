@@ -27143,7 +27143,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Ziggy": () => (/* binding */ Ziggy)
 /* harmony export */ });
 var Ziggy = {
-  "url": "https:\/\/webdev.diu.ac",
+  "url": "http:\/\/diu.ac",
   "port": null,
   "defaults": {},
   "routes": {
@@ -27312,6 +27312,22 @@ var Ziggy = {
     },
     "department-details": {
       "uri": "department\/{slug}",
+      "methods": ["GET", "HEAD"]
+    },
+    "books-and-library": {
+      "uri": "books-and-library",
+      "methods": ["GET", "HEAD"]
+    },
+    "trending-courses": {
+      "uri": "trending-courses",
+      "methods": ["GET", "HEAD"]
+    },
+    "certified-teachers": {
+      "uri": "certified-teachers",
+      "methods": ["GET", "HEAD"]
+    },
+    "certification": {
+      "uri": "certification",
       "methods": ["GET", "HEAD"]
     },
     "test": {
