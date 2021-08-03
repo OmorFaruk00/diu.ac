@@ -5,17 +5,21 @@
         .notice-section {
             background-image: linear-gradient(#FFFFFF, #01AA4D);
         }
+
         .about-section {
             background: #ddd;
         }
+
         .card {
             background: transparent !important;
         }
+
         .back-image {
             /*background-size: 100%;*/
             background-attachment: fixed;
             background-position: center top;
         }
+
         .slider-desc {
             max-width: 850px;
             margin: 0 auto;
@@ -82,23 +86,31 @@
             <div class="row">
 
                 <div class="col-lg-3 col-md-6">
-                    <Home-service-card icon="fa fa-american-sign-language-interpreting" title="Trending Courses"
-                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
+                    <a href="{{ route('trending-courses') }}">
+                        <Home-service-card icon="fa fa-american-sign-language-interpreting" title="Trending Courses"
+                                           details="We always try to teach trending courses. Our goal is to keep ourselves up to date ..."/>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <Home-service-card icon="fa fa-book" title="Books & Library"
-                                       details="Due to the explosion of knowledge in both traditional and digital forms, DIU Library has developed a system that is capable of serving the best of its users. DIU Library is working closely with faculties to integrate resources and also to ensure that our collections meet with needs of our teaching and research programs."/>
+                    <a href="{{ route('books-and-library') }}">
+                        <Home-service-card icon="fa fa-book" title="Books & Library"
+                                           details="Due to the explosion of knowledge in both traditional and digital forms, DIU Library ..."/>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('certified-teachers') }}">
                     <Home-service-card icon="fa fa-user" title="Certified Teachers"
-                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
+                                       details="We believe in quality and for this reason we have certified and high quality skilled teachers."/>
+                    </a>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
+                    <a href="{{ route('certification') }}">
                     <Home-service-card icon="fa fa-graduation-cap" title="Certification"
-                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
+                                       details="We provide certification courses. Global certification is essential for one's career growth."/>
+                    </a>
                 </div>
 
             </div>

@@ -38,6 +38,11 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/certificate-verification', [DiuController::class, 'certificateVerification'])->name('certificate-verification');
     Route::get('/department/{slug}', [DiuController::class, 'departmentDetails'])->name('department-details');
 
+    Route::get('/books-and-library', [DiuController::class, 'booksAndLibrary'])->name('books-and-library');
+    Route::get('/trending-courses', [DiuController::class, 'trendingCourses'])->name('trending-courses');
+    Route::get('/certified-teachers', [DiuController::class, 'certifiedTeachers'])->name('certified-teachers');
+    Route::get('/certification', [DiuController::class, 'certification'])->name('certification');
+
     Route::get('/test', [DiuController::class, 'test'])->name('test');
 });
 

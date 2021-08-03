@@ -139,4 +139,24 @@ class DiuController extends Controller
     {
         return view('front.eventBoard.show', compact('slug'));
     }
+
+    public function booksAndLibrary()
+    {
+        return view('front.booksAndLibrary.index');
+    }
+
+    public function trendingCourses()
+    {
+        return view('front.trendingCourses.index');
+    }
+
+    public function certifiedTeachers()
+    {
+        return view('front.certifiedTeachers.index');
+    }
+
+    public function certification()
+    {
+        return view('front.certification.index');
+    }
 }
