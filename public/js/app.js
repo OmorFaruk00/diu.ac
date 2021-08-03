@@ -27270,6 +27270,10 @@ var Ziggy = {
       "uri": "notice-details\/{slug}",
       "methods": ["GET", "HEAD"]
     },
+    "event-board-details": {
+      "uri": "event-details\/{slug}",
+      "methods": ["GET", "HEAD"]
+    },
     "admission": {
       "uri": "admission",
       "methods": ["GET", "HEAD"]
