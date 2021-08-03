@@ -51,7 +51,7 @@
         <div class="overlay">
             <div class="container">
                 <div class="col-md-12 text-center">
-                    <h1 class="page-title text-capitalize">{{ \Str::replace('-', ' ', $slug ?? '') }}</h1>
+                    <h1 class="page-title" style="text-transform: uppercase">{{ \Str::replace('-', ' ', $slug ?? '') }}</h1>
                     <ul>
                         <li>
                             <a class="active " href="{{ route('homePage') }}">Home</a> / <span
