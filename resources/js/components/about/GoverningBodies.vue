@@ -26,7 +26,7 @@
                                 <div class="row">
                                     <div v-for="(person,index) in row.vital_persons" :key="index"
                                          class="col-lg-3 col-md-4">
-                                        <div class="cource-item">
+                                        <div class="cource-item" style="height: 320px">
 
                                             <div class="governing-img">
                                                 <img v-lazy="{ src: person.image_url }" :alt="person.name"/>
@@ -37,6 +37,10 @@
                                                 <div class="course-desc">
                                                     <p>
                                                         {{ person.title }}
+                                                    </p>
+
+                                                    <p>
+                                                        {{ person.description }}
                                                     </p>
                                                 </div>
                                             </div>
