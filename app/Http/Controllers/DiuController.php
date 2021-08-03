@@ -134,4 +134,9 @@ class DiuController extends Controller
     {
         return view('front.noticeBoard.show', compact('slug'));
     }
+
+    public function eventBoardDetails($slug)
+    {
+        return view('front.eventBoard.show', compact('slug'));
+    }
 }

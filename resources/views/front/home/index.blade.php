@@ -87,8 +87,8 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <Home-service-card icon="fa fa-book" title="Books & Liberary"
-                                       details="Lorem ipsum dolor sit amet Sed nec molestie justo"/>
+                    <Home-service-card icon="fa fa-book" title="Books & Library"
+                                       details="Due to the explosion of knowledge in both traditional and digital forms, DIU Library has developed a system that is capable of serving the best of its users. DIU Library is working closely with faculties to integrate resources and also to ensure that our collections meet with needs of our teaching and research programs."/>
                 </div>
 
                 <div class="col-lg-3 col-md-6">

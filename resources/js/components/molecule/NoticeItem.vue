@@ -7,7 +7,8 @@
         </div>
         <div class="event-des">
             <h4 class="title">
-                <a :href="route('notice-board-details',{slug:row.slug})">{{ stringLimit(row.title, 40) }}</a>
+                <a v-if="row.type == 'notice'" :href="route('notice-board-details',{slug:row.slug})">{{ stringLimit(row.title, 40) }}</a>
+                <a v-if="row.type == 'event'" :href="route('event-board-details',{slug:row.slug})">{{ stringLimit(row.title, 40) }}</a>
             </h4>
         </div>
     </div>

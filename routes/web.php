@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/cache-clear', function () {
     \Artisan::call('cache:clear');
-    return response()->json(['message'=>'cache clear'],200);
+    return response()->json(['message' => 'cache clear'], 200);
 
 });
 
@@ -25,6 +25,7 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');
     Route::get('/notice-board', [DiuController::class, 'noticeBoard'])->name('notice-board');
     Route::get('/notice-details/{slug}', [DiuController::class, 'noticeBoardDetails'])->name('notice-board-details');
+    Route::get('/event-details/{slug}', [DiuController::class, 'eventBoardDetails'])->name('event-board-details');
     Route::get('/admission', [DiuController::class, 'admission'])->name('admission');
     Route::get('/institute', [DiuController::class, 'institute'])->name('institute');
     Route::get('/alumni', [DiuController::class, 'alumni'])->name('alumni');
