@@ -27143,7 +27143,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Ziggy": () => (/* binding */ Ziggy)
 /* harmony export */ });
 var Ziggy = {
-  "url": "https:\/\/webdev.diu.ac",
+  "url": "https:\/\/diu.ac",
   "port": null,
   "defaults": {},
   "routes": {
