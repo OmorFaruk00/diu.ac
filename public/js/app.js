@@ -27314,6 +27314,22 @@ var Ziggy = {
       "uri": "department\/{slug}",
       "methods": ["GET", "HEAD"]
     },
+    "books-and-library": {
+      "uri": "books-and-library",
+      "methods": ["GET", "HEAD"]
+    },
+    "trending-courses": {
+      "uri": "trending-courses",
+      "methods": ["GET", "HEAD"]
+    },
+    "certified-teachers": {
+      "uri": "certified-teachers",
+      "methods": ["GET", "HEAD"]
+    },
+    "certification": {
+      "uri": "certification",
+      "methods": ["GET", "HEAD"]
+    },
     "test": {
       "uri": "test",
       "methods": ["GET", "HEAD"]
