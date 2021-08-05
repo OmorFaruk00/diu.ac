@@ -1199,6 +1199,9 @@ select {
 .-mt-px {
 	margin-top: -1px;
 }
+.mb-48 {
+	margin-bottom: 12rem;
+}
 .block {
 	display: block;
 }

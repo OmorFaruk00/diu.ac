@@ -64,7 +64,7 @@
             <div class="sec-title-2 mb-50 text-center">
                 <h2 style="text-transform: uppercase">WELCOME TO certified teachers</h2>
             </div>
-            <div class="rs-timeline">
+            <div class="rs-timeline mb-100">
 
                 <div class="rs-timeline-block">
 

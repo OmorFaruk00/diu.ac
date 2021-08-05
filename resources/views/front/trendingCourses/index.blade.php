@@ -65,13 +65,14 @@
                 <h2 style="text-transform: uppercase">WELCOME TO Trending Courses</h2>
                 <p>We always try to teach trending courses. Our goal is to keep ourselves up to date in this new technology era.</p>
             </div>
-            <div class="rs-timeline">
+            <div class="rs-timeline mb-100">
 
                 <div class="rs-timeline-block">
 
                     <div class="rs-timeline-content">
                         <ul style="list-style: circle">
                             <li><a href="{{ asset('cources/cecd-course-outlines.pdf') }}" target="_blank">Centre for Excellence and Career Development (CECD)</a></li>
+                            <li><a href="{{ asset('cources/ccna-product-overview.pdf') }}" target="_blank">CCNA</a></li>
                         </ul>
                     </div>
 
