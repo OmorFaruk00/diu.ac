@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('/cache-clear', function () {
+    \Artisan::call('cache:clear');
+    return response()->json(['message' => 'cache clear'], 200);
+
+});
