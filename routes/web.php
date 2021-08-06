@@ -20,6 +20,10 @@ Route::get('/cache-clear', function () {
 
 });
 
+Route::get('offline', function () { return view('vendor/laravelpwa/offline'); });
+
+
+
 Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
     Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');
