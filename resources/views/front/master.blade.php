@@ -73,6 +73,8 @@
     </style>
     @stack('style')
 
+    @laravelPWA
+
 </head>
 <body class="home1">
 
