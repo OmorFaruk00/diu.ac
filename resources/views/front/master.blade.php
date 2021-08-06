@@ -6,6 +6,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DIU | Dhaka International University</title>
+
+    @laravelPWA
+
     <meta name="description"
           content="Dhaka International University DIU is one of the leading, familiar and note-worthy private universities in Bangladesh which was established on 7th April 1995. It is a non-profitable institution having strict academic discipline">
     <meta name="keywords"
@@ -72,8 +75,6 @@
         }
     </style>
     @stack('style')
-
-    @laravelPWA
 
 </head>
 <body class="home1">

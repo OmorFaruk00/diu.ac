@@ -5,7 +5,7 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'DIU-Dhaka International University'),
         'short_name' => 'DIU',
-        'start_url' => '/',
+        'start_url' => env('APP_URL',''),
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
         'display' => 'standalone',
