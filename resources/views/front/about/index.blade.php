@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                                                    background-repeat: repeat-x;
+                                                     background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -155,14 +155,11 @@
                         <h2>OUR MISSION</h2>
                     </div>
                     <div class="about-desc">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius mod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe derit in
-                            voluptate velit esse cillum.</p>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                            and demoralized by the charms of pleasure of the moment, that they cannot fore see the pain
-                            and trouble that are bound to ensue; and equal blame belongs to those who fail in their
-                            duty.</p>
+                        <p>The mission of DIU is to produce capable leaders in the respective field of study who can
+                            meet the challenges of present dynamic world. It wants to create multidisciplinary
+                            knowledge, communication and interpersonal skills at the highest level of excellence among
+                            the students which will make them honest, sincere and dedicated in their thoughts and deeds.
+                        </p>
                     </div>
                 </div>
             </div>
