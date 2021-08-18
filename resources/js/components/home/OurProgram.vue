@@ -14,12 +14,12 @@
             <div class="product-item" v-for="(program ,index) in programs" :key="index">
 
                 <div class="product-img">
-                    <a href="javaScript:void(0)">
+                    <a :href="route('department-details',{slug:program.slug})">
                         <img style="height: 250px" :src="program.image_url" :alt="program.title"/>
                     </a>
                 </div>
 
-                <h4 class="product-title"><a href="javaScript:void(0)">{{ program.title }}</a></h4>
+                <h4 class="product-title"><a :href="route('department-details',{slug:program.slug})">{{ program.title }}</a></h4>
                 <div class="product-btn">
                     <a href="https://admission.diu.ac/register" target="_blank">Apply Now</a>
                 </div>
