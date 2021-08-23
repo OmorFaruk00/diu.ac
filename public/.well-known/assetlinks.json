@@ -1,0 +1,6 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "diu.ac",
+                     "sha256_cert_fingerprints": ["C3:B9:F5:DD:F3:24:36:01:72:1D:CF:41:AE:AC:C7:D2:8C:01:7A:7F:E1:26:A5:3B:84:7C:1F:7A:08:89:0E:C9"] }
+      }
+]

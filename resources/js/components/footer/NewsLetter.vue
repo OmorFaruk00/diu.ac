@@ -18,6 +18,13 @@
                 <small v-if="errors.email" class="text-danger with-errors"
                        v-html="errors.email[0]"></small>
             </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-2" style="max-width: 98%;margin: 0 auto;">
+                <img src="/thumbnail_National-Helpline-DIU.jpg" class="img-fluid text-center" alt="DIU">
+            </div>
         </div>
 
     </form>
