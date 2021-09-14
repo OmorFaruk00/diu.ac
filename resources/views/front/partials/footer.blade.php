@@ -93,6 +93,10 @@
                         </li>
                         <li><a href="{{ route('publications') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Publications</a>
                         </li>
+
+                        <li><a href="{{ route('privacy-policy') }}"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy
+                                Policy</a>
+                        </li>
                     </ul>
                 </div>
 
@@ -111,9 +115,10 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="copyright">
-{{--                <p class="text-center ">© {{ \Carbon\Carbon::now()->format('Y') }} | <a href="{{ route('homePage') }}">DIU</a>. All Rights Reserved.</p>--}}
+                {{--                <p class="text-center ">© {{ \Carbon\Carbon::now()->format('Y') }} | <a href="{{ route('homePage') }}">DIU</a>. All Rights Reserved.</p>--}}
                 <p class="text-center ">
-                    © {{ \Carbon\Carbon::now()->format('Y') }} <a href="{{ route('homePage') }}">DIU</a>. All rights Reserved. | Developed & Powered by:
+                    © {{ \Carbon\Carbon::now()->format('Y') }} <a href="{{ route('homePage') }}">DIU</a>. All rights
+                    Reserved. | Developed & Powered by:
                     <a href="https://it.diu.ac" target="_blank">IT-Team, DIU</a>
                 </p>
             </div>

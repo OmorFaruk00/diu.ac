@@ -46,6 +46,7 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/trending-courses', [DiuController::class, 'trendingCourses'])->name('trending-courses');
     Route::get('/certified-teachers', [DiuController::class, 'certifiedTeachers'])->name('certified-teachers');
     Route::get('/certification', [DiuController::class, 'certification'])->name('certification');
+    Route::get('/privacy-policy', [DiuController::class, 'privacyPolicy'])->name('privacy-policy');
 
     Route::get('/test', [DiuController::class, 'test'])->name('test');
 });

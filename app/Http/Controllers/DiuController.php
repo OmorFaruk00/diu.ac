@@ -159,4 +159,9 @@ class DiuController extends Controller
     {
         return view('front.certification.index');
     }
+
+    public function privacyPolicy()
+    {
+        return view('front.privacyPolicy.index');
+    }
 }
