@@ -2,6 +2,11 @@
 
 @push('style')
     <style>
+        .item img{
+            width: 100%;
+            max-height: 650px;
+            object-fit: 100% 100%;
+        }
         .notice-section {
             background-image: linear-gradient(#FFFFFF, #01AA4D);
         }
@@ -101,15 +106,15 @@
 
                 <div class="col-lg-3 col-md-6">
                     <a href="{{ route('certified-teachers') }}">
-                    <Home-service-card icon="fa fa-user" title="Certified Teachers"
-                                       details="We believe in quality and for this reason we have certified and high quality skilled teachers."/>
+                        <Home-service-card icon="fa fa-user" title="Certified Teachers"
+                                           details="We believe in quality and for this reason we have certified and high quality skilled teachers."/>
                     </a>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <a href="{{ route('certification') }}">
-                    <Home-service-card icon="fa fa-graduation-cap" title="Certification"
-                                       details="We provide certification courses. Global certification is essential for one's career growth."/>
+                        <Home-service-card icon="fa fa-graduation-cap" title="Certification"
+                                           details="We provide certification courses. Global certification is essential for one's career growth."/>
                     </a>
                 </div>
 
