@@ -106,6 +106,13 @@
                             <td>{{ transcript.passing_year }}</td>
                         </tr>
 
+                        <tr v-if="transcript.has_file == 1">
+                            <th>Transcript</th>
+                            <td>
+                                <a :href="transcript.transcript_link" target="blank">Download</a>
+                            </td>
+                        </tr>
+
                     </table>
                 </div>
 
