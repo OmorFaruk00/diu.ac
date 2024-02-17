@@ -20,6 +20,12 @@
                                 <span>Welcome to DIU</span>
                             </a>
                         </div>
+                        <div class="medium-device">
+                            <a :href="route('homePage')">
+                                <i class="fa fa-bank"></i>
+                                <span>Welcome to DIU</span>
+                            </a>
+                        </div>
 
                     </div>
                 </div>
@@ -59,15 +65,18 @@
                                 <li><a :class="route().current() == 'publications' ? 'toolbar-share-icon-active' : ''"
                                         :href="route('publications')">Publications</a></li>
 
-                                <li v-if="!seeMoreStatus"><a href="javaScript:void(0)" @click="seeMoreStatusChange">See
+                                <li v><a href="javaScript:void(0)" id="seeMoreLinkMedium">See
                                         More...</a></li>
-                                <template v-if="seeMoreStatus">
+                                        <div id="seeMoreTemplateMedium" style="display: none">
 
                                     <li><a :class="route().current() == 'convocation' ? 'toolbar-share-icon-active' : ''"
                                             :href="route('convocation')">Convocation</a></li>
                                     <li><a href="https://students.diu.ac" target="_blank">Students Portal</a></li>
                                     <li><a :class="route().current() == 'certificate-verification' ? 'toolbar-share-icon-active' : ''"
                                             :href="route('certificate-verification')">Certificate Verification</a></li>
+                                            <li><a href="javascript:void(0)" id="hideMoreLinkMedium">
+                                                <i class="fa fa-close"></i>
+                                            </a></li>
                                 </template>
                             </span>
 
@@ -146,10 +155,17 @@
         $(document).ready(function() {
             $("#seeMoreLink").click(function() {
                 $("#seeMoreTemplate").toggle();
-            });
+            });           
 
             $("#hideMoreLink").click(function() {
                 $("#seeMoreTemplate").toggle();
+            });
+
+            $("#seeMoreLinkMedium").click(function() {
+                $("#seeMoreTemplateMedium").toggle();
+            });
+            $("#hideMoreLinkMedium").click(function() {
+                $("#seeMoreTemplateMedium").toggle();
             });
         });
     </script>
