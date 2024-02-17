@@ -36,7 +36,7 @@
             <div class="form-group">
                 <label for="reg_code">Reg Code</label>
                 <input name="reg_code" type="text" v-model="form.reg_code" class="form-control"
-                       placeholder="Enter reg code.Ex: 123456">
+                       placeholder="Enter reg code.Ex: xx-x-xx-xx-xxxxxx">
                 <small v-if="errors.reg_code" class="text-danger with-errors"
                        v-html="errors.reg_code[0]"></small>
             </div>

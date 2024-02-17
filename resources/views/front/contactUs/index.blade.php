@@ -17,7 +17,7 @@
             content: "";
             position: absolute;
             {{--background: url({{ url('front/images/bg/section_notch_top.png') }});--}}
-                            background-repeat: repeat-x;
+                   background-repeat: repeat-x;
             display: block;
             top: 0;
             width: 100%;
@@ -31,10 +31,16 @@
             text-align: center;
         }
 
-        .notice-section {
-            background-image: url({{ url('front/images/bg/dot-grid.png') }});
-            background-attachment: fixed;
-            background-position: center top;
+        .documents-title {
+            font-size: 22px;
+            text-decoration: underline;
+            color: #01aa4d;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .contact-address p {
+            font-size: 13px;
         }
     </style>
 @endpush
@@ -57,30 +63,41 @@
             </div><!-- container -->
         </div><!-- overlay -->
     </section><!-- page header -->
-    <!-- Page Header End here -->
+    <!-- Page Header End here --> 
 
-    <!-- titmeline Start -->
-    <div class="rs-titmeline sec-spacer">
+
+    <!-- Contact Section Start -->
+    <div class="contact-page-section sec-spacer">
         <div class="container">
-            <div class="abt-title mb-70 text-center">
+            <div class="sec-title-2 mb-50 text-center">
                 <h2>OUR CAMPUS</h2>
+              
             </div>
-            <Contact-address-info/>
+            <div class="row contact-address-section">
+                <div class="col-md-6 pl-0 mx-auto">
+                    <div class="contact-info contact-address">
+                        <i class="fa fa-map-marker"></i>
+                        <h3>Permanent Campus</h3>
+                        <p>Satarkul, Badda, <br> Dhaka-1212. Bangladesh.</p>
+                        <p>+8809612111348</p>
+                        <p><a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
+                        <p><a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
+                    </div>
+                </div>               
+               
+            </div>            
         </div>
     </div>
-    <!-- titmeline End -->
-
-    <!-- map Start -->
-    <div class="contact-page-section sec-spacer">
+    <!-- Contact Section End -->
+     <!-- map Start -->
+     <div class="contact-page-section sec-spacer">
         <iframe src="https://www.google.com/maps/d/embed?mid=zpd50ugWdJd0.knmLtiVuBsXE"
                 width="100%"
                 height="500"></iframe>
     </div>
     <!-- map End -->
-
-
-    <!-- Contact Section Start -->
-    <div class="contact-page-section sec-spacer">
+      <!-- Contact Section Start -->
+      <div class="contact-page-section sec-spacer">
         <div class="container">
             <div class="contact-comment-section">
                 <h3>Have Some Question ?</h3>
@@ -91,9 +108,6 @@
         </div>
     </div>
     <!-- Contact Section End -->
-
-
-
 
 @endsection
 

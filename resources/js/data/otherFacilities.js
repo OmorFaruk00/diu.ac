@@ -20,7 +20,7 @@ export const otherFacilities = [
     {
         id: '4',
         title: 'Student’s Welfare',
-        description:"Dhaka international University is committed to serve the students. As per private university act - 2010, DIU authority has appointed student welfare adviser. Student welfare adviser conselts with the students regarding their problems and solv the problems.",
+        description:"Dhaka international University is committed to serve the students. As per private university act - 2010, DIU authority has appointed a student welfare adviser. Student welfare adviser conselts with the students regarding their problems and solv the problems.",
     },
 
     {

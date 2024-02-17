@@ -20,11 +20,12 @@ Route::get('/cache-clear', function () {
 
 });
 
+
 Route::get('offline', function () { return view('vendor/laravelpwa/offline'); });
 
 
 
-Route::group(['middleware' => ['pageSpreed']], function () {
+Route::group(['middleware' => ['pageSpreed']], function () {    
     Route::get('/', [DiuController::class, 'homePage'])->name('homePage');
     Route::get('/about-us', [DiuController::class, 'aboutUs'])->name('about-us');
     Route::get('/notice-board', [DiuController::class, 'noticeBoard'])->name('notice-board');
@@ -40,6 +41,7 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/publications', [DiuController::class, 'publications'])->name('publications');
     Route::get('/convocation', [DiuController::class, 'convocation'])->name('convocation');
     Route::get('/certificate-verification', [DiuController::class, 'certificateVerification'])->name('certificate-verification');
+    Route::get('/certificate-verification-test', [DiuController::class, 'certificateVerificationTest'])->name('certificate-verification-test');
     Route::get('/department/{slug}', [DiuController::class, 'departmentDetails'])->name('department-details');
 
     Route::get('/books-and-library', [DiuController::class, 'booksAndLibrary'])->name('books-and-library');

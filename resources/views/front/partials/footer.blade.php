@@ -9,8 +9,8 @@
                         <i class="fa fa-map-marker"></i>
                         <h4 class="contact-title">Address</h4>
                         <p class="contact-desc">
-                            House # 4, Road # 1, Block - F, <br>
-                            Banani, Dhaka-1213, Bangladesh.
+                            {{-- House # 4, Road # 1, Block - F, <br> --}}
+                            Satarkul, Badda, Dhaka-1212, Bangladesh.
                         </p>
                     </div>
                 </div>

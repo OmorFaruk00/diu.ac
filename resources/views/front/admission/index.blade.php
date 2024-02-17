@@ -91,8 +91,21 @@
                     On the basis of admission test result, a student will get full free scholarship.
                 </p>
             </div>
+            <div class="row contact-address-section">
+                <div class="col-md-6 pl-0 mx-auto">
+                    <div class="contact-info contact-address">
+                        <i class="fa fa-map-marker"></i>
+                        <h3>Permanent Campus</h3>
+                        <p>Satarkul, Badda, <br> Dhaka-1212. Bangladesh.</p>
+                        <p>55040891-7</p>
+                        <p><a href="mailto:admission@diu.net.bd">admission@diu.net.bd</a></p>
+                        <p><a href="https://admission.diu.ac/register" target="_blank">https://admission.diu.ac/register</a></p>
+                    </div>
+                </div>               
+               
+            </div>
 
-            <Admission-address/>
+            {{-- <Admission-address/> --}}
         </div>
     </div>
     <!-- Contact Section End -->

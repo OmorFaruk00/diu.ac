@@ -100,12 +100,15 @@
     </div>--}}
     <!-- FACILITIES End -->
 
+  
 
     <!-- facilities Start -->
     <div id="rs-learning-objectives" class="rs-learning-objectives">
         <Department-facilities/>
     </div>
     <!-- facilities End -->
+
+    
 
 
     <!-- Gallery Start -->
@@ -116,9 +119,15 @@
     </div>
     <!-- Gallery End -->
 
+
+
+    <div id="rs-learning-objectives" class="rs-learning-objectives">
+        <Department-syllabus/>
+    </div>
+
     <!-- admission requirement Start -->
     <div class="rs-titmeline sec-spacer">
-        <Department-syllabus/>
+        {{-- <Department/> --}}
     </div>
     <!-- admission requirement End -->
 

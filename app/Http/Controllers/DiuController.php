@@ -11,7 +11,7 @@ class DiuController extends Controller
     public function homePage()
     {
         if (!Cache::has('sliderData')) {
-            $sliders = Api::sliders();
+             $sliders = Api::sliders();
             Cache::put('sliderData', $sliders);
         }
 
@@ -107,7 +107,11 @@ class DiuController extends Controller
 
     public function certificateVerification()
     {
-        return view('front.certificateVerification.index');
+        return view('front.certificateVerification.newindex');
+    }
+    public function certificateVerificationTest()
+    {
+        return view('front.certificateVerification.test');
     }
 
     public function departmentDetails($slug)
@@ -120,7 +124,34 @@ class DiuController extends Controller
             Cache::put('programsData_' . $slug, $facultyMembers);
         }
 
+
+
         $facultyMembers = Cache::get('programsData_' . $slug);
+
+        
+
+        if($slug == 'department-of-sociology')
+        {
+            $facultyMembers[6] = [
+
+                "id" => 138,
+                "name" => "Md. Fazlul Haque",
+                "email" => "fazlul.soc@diu.ac",
+                "designation" => "Associate Professor",
+                "department" => "Department of Sociology",
+                "office_email" => "fazlul.soc@diu.ac",
+                "personal_phone_no" => "8801718184811",
+                "jobtype" => "Full Time",
+                "campus" => "Permanent Campus",
+                "profile_photo_file" => "images/profile_image_upload_138.jpg",
+                "profilepic" => "https://api.diu.ac/images/profile_image_upload_138.jpg",
+                "groups" => "faculty",
+                "website" => "https://profile.diu.ac/md.fazlul.haque"
+
+            ];
+
+        }
+
 
         return view('front.departmentDetails.index', compact('slug', 'facultyMembers'));
     }
