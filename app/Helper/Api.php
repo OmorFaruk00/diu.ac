@@ -20,8 +20,8 @@ class Api
     public static function programs()
     {
 
-        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/programs/', false, self::ssl())); 
-        return   $response->data; 
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/programs', false, self::ssl()));
+        return $response->data;
 
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/programs";
@@ -33,17 +33,14 @@ class Api
         //     return $response->content->data;
         // }
         // return false;
+   
+       
     }
 
     public static function sliders()
     {
-
-        
-
-        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/sliders', false, self::ssl())); 
-        return   $response; 
-
-
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/sliders', false, self::ssl()));
+        return $response;
 
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/sliders";
@@ -60,8 +57,8 @@ class Api
     public static function partners()
     {
 
-        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/partners', false, self::ssl())); 
-        return   $response; 
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/partners', false, self::ssl()));
+        return $response;
 
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/partners";
@@ -78,9 +75,8 @@ class Api
     public static function keyResourcePersons()
     {
 
-        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/key-resource-persons', false, self::ssl())); 
-        return   $response; 
-
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/key-resource-persons', false, self::ssl()));
+        return $response;
 
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/key-resource-persons";
@@ -97,8 +93,8 @@ class Api
     public static function diuGoverningBodies()
     {
 
-        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/diu-governing-bodies', false, self::ssl())); 
-        return   $response; 
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/diu-governing-bodies', false, self::ssl()));
+        return $response;
 
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/diu-governing-bodies";
@@ -114,10 +110,11 @@ class Api
 
     public static function departmentFacilities($slug)
     {
-
         $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/department-facilities/'.$slug, false, self::ssl())); 
-        return   $response; 
+        return   $response->data; 
 
+        // $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/department-facilities/{$slug}', false, self::ssl()));
+        // return $response;
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/department-facilities/{$slug}";
         // $curl = Curl::to($url)->returnResponseObject();
@@ -133,7 +130,8 @@ class Api
     public static function departmentGalleries($slug)
     {
         $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/department-gallery/'.$slug, false, self::ssl())); 
-        return   $response; 
+        return   $response->data; 
+
 
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/department-gallery/{$slug}";
@@ -149,10 +147,9 @@ class Api
 
     public static function departmentFacultyMembers($slug)
     {
-        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/department-faculty-member/'.$slug, false, self::ssl())); 
-        return   $response->data;  
 
-
+        $facultyMembers = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/department-faculty-member/'.$slug, false, self::ssl())); 
+        return   $facultyMembers->data;        
         
         // $basePath = env('API_URL');
         // $url = "{$basePath}/public-diu-website/department-faculty-member/{$slug}";

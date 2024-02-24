@@ -41,7 +41,6 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/publications', [DiuController::class, 'publications'])->name('publications');
     Route::get('/convocation', [DiuController::class, 'convocation'])->name('convocation');
     Route::get('/certificate-verification', [DiuController::class, 'certificateVerification'])->name('certificate-verification');
-    Route::get('/certificate-verification-test', [DiuController::class, 'certificateVerificationTest'])->name('certificate-verification-test');
     Route::get('/department/{slug}', [DiuController::class, 'departmentDetails'])->name('department-details');
 
     Route::get('/books-and-library', [DiuController::class, 'booksAndLibrary'])->name('books-and-library');
@@ -51,6 +50,9 @@ Route::group(['middleware' => ['pageSpreed']], function () {
     Route::get('/privacy-policy', [DiuController::class, 'privacyPolicy'])->name('privacy-policy');
 
     Route::get('/test', [DiuController::class, 'test'])->name('test');
+    Route::view('diu-student-privacy-policy','/front/diu-student-privacy-policy');
+
+    
 });
 
 

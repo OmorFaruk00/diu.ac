@@ -10,6 +10,7 @@ class DiuController extends Controller
 {
     public function homePage()
     {
+        // return $partners = Api::partners();;
         if (!Cache::has('sliderData')) {
              $sliders = Api::sliders();
             Cache::put('sliderData', $sliders);
@@ -27,7 +28,7 @@ class DiuController extends Controller
 
         $cache_sliders = Cache::get('sliderData');
         $cache_partners = Cache::get('partnersData');
-        $cache_programs = Cache::get('programsData');
+         $cache_programs = Cache::get('programsData');
 
         return view('front.home.index', [
             'programs' => $cache_programs,
