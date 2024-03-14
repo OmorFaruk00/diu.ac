@@ -31,7 +31,7 @@
                         <div class="info-text">
                             <a href="tel:8809612111348">
                                 <span>Call Us</span>
-                                +880 9612111348
+                                +88 09677777348
                             </a>
                         </div>
                     </div>

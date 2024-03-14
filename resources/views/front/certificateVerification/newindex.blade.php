@@ -50,7 +50,7 @@
         <div class="overlay">
             <div class="container">
                 <div class="col-md-12 text-center">
-                    <h1 class="page-title">Certificate Verification</h1>
+                    <h1 class="page-title">Certificate Verificationss</h1>
                     <ul>
                         <li>
                             <a class="active" href="{{ route('homePage') }}">Home</a> / <span
@@ -74,7 +74,7 @@
                     <option value="" selected disabled hidden>Select roll</option>
                     @php
                         for ($row = 1; $row <= 600; $row++) {
-                            echo "<option value=\"$row\">" . str_pad($row, 2, '0', STR_PAD_LEFT) . '</option>';
+                            echo "<option value='" . str_pad($row, 2, '0', STR_PAD_LEFT) . "'>" . str_pad($row, 2, '0', STR_PAD_LEFT) . '</option>';
                         }
                     @endphp
                 </select>
@@ -196,7 +196,7 @@
                             opt += '</tr>';
                             opt += '<tr>';
                             opt += '<th scope="col">Program</th>';
-                            opt += '<td scope="col">' + response.data.data.roll + '</td>';
+                            opt += '<td scope="col">' + response.data.data.program + '</td>';
                             opt += '</tr>';
                             opt += '<tr>';
                             opt += '<th scope="col">Batch</th>';

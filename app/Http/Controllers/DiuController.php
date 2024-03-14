@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Helper\Api;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Route;
 
 class DiuController extends Controller
 {
@@ -98,7 +99,29 @@ class DiuController extends Controller
 
     public function publications()
     {
+        
         return view('front.publications.index');
+    }
+    public function journals()    
+    {     
+          
+       return view('front.journal.index');
+    }
+    public function journalsVol12()    
+    {
+
+        if (!Cache::has('journals')) {
+            $journalsdata =  Api::getJournal();  
+            Cache::put('journals',  $journalsdata);
+        }
+       $journals = Cache::get('journals');
+          
+       return view('front.journal.vol12',compact('journals'));
+    }
+    public function journalDetails($id)    
+    {
+        $journal =  Api::getJournalDetails($id);       
+        return view('front.journal.details',compact('journal'));
     }
 
     public function convocation()

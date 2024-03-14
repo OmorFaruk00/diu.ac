@@ -163,4 +163,16 @@ class Api
         // return false;
     }
 
+    public static function getJournal()
+    {
+
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/journal', false, self::ssl()));
+        return $response;
+    }
+    public static function getJournalDetails($id)
+    {
+        $response = json_decode(@file_get_contents('https://api.diu.ac/public-diu-website/journal/'.$id, false, self::ssl())); 
+        return   $response;  
+    }
+
 }
